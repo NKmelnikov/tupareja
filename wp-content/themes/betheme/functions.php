@@ -7,6 +7,8 @@
  * @link https://muffingroup.com
  */
 
+use Admin\LadiesMenu;
+
 define('MFN_THEME_VERSION', '21.5.4');
 
 // theme related filters
@@ -187,7 +189,13 @@ if (is_admin()) {
 //    add_menu_page($page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position);
 //}
 
-require_once '_сustom/admin/ladies.php';
+require_once '_Custom/Admin/LadiesMenu.php';
+
+add_action('admin_menu', 'ladies_menu');
+
+function ladies_menu() {
+    return LadiesMenu::instance()->plugin_menu();
+}
 
 /**
  * @deprecated 21.0.5
