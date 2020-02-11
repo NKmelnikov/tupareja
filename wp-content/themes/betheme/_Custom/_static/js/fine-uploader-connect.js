@@ -59,8 +59,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             console.log(JSON.stringify(pathArray));
             $('#la1-path-to-images').val(JSON.stringify(pathArray));
-
-
+            $('.la1-submit').attr('disabled', false);
         });
     })(jQuery);
 });

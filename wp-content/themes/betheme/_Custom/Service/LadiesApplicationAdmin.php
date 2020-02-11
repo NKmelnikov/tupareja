@@ -45,18 +45,26 @@ class LadiesApplicationAdmin extends WP_List_Table
     function column_name($item ) {
 
         // create a nonce
-        $delete_nonce = wp_create_nonce( 'sp_delete_customer' );
+        $edit_nonce = wp_create_nonce( 'sp_edit_customer' );
+        $activate_nonce = wp_create_nonce( 'sp_activate_customer' );
 
         $title = '<strong>' . $item['name'] . '</strong>';
 
         $actions = [
-            'delete' => sprintf(
-                '<a href="?page=%s&action=%s&customer=%s&_wpnonce=%s">Delete</a>',
+            'edit' => sprintf(
+                '<a href="?page=%s&action=%s&customer=%s&_wpnonce=%s">Edit</a>',
                 esc_attr( $_REQUEST['page'] ),
-                'delete',
+                'edit',
                 absint( $item['id'] ),
-                $delete_nonce
-            )
+                $edit_nonce
+            ),
+            'activate' => sprintf(
+                '<a href="?page=%s&action=%s&customer=%s&_wpnonce=%s">Activate</a>',
+                esc_attr( $_REQUEST['page'] ),
+                'activate',
+                absint( $item['id'] ),
+                $activate_nonce
+            ),
         ];
 
         return $title . $this->row_actions( $actions );
@@ -71,7 +79,11 @@ class LadiesApplicationAdmin extends WP_List_Table
      * @return mixed
      */
     public function column_default($item, $column_name ) {
+        $_item = $item[ $column_name ];
+        $image_src = $this->handle_image_src($_item);
+        //Todo default image
         switch ( $column_name ) {
+            case 'activated':
             case 'name':
             case 'date of birth':
             case 'email':
@@ -85,13 +97,26 @@ class LadiesApplicationAdmin extends WP_List_Table
             case 'profession':
             case 'town':
             case 'country':
+            case 'man_wish_age':
+            case 'video_link':
             case 'about':
-                return $item[ $column_name ];
+                return $_item;
+            case 'main_image_path':
+                return "<img src='$image_src' width='39' height='50'>";
             default:
                 return print_r( $item, true ); //Show the whole array for troubleshooting purposes
         }
     }
 
+    public function handle_image_src($src){
+        preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
+//        echo print_r($new_src[0],true);
+        if (!empty($new_src)) {
+            return $new_src[0][0];
+        }
+
+        return '/wp-content/themes/betheme/images/woman-default-picture.png';
+    }
     /**
      * Render the bulk edit checkbox
      *
@@ -113,7 +138,9 @@ class LadiesApplicationAdmin extends WP_List_Table
     function get_columns() {
         return [
             'cb'      => '<input type="checkbox" />',
-            'name'    => __( 'Name', 'sp' ),
+            'main_image_path'      => __( 'Обложка', 'sp' ),
+            'activated'    => __( 'Активирован', 'sp' ),
+            'name'    => __( 'Имя', 'sp' ),
             'email' => __( 'email', 'sp' ),
             'phone'    => __( 'phone', 'sp' ),
             'family_status'    => __( 'family_status', 'sp' ),
@@ -125,6 +152,8 @@ class LadiesApplicationAdmin extends WP_List_Table
             'profession'    => __( 'profession', 'sp' ),
             'town'    => __( 'town', 'sp' ),
             'country'    => __( 'country', 'sp' ),
+            'man_wish_age'    => __( 'man_wish_age', 'sp' ),
+            'video_link'    => __( 'video_link', 'sp' ),
             'about'    => __( 'about', 'sp' ),
         ];
     }
@@ -136,6 +165,7 @@ class LadiesApplicationAdmin extends WP_List_Table
      */
     public function get_sortable_columns() {
         return [
+            'activated' => ['activated', true],
             'name' => ['name', true],
             'family_status' => ['name', false]
         ];
@@ -164,7 +194,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         /** Process bulk action */
         $this->process_bulk_action();
 
-        $per_page     = $this->get_items_per_page( 'customers_per_page', 5 );
+        $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
         $total_items  = $this->ladiesRepository->recordCount();
 

@@ -28,6 +28,17 @@ class LadiesRepository
         $updated = $this->db->update($table, $data, $where);
     }
 
+    public function checkExistence($key, $value){
+        $sql = sprintf(
+            "SELECT * FROM %s WHERE `%s`='%s'",
+            self::TABLE_LADIES,
+            $key,
+            $value
+        );
+        $result = $this->db->get_results($sql);
+        return ($result) ? true : false ;
+
+    }
     /**
      * Retrieve customer’s data from the database
      *
@@ -36,7 +47,7 @@ class LadiesRepository
      *
      * @return mixed
      */
-    public function getLadies($per_page = 5, $page_number = 1)
+    public function getLadies($per_page = 10, $page_number = 1)
     {
         $sql = sprintf(
             "SELECT * FROM %s",

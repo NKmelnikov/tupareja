@@ -1,4 +1,3 @@
-<pre>
 <?php
 require_once '../Service/LadiesApplicationClient.php';
 //
@@ -10,8 +9,5 @@ use Service\LadiesApplicationClient;
 
 $ladiesApplicationClient = new LadiesApplicationClient();
 $result = $ladiesApplicationClient->ladiesAction($_POST, $_FILES);
-
-
-?>
-</pre>
-
+echo print_r(json_encode($result),true);
+die();

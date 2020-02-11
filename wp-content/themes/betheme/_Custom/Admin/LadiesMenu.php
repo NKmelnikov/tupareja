@@ -60,7 +60,7 @@ class LadiesMenu
         $option = 'per_page';
         $args = [
             'label' => 'Customers',
-            'default' => 5,
+            'default' => 10,
             'option' => 'customers_per_page'
         ];
 
@@ -81,7 +81,7 @@ class LadiesMenu
             <h2>Анкеты девушек</h2>
 
             <div id="poststuff">
-                <div id="post-body" class="metabox-holder columns-2">
+                <div id="post-body" class="metabox-holder">
                     <div id="post-body-content">
                         <div class="meta-box-sortables ui-sortable">
                             <form method="post">

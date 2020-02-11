@@ -1,0 +1,171 @@
+/*#Subheader{*/
+/*	display: none;*/
+/*}*/
+
+#__lpform_la1-name{
+	display: none;
+}
+
+.la1-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.la1-article{
+	letter-spacing:0;
+	margin-bottom: 20px;
+}
+
+.la1-article p{
+	font-weight: bold;
+}
+.la1-article ul{
+	list-style: circle;
+	margin-left: 40px;
+}
+
+.la1-input-section{
+	display: flex;
+	justify-content: space-between;
+}
+
+.la1-input-section__first-box, .la1-input-section__second-box{
+	width: 48%;
+}
+
+.la1-input-section__first-box input, .la1-input-section__second-box input{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.la1-input-section__first-box textarea, .la1-input-section__second-box textarea{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.la1-input-section__first-box .error-box, .la1-input-section__second-box .error-box{
+	height: 20px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.qq-gallery .qq-upload-button {
+	border-color: #081025;
+	background: #fff!important;
+	color: #081025 !important;
+}
+
+.qq-gallery .qq-upload-button:hover{
+	background-color: #081025 !important;
+	color: #ffffff !important;
+}
+
+/* Customize the label (the la1-terms-box) */
+.la1-terms-box {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top:15px;
+	flex-direction: column;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.la1-terms-box input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border: 1px solid black;
+
+}
+
+/* On mouse-over, add a grey background color */
+.la1-terms-box:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.la1-terms-box input:checked ~ .checkmark {
+	background-color: rgba(1, 4, 19, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.la1-terms-box input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.la1-terms-box .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.la1-notification {
+	transition: 0.2s ease-in-out!important;
+	min-width: 300px;
+	color: white;
+	display: flex;
+	padding: 20px;
+}
+.la1-submit:disabled{
+	background: gray!important;
+	border: 1px solid gray!important;
+	cursor: not-allowed;
+}
+.la1-submit:disabled:hover{
+		background: gray!important;
+}
+
+.la1-input{
+	border: 1px solid transparent;
+}
+
+.error-input{
+	border: 1px solid #d95c55!important;
+}
+
+.error-box{
+	color: #d95c55;
+	font-size: 12px;
+}
+
+.alert-danger{
+	background: #d95c55;
+}
+
+.alert-success{
+	background: #48c675;
+}
