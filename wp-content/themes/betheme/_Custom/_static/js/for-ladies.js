@@ -71,9 +71,9 @@
         },
 
         submitApplicationClient () {
-            // if (this.validateHtml().length === 0) {
+            if (this.validateHtml().length === 0) {
                  this.sendAjax();
-            // }
+            }
         }
 
     };
