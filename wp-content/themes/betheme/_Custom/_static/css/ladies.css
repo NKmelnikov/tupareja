@@ -48,6 +48,13 @@
 	margin-bottom: 5px;
 }
 
+.la1-bottom-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
 .qq-gallery .qq-upload-button {
 	border-color: #081025;
 	background: #fff!important;
@@ -58,6 +65,21 @@
 	background-color: #081025 !important;
 	color: #ffffff !important;
 }
+
+.la1-submit{
+	width: 400px;
+}
+
+.la1-submit:disabled{
+	background: gray!important;
+	border: 1px solid gray!important;
+	cursor: not-allowed;
+}
+.la1-submit:disabled:hover{
+	background: gray!important;
+}
+
+
 
 /* Customize the label (the la1-terms-box) */
 .la1-terms-box {
@@ -70,7 +92,7 @@
 	padding-left: 35px;
 	margin-bottom: 12px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 13px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -133,20 +155,14 @@
 	transform: rotate(45deg);
 }
 
+
+
 .la1-notification {
 	transition: 0.2s ease-in-out!important;
 	min-width: 300px;
 	color: white;
 	display: flex;
 	padding: 20px;
-}
-.la1-submit:disabled{
-	background: gray!important;
-	border: 1px solid gray!important;
-	cursor: not-allowed;
-}
-.la1-submit:disabled:hover{
-		background: gray!important;
 }
 
 .la1-input{

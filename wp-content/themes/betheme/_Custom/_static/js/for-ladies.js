@@ -31,12 +31,15 @@
         },
 
         sendAjax(){
+            let data = this.ladiesForm.serialize();
+            data['g-recaptcha-response'] = grecaptcha.getResponse();
+
             $.ajax({
                 url: this.ladiesForm.attr('action'),
                 type: 'POST',
-                data : this.ladiesForm.serialize(),
+                data : data,
                 success: function(response){
-                    l.validate(response)
+                    l.validate(response);
                 }
             });
         },
@@ -46,26 +49,31 @@
             return this.ladiesForm.find( ":invalid" ).each( function( index, node ) {
                 $(`#${node.id}`).addClass('error-input');
                 $(`.error-${node.id}`).html(node.validationMessage);
+                console.log(node.id);
+                console.log(node.validationMessage);
             });
         },
 
-        validate(response) {
-            response = JSON.parse(response);
-            if (response.error) {
-                this.showNotification('danger', response.error)
+        validate(data) {
+            data = JSON.parse(data);
+            if (data.error) {
+                this.showNotification('danger', data.error)
             } else {
-                this.showNotification('success', response.success);
+                this.showNotification('success', data.success);
                 setTimeout(()=>{
                     location.replace(this.homeUrl)
                 },7000)
             }
+        },
 
+        verifyCallback(response) {
+            return response;
         },
 
         submitApplicationClient () {
-            if (this.validateHtml().length === 0) {
+            // if (this.validateHtml().length === 0) {
                  this.sendAjax();
-            }
+            // }
         }
 
     };
@@ -78,7 +86,14 @@
 
     $('.la1-input').on('input', function () {
         l.clearErrors();
-    })
+    });
 
+    function onloadCallback() {
+        grecaptcha.render('g-recaptcha', {
+            'sitekey' : '6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0',
+            'callback' : l.verifyCallback
+        });
+    };
+    window.onloadCallback = onloadCallback;
 
 })(jQuery);

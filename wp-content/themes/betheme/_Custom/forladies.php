@@ -23,6 +23,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.core.min.js"></script>
   <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.js"></script>
   <script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
 
@@ -105,7 +106,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
           </div>
 
         </section>
-        <div class="la1-uploader-section">
+        <section class="la1-uploader-section">
           <!-- Fine Uploader Gallery template
      ====================================================================== -->
           <script type="text/template" id="qq-template-gallery">
@@ -192,16 +193,21 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
           ====================================================================== -->
           <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js' ?>"></script>
 
-        </div>
-        <label class="la1-terms-box">Даю согласие на обработку персональных данных
-          <input required type="checkbox" id="la1-terms-checkbox" name="la1-terms-checkbox" class="la1-terms-checkbox">
-          <span class="error-box error-la1-terms-checkbox"></span>
-          <span class="checkmark"></span>
-        </label>
-        <button class="la1-submit" disabled type="submit">Отправить</button>
+        </section>
+        <section class="la1-bottom-section">
+          <label class="la1-terms-box">Даю согласие на обработку персональных данных
+            <input required type="checkbox" id="la1-terms-checkbox" name="la1-terms-checkbox" class="la1-terms-checkbox">
+            <span class="error-box error-la1-terms-checkbox"></span>
+            <span class="checkmark"></span>
+          </label>
+          <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
+          <button class="la1-submit" disabled type="submit">Отправить</button>
+        </section>
       </form>
     </div>
+
     <script src="<?php echo $pathToCustom . '_static/js/for-ladies.js' ?>"></script>
+
   </div>
 
 <?php get_footer();

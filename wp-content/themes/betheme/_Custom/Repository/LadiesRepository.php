@@ -19,7 +19,6 @@ class LadiesRepository
 
     public function insertLadiesApplication($post)
     {
-        //TODO validation
         $this->db->insert(self::TABLE_LADIES, $post);
     }
 

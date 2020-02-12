@@ -16,20 +16,17 @@ class LadiesApplicationClient
         $this->ladiesRepository = new LadiesRepository();
     }
 
-    public function ladiesAction($post, $files)
+    public function ladiesAction($post)
     {
         $post = $this->validatePost($post);
-
         $first_key = key($post);
 
         if($first_key === 'error'){
             return ['error' => $post['error']];
         }
 
+        $this->ladiesRepository->insertLadiesApplication($post);
         return ['success' => 'Ваша анкета была успешно подана, после подтверждения модератором, она появится на сайте.'];
-        
-//        $this->ladiesRepository->insertLadiesApplication($post);
-//        wp_redirect( get_home_url() );
     }
 
     private function validatePost($post)
@@ -49,33 +46,40 @@ class LadiesApplicationClient
             'profession' => CustomHelper::sanitiseText($post['la1-profession']),
             'town' => CustomHelper::sanitiseText($post['la1-town']),
             'country' => CustomHelper::sanitiseText($post['la1-country']),
+            'about' => CustomHelper::sanitiseText($post['la1-about']),
             'smoking' => CustomHelper::sanitiseText($post['la1-smoking']),
             'man_wish_age' => CustomHelper::sanitiseText($post['la1-man-wish-age']),
             'wishes_to_man' => CustomHelper::sanitiseText($post['la1-wishes-to-man']),
-            'about' => CustomHelper::sanitiseText($post['la1-about']),
             'video_link' => esc_url($post['la1-video-link']),
             'path_to_images' => CustomHelper::sanitiseText($post['la1-path-to-images']),
             'main_image_path' => CustomHelper::sanitiseText($post['la1-main-image-path'])
         ];
 
-
         $emailExist = $this->ladiesRepository->checkExistence('email', $post['email']);
         $phoneExist = $this->ladiesRepository->checkExistence('phone', $post['phone']);
+        $validateCaptcha = $this->validReCaptcha();
 
-        if($emailExist){
-            return  ['error' => 'this Email is already taken'];
-        } else if ($phoneExist){
-            return ['error' => 'this Phone is already taken'];
-        } else {
-            return $post;
-
+        switch (true){
+            case $emailExist:
+                return  ['error' => 'this Email is already taken'];
+                break;
+            case $phoneExist:
+                return  ['error' => 'this Phone is already taken'];
+                break;
+            case !$validateCaptcha->success:
+                return  ['error' => 'captcha is not checked'];
+                break;
         }
 
+        return $post;
     }
 
-    private function handleFiles()
-    {
-
+    private function validReCaptcha(){
+            //your site secret key
+            $secret = '6LdRaDMUAAAAAB9iSSvcB1Sp73Uk3-KtmRBZr6un';
+            //get verify response data
+            $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+            return json_decode($verifyResponse);
     }
 
 }
