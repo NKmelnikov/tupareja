@@ -1,7 +1,9 @@
 <?php
 
 // Include the upload handler class
-const UPLOAD_DIR = "/var/www/melnikovshop/wordpress/wp-content/uploads";
+require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
+const UPLOAD_DIR = ABSPATH. 'wp-content/uploads';
+
 require_once "../Helper/UploadHelper.php";
 $uploader = new UploadHelper();
 

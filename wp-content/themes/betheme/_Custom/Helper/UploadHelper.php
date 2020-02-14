@@ -110,7 +110,7 @@ class UploadHelper {
         }
 
         if ($this->isInaccessible($uploadDirectory)){
-            return array('error' => "Server error. Uploads directory isn't writable");
+            return array('error' => $uploadDirectory ." Server error. Uploads directory isn't writable");
         }
 
         $type = $_SERVER['CONTENT_TYPE'];

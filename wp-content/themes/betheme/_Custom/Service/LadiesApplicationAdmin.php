@@ -42,7 +42,7 @@ class LadiesApplicationAdmin extends WP_List_Table
      *
      * @return string
      */
-    function column_name($item ) {
+    function column_name($item) {
 
         // create a nonce
         $edit_nonce = wp_create_nonce( 'sp_edit_customer' );
@@ -52,8 +52,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $actions = [
             'edit' => sprintf(
-                '<a href="?page=%s&action=%s&customer=%s&_wpnonce=%s">Edit</a>',
-                esc_attr( $_REQUEST['page'] ),
+                '<a href="edit-lady/?&action=%s&customer=%s&_wpnonce=%s">Edit</a>',
                 'edit',
                 absint( $item['id'] ),
                 $edit_nonce

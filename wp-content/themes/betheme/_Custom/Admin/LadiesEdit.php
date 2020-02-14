@@ -1,10 +1,12 @@
 <?php
 
+
 namespace Admin;
+
 
 use Service\LadiesApplicationAdmin;
 
-class LadiesMenu
+class LadiesEdit
 {
     // class instance
     static $instance;
@@ -36,10 +38,10 @@ class LadiesMenu
     {
 
         $hook = add_menu_page(
-            'asdasd',
-            'Анкеты девушек',
+            'Редактировать анкету',
+            'Редактировать анкету',
             'manage_options',
-            'ladies_applications',
+            'lady_edit',
             [$this, 'plugin_settings_page'],
             'dashicons-businesswoman',
             1
@@ -55,46 +57,16 @@ class LadiesMenu
      */
     public function screen_option()
     {
-
         $option = 'per_page';
-        $args = [
-            'label' => 'Customers',
-            'default' => 10,
-            'option' => 'customers_per_page'
-        ];
+        $args = [];
 
         add_screen_option($option, $args);
-        require_once( ABSPATH . 'wp-content/themes/betheme/_Custom/Service/LadiesApplicationAdmin.php');
-        $this->ladiesApplicationAdmin = new LadiesApplicationAdmin();
-
     }
-
-
     /**
      * Plugin settings page
      */
     public function plugin_settings_page()
     {
-        ?>
-        <div class="wrap">
-            <h2>Анкеты девушек</h2>
-
-            <div id="poststuff">
-                <div id="post-body" class="metabox-holder">
-                    <div id="post-body-content">
-                        <div class="meta-box-sortables ui-sortable">
-                            <form method="post">
-                                <?php
-                                $this->ladiesApplicationAdmin->prepare_items();
-                                $this->ladiesApplicationAdmin->display(); ?>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <br class="clear">
-            </div>
-        </div>
-        <?php
+        require_once __DIR__ . '/../editLady.php';
     }
 }
-

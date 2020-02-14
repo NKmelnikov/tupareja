@@ -8,6 +8,7 @@
  */
 
 use Admin\LadiesMenu;
+use Admin\LadiesEdit;
 
 define('MFN_THEME_VERSION', '21.5.4');
 
@@ -175,7 +176,6 @@ if (is_admin()) {
     require_once(get_theme_file_path('/functions/admin/class-mfn-changelog.php'));
 }
 
-//add_action('admin_menu', 'extra_post_info_menu');
 //
 //function extra_post_info_menu()
 //{
@@ -185,16 +185,23 @@ if (is_admin()) {
 //    $menu_slug = 'extra-post-info';
 //    $function = 'extra_post_info_page';
 //    $icon_url = 'dashicons-media-code';
-//    $position = 4;
-//    add_menu_page($page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position);
+//    add_menu_page($page_title, $menu_title, $capability, $menu_slug, $function, $icon_url);
 //}
 
+
 require_once '_Custom/Admin/LadiesMenu.php';
+require_once '_Custom/Admin/LadiesEdit.php';
 
 add_action('admin_menu', 'ladies_menu');
+add_action('admin_menu', 'ladies_edit');
+
 
 function ladies_menu() {
     return LadiesMenu::instance()->plugin_menu();
+}
+
+function ladies_edit() {
+    return LadiesEdit::instance()->plugin_menu();
 }
 
 /**
