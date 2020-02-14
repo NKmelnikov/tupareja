@@ -66,10 +66,6 @@
             }
         },
 
-        verifyCallback(response) {
-            return response;
-        },
-
         submitApplicationClient () {
             if (this.validateHtml().length === 0) {
                  this.sendAjax();
@@ -87,13 +83,5 @@
     $('.la1-input').on('input', function () {
         l.clearErrors();
     });
-
-    function onloadCallback() {
-        grecaptcha.render('g-recaptcha', {
-            'sitekey' : '6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0',
-            'callback' : l.verifyCallback
-        });
-    };
-    window.onloadCallback = onloadCallback;
 
 })(jQuery);
