@@ -1,0 +1,59 @@
+.le1-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', Arial, sans-serif; }
+
+.le1_input_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .le1_input_section__first-box, .le1_input_section__second-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%; }
+    .le1_input_section__first-box input, .le1_input_section__first-box textarea, .le1_input_section__second-box input, .le1_input_section__second-box textarea {
+      padding: 5px;
+      margin: 5px;
+      width: 100%; }
+    .le1_input_section__first-box label, .le1_input_section__second-box label {
+      font-size: 16px;
+      font-weight: bold; }
+
+.le1_photo_section {
+  display: flex; }
+  .le1_photo_section img {
+    max-width: 400px;
+    margin: 5px; }
+    .le1_photo_section img.main-image {
+      border: 3px solid orange; }
+
+.le1_bottom_section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .le1_bottom_section button {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    color: #cecece;
+    outline: none;
+    border: 1px solid transparent;
+    transition: .2s ease-in-out; }
+  .le1_bottom_section button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black; }
+  .le1_bottom_section button:active {
+    transform: scale(0.95); }
+  .le1_bottom_section__button-save {
+    background: #0c6856; }
+  .le1_bottom_section__button-activate {
+    background: #1f5168; }
+  .le1_bottom_section__button-delete {
+    background: #682e37; }
+
+/*# sourceMappingURL=ladiesEdit.css.map */

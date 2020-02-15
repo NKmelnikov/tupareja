@@ -22,9 +22,19 @@ class LadiesRepository
         $this->db->insert(self::TABLE_LADIES, $post);
     }
 
-    public function activateLady($post)
+    public function activateLady($id)
     {
-        $updated = $this->db->update($table, $data, $where);
+        $updated = $this->db->update(self::TABLE_LADIES, ['active'=> 1], ['id' => $id]);
+        // TODO check if ok
+    }
+
+    public function getLadyById($id){
+        $sql = sprintf(
+            "SELECT * FROM %s WHERE `id`='%s'",
+            self::TABLE_LADIES,
+            $id
+        );
+        return $this->db->get_results($sql);
     }
 
     public function checkExistence($key, $value){
@@ -36,7 +46,6 @@ class LadiesRepository
         );
         $result = $this->db->get_results($sql);
         return ($result) ? true : false ;
-
     }
     /**
      * Retrieve customer’s data from the database
