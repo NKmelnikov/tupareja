@@ -36,7 +36,7 @@ class LadiesMenu
     {
 
         $hook = add_menu_page(
-            'asdasd',
+            'Анкеты девушек',
             'Анкеты девушек',
             'manage_options',
             'ladies_applications',

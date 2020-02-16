@@ -25,8 +25,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 ?>
 <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesEdit.css">
 
-<form action="" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
-  <section class="le1_input_section">
+<script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
+
+
+<form action="<?php echo $pathToCustom . 'Actions/submitUpdate.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
+	<input type="hidden" id="le1-id" value="<?php echo $_GET['customer']?>">
+	<section class="le1_input_section">
     <div class="le1_input_section__first-box">
       <label for="le1-name">Ф.И.О</label>
       <input type="text" required name="le1-name" id="le1-name" min="2" max="255" class="le1-input" placeholder="Ф.И.О" value="<?php echo $lady['name']; ?>">
@@ -108,9 +112,16 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
   ?>
   </section>
+	<section class="le1_activated_section">
+		<h3>Статус активации:</h3>
+		<label for="le1-activated-yes">Активирована</label>
+		<input type="radio" name="le1-activated" id="le1-activate-yes" value="1" <?php if($lady['activated']==1) echo 'checked'?>>
+		<label for="le1-activated-no">Не активирована</label>
+		<input type="radio" name="le1-activated" id="le1-activate-no" value="0" <?php if($lady['activated']==0) echo 'checked'?>>
+	</section>
   <section class="le1_bottom_section">
     <button class="le1_bottom_section__button-save" type="submit">Сохранить</button>
-    <button class="le1_bottom_section__button-activate" type="button">Активировать</button>
+    <!-- <button class="le1_bottom_section__button-activate" type="button">Активировать</button> -->
   </section>
-  <script src="<?php echo $pathToCustom . '_static/js/for-ladies.js' ?>"></script>
+  <script src="<?php echo $pathToCustom . '_static/js/ladies-edit.js' ?>"></script>
 </form>

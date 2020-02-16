@@ -56,4 +56,17 @@
   .le1_bottom_section__button-delete {
     background: #682e37; }
 
+
+.error-input {
+	border: 1px solid #d95c55 !important; }
+
+.error-box {
+	color: #d95c55;
+	font-size: 12px; }
+
+.alert-danger {
+	background: #d95c55; }
+
+.alert-success {
+	background: #48c675; }
 /*# sourceMappingURL=ladiesEdit.css.map */

@@ -2,7 +2,6 @@
     var le1 = {
         homeUrl: location.protocol + '//' + location.host,
         saveBtn : $('.le1_bottom_section__button-save'),
-        activateBtn : $('.le1_bottom_section__button-save'),
         ladiesForm: $('#le1-form'),
 
         clearErrors() {
@@ -31,7 +30,8 @@
             });
         },
 
-        sendSaveAjax(){
+        sendAjax(){
+            let data = this.ladiesForm.serialize();
             $.ajax({
                 url: this.ladiesForm.attr('action'),
                 type: 'POST',
@@ -69,9 +69,6 @@
                 this.showNotification('danger', data.error)
             } else {
                 this.showNotification('success', data.success);
-                setTimeout(()=>{
-                    location.replace(this.homeUrl)
-                },7000)
             }
         },
 
@@ -87,16 +84,6 @@
         e.preventDefault();
 
         le1.saveApplication();
-    });
-
-    le1.activateBtn.on('click', (e) => {
-        e.preventDefault();
-
-        le1.saveApplication();
-    });
-
-    $('.le1-input').on('input', function () {
-        le1.clearErrors();
     });
 
 })(jQuery);

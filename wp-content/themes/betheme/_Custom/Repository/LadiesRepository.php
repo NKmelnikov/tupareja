@@ -22,6 +22,11 @@ class LadiesRepository
         $this->db->insert(self::TABLE_LADIES, $post);
     }
 
+    public function updateLadiesApplication($post)
+    {
+    	$this->db->update(self::TABLE_LADIES, $post,['id'=>$post['id']]);
+    }
+
     public function activateLady($id)
     {
         $updated = $this->db->update(self::TABLE_LADIES, ['active'=> 1], ['id' => $id]);

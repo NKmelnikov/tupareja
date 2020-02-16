@@ -49,6 +49,7 @@ class LadiesEdit
         );
 
         add_action("load-$hook", [$this, 'screen_option']);
+        add_action('admin_menu', remove_menu_page('lady_edit'));
 
     }
 
