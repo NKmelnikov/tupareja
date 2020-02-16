@@ -29,7 +29,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdate.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
-	<input type="hidden" id="le1-id" value="<?php echo $_GET['customer']?>">
+	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
 	<section class="le1_input_section">
     <div class="le1_input_section__first-box">
       <label for="le1-name">Ф.И.О</label>

@@ -1,0 +1,70 @@
+<?php
+
+
+namespace Service;
+
+use Helper\CustomHelper;
+use Repository\LadiesRepository;
+use wpdb;
+
+
+
+class LadiesApplicationAdminUpdate
+{
+
+    /** Class constructor */
+    private $ladiesRepository;
+
+    public function __construct()
+    {
+
+	    require_once '../Repository/LadiesRepository.php';
+	    $this->ladiesRepository = new LadiesRepository();
+
+    }
+
+	public function ladiesUpdate($post)
+	{
+		$post = $this->validatePost($post);
+		$first_key = key($post);
+
+		if($first_key === 'error'){
+			return ['error' => $post['error']];
+		}
+
+		$this->ladiesRepository->updateLadiesApplication($post);
+		return ['success' => 'Анкета успешно обновлена'];
+	}
+
+	private function validatePost($post)
+	{
+		require_once '../Helper/CustomHelper.php';
+		$post =  [
+			'id' => CustomHelper::sanitiseText($post['le1-id']),
+			'name' => CustomHelper::sanitiseText($post['le1-name']),
+			'date_of_birth' => CustomHelper::sanitiseText($post['le1-dateOfBirth']),
+			'email' => sanitize_email($post['le1-email']),
+			'phone' => CustomHelper::sanitiseText($post['le1-phone']),
+			'family_status' => CustomHelper::sanitiseText($post['le1-familyStatus']),
+			'kids' => CustomHelper::sanitiseText($post['le1-kids']),
+			'height' => CustomHelper::sanitiseText($post['le1-height']),
+			'weight' => CustomHelper::sanitiseText($post['le1-weight']),
+			'eye_color' => CustomHelper::sanitiseText($post['le1-eyeColor']),
+			'languages' => CustomHelper::sanitiseText($post['le1-languages']),
+			'profession' => CustomHelper::sanitiseText($post['le1-profession']),
+			'town' => CustomHelper::sanitiseText($post['le1-town']),
+			'country' => CustomHelper::sanitiseText($post['le1-country']),
+			'about' => CustomHelper::sanitiseText($post['le1-about']),
+			'smoking' => CustomHelper::sanitiseText($post['le1-smoking']),
+			'man_wish_age' => CustomHelper::sanitiseText($post['le1-man-wish-age']),
+			'wishes_to_man' => CustomHelper::sanitiseText($post['le1-wishes-to-man']),
+			'video_link' => esc_url($post['le1-video-link']),
+			'path_to_images' => CustomHelper::sanitiseText($post['le1-path-to-images']),
+			'main_image_path' => CustomHelper::sanitiseText($post['le1-main-image-path']),
+			'activated' => CustomHelper::sanitiseText($post['le1-activated'])
+		];
+
+		return $post;
+	}
+
+}
