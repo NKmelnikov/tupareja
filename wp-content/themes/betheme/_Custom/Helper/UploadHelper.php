@@ -92,6 +92,7 @@ class UploadHelper {
      * @param string $name Overwrites the name of the file.
      * @return array
      */
+
     public function handleUpload($uploadDirectory, $name = null){
 
         if (is_writable($this->chunksFolder) &&
@@ -189,7 +190,24 @@ class UploadHelper {
                 if (!is_dir(dirname($target))){
                     mkdir(dirname($target), 0777, true);
                 }
+                $imageWithWm = $file['tmp_name'];
                 if (move_uploaded_file($file['tmp_name'], $target)){
+	                $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_main_watermark.png');
+	                imagealphablending($watermark, false);
+	                imagesavealpha($watermark, true);
+	                $img = imagecreatefromjpeg($target);
+	                $img_w = imagesx($img);
+	                $img_h = imagesy($img);
+	                $wtrmrk_w = imagesx($watermark);
+	                $wtrmrk_h = imagesy($watermark);
+	                $dst_x = $img_w - $wtrmrk_w; // For centering the watermark on any image
+	                $dst_y = $img_h - $wtrmrk_h; // For centering the watermark on any image
+	                imagecopy($img, $watermark, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
+	                imagejpeg($img, $target, 100);
+	                imagedestroy($img);
+	                imagedestroy($watermark);
+
                     return array('success'=> true, "uuid" => $uuid, "path" => $target);
                 }
             }
