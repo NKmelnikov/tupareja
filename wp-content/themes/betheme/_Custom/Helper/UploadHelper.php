@@ -192,7 +192,7 @@ class UploadHelper {
                 }
                 $imageWithWm = $file['tmp_name'];
                 if (move_uploaded_file($file['tmp_name'], $target)){
-	                $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	                $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
 	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_main_watermark.png');
 	                imagealphablending($watermark, false);
 	                imagesavealpha($watermark, true);
