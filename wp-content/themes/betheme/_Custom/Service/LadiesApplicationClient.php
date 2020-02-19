@@ -48,9 +48,8 @@ class LadiesApplicationClient
             'country' => CustomHelper::sanitiseText($post['la1-country']),
             'about' => CustomHelper::sanitiseText($post['la1-about']),
             'smoking' => CustomHelper::sanitiseText($post['la1-smoking']),
-            'man_wish_age' => CustomHelper::sanitiseText($post['la1-man-wish-age']),
             'wishes_to_man' => CustomHelper::sanitiseText($post['la1-wishes-to-man']),
-            'video_link' => esc_url($post['la1-video-link']),
+            'video_link' => CustomHelper::sanitiseText($post['video_link']),
             'path_to_images' => CustomHelper::sanitiseText($post['la1-path-to-images']),
             'main_image_path' => CustomHelper::sanitiseText($post['la1-main-image-path'])
         ];

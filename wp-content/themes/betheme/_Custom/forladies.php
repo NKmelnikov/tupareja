@@ -28,19 +28,17 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="content_wrapper clearfix ">
 
       <article class="la1-article">
-        <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor.
-          Nam vel justo cursus, faucibus lorem eget, egestas eros.
-          Maecenas eleifend erat at justo fringilla imperdiet id ac magna.
-          Suspendisse vel facilisis odio, at ornare nibh. In malesuada, tortor eget sodales mollis,
-        </p>
-        <ul>
+        <p>Вся контактная информация, а также фамилия и полная дата рождения — строго конфиденциальны и не публикуются на сайте!</p>
+        <p>Наши рекомендации по заполнению анкеты:</p>
+	      <ul>
             <li>Выделите качества, которые делают вас особенной</li>
             <li>Расскажите подробно о своих увлечениях и хобби</li>
             <li>Укажите оригинальное жизненное кредо</li>
             <li>Опишите, какие качества Вы хотите видеть в своем избраннике</li>
             <li>Предоставляйте только реальную информацию (не скрывайте свой возраст либо наличие детей)</li>
-            <li>Предоставляйте только реальную информацию (не скрывайте свой возраст либо наличие детей)</li>
-            <li>Прикрепите удачные фото, где можно хорошо рассмотреть Ваши черты лица и особенности фигуры (профессиональные фото не обязательны, но снимки не должны быть вульгарными)</li>
+            <li>Прикрепите удачные фото, где можно хорошо рассмотреть Ваши черты лица и особенности фигуры (снимки не должны быть вульгарными)</li>
+            <li>Не создавайте придуманного образа, несоответствие с ним может оттолкнуть мужчину</li>
+		      <li>Сделайте коротенькое качественное видео, где можно увидеть вас в реальной жизни</li>
         </ul>
       </article>
       <form action="<?php echo $pathToCustom . 'Actions/submitApplication.php' ?>" class="la1-wrapper" id="la1-form" method="post" enctype="multipart/form-data">
@@ -67,9 +65,6 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
             <input type="text" required name="la1-kids" id="la1-kids" min="2" max="255" class="la1-input" placeholder="Дети">
             <span class="error-box error-la1-kids"></span>
 
-            <input type="text" required name="la1-video-link" id="la1-video-link" min="2" max="255" class="la1-input" placeholder="Ссылка на видео о себе">
-            <span class="error-box error-la1-video-link"></span>
-
             <textarea rows="4" cols="50" required name="la1-about" id="la1-about" class="la1-input" placeholder="О себе"></textarea>
             <span class="error-box error-la1-about"></span>
           </div>
@@ -94,9 +89,6 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
             <input type="text" required name="la1-smoking" id="la1-smoking" min="2" max="255" class="la1-input" placeholder="Курите ли Вы?">
             <span class="error-box error-la1-smoking"></span>
-
-            <input type="text" name="la1-man-wish-age" id="la1-man-wish-age" min="2" max="255" class="la1-input" placeholder="Желаемый возраст мужчины">
-            <span class="error-box error-la1-man-wish-age"></span>
 
             <textarea rows="4" cols="50" name="la1-wishes-to-man" id="la1-wishes-to-man" class="la1-input" placeholder="Пожелания к потенциальному партнёру"></textarea>
             <span class="error-box error-la1-wishes-to-man"></span>
@@ -195,19 +187,19 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
         </section>
         <section class="la1-bottom-section">
-          <label class="la1-terms-box">Даю согласие на обработку персональных данных
-            <input required type="checkbox" id="la1-terms-checkbox" name="la1-terms-checkbox" class="la1-terms-checkbox">
-            <span class="error-box error-la1-terms-checkbox"></span>
-            <span class="checkmark"></span>
+          <label class="la1-video">Ваше видео
+            <input required type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-video-upload">
+            <span class="error-box error-la1-video-upload"></span>
           </label>
+	        <div id="upload-info"></div>
           <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
           <button class="la1-submit" disabled type="submit">Отправить</button>
         </section>
+	      <script src="<?php echo $pathToCustom . '_static/js/videoUpload.js' ?>"></script>
       </form>
     </div>
 
     <script src="<?php echo $pathToCustom . '_static/js/for-ladies.js' ?>"></script>
-
   </div>
 
 <?php get_footer();
