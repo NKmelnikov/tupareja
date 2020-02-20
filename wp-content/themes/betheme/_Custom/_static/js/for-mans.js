@@ -1,13 +1,12 @@
 (function ($) {
-    let la1 = {
+    var ma1 = {
         homeUrl: location.protocol + '//' + location.host,
-        submitBtn : $('.la1-submit'),
-        ladiesForm: $('#la1-form'),
-        uploadInput: $('#la1-video-upload'),
+        submitBtn : $('.ma1-submit'),
+        ladiesForm: $('#ma1-form'),
 
         clearErrors() {
             $('.error-box').text(''); //clear error spans
-            $('.la1-input').removeClass('error-input');
+            $('.ma1-input').removeClass('error-input');
         },
 
         showNotification(type, message, timeOut = 7000){
@@ -33,7 +32,6 @@
 
         sendAjax(url_video){
             let data = this.ladiesForm.serialize();
-          data+='&video_link='+url_video;
             data['g-recaptcha-response'] = grecaptcha.getResponse();
 
             $.ajax({
@@ -41,28 +39,11 @@
                 type: 'POST',
                 data : data,
                 success: function(response){
-                    la1.validate(response);
+                    ma1.validate(response);
                 }
             });
         },
 
-        sendAjaxVideo(){
-          let file_video = la1.uploadInput.prop('files')[0];
-          let data_video = new FormData();
-          data_video.append('file',file_video);
-          $.ajax({
-            url: '/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php',
-            type: 'POST',
-            data: data_video,
-            cache: false,
-            processData: false,
-            contentType: false,
-            success: function (msg) {
-              la1.sendAjax(msg);
-            },
-            beforeSend: la1.showNotification('success','Идет загрузка видео',5000)
-          });
-        },
         validateHtml(){
             this.clearErrors();
             return this.ladiesForm.find( ":invalid" ).each( function( index, node ) {
@@ -87,36 +68,19 @@
 
         submitApplicationClient () {
             if (this.validateHtml().length === 0) {
-                 this.sendAjaxVideo();
+                 this.sendAjax();
             }
         },
 
-        fileValidate() {
-        let file = la1.uploadInput.prop('files')[0],
-          ext = "не определилось",
-          parts = file.name.split('.');
-        la1.uploadInput.removeClass('error-input');
-        if (parts.length > 1) ext = parts.pop();
-        if (file.type!=="video/mp4") {
-          la1.showNotification('danger', "Неверный тип файла!");
-          la1.uploadInput.addClass('error-input');}
-        if (ext!=="mp4") {
-          la1.showNotification('danger', "Неверный формат видео!");
-          la1.uploadInput.addClass('error-input');}
-        if (file.size>=60*1024*1024) {
-          la1.showNotification('danger', "Видео не должно быть больше 60мб!");
-          la1.uploadInput.addClass('error-input');}
-      }
     };
 
-    la1.submitBtn.on('click', (e) => {
+    ma1.submitBtn.on('click', (e) => {
         e.preventDefault();
 
-        la1.submitApplicationClient();
+        ma1.submitApplicationClient();
     });
 
 
-  document.getElementById('la1-video-upload').addEventListener('change', la1.fileValidate);
 
 
 

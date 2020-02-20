@@ -195,7 +195,6 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
           <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
           <button class="la1-submit" disabled type="submit">Отправить</button>
         </section>
-	      <script src="<?php echo $pathToCustom . '_static/js/videoUpload.js' ?>"></script>
       </form>
     </div>
 
