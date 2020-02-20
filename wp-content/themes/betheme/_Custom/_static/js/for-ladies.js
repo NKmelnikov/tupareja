@@ -1,9 +1,11 @@
 (function ($) {
-    var la1 = {
+    let la1 = {
         homeUrl: location.protocol + '//' + location.host,
         submitBtn: $('.la1-submit'),
         ladiesForm: $('#la1-form'),
+        uploadInput: $('#la1-video-upload'),
         progressBar: $('.meter'),
+        
         clearErrors() {
             $('.error-box').text(''); //clear error spans
             $('.la1-input').removeClass('error-input');
@@ -18,9 +20,9 @@
                 allow_dismiss: false,
                 template: '<div data-notify="container" class="la1-notification alert alert-{0}" role="alert">' +
                     '<div data-notify="message">{2}</div>' +
-                    '<div class="meter">'+
-                        '<span style="width:100%;"><span class="progress"></span></span>'+
-                    '</div>'+
+                    '<div class="meter">' +
+                    '<span style="width:100%;"><span class="progress"></span></span>' +
+                    '</div>' +
                     '</div>',
                 placement: {
                     from: "bottom"
@@ -34,7 +36,6 @@
 
         sendAjax(url_video) {
             let data = this.ladiesForm.serialize();
-            data['video_link1'] = url_video;
             data += '&video_link=' + url_video;
             data['g-recaptcha-response'] = grecaptcha.getResponse();
             console.log(data);
@@ -49,7 +50,7 @@
         },
 
         sendAjaxVideo() {
-            let file_video = $('#la1-video-upload').prop('files')[0];
+            let file_video = la1.uploadInput.prop('files')[0];
             let data_video = new FormData();
             data_video.append('file', file_video);
             $.ajax({
@@ -79,10 +80,10 @@
             } else {
                 let noti = this.showNotification('success', '<strong>Saving files</strong>.');
                 this.progressBar.show();
-                setTimeout(function() {
+                setTimeout(function () {
                     noti.update('message', '<strong>Files are saved</strong>.');
                 }, 2000);
-                setTimeout(function() {
+                setTimeout(function () {
                     this.progressBar.hide();
                     noti.update('message', data.success);
                 }, 3000);
@@ -99,23 +100,22 @@
         },
 
         fileValidate() {
-            var uploadInput = $('#la1-video-upload');
-            var file = document.getElementById("la1-video-upload").files[0],
+            let file = la1.uploadInput.prop('files')[0],
                 ext = "не определилось",
                 parts = file.name.split('.');
-            uploadInput.removeClass('error-input');
+            la1.uploadInput.removeClass('error-input');
             if (parts.length > 1) ext = parts.pop();
             if (file.type !== "video/mp4") {
                 la1.showNotification('danger', "Неверный тип файла!");
-                uploadInput.addClass('error-input');
+                la1.uploadInput.addClass('error-input');
             }
             if (ext !== "mp4") {
                 la1.showNotification('danger', "Неверный формат видео!");
-                uploadInput.addClass('error-input');
+                la1.uploadInput.addClass('error-input');
             }
             if (file.size >= 60 * 1024 * 1024) {
                 la1.showNotification('danger', "Видео не должно быть больше 60мб!");
-                uploadInput.addClass('error-input');
+                la1.uploadInput.addClass('error-input');
             }
         }
     };
@@ -131,7 +131,7 @@
     });
 
 
-    document.getElementById('la1-video-upload').addEventListener('change', la1.fileValidate);
+    la1.uploadInput.on('change', la1.fileValidate);
 
 
 })(jQuery);
