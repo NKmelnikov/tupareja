@@ -15,6 +15,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-gallery.min.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-new.min.css">
+  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/css-libs/animate.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladies.css">
 
   <!--  <script src="/wp-content/themes/betheme/_Custom/_static/js/jquery-3.4.1.slim.min.js"></script>-->
@@ -188,14 +189,13 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
         </section>
         <section class="la1-bottom-section">
           <label class="la1-video">Ваше видео
-            <input required type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-video-upload">
+            <input required type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
             <span class="error-box error-la1-video-upload"></span>
           </label>
 	        <div id="upload-info"></div>
           <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
           <button class="la1-submit" disabled type="submit">Отправить</button>
         </section>
-	      <script src="<?php echo $pathToCustom . '_static/js/videoUpload.js' ?>"></script>
       </form>
     </div>
 
