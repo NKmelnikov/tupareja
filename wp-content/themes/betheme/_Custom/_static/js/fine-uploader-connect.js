@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 showButton: true
             },
             validation: {
-                itemLimit: 4,
+                itemLimit: 5,
                 acceptFiles: 'image/*',
                 allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
             }
@@ -56,8 +56,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             $(`.qq-file-id-${id}`).prepend(`<input name="make_main" id="make_main-${id}" class="make-main-checkbox" type="checkbox">Главная`);
             updateImagesPathes($,responseJSON);
             makeMain($, id);
-
-            console.log(pathArray);
             $('#la1-path-to-images').val(pathArray);
             $('.la1-submit').attr('disabled', false);
         });

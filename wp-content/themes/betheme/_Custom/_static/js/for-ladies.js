@@ -35,16 +35,18 @@
         },
 
         sendAjax(url_video) {
+            let telegramArray = {name: $('#la1-name').val(), email: $('#la1-email').val(), phone: $('#la1-phone').val()};
+
             let data = this.ladiesForm.serialize();
             data += '&video_link=' + url_video;
             data['g-recaptcha-response'] = grecaptcha.getResponse();
-            console.log(data);
             $.ajax({
                 url: this.ladiesForm.attr('action'),
                 type: 'POST',
                 data: data,
                 success: function (response) {
                     la1.validate(response);
+                    la1.sendAjaxTelegram(telegramArray)
                 }
             });
         },
@@ -65,6 +67,28 @@
                 }
             });
         },
+
+        sendAjaxTelegram(data) {
+            let botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ';
+            let chatId = '-395677332';
+            let text = 'Новая анкета' + "\n";
+                text += `Имя: ${data['name']}` + "\n";
+                text += `Email: ${data['email']}` + "\n";
+                text += `Телефон: ${data['phone']}` + "\n";
+                text += `--------------------------` + "\n";
+
+
+            let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data:{chat_id:chatId,text:text},
+                success: function (response) {
+
+                }
+            });
+        },
+
         validateHtml() {
             this.clearErrors();
             return this.ladiesForm.find(":invalid").each(function (index, node) {
@@ -79,12 +103,12 @@
                 this.showNotification('danger', data.error)
             } else {
                 let noti = this.showNotification('success', '<strong>Saving files</strong>.');
-                this.progressBar.show();
+                la1.progressBar.show();
                 setTimeout(function () {
                     noti.update('message', '<strong>Files are saved</strong>.');
+                    la1.progressBar.hide();
                 }, 2000);
                 setTimeout(function () {
-                    this.progressBar.hide();
                     noti.update('message', data.success);
                 }, 3000);
                 setTimeout(() => {
