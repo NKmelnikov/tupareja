@@ -9,7 +9,7 @@ if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
     die();
 }
 $clientRepository = new ClientRepository();
-$lady = $clientRepository->getLadyById($_GET['customer']);
+$lady = $clientRepository->getById(TABLE_LADIES, $_GET['customer']);
 $lady = (array)$lady[0];
 
 if (!$lady){
