@@ -4,7 +4,7 @@
 namespace Service;
 
 use Helper\CustomHelper;
-use Repository\LadiesRepository;
+use Repository\ClientRepository;
 use wpdb;
 
 
@@ -13,13 +13,13 @@ class LadiesApplicationAdminUpdate
 {
 
     /** Class constructor */
-    private $ladiesRepository;
+    private $clientRepository;
 
     public function __construct()
     {
 
-	    require_once '../Repository/LadiesRepository.php';
-	    $this->ladiesRepository = new LadiesRepository();
+	    require_once '../Repository/ClientRepository.php';
+	    $this->clientRepository = new ClientRepository();
 
     }
 
@@ -32,7 +32,7 @@ class LadiesApplicationAdminUpdate
 			return ['error' => $post['error']];
 		}
 
-		$this->ladiesRepository->updateLadiesApplication($post);
+		$this->clientRepository->updateLadiesApplication($post);
 		return ['success' => 'Анкета успешно обновлена'];
 	}
 

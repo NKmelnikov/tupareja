@@ -1,13 +1,13 @@
 <?php
 require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
-require_once 'Repository/LadiesRepository.php';
-use Repository\LadiesRepository;
+require_once 'Repository/ClientRepository.php';
+use Repository\ClientRepository;
 
 if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
     echo 'Lady not found (';
     die();
 }
-$ladiesRepository = new LadiesRepository();
+$ladiesRepository = new ClientRepository();
 $lady = $ladiesRepository->getLadyById($_GET['customer']);
 $lady = (array)$lady[0];
 

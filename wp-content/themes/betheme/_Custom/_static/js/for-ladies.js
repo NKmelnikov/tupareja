@@ -4,8 +4,9 @@
         submitBtn: $('.la1-submit'),
         ladiesForm: $('#la1-form'),
         uploadInput: $('#la1-video-upload'),
-        progressBar: $('.meter'),
-        
+        fileNameSpan: $('#la1-fileName-text'),
+        fakeFileUploadBtn: $('#la1-fake-file-input'),
+
         clearErrors() {
             $('.error-box').text(''); //clear error spans
             $('.la1-input').removeClass('error-input');
@@ -21,7 +22,7 @@
                 template: '<div data-notify="container" class="la1-notification alert alert-{0}" role="alert">' +
                     '<div data-notify="message">{2}</div>' +
                     '<div class="meter">' +
-                    '<span style="width:100%;"><span class="progress"></span></span>' +
+                        '<span style="width:100%;"><span class="progress"></span></span>' +
                     '</div>' +
                     '</div>',
                 placement: {
@@ -71,11 +72,10 @@
         sendAjaxTelegram(data) {
             let botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ';
             let chatId = '-395677332';
-            let text = 'Новая анкета' + "\n";
+            let text = 'Новая !женская! анкета' + "\n";
                 text += `Имя: ${data['name']}` + "\n";
                 text += `Email: ${data['email']}` + "\n";
                 text += `Телефон: ${data['phone']}` + "\n";
-                text += `--------------------------` + "\n";
 
 
             let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -102,11 +102,11 @@
             if (data.error) {
                 this.showNotification('danger', data.error)
             } else {
-                let noti = this.showNotification('success', '<strong>Saving files</strong>.');
-                la1.progressBar.show();
+                let noti = la1.showNotification('success', '<strong>Saving files</strong>.');
+                $('.meter').show();
                 setTimeout(function () {
                     noti.update('message', '<strong>Files are saved</strong>.');
-                    la1.progressBar.hide();
+                    $('.meter').hide();
                 }, 2000);
                 setTimeout(function () {
                     noti.update('message', data.success);
@@ -128,6 +128,7 @@
                 ext = "не определилось",
                 parts = file.name.split('.');
             la1.uploadInput.removeClass('error-input');
+            la1.fileNameSpan.html(file.name);
             if (parts.length > 1) ext = parts.pop();
             if (file.type !== "video/mp4") {
                 la1.showNotification('danger', "Неверный тип файла!");
@@ -146,7 +147,6 @@
 
     la1.submitBtn.on('click', (e) => {
         e.preventDefault();
-
         la1.submitApplicationClient();
     });
 
@@ -154,8 +154,10 @@
         la1.clearErrors();
     });
 
+    la1.fakeFileUploadBtn.on('click', () => {
+        la1.uploadInput.click();
+    });
 
     la1.uploadInput.on('change', la1.fileValidate);
-
 
 })(jQuery);

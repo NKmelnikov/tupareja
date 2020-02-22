@@ -1,0 +1,36 @@
+.error-input {
+  border: 1px solid #d95c55 !important; }
+
+.error-box {
+  color: #d95c55;
+  font-size: 12px; }
+
+.alert-danger {
+  background: #d95c55; }
+
+.alert-success {
+  background: #48c675; }
+
+.meter {
+  display: none;
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden; }
+
+.meter span {
+  display: block;
+  height: 100%; }
+
+.progress {
+  background-color: #0f8252;
+  animation: progressBar 2s ease-in-out;
+  animation-fill-mode: both; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+/*# sourceMappingURL=global.css.map */

@@ -1,3 +1,37 @@
+.error-input {
+  border: 1px solid #d95c55 !important; }
+
+.error-box {
+  color: #d95c55;
+  font-size: 12px; }
+
+.alert-danger {
+  background: #d95c55; }
+
+.alert-success {
+  background: #48c675; }
+
+.meter {
+  display: none;
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden; }
+
+.meter span {
+  display: block;
+  height: 100%; }
+
+.progress {
+  background-color: #0f8252;
+  animation: progressBar 2s ease-in-out;
+  animation-fill-mode: both; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 #__lpform_ma1-name {
   display: none; }
 
@@ -13,7 +47,8 @@
 
 .ma1-article {
   letter-spacing: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
   .ma1-article p {
     font-weight: bold; }
   .ma1-article ul {
@@ -134,17 +169,4 @@
 .ma1-input {
   border: 1px solid transparent; }
 
-.error-input {
-  border: 1px solid #d95c55 !important; }
-
-.error-box {
-  color: #d95c55;
-  font-size: 12px; }
-
-.alert-danger {
-  background: #d95c55; }
-
-.alert-success {
-  background: #48c675; }
-
-/*# sourceMappingURL=mans.css.map */
+/*# sourceMappingURL=men.css.map */

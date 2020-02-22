@@ -3,33 +3,50 @@
 namespace Service;
 
 use Helper\CustomHelper;
-use Repository\LadiesRepository;
+use Repository\ClientRepository;
 use wpdb;
 
-class LadiesApplicationClient
+
+class ClientApplicationHandler
 {
-    private $ladiesRepository;
+    const TABLE_LADIES = 'wp_ladies';
+    const TABLE_MEN = 'wp_men';
+
+    private $clientRepository;
 
     public function __construct()
     {
-        require_once '../Repository/LadiesRepository.php';
-        $this->ladiesRepository = new LadiesRepository();
+        require_once '../Repository/ClientRepository.php';
+        $this->clientRepository = new ClientRepository();
     }
 
     public function ladiesAction($post)
     {
-        $post = $this->validatePost($post);
+        $post = $this->validatePostLadies($post);
         $first_key = key($post);
 
         if($first_key === 'error'){
             return ['error' => $post['error']];
         }
 
-        $this->ladiesRepository->insertLadiesApplication($post);
+        $this->clientRepository->insertApplication(self::TABLE_LADIES, $post);
         return ['success' => 'Ваша анкета была успешно подана, после подтверждения модератором, она появится на сайте.'];
     }
 
-    private function validatePost($post)
+    public function mensAction($post)
+    {
+        $post = $this->validatePostMen($post);
+        $first_key = key($post);
+
+        if($first_key === 'error'){
+            return ['error' => $post['error']];
+        }
+
+        $this->clientRepository->insertApplication(self::TABLE_MEN, $post);
+        return ['success' => 'Ваша анкета была успешно подана'];
+    }
+
+    private function validatePostLadies($post)
     {
         require_once '../Helper/CustomHelper.php';
         $post =  [
@@ -54,8 +71,35 @@ class LadiesApplicationClient
             'main_image_path' => CustomHelper::sanitiseText($post['la1-main-image-path'])
         ];
 
-        $emailExist = $this->ladiesRepository->checkExistence('email', $post['email']);
-        $phoneExist = $this->ladiesRepository->checkExistence('phone', $post['phone']);
+        return ($this->existInDb($post, self::TABLE_LADIES))?: $post;
+    }
+
+    private function validatePostMen($post)
+    {
+        require_once '../Helper/CustomHelper.php';
+        $post =  [
+            'name' => CustomHelper::sanitiseText($post['ma1-name']),
+            'date_of_birth' => CustomHelper::sanitiseText($post['ma1-dateOfBirth']),
+            'email' => sanitize_email($post['ma1-email']),
+            'phone' => CustomHelper::sanitiseText($post['ma1-phone']),
+            'town' => CustomHelper::sanitiseText($post['ma1-town']),
+            'country' => CustomHelper::sanitiseText($post['ma1-country']),
+        ];
+
+        return ($this->existInDb($post, self::TABLE_MEN))?: $post;
+    }
+
+    private function validReCaptcha(){
+            //your site secret key
+            $secret = '6LdRaDMUAAAAAB9iSSvcB1Sp73Uk3-KtmRBZr6un';
+            //get verify response data
+            $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+            return json_decode($verifyResponse);
+    }
+
+    private function existInDb($post, $table){
+        $emailExist = $this->clientRepository->checkExistence('email', $post['email'], $table);
+        $phoneExist = $this->clientRepository->checkExistence('phone', $post['phone'], $table);
         $validateCaptcha = $this->validReCaptcha();
 
         switch (true){
@@ -70,15 +114,7 @@ class LadiesApplicationClient
                 break;
         }
 
-        return $post;
-    }
-
-    private function validReCaptcha(){
-            //your site secret key
-            $secret = '6LdRaDMUAAAAAB9iSSvcB1Sp73Uk3-KtmRBZr6un';
-            //get verify response data
-            $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-            return json_decode($verifyResponse);
+        return false;
     }
 
 }

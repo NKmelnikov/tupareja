@@ -1,3 +1,37 @@
+.error-input {
+  border: 1px solid #d95c55 !important; }
+
+.error-box {
+  color: #d95c55;
+  font-size: 12px; }
+
+.alert-danger {
+  background: #d95c55; }
+
+.alert-success {
+  background: #48c675; }
+
+.meter {
+  display: none;
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden; }
+
+.meter span {
+  display: block;
+  height: 100%; }
+
+.progress {
+  background-color: #0f8252;
+  animation: progressBar 2s ease-in-out;
+  animation-fill-mode: both; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 #__lpform_la1-name {
   display: none; }
 
@@ -52,51 +86,19 @@
     @media (max-width: 768px) {
       .la1-wrapper .la1-bottom-section {
         flex-direction: column; } }
-    .la1-wrapper .la1-bottom-section .la1-terms-box {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      margin-top: 15px;
-      flex-direction: column;
-      position: relative;
-      padding-left: 35px;
-      margin-bottom: 12px;
-      cursor: pointer;
-      font-size: 13px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none; }
-      .la1-wrapper .la1-bottom-section .la1-terms-box:hover input ~ .checkmark {
-        background-color: #ccc; }
-      .la1-wrapper .la1-bottom-section .la1-terms-box input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0; }
-        .la1-wrapper .la1-bottom-section .la1-terms-box input:checked ~ .checkmark {
-          background-color: #010413; }
-          .la1-wrapper .la1-bottom-section .la1-terms-box input:checked ~ .checkmark:after {
-            display: block; }
-      .la1-wrapper .la1-bottom-section .la1-terms-box .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 25px;
-        width: 25px;
-        background-color: #eee;
-        border: 1px solid black; }
-        .la1-wrapper .la1-bottom-section .la1-terms-box .checkmark:after {
-          left: 9px;
-          top: 5px;
-          width: 5px;
-          height: 10px;
-          border: solid white;
-          border-width: 0 3px 3px 0;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+    .la1-wrapper .la1-bottom-section #la1-fake-file-input {
+      margin: 0; }
+    .la1-wrapper .la1-bottom-section #la1-fileName-text {
+      max-width: 100px;
+      word-wrap: break-word;
+      font-size: 10px;
+      margin-left: -60px; }
+      @media (max-width: 768px) {
+        .la1-wrapper .la1-bottom-section #la1-fileName-text {
+          margin: 0;
+          max-width: 98%; } }
+    .la1-wrapper .la1-bottom-section .la1-video-upload {
+      display: none; }
     .la1-wrapper .la1-bottom-section .la1-submit {
       width: 400px; }
       @media (max-width: 768px) {
@@ -130,40 +132,5 @@
 
 .la1-input {
   border: 1px solid transparent; }
-
-.error-input {
-  border: 1px solid #d95c55 !important; }
-
-.error-box {
-  color: #d95c55;
-  font-size: 12px; }
-
-.alert-danger {
-  background: #d95c55; }
-
-.alert-success {
-  background: #48c675; }
-
-.meter {
-  display: none;
-  height: 5px;
-  position: relative;
-  background: #f3efe6;
-  overflow: hidden; }
-
-.meter span {
-  display: block;
-  height: 100%; }
-
-.progress {
-  background-color: #0f8252;
-  animation: progressBar 2s ease-in-out;
-  animation-fill-mode: both; }
-
-@keyframes progressBar {
-  0% {
-    width: 0; }
-  100% {
-    width: 100%; } }
 
 /*# sourceMappingURL=ladies.css.map */

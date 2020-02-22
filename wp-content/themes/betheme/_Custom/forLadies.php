@@ -1,15 +1,9 @@
 <?php
 /*
-Template Name: for ladies
+Template Name: for Ladies
 */
 get_header();
 
-//spl_autoload_register(function ($class) {
-//    echo 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
-//    echo "/wp-content/themes/betheme/_Custom/$class.php";
-//
-//    require_once "/wp-content/themes/betheme/_Custom/$class.php";
-//});
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 ?>
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.css">
@@ -42,7 +36,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 		      <li>Сделайте коротенькое качественное видео, где можно увидеть вас в реальной жизни</li>
         </ul>
       </article>
-      <form action="<?php echo $pathToCustom . 'Actions/submitApplication.php' ?>" class="la1-wrapper" id="la1-form" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $pathToCustom . 'Actions/submitApplicationLady.php' ?>" class="la1-wrapper" id="la1-form" method="post" enctype="multipart/form-data">
         <section class="la1-input-section">
           <div class="la1-input-section__first-box">
             <input type="text" required name="la1-name" id="la1-name" min="2" max="255" class="la1-input" placeholder="Ф.И.О">
@@ -188,10 +182,10 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
         </section>
         <section class="la1-bottom-section">
-          <label class="la1-video">Ваше видео
+            <input type="button" id="la1-fake-file-input" value="Загрузить видео" />
             <input required type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
+            <span id="la1-fileName-text"></span>
             <span class="error-box error-la1-video-upload"></span>
-          </label>
 	        <div id="upload-info"></div>
           <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
           <button class="la1-submit" disabled type="submit">Отправить</button>

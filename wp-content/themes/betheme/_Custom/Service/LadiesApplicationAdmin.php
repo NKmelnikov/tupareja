@@ -4,7 +4,7 @@
 namespace Service;
 
 use WP_List_Table;
-use Repository\LadiesRepository;
+use Repository\ClientRepository;
 
 if ( ! class_exists( 'WP_List_Table' ) ) {
 
@@ -16,7 +16,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 {
 
     /** Class constructor */
-    private $ladiesRepository;
+    private $clientRepository;
 
     public function __construct()
     {
@@ -28,8 +28,8 @@ class LadiesApplicationAdmin extends WP_List_Table
 
 
         ]);
-        require_once( ABSPATH . 'wp-content/themes/betheme/_Custom/Repository/LadiesRepository.php');
-        $this->ladiesRepository = new LadiesRepository();
+        require_once(ABSPATH . 'wp-content/themes/betheme/_Custom/Repository/ClientRepository.php');
+        $this->clientRepository = new ClientRepository();
 
     }
 
@@ -199,7 +199,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        $total_items  = $this->ladiesRepository->recordCount();
+        $total_items  = $this->clientRepository->recordCount();
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -207,7 +207,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         ] );
 
 
-        $this->items = $this->ladiesRepository->getLadies( $per_page, $current_page );
+        $this->items = $this->clientRepository->getLadies( $per_page, $current_page );
     }
 
     public function process_bulk_action() {
@@ -222,7 +222,7 @@ class LadiesApplicationAdmin extends WP_List_Table
                 die( 'Go get a life script kiddies' );
             }
             else {
-                $this->ladiesRepository->deleteLady( absint( $_GET['customer'] ) );
+                $this->clientRepository->deleteLady( absint( $_GET['customer'] ) );
 
                 wp_redirect( esc_url( add_query_arg() ) );
                 exit;
@@ -239,7 +239,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
             // loop over the array of record IDs and delete them
             foreach ( $delete_ids as $id ) {
-                $this->ladiesRepository->deleteLady( $id );
+                $this->clientRepository->deleteLady( $id );
 
             }
 

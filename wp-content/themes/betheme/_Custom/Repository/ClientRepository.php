@@ -4,11 +4,10 @@
 namespace Repository;
 
 
-class LadiesRepository
+class ClientRepository
 {
     private $db;
 
-    const TABLE_LADIES = 'wp_ladies';
 
     public function __construct()
     {
@@ -17,9 +16,9 @@ class LadiesRepository
         $this->db = $wpdb;
     }
 
-    public function insertLadiesApplication($post)
+    public function insertApplication($table, $post)
     {
-        $this->db->insert(self::TABLE_LADIES, $post);
+        $this->db->insert($table, $post);
     }
 
     public function updateLadiesApplication($post)
@@ -42,10 +41,10 @@ class LadiesRepository
         return $this->db->get_results($sql);
     }
 
-    public function checkExistence($key, $value){
+    public function checkExistence($key, $value, $table){
         $sql = sprintf(
             "SELECT * FROM %s WHERE `%s`='%s'",
-            self::TABLE_LADIES,
+            $table,
             $key,
             $value
         );
