@@ -12,19 +12,19 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 }
 
 
-class LadiesApplicationAdmin extends WP_List_Table
+class MenApplicationAdmin extends WP_List_Table
 {
 
     /** Class constructor */
     private $clientRepository;
-	const TABLE_LADIES = 'wp_ladies';
+	const TABLE_MEN = 'wp_men';
 
     public function __construct()
     {
 
         parent::__construct([
-            'singular' => __('Lady', 'sp'), //singular name of the listed records
-            'plural' => __('Ladies', 'sp'), //plural name of the listed records
+            'singular' => __('Man', 'sp'), //singular name of the listed records
+            'plural' => __('Men', 'sp'), //plural name of the listed records
             'ajax' => false //should this table support ajax?
 
 
@@ -57,7 +57,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         $actions = [
             'edit' => sprintf(
                 '<a href="?page=%s&action=%s&customer=%s&_wpnonce=%s">Edit</a>',
-                'lady_edit',
+                'man_edit',
                 'edit',
                 absint( $item['id'] ),
                 $edit_nonce
@@ -84,43 +84,20 @@ class LadiesApplicationAdmin extends WP_List_Table
      */
     public function column_default($item, $column_name ) {
         $_item = $item[ $column_name ];
-        $image_src = $this->handle_image_src($_item);
-        //Todo default image
         switch ( $column_name ) {
-            case 'activated':
             case 'name':
             case 'date of birth':
             case 'email':
             case 'phone':
-            case 'family_status':
-            case 'kids':
-            case 'height':
-            case 'weight':
-            case 'eye_color':
-            case 'languages':
-            case 'profession':
+	        case 'country':
             case 'town':
-            case 'country':
-            case 'man_wish_age':
-            case 'video_link':
-            case 'about':
                 return $_item;
-            case 'main_image_path':
-                return "<img src='$image_src' width='39' height='50'>";
             default:
                 return print_r( $item, true ); //Show the whole array for troubleshooting purposes
         }
     }
 
-    public function handle_image_src($src){
-        preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
-//        echo print_r($new_src[0],true);
-        if (!empty($new_src)) {
-            return $new_src[0][0];
-        }
 
-        return '/wp-content/themes/betheme/images/woman-default-picture.png';
-    }
     /**
      * Render the bulk edit checkbox
      *
@@ -142,23 +119,11 @@ class LadiesApplicationAdmin extends WP_List_Table
     function get_columns() {
         return [
             'cb'      => '<input type="checkbox" />',
-            'main_image_path'      => __( 'Обложка', 'sp' ),
-            'activated'    => __( 'Активирован', 'sp' ),
             'name'    => __( 'Имя', 'sp' ),
             'email' => __( 'email', 'sp' ),
             'phone'    => __( 'phone', 'sp' ),
-            'family_status'    => __( 'family_status', 'sp' ),
-            'kids'    => __( 'kids', 'sp' ),
-            'height'    => __( 'height', 'sp' ),
-            'weight'    => __( 'weight', 'sp' ),
-            'eye_color'    => __( 'eye_color', 'sp' ),
-            'languages'    => __( 'languages', 'sp' ),
-            'profession'    => __( 'profession', 'sp' ),
+	        'country'    => __( 'country', 'sp' ),
             'town'    => __( 'town', 'sp' ),
-            'country'    => __( 'country', 'sp' ),
-            'man_wish_age'    => __( 'man_wish_age', 'sp' ),
-            'video_link'    => __( 'video_link', 'sp' ),
-            'about'    => __( 'about', 'sp' ),
         ];
     }
 
@@ -169,9 +134,7 @@ class LadiesApplicationAdmin extends WP_List_Table
      */
     public function get_sortable_columns() {
         return [
-            'activated' => ['activated', true],
             'name' => ['name', true],
-            'family_status' => ['name', false]
         ];
     }
 
@@ -200,7 +163,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES);
+        $total_items  = $this->clientRepository->recordCount(self::TABLE_MEN);
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -208,7 +171,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         ] );
 
 
-        $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page );
+        $this->items = $this->clientRepository->getElement(self::TABLE_MEN, $per_page, $current_page );
     }
 
     public function process_bulk_action() {
@@ -223,7 +186,7 @@ class LadiesApplicationAdmin extends WP_List_Table
                 die( 'Go get a life script kiddies' );
             }
             else {
-                $this->clientRepository->deleteElement(self::TABLE_LADIES, absint( $_GET['customer'] ) );
+                $this->clientRepository->deleteElement(self::TABLE_MEN, absint( $_GET['customer'] ) );
 
                 wp_redirect( esc_url( add_query_arg() ) );
                 exit;
@@ -240,7 +203,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
             // loop over the array of record IDs and delete them
             foreach ( $delete_ids as $id ) {
-                $this->clientRepository->deleteElement(self::TABLE_LADIES, $id );
+                $this->clientRepository->deleteElement(self::TABLE_MEN, $id );
 
             }
 

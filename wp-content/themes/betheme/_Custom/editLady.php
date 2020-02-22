@@ -2,13 +2,14 @@
 require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
 require_once 'Repository/ClientRepository.php';
 use Repository\ClientRepository;
+const TABLE_LADIES = 'wp_ladies';
 
 if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
     echo 'Lady not found (';
     die();
 }
 $ladiesRepository = new ClientRepository();
-$lady = $ladiesRepository->getLadyById($_GET['customer']);
+$lady = $ladiesRepository->getById(TABLE_LADIES,$_GET['customer']);
 $lady = (array)$lady[0];
 
 if (!$lady){
@@ -28,7 +29,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
 
 
-<form action="<?php echo $pathToCustom . 'Actions/submitUpdate.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
+<form action="<?php echo $pathToCustom . 'Actions/submitUpdateLady.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
 	<section class="le1_input_section">
     <div class="le1_input_section__first-box">
