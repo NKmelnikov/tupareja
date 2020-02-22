@@ -9,6 +9,7 @@ class MainGalleryHandler
 
     private $clientRepository;
     const LADIES_PER_PAGE = 15;
+    const TABLE_LADIES = 'wp_ladies';
 
 
     public function __construct()
@@ -19,7 +20,7 @@ class MainGalleryHandler
     }
 
     public function getLadies() {
-        $ladies = $this->clientRepository->getLadies(self::LADIES_PER_PAGE, 1);
+        $ladies = $this->clientRepository->getElement(self::TABLE_LADIES,self::LADIES_PER_PAGE, 1);
         foreach ($ladies as $k=>$lady) {
             $ladies[$k]['browser_path'] = $this->convertImgPath($lady['main_image_path']);
         }

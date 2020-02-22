@@ -1,3 +1,37 @@
+.error-input {
+  border: 1px solid #d95c55 !important; }
+
+.error-box {
+  color: #d95c55;
+  font-size: 12px; }
+
+.alert-danger {
+  background: #d95c55; }
+
+.alert-success {
+  background: #48c675; }
+
+.meter {
+  display: none;
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden; }
+
+.meter span {
+  display: block;
+  height: 100%; }
+
+.progress {
+  background-color: #0f8252;
+  animation: progressBar 2s ease-in-out;
+  animation-fill-mode: both; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 .le1-wrapper {
   width: 100%;
   display: flex;
@@ -25,7 +59,7 @@
 .le1_photo_section {
   display: flex; }
   .le1_photo_section img {
-    max-width: 400px;
+    max-width: 200px;
     margin: 5px; }
     .le1_photo_section img.main-image {
       border: 3px solid orange; }
@@ -56,17 +90,4 @@
   .le1_bottom_section__button-delete {
     background: #682e37; }
 
-
-.error-input {
-	border: 1px solid #d95c55 !important; }
-
-.error-box {
-	color: #d95c55;
-	font-size: 12px; }
-
-.alert-danger {
-	background: #d95c55; }
-
-.alert-success {
-	background: #48c675; }
 /*# sourceMappingURL=ladiesEdit.css.map */
