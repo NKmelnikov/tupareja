@@ -1,6 +1,6 @@
 (function ($) {
     var le1 = {
-        TableUrl: location.protocol + '//' + location.host+'/wp-admin/admin.php?page=ladies_applications',
+        tableUrl: location.protocol + '//' + location.host+'/wp-admin/admin.php?page=ladies_applications',
         saveBtn : $('.le1_bottom_section__button-save'),
         ladiesForm: $('#le1-form'),
 
@@ -42,17 +42,6 @@
             });
         },
 
-        sendActivateAjax(){
-            $.ajax({
-                url: this.ladiesForm.attr('action'),
-                type: 'POST',
-                data : data,
-                success: function(response){
-                    le1.validate(response);
-                }
-            });
-        },
-
         validateHtml(){
             this.clearErrors();
             return this.ladiesForm.find( ":invalid" ).each( function( index, node ) {
@@ -69,7 +58,7 @@
                 this.showNotification('danger', data.error)
             } else {
                 this.showNotification('success', data.success);
-                location.replace(this.TableUrl)
+                location.replace(this.tableUrl)
             }
         },
 

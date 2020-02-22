@@ -1,8 +1,8 @@
 (function ($) {
     let me1 = {
-        TableUrl: location.protocol + '//' + location.host+'/wp-admin/admin.php?page=men_applications',
+        tableUrl: location.protocol + '//' + location.host+'/wp-admin/admin.php?page=men_applications',
         saveBtn : $('.me1_bottom_section__button-save'),
-        MenForm: $('#me1-form'),
+        menForm: $('#me1-form'),
 
         clearErrors() {
             $('.error-box').text(''); //clear error spans
@@ -31,9 +31,9 @@
         },
 
         sendAjax(){
-            let data = this.MenForm.serialize();
+            let data = this.menForm.serialize();
             $.ajax({
-                url: this.MenForm.attr('action'),
+                url: this.menForm.attr('action'),
                 type: 'POST',
                 data : data,
                 success: function(response){
@@ -42,20 +42,10 @@
             });
         },
 
-        sendActivateAjax(){
-            $.ajax({
-                url: this.MenForm.attr('action'),
-                type: 'POST',
-                data : data,
-                success: function(response){
-                    le1.validate(response);
-                }
-            });
-        },
 
         validateHtml(){
             this.clearErrors();
-            return this.MenForm.find( ":invalid" ).each( function( index, node ) {
+            return this.menForm.find( ":invalid" ).each( function( index, node ) {
                 $(`#${node.id}`).addClass('error-input');
                 $(`.error-${node.id}`).html(node.validationMessage);
                 console.log(node.id);
@@ -69,7 +59,7 @@
                 this.showNotification('danger', data.error)
             } else {
                 this.showNotification('success', data.success);
-                location.replace(this.TableUrl)
+                location.replace(this.tableUrl)
             }
         },
 
