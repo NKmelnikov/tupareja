@@ -1,2 +1,8 @@
 env.php
 wp-content/uploads/*
+
+.htaccess
+
+.idea/
+
+wp-content/themes/betheme/_Custom/_static/scss/men/menEdit.css.map
