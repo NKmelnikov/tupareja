@@ -13,6 +13,7 @@ class LadiesApplicationAdminUpdate
 
     /** Class constructor */
     private $clientRepository;
+	const TABLE_LADIES = 'wp_ladies';
 
     public function __construct()
     {
@@ -32,7 +33,7 @@ class LadiesApplicationAdminUpdate
 			return ['error' => $post['error']];
 		}
 
-		$this->clientRepository->updateLadiesApplication($post);
+		$this->clientRepository->updateApplication(self::TABLE_LADIES,$post);
 		return ['success' => 'Анкета успешно обновлена'];
 	}
 

@@ -178,9 +178,13 @@ if (is_admin()) {
 
 require_once '_Custom/Admin/LadiesMenu.php';
 require_once '_Custom/Admin/LadiesEdit.php';
+require_once '_Custom/Admin/MenMenu.php';
+require_once '_Custom/Admin/MenEdit.php';
 
 add_action('admin_menu', 'ladies_menu');
 add_action('admin_menu', 'ladies_edit');
+add_action('admin_menu', 'men_menu');
+add_action('admin_menu', 'man_edit');
 
 
 function ladies_menu() {
@@ -190,7 +194,13 @@ function ladies_menu() {
 function ladies_edit() {
     return LadiesEdit::instance()->plugin_menu();
 }
+function men_menu() {
+	return \Admin\MenMenu::instance()->plugin_menu();
+}
 
+function man_edit() {
+	return \Admin\MenEdit::instance()->plugin_menu();
+}
 /**
  * @deprecated 21.0.5
  * Below constants are deprecated and will be removed soon

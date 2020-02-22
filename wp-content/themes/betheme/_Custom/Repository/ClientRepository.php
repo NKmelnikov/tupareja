@@ -1,13 +1,10 @@
 <?php
-
-
 namespace Repository;
 
 
 class ClientRepository
 {
     private $db;
-    const TABLE_LADIES = 'wp_ladies';
 
 
     public function __construct()
@@ -22,21 +19,15 @@ class ClientRepository
         $this->db->insert($table, $post);
     }
 
-    public function updateLadiesApplication($post)
+    public function updateApplication($table,$post)
     {
-    	$this->db->update(self::TABLE_LADIES, $post,['id'=>$post['id']]);
+    	$this->db->update($table, $post,['id'=>$post['id']]);
     }
 
-    public function activateLady($id)
-    {
-        $updated = $this->db->update(self::TABLE_LADIES, ['active'=> 1], ['id' => $id]);
-        // TODO check if ok
-    }
-
-    public function getLadyById($id){
+    public function getById($table,$id){
         $sql = sprintf(
             "SELECT * FROM %s WHERE `id`='%s'",
-            self::TABLE_LADIES,
+            $table,
             $id
         );
         return $this->db->get_results($sql);
@@ -60,11 +51,11 @@ class ClientRepository
      *
      * @return mixed
      */
-    public function getLadies($per_page = 10, $page_number = 1)
+    public function getElement($table,$per_page = 10, $page_number = 1)
     {
         $sql = sprintf(
             "SELECT * FROM %s",
-            self::TABLE_LADIES
+	        $table
         );
         if (!empty($_REQUEST['orderby'])) {
             $sql .= ' ORDER BY ' . esc_sql($_REQUEST['orderby']);
@@ -81,10 +72,10 @@ class ClientRepository
      *
      * @param int $id customer ID
      */
-    public function deleteLady($id)
+    public function deleteElement($table,$id)
     {
         $this->db->delete(
-            self::TABLE_LADIES,
+	        $table,
             ['ID' => $id],
             ['%d']
         );
@@ -95,19 +86,19 @@ class ClientRepository
      *
      * @return null|string
      */
-    public function recordCount()
+    public function recordCount($table)
     {
 
         $sql = sprintf(
             "SELECT COUNT(*) FROM %s",
-            self::TABLE_LADIES
+            $table
         );
 
         return $this->db->get_var($sql);
     }
 
-    public function updatePathToPhotos($id, $data){
-        $this->db->update(self::TABLE_LADIES, $data, ['id'=>$id]);
+    public function updatePathToPhotos($table, $id, $data){
+        $this->db->update($table, $data, ['id'=>$id]);
     }
 
     public function delete($table, $where, $where_format = null)
