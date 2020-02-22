@@ -45,12 +45,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <label for="me1-phone">Телефон</label>
       <input type="text" required name="me1-phone" id="me1-phone" min="2" max="255" class="me1-input" placeholder="Телефон" value="<?php echo $man['phone']; ?>">
       <span class="error-box error-me1-phone"></span>
-	    <label for="me1-town">Город</label>
-	    <input type="text" required name="me1-town" id="me1-town" min="2" max="255" class="me1-input" placeholder="Город" value="<?php echo $man['town']; ?>">
-	    <span class="error-box error-me1-town"></span>
 	    <label for="me1-country">Страна</label>
 	    <input type="text" required name="me1-country" id="me1-country" min="2" max="255" class="me1-input" placeholder="Страна" value="<?php echo $man['country']; ?>">
 	    <span class="error-box error-me1-country"></span>
+	    <label for="me1-town">Город</label>
+	    <input type="text" required name="me1-town" id="me1-town" min="2" max="255" class="me1-input" placeholder="Город" value="<?php echo $man['town']; ?>">
+	    <span class="error-box error-me1-town"></span>
     </div>
   </section>
   <section class="me1_bottom_section">
