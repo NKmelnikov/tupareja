@@ -7,8 +7,8 @@ if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
     echo 'Lady not found (';
     die();
 }
-$ladiesRepository = new ClientRepository();
-$lady = $ladiesRepository->getLadyById($_GET['customer']);
+$clientRepository = new ClientRepository();
+$lady = $clientRepository->getLadyById($_GET['customer']);
 $lady = (array)$lady[0];
 
 if (!$lady){
@@ -33,7 +33,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	<section class="le1_input_section">
     <div class="le1_input_section__first-box">
       <label for="le1-name">Ф.И.О</label>
-      <input type="text" required name="le1-name" id="le1-name" min="2" max="255" class="le1-input" placeholder="Ф.И.О" value="<?php echo $lady['name']; ?>">
+      <input type="text" required name="le1-name" id="le1-name" maxlength="10" class="le1-input" placeholder="Ф.И.О" value="<?php echo $lady['name']; ?>">
       <span class="error-box error-le1-name"></span>
       <label for="le1-dateOfBirth">Дата рождения</label>
       <input type="text" required name="le1-dateOfBirth" id="le1-dateOfBirth" min="2" max="255" class="le1-input" placeholder="Дата рождения" value="<?php echo $lady['date_of_birth']; ?>">

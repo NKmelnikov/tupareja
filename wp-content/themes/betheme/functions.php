@@ -176,19 +176,6 @@ if (is_admin()) {
     require_once(get_theme_file_path('/functions/admin/class-mfn-changelog.php'));
 }
 
-//
-//function extra_post_info_menu()
-//{
-//    $page_title = 'WordPress Extra Post Info';
-//    $menu_title = 'Extra Post Info';
-//    $capability = 'manage_options';
-//    $menu_slug = 'extra-post-info';
-//    $function = 'extra_post_info_page';
-//    $icon_url = 'dashicons-media-code';
-//    add_menu_page($page_title, $menu_title, $capability, $menu_slug, $function, $icon_url);
-//}
-
-
 require_once '_Custom/Admin/LadiesMenu.php';
 require_once '_Custom/Admin/LadiesEdit.php';
 

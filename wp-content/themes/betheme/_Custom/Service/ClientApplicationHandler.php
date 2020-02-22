@@ -51,6 +51,8 @@ class ClientApplicationHandler
         require_once '../Helper/CustomHelper.php';
         $post =  [
             'name' => CustomHelper::sanitiseText($post['la1-name']),
+            'lname' => CustomHelper::sanitiseText($post['la1-lname']),
+            'fname' => CustomHelper::sanitiseText($post['la1-fname']),
             'date_of_birth' => CustomHelper::sanitiseText($post['la1-dateOfBirth']),
             'email' => sanitize_email($post['la1-email']),
             'phone' => CustomHelper::sanitiseText($post['la1-phone']),

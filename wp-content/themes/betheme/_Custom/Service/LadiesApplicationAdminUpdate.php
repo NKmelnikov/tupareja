@@ -8,7 +8,6 @@ use Repository\ClientRepository;
 use wpdb;
 
 
-
 class LadiesApplicationAdminUpdate
 {
 
@@ -18,7 +17,8 @@ class LadiesApplicationAdminUpdate
     public function __construct()
     {
 
-	    require_once '../Repository/ClientRepository.php';
+        require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
+        require_once(ABSPATH . 'wp-content/themes/betheme/_Custom/Repository/ClientRepository.php');
 	    $this->clientRepository = new ClientRepository();
 
     }

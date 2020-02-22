@@ -78,6 +78,12 @@
         height: 20px;
         display: block;
         margin-bottom: 5px; }
+      .la1-wrapper .la1-input-section__first-box .la1-name-container, .la1-wrapper .la1-input-section__second-box .la1-name-container {
+        display: flex;
+        justify-content: space-between; }
+        .la1-wrapper .la1-input-section__first-box .la1-name-container div, .la1-wrapper .la1-input-section__second-box .la1-name-container div {
+          display: flex;
+          flex-direction: column; }
   .la1-wrapper .la1-bottom-section {
     display: flex;
     justify-content: space-between;

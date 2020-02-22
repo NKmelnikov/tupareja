@@ -39,50 +39,62 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <form action="<?php echo $pathToCustom . 'Actions/submitApplicationLady.php' ?>" class="la1-wrapper" id="la1-form" method="post" enctype="multipart/form-data">
         <section class="la1-input-section">
           <div class="la1-input-section__first-box">
-            <input type="text" required name="la1-name" id="la1-name" min="2" max="255" class="la1-input" placeholder="Ф.И.О">
-            <span class="error-box error-la1-name"></span>
+            <div class="la1-name-container">
+              <div class="la1-name-box">
+                <input type="text" required name="la1-name" id="la1-name" maxlength="125" class="la1-input" placeholder="Фамилия">
+                <span class="error-box error-la1-name"></span>
+              </div>
+              <div class="la1-lname-box">
+                <input type="text" required name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Имя">
+                <span class="error-box error-la1-lname"></span>
+              </div>
+              <div class="la1-fname-box">
+                <input type="text" required name="la1-fname" id="la1-fname" maxlength="125" class="la1-input" placeholder="Отчество">
+                <span class="error-box error-la1-fname"></span>
+              </div>
+            </div>
 
-            <input type="text" required name="la1-dateOfBirth" id="la1-dateOfBirth" min="2" max="255" class="la1-input" placeholder="Дата рождения">
+            <input type="text" required name="la1-dateOfBirth" id="la1-dateOfBirth" maxlength="125" class="la1-input" placeholder="Дата рождения">
             <span class="error-box error-la1-dateOfBirth"></span>
 
-            <input type="email" required name="la1-email" id="la1-email" min="2" max="255" class="la1-input" placeholder="Email">
+            <input type="email" required name="la1-email" id="la1-email" maxlength="125" class="la1-input" placeholder="Email">
             <span class="error-box error-la1-email"></span>
 
-            <input type="text" required name="la1-phone" id="la1-phone" min="2" max="255" class="la1-input" placeholder="Телефон">
+            <input type="text" required name="la1-phone" id="la1-phone" maxlength="125" class="la1-input" placeholder="Телефон">
             <span class="error-box error-la1-phone"></span>
 
-            <input type="text" required name="la1-profession" id="la1-profession" min="2" max="255" class="la1-input" placeholder="Профессия">
+            <input type="text" required name="la1-profession" id="la1-profession" maxlength="125" class="la1-input" placeholder="Профессия">
             <span class="error-box error-la1-profession"></span>
 
-            <input type="text" required name="la1-familyStatus" id="la1-familyStatus" min="2" max="255" class="la1-input" placeholder="Семейное положение">
+            <input type="text" required name="la1-familyStatus" id="la1-familyStatus" maxlength="125" class="la1-input" placeholder="Семейное положение">
             <span class="error-box error-la1-familyStatus"></span>
 
-            <input type="text" required name="la1-kids" id="la1-kids" min="2" max="255" class="la1-input" placeholder="Дети">
+            <input type="text" required name="la1-kids" id="la1-kids" maxlength="125" class="la1-input" placeholder="Дети">
             <span class="error-box error-la1-kids"></span>
 
             <textarea rows="4" cols="50" required name="la1-about" id="la1-about" class="la1-input" placeholder="О себе"></textarea>
             <span class="error-box error-la1-about"></span>
           </div>
           <div class="la1-input-section__second-box">
-            <input type="text" required name="la1-height" id="la1-height" min="2" max="255" class="la1-input" placeholder="Рост">
+            <input type="text" required name="la1-height" id="la1-height" maxlength="125" class="la1-input" placeholder="Рост">
             <span class="error-box error-la1-height"></span>
 
-            <input type="text" required name="la1-weight" id="la1-weight" min="2" max="255" class="la1-input" placeholder="Вес">
+            <input type="text" required name="la1-weight" id="la1-weight" maxlength="125" class="la1-input" placeholder="Вес">
             <span class="error-box error-la1-weight"></span>
 
-            <input type="text" required name="la1-eyeColor" id="la1-eyeColor" min="2" max="255" class="la1-input" placeholder="Цвет глаз">
+            <input type="text" required name="la1-eyeColor" id="la1-eyeColor" maxlength="125" class="la1-input" placeholder="Цвет глаз">
             <span class="error-box error-la1-eyeColor"></span>
 
-            <input type="text" required name="la1-town" id="la1-town" min="2" max="255" class="la1-input" placeholder="Город">
+            <input type="text" required name="la1-town" id="la1-town" maxlength="125" class="la1-input" placeholder="Город">
             <span class="error-box error-la1-town"></span>
 
-            <input type="text" required name="la1-country" id="la1-country" min="2" max="255" class="la1-input" placeholder="Страна">
+            <input type="text" required name="la1-country" id="la1-country" maxlength="125" class="la1-input" placeholder="Страна">
             <span class="error-box error-la1-country"></span>
 
-            <input type="text" required name="la1-languages" id="la1-languages" min="2" max="255" class="la1-input" placeholder="Иностранные языки">
+            <input type="text" required name="la1-languages" id="la1-languages" maxlength="125" class="la1-input" placeholder="Иностранные языки">
             <span class="error-box error-la1-languages"></span>
 
-            <input type="text" required name="la1-smoking" id="la1-smoking" min="2" max="255" class="la1-input" placeholder="Курите ли Вы?">
+            <input type="text" required name="la1-smoking" id="la1-smoking" maxlength="125" class="la1-input" placeholder="Курите ли Вы?">
             <span class="error-box error-la1-smoking"></span>
 
             <textarea rows="4" cols="50" name="la1-wishes-to-man" id="la1-wishes-to-man" class="la1-input" placeholder="Пожелания к потенциальному партнёру"></textarea>
