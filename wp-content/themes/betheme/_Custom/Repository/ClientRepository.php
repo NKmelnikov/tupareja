@@ -7,6 +7,7 @@ namespace Repository;
 class ClientRepository
 {
     private $db;
+    const TABLE_LADIES = 'wp_ladies';
 
 
     public function __construct()
