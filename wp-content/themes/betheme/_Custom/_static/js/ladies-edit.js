@@ -1,6 +1,6 @@
 (function ($) {
     var le1 = {
-        homeUrl: location.protocol + '//' + location.host,
+        TableUrl: location.protocol + '//' + location.host+'/wp-admin/admin.php?page=ladies_applications',
         saveBtn : $('.le1_bottom_section__button-save'),
         ladiesForm: $('#le1-form'),
 
@@ -69,6 +69,7 @@
                 this.showNotification('danger', data.error)
             } else {
                 this.showNotification('success', data.success);
+                location.replace(this.TableUrl)
             }
         },
 

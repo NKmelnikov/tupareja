@@ -1,6 +1,6 @@
 (function ($) {
-    var me1 = {
-        homeUrl: location.protocol + '//' + location.host,
+    let me1 = {
+        TableUrl: location.protocol + '//' + location.host+'/wp-admin/admin.php?page=men_applications',
         saveBtn : $('.me1_bottom_section__button-save'),
         MenForm: $('#me1-form'),
 
@@ -69,6 +69,7 @@
                 this.showNotification('danger', data.error)
             } else {
                 this.showNotification('success', data.success);
+                location.replace(this.TableUrl)
             }
         },
 

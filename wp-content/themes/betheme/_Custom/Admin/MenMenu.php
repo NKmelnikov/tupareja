@@ -41,7 +41,7 @@ class MenMenu
             'manage_options',
             'men_applications',
             [$this, 'plugin_settings_page'],
-            'dashicons-businesswoman',
+            'dashicons-businessman',
             1
 
         );
