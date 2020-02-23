@@ -89,6 +89,8 @@ class LadiesApplicationAdmin extends WP_List_Table
         switch ( $column_name ) {
             case 'activated':
             case 'name':
+	        case 'lname':
+	        case 'fname':
             case 'date of birth':
             case 'email':
             case 'phone':
@@ -145,6 +147,8 @@ class LadiesApplicationAdmin extends WP_List_Table
             'main_image_path'      => __( 'Обложка', 'sp' ),
             'activated'    => __( 'Активирован', 'sp' ),
             'name'    => __( 'Имя', 'sp' ),
+	        'lname'    => __( 'Фамилия', 'sp' ),
+	        'fname'    => __( 'Отчество', 'sp' ),
             'email' => __( 'email', 'sp' ),
             'phone'    => __( 'phone', 'sp' ),
             'family_status'    => __( 'family_status', 'sp' ),

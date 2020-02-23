@@ -80,7 +80,7 @@ class LadiesMenu
             <h2>Анкеты девушек</h2>
 			<form method="GET">
 				<input type="hidden" name="page" value="ladies_applications">
-				<input type="search" name="ladiesSearch" placeholder="Введите имя" value="<?php if(isset($_GET['ladiesSearch'])&& ($_GET['ladiesSearch']!="")) echo $_GET['ladiesSearch']?>">
+				<input type="search" name="ladiesSearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['ladiesSearch'])&& ($_GET['ladiesSearch']!="")) echo $_GET['ladiesSearch']?>">
 
 				<input type="submit" value="Поиск" class="button action">
 

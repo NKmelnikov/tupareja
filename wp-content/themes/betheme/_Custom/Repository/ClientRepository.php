@@ -61,8 +61,10 @@ class ClientRepository
 	    }
     	else{
 		    $sql = sprintf(
-			    "SELECT * FROM %s WHERE `name` LIKE '%s'",
+			    "SELECT * FROM %s WHERE `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s'",
 			    $table,
+			    $qwery,
+			    $qwery,
 			    $qwery
 		    );
 	    }
@@ -106,8 +108,10 @@ class ClientRepository
 		}
         else{
 	        $sql = sprintf(
-		        "SELECT COUNT(*) FROM %s WHERE `name` LIKE '%s'",
+		        "SELECT COUNT(*) FROM %s WHERE `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s'",
 		        $table,
+		        $qwery,
+		        $qwery,
 		        $qwery
 	        );
         }
