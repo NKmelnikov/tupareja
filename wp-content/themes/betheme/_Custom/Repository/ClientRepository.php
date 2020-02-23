@@ -51,12 +51,22 @@ class ClientRepository
      *
      * @return mixed
      */
-    public function getElement($table,$per_page = 10, $page_number = 1)
+    public function getElement($table,$per_page = 10, $page_number = 1, $qwery="")
     {
-        $sql = sprintf(
-            "SELECT * FROM %s",
-	        $table
-        );
+    	if($qwery==""){
+		    $sql = sprintf(
+			    "SELECT * FROM %s",
+			    $table
+		    );
+	    }
+    	else{
+		    $sql = sprintf(
+			    "SELECT * FROM %s WHERE `name` LIKE '%s'",
+			    $table,
+			    $qwery
+		    );
+	    }
+
         if (!empty($_REQUEST['orderby'])) {
             $sql .= ' ORDER BY ' . esc_sql($_REQUEST['orderby']);
             $sql .= !empty($_REQUEST['order']) ? ' ' . esc_sql($_REQUEST['order']) : ' ASC';
@@ -86,13 +96,21 @@ class ClientRepository
      *
      * @return null|string
      */
-    public function recordCount($table)
+    public function recordCount($table,$qwery="")
     {
-
-        $sql = sprintf(
-            "SELECT COUNT(*) FROM %s",
-            $table
-        );
+		if($qwery==""){
+			$sql = sprintf(
+				"SELECT COUNT(*) FROM %s",
+				$table
+			);
+		}
+        else{
+	        $sql = sprintf(
+		        "SELECT COUNT(*) FROM %s WHERE `name` LIKE '%s'",
+		        $table,
+		        $qwery
+	        );
+        }
 
         return $this->db->get_var($sql);
     }

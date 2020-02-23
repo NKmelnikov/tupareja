@@ -191,7 +191,7 @@ class LadiesApplicationAdmin extends WP_List_Table
     /**
      * Handles data query and filter, sorting, and pagination.
      */
-    public function prepare_items() {
+    public function prepare_items($qwery="") {
 
         $this->_column_headers = $this->get_column_info();
 
@@ -200,7 +200,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES);
+        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES,$qwery);
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -208,7 +208,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         ] );
 
 
-        $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page );
+        $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $qwery);
     }
 
     public function process_bulk_action() {
