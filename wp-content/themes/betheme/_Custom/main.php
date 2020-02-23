@@ -17,9 +17,21 @@ $ladies = $galleryHandler->getLadies();
 <?php
 foreach ($ladies as $lady){
 ?>
-    <div class="mp1-image-container">
-        <img src="<?php echo $lady['browser_path'];?>" alt="">
-    </div>
+  <a href="#">
+
+  <section class="mp1-lady-container">
+
+      <div class="mp1-image-container" style="background: url('<?php echo $lady['browser_path'];?>') no-repeat"></div>
+      <div class="mp1-image-hover-container">
+        <span class="mp1-image-hover-container__name"><?php echo $lady['name'];?></span>
+        <span class="mp1-image-hover-container__divider"></span>
+        <span class="mp1-image-hover-container__age"><b>Возраст:</b> <?php echo $lady['age'];?></span>
+        <span class="mp1-image-hover-container__height"><b>Рост:</b> <?php echo $lady['height'];?></span>
+        <span class="mp1-image-hover-container__profession"><b>Профессия:</b> <?php echo $lady['profession'];?></span>
+      </div>
+    </section>
+  </a>
+
 <?php
 }
 ?>

@@ -41,12 +41,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
           <div class="la1-input-section__first-box">
             <div class="la1-name-container">
               <div class="la1-name-box">
-                <input type="text" required name="la1-name" id="la1-name" maxlength="125" class="la1-input" placeholder="Фамилия">
-                <span class="error-box error-la1-name"></span>
+                <input type="text" required name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Фамилия">
+                <span class="error-box error-la1-lname"></span>
               </div>
               <div class="la1-lname-box">
-                <input type="text" required name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Имя">
-                <span class="error-box error-la1-lname"></span>
+                <input type="text" required name="la1-name" id="la1-name" maxlength="125" class="la1-input" placeholder="Имя">
+                <span class="error-box error-la1-name"></span>
               </div>
               <div class="la1-fname-box">
                 <input type="text" required name="la1-fname" id="la1-fname" maxlength="125" class="la1-input" placeholder="Отчество">
@@ -54,7 +54,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
               </div>
             </div>
 
-            <input type="text" required name="la1-dateOfBirth" id="la1-dateOfBirth" maxlength="125" class="la1-input" placeholder="Дата рождения">
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required name="la1-dateOfBirth" id="la1-dateOfBirth" maxlength="125" class="la1-input" placeholder="Дата рождения">
             <span class="error-box error-la1-dateOfBirth"></span>
 
             <input type="email" required name="la1-email" id="la1-email" maxlength="125" class="la1-input" placeholder="Email">
