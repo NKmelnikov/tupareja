@@ -98,7 +98,7 @@ class ClientRepository
      *
      * @return null|string
      */
-    public function recordCount($table,$qwery="")
+    public function recordCount($table,$qwery)
     {
 		if($qwery==""){
 			$sql = sprintf(
@@ -148,4 +148,25 @@ class ClientRepository
         $this->check_current_query = false;
         return $this->query($this->prepare($sql, $values));
     }
+
+    public function minAge($table)
+    {
+	    $sql = sprintf(
+		    "SELECT `date_of_birth` FROM %s WHERE `date_of_birth` = (SELECT MIN(date_of_birth) FROM %s)",
+		    $table,
+		    $table
+	    );
+	    return $this->db->get_results($sql);
+    }
+	public function maxAge($table)
+	{
+		$sql = sprintf(
+			"SELECT `date_of_birth` FROM %s WHERE `date_of_birth` = (SELECT MAX(date_of_birth) FROM %s)",
+			$table,
+			$table
+		);
+
+		return $this->db->get_results($sql);
+	}
+
 }

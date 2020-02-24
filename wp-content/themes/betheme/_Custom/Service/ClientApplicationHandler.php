@@ -53,7 +53,7 @@ class ClientApplicationHandler
             'name' => CustomHelper::sanitiseText($post['la1-name']),
             'lname' => CustomHelper::sanitiseText($post['la1-lname']),
             'fname' => CustomHelper::sanitiseText($post['la1-fname']),
-            'date_of_birth' => CustomHelper::sanitiseText($post['la1-dateOfBirth']),
+            'date_of_birth' =>strtotime(CustomHelper::sanitiseText($post['la1-dateOfBirth'])),
             'email' => sanitize_email($post['la1-email']),
             'phone' => CustomHelper::sanitiseText($post['la1-phone']),
             'family_status' => CustomHelper::sanitiseText($post['la1-familyStatus']),

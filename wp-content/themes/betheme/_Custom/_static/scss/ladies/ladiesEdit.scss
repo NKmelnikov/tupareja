@@ -30,6 +30,16 @@
       font-weight: bold;
     }
   }
+
+  .le1-name-container{
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 .le1_photo_section{
   display: flex;

@@ -48,6 +48,10 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
                 <input type="text" required name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Имя">
                 <span class="error-box error-la1-lname"></span>
               </div>
+              <div class="la1-name-box">
+                <input type="text" required name="la1-name" id="la1-name" maxlength="125" class="la1-input" placeholder="Имя">
+                <span class="error-box error-la1-name"></span>
+              </div>
               <div class="la1-fname-box">
                 <input type="text" required name="la1-fname" id="la1-fname" maxlength="125" class="la1-input" placeholder="Отчество">
                 <span class="error-box error-la1-fname"></span>
