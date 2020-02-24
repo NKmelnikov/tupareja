@@ -68,12 +68,15 @@
       @media (max-width: 768px) {
         .la1-wrapper .la1-input-section__first-box, .la1-wrapper .la1-input-section__second-box {
           width: 100%; } }
-      .la1-wrapper .la1-input-section__first-box input, .la1-wrapper .la1-input-section__second-box input {
+      .la1-wrapper .la1-input-section__first-box input, .la1-wrapper .la1-input-section__first-box textarea, .la1-wrapper .la1-input-section__first-box select, .la1-wrapper .la1-input-section__second-box input, .la1-wrapper .la1-input-section__second-box textarea, .la1-wrapper .la1-input-section__second-box select {
         width: 100%;
         margin-bottom: 0; }
-      .la1-wrapper .la1-input-section__first-box textarea, .la1-wrapper .la1-input-section__second-box textarea {
-        width: 100%;
-        margin-bottom: 0; }
+      .la1-wrapper .la1-input-section__first-box select, .la1-wrapper .la1-input-section__second-box select {
+        color: gray; }
+        .la1-wrapper .la1-input-section__first-box select option, .la1-wrapper .la1-input-section__second-box select option {
+          color: gray; }
+      .la1-wrapper .la1-input-section__first-box select:active, .la1-wrapper .la1-input-section__second-box select:active {
+        color: black; }
       .la1-wrapper .la1-input-section__first-box .error-box, .la1-wrapper .la1-input-section__second-box .error-box {
         height: 20px;
         display: block;

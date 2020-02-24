@@ -46,7 +46,6 @@
                     type: 'GET',
                     url: '/wp-content/themes/betheme/_Custom/Actions/getLadiesForGallery.php',
                     success: function(response) {
-                      console.log(response);
                         response = JSON.parse(response);
                         done(response);
                     }

@@ -26,7 +26,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 ?>
 <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/men/menEdit.css">
 
-<script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
+<script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
 
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateMan.php' ?>" class="me1-wrapper" id="me1-form" method="post" enctype="multipart/form-data">

@@ -52,14 +52,21 @@
       }
 
 
-      input {
+      input, textarea, select {
         width: 100%;
         margin-bottom: 0;
       }
 
-      textarea {
-        width: 100%;
-        margin-bottom: 0;
+      select {
+        color: gray;
+
+        option {
+          color: gray;
+        }
+      }
+
+      select:active {
+        color: black;
       }
 
       .error-box {

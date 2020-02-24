@@ -80,6 +80,17 @@ class ClientRepository
     }
 
     /**
+     * Retrieve customer’s data from the database
+     */
+    public function getLadiesForGallery($table)
+    {
+        $sql = sprintf(
+            "SELECT * FROM %s",
+            $table
+        );
+        return $this->db->get_results($sql, 'ARRAY_A');
+    }
+    /**
      * Delete a customer record.
      *
      * @param int $id customer ID
