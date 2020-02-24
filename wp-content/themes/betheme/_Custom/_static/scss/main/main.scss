@@ -56,3 +56,32 @@
   }
 
 }
+.paginationjs-pages{
+  ul {
+    display: flex;
+
+    li{
+      padding: 0 5px;
+
+      &.active {
+        background: #86c0c7;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+.mp1-lower-section{
+  display: flex;
+  justify-content: space-between;
+
+  #accordion{
+   //width: 400px;
+
+    .ui-accordion-header{
+      text-align: center;
+    }
+  }
+  #mp1-ds-form{
+    display: flex;
+  }
+}

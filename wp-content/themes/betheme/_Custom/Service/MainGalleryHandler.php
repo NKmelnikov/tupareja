@@ -9,7 +9,6 @@ class MainGalleryHandler
 {
 
     private $clientRepository;
-    const LADIES_PER_PAGE = 15;
     const TABLE_LADIES = 'wp_ladies';
 
 
@@ -21,27 +20,16 @@ class MainGalleryHandler
     }
 
     public function getLadies() {
-        $ladies = $this->clientRepository->getElement(self::TABLE_LADIES,self::LADIES_PER_PAGE, 1);
+        $ladies = (array)$this->clientRepository->getLadiesForGallery(self::TABLE_LADIES);
         foreach ($ladies as $k=>$lady) {
+            $lady = (array)($lady);
             $ladies[$k]['browser_path'] = $this->convertImgPath($lady['main_image_path']);
             $ladies[$k]['age'] = $this->countAge($lady['date_of_birth']);
+            $ladies[$k]['zodiac'] = $this->getZodiac($lady['date_of_birth']);
         }
         return (array)$ladies;
     }
 
-    private function convertImgPath($src){
-        preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
-        if (!empty($new_src)) {
-            return $new_src[0][0];
-        }
-        return '';
-    }
 
-    private function countAge($dateOfBirth){
-        $date = new DateTime($dateOfBirth);
-        $now = new DateTime();
-        $interval = $now->diff($date);
-        return $interval->y;
-    }
 
 }

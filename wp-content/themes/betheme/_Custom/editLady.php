@@ -26,7 +26,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 ?>
 <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesEdit.css">
 
-<script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
+<script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
 
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateLady.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">

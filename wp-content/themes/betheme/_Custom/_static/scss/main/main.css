@@ -69,4 +69,20 @@
   .mp1-wrapper .mp1-lady-container:hover .mp1-image-hover-container {
     opacity: 0.9; }
 
+.paginationjs-pages ul {
+  display: flex; }
+  .paginationjs-pages ul li {
+    padding: 0 5px; }
+    .paginationjs-pages ul li.active {
+      background: #86c0c7;
+      border-radius: 2px; }
+
+.mp1-lower-section {
+  display: flex;
+  justify-content: space-between; }
+  .mp1-lower-section #accordion .ui-accordion-header {
+    text-align: center; }
+  .mp1-lower-section #mp1-ds-form {
+    display: flex; }
+
 /*# sourceMappingURL=main.css.map */

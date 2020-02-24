@@ -160,4 +160,11 @@
 
     la1.uploadInput.on('change', la1.fileValidate);
 
+    $('#la1-eyeColor').on('change', function () {
+        $(this).css('color', 'gray');
+
+        if($(this).val() !== ''){
+            $(this).css('color', 'black');
+        }
+    })
 })(jQuery);

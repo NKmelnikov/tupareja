@@ -6,12 +6,12 @@ get_header();
 
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 ?>
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/css-libs/animate.css">
+  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/libs/animate.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/men/men.css">
 
 
   <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/dnd.min.js"></script>
-  <script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
+  <script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">

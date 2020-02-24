@@ -9,7 +9,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-gallery.min.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-new.min.css">
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/css-libs/animate.css">
+  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/libs/animate.css">
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladies.css">
 
   <!--  <script src="/wp-content/themes/betheme/_Custom/_static/js/jquery-3.4.1.slim.min.js"></script>-->
@@ -17,7 +17,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/dnd.min.js"></script>
   <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.core.min.js"></script>
   <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.js"></script>
-  <script src="/wp-content/themes/betheme/_Custom/_static/js/bootstrap.notify.min.js"></script>
+  <script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
@@ -82,7 +82,13 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
             <input type="text" required name="la1-weight" id="la1-weight" maxlength="125" class="la1-input" placeholder="Вес">
             <span class="error-box error-la1-weight"></span>
 
-            <input type="text" required name="la1-eyeColor" id="la1-eyeColor" maxlength="125" class="la1-input" placeholder="Цвет глаз">
+            <select required name="la1-eyeColor" id="la1-eyeColor"  class="la1-input">
+              <option value="">Цвет глаз</option>
+              <option value="blue">Голубые</option>
+              <option value="hazel">Карьи</option>
+              <option value="gray">Серые</option>
+              <option value="green">Зелёные</option>
+            </select>
             <span class="error-box error-la1-eyeColor"></span>
 
             <input type="text" required name="la1-town" id="la1-town" maxlength="125" class="la1-input" placeholder="Город">
