@@ -78,15 +78,28 @@ class LadiesMenu
         ?>
         <div class="wrap">
             <h2>Анкеты девушек</h2>
+			<form method="GET">
+				<input type="hidden" name="page" value="ladies_applications">
+				<input type="search" name="ladiesSearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['ladiesSearch'])&& ($_GET['ladiesSearch']!="")) echo $_GET['ladiesSearch']?>">
 
+				<input type="submit" value="Поиск" class="button action">
+
+			</form>
             <div id="poststuff">
                 <div id="post-body" class="metabox-holder">
                     <div id="post-body-content">
                         <div class="meta-box-sortables ui-sortable">
                             <form method="post">
                                 <?php
-                                $this->ladiesApplicationAdmin->prepare_items();
-                                $this->ladiesApplicationAdmin->display(); ?>
+                                if (isset($_GET['ladiesSearch'])&& ($_GET['ladiesSearch']!="")){
+	                                $this->ladiesApplicationAdmin->prepare_items($_GET['ladiesSearch']);
+	                                $this->ladiesApplicationAdmin->display();
+                                }
+                                else{
+	                                $this->ladiesApplicationAdmin->prepare_items();
+	                                $this->ladiesApplicationAdmin->display();
+                                }
+                                 ?>
                             </form>
                         </div>
                     </div>
