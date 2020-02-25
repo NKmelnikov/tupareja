@@ -204,7 +204,13 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES,$qwery);
+        if (isset($qwery['ladiesSearch'])&& $qwery['ladiesSearch']!="")
+        {
+        	$total_items = $this->clientRepository->recordCount(self::TABLE_LADIES,$qwery['ladiesSearch']);
+        }
+        else{
+	        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES);
+        }
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -214,16 +220,24 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $qwery);
     }
-     public function get_minAge()
+
+	public function countAge($dateOfBirth){
+		$date = new DateTime("@$dateOfBirth");
+		$now = new DateTime();
+		$interval = $now->diff($date);
+		return $interval->y;
+	}
+
+    public function get_minAge()
      {
-     	$minAge = $this->clientRepository->minAge(self::TABLE_LADIES);
-	     return $minAge[0]->date_of_birth;//['date_of_birth'];
+     	$minAge = $this->clientRepository->maxAge(self::TABLE_LADIES);
+	     return $this->countAge($minAge[0]->date_of_birth);//['date_of_birth'];
      }
 
 	public function get_maxAge()
 	{
-		$maxAge = $this->clientRepository->maxAge(self::TABLE_LADIES);
-		return $maxAge[0]->date_of_birth;//['date_of_birth'];
+		$maxAge = $this->clientRepository->mixAge(self::TABLE_LADIES);
+		return $this->countAge($maxAge[0]->date_of_birth);//['date_of_birth'];
 	}
 
 

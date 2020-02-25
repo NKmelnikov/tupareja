@@ -128,11 +128,12 @@ class ClientApplicationHandler
     }
 
     public function countAge($dateOfBirth){
-        $date = new DateTime($dateOfBirth);
+        $date = new DateTime("@$dateOfBirth");
         $now = new DateTime();
         $interval = $now->diff($date);
         return $interval->y;
     }
+
 
     public function getZodiac($dateOfBirth){
         $d = explode('-', $dateOfBirth);

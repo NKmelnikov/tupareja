@@ -51,21 +51,22 @@ class ClientRepository
      *
      * @return mixed
      */
-    public function getElement($table,$per_page = 10, $page_number = 1, $qwery="")
+    public function getElement($table,$per_page = 10, $page_number = 1, $qwery)
     {
-    	if($qwery==""){
-		    $sql = sprintf(
-			    "SELECT * FROM %s",
-			    $table
-		    );
-	    }
-    	else{
+    	if(isset($qwery['ladiesSearch']) && $qwery['ladiesSearch']!=""){
 		    $sql = sprintf(
 			    "SELECT * FROM %s WHERE `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s'",
 			    $table,
-			    $qwery,
-			    $qwery,
-			    $qwery
+			    $qwery['ladiesSearch'],
+			    $qwery['ladiesSearch'],
+			    $qwery['ladiesSearch']
+		    );
+
+	    }
+    	else{
+		    $sql = sprintf(
+			    "SELECT * FROM %s",
+			    $table
 		    );
 	    }
 
@@ -109,7 +110,7 @@ class ClientRepository
      *
      * @return null|string
      */
-    public function recordCount($table,$qwery)
+    public function recordCount($table,$qwery="")
     {
 		if($qwery==""){
 			$sql = sprintf(
