@@ -50,6 +50,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
         <label for="mp1-ds-eyes-green">Зелёные</label>
         <input id="mp1-ds-eyes-green" name="mp1-ds-eyes-green" type="checkbox">
       </section>
+      <button type="submit">Искать</button>
     </form>
   </div>
 </div>

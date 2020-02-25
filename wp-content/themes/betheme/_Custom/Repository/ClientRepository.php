@@ -82,12 +82,9 @@ class ClientRepository
     /**
      * Retrieve customer’s data from the database
      */
-    public function getLadiesForGallery($table)
+    public function getLadiesForGallery()
     {
-        $sql = sprintf(
-            "SELECT * FROM %s",
-            $table
-        );
+        $sql = "SELECT * FROM wp_ladies";
         return $this->db->get_results($sql, 'ARRAY_A');
     }
     /**
