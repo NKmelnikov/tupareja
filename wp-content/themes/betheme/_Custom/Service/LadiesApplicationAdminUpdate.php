@@ -42,7 +42,9 @@ class LadiesApplicationAdminUpdate
 		require_once '../Helper/CustomHelper.php';
 		$post =  [
 			'id' => CustomHelper::sanitiseText($post['le1-id']),
+			'lname' => CustomHelper::sanitiseText($post['le1-lname']),
 			'name' => CustomHelper::sanitiseText($post['le1-name']),
+			'fname' => CustomHelper::sanitiseText($post['le1-fname']),
 			'date_of_birth' => CustomHelper::sanitiseText($post['le1-dateOfBirth']),
 			'email' => sanitize_email($post['le1-email']),
 			'phone' => CustomHelper::sanitiseText($post['le1-phone']),

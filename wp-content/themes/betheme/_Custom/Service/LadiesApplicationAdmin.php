@@ -195,7 +195,7 @@ class LadiesApplicationAdmin extends WP_List_Table
     /**
      * Handles data query and filter, sorting, and pagination.
      */
-    public function prepare_items($qwery="") {
+    public function prepare_items($qwery) {
 
         $this->_column_headers = $this->get_column_info();
 
@@ -214,6 +214,18 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $qwery);
     }
+     public function get_minAge()
+     {
+     	$minAge = $this->clientRepository->minAge(self::TABLE_LADIES);
+	     return $minAge[0]->date_of_birth;//['date_of_birth'];
+     }
+
+	public function get_maxAge()
+	{
+		$maxAge = $this->clientRepository->maxAge(self::TABLE_LADIES);
+		return $maxAge[0]->date_of_birth;//['date_of_birth'];
+	}
+
 
     public function process_bulk_action() {
 

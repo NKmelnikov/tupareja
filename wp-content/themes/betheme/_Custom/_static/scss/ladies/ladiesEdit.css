@@ -55,6 +55,12 @@
     .le1_input_section__first-box label, .le1_input_section__second-box label {
       font-size: 16px;
       font-weight: bold; }
+  .le1_input_section .le1-name-container {
+    display: flex;
+    justify-content: space-between; }
+    .le1_input_section .le1-name-container div {
+      display: flex;
+      flex-direction: column; }
 
 .le1_photo_section {
   display: flex; }

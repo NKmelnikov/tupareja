@@ -33,9 +33,23 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
 	<section class="le1_input_section">
     <div class="le1_input_section__first-box">
-      <label for="le1-name">Ф.И.О</label>
-      <input type="text" required name="le1-name" id="le1-name" maxlength="10" class="le1-input" placeholder="Ф.И.О" value="<?php echo $lady['name']; ?>">
-      <span class="error-box error-le1-name"></span>
+	    <div class="le1-name-container">
+		    <div class="le1-name-box">
+			    <label for="le1-lname">Фамилия</label>
+			    <input type="text" required name="le1-lname" id="le1-lname" maxlength="125" class="le1-input" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
+			    <span class="error-box error-le1-lname"></span>
+		    </div>
+		    <div class="le1-name-box">
+			    <label for="le1-name">Имя</label>
+			    <input type="text" required name="le1-name" id="le1-name" maxlength="125" class="le1-input" placeholder="Имя" value="<?php echo $lady['name']; ?>">
+			    <span class="error-box error-le1-name"></span>
+		    </div>
+		    <div class="le1-fname-box">
+			    <label for="le1-fname">Отчество</label>
+			    <input type="text" required name="le1-fname" id="le1-fname" maxlength="125" class="le1-input" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
+			    <span class="error-box error-le1-fname"></span>
+		    </div>
+	    </div>
       <label for="le1-dateOfBirth">Дата рождения</label>
       <input type="text" required name="le1-dateOfBirth" id="le1-dateOfBirth" min="2" max="255" class="le1-input" placeholder="Дата рождения" value="<?php echo $lady['date_of_birth']; ?>">
       <span class="error-box error-le1-dateOfBirth"></span>
