@@ -60,7 +60,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
             <input type="email" required name="la1-email" id="la1-email" maxlength="125" class="la1-input" placeholder="Email">
             <span class="error-box error-la1-email"></span>
 
-            <input type="text" required name="la1-phone" id="la1-phone" maxlength="125" class="la1-input" placeholder="Телефон">
+            <input type="number" required name="la1-phone" id="la1-phone" maxlength="125" class="la1-input" placeholder="Телефон">
             <span class="error-box error-la1-phone"></span>
 
             <input type="text" required name="la1-profession" id="la1-profession" maxlength="125" class="la1-input" placeholder="Профессия">
@@ -76,10 +76,10 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
             <span class="error-box error-la1-about"></span>
           </div>
           <div class="la1-input-section__second-box">
-            <input type="text" required name="la1-height" id="la1-height" maxlength="125" class="la1-input" placeholder="Рост">
+            <input type="number" required name="la1-height" id="la1-height" maxlength="125" class="la1-input" placeholder="Рост (см)">
             <span class="error-box error-la1-height"></span>
 
-            <input type="text" required name="la1-weight" id="la1-weight" maxlength="125" class="la1-input" placeholder="Вес">
+            <input type="number" required name="la1-weight" id="la1-weight" maxlength="125" class="la1-input" placeholder="Вес (кг)">
             <span class="error-box error-la1-weight"></span>
 
             <select required name="la1-eyeColor" id="la1-eyeColor"  class="la1-input">

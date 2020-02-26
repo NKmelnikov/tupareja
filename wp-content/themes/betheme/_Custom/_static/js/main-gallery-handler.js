@@ -1,7 +1,10 @@
 (function ($) {
     let mp1 = {
         galleryWrapper: $('.mp1-wrapper'),
+        deepSearchSubmitButton: $('#mp1-ds-submit-btn'),
+        deepSearchForm: $('#mp1-ds-form'),
         ladiesArray: [],
+
 
         grabLadies(getParams) {
             return new Promise(function (resolve, reject) {
@@ -10,8 +13,10 @@
                     type: 'GET',
                     data: getParams,
                     success: (data) => {
-                        resolve(JSON.parse(data));
-                        mp1.ladiesArray = JSON.parse(data);
+                        console.log(data);
+
+                        // resolve(JSON.parse(data));
+                        // mp1.ladiesArray = JSON.parse(data);
                     },
                     error: data => reject(data)
                 });
@@ -51,6 +56,38 @@
                 }
             });
 
+        },
+
+        createParamArray(form){
+            let paramPairs = [];
+            let a = form.split('&');
+            a.forEach((item, i) => {
+                let b = item.split('=');
+                paramPairs[b[0]] = b[1];
+            });
+
+            return paramPairs;
+        },
+
+        deepSearch(ladiesArray, paramArray){
+            console.log(paramArray);
+            let dsArray = [];
+            ladiesArray.forEach((item, i) => {
+                if(
+                    (item['age'] >= paramArray['mp1-ds-age-from'] && item['age'] <= paramArray['mp1-ds-age-to']) ||
+                    (item['height'] >= paramArray['mp1-ds-height-from'] && item['height'] <= paramArray['mp1-ds-height-to']) ||
+                    (item['weight'] >= paramArray['mp1-ds-weight-from'] && item['weight'] <= paramArray['mp1-ds-weight-to']) ||
+                    (item['zodiac'] === paramArray['mp1-ds-zodiac'])
+                ){
+                    dsArray.push(item);
+                }
+            });
+            console.log(dsArray);
+            return mp1.renderLadyGrid(dsArray);
+            // if()
+            // console.log(paramArray);
+            // let ageFrom = array[0]['mp1-ds-age-from'];
+            // console.log(ageFrom);
         }
     };
 
@@ -66,10 +103,14 @@
             .then((data) => mp1.renderLadyGrid(data));
 
         setTimeout(function () {
-            console.log(mp1.ladiesArray);
         }, 2000);
+
+        mp1.deepSearchSubmitButton.on('click', (e) => {
+            e.preventDefault();
+
+            let paramArray = mp1.createParamArray(mp1.deepSearchForm.serialize());
+            mp1.deepSearch(mp1.ladiesArray, paramArray);
+        });
     });
-
     //TODO loading cloak
-
 })(jQuery);

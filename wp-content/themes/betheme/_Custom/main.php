@@ -21,23 +21,40 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <section class="mp1-ds-age-section">
         <span>Возраст</span>
         <label for="mp1-ds-age-from">От</label>
-        <input id="mp1-ds-age-from" name="mp1-ds-age-from" type="text">
+        <input id="mp1-ds-age-from" name="mp1-ds-age-from" value="18" type="text">
         <label for="mp1-ds-age-to">До</label>
-        <input for="mp1-ds-age-to" name="mp1-ds-age-to" type="text">
+        <input for="mp1-ds-age-to" name="mp1-ds-age-to" value="60" type="text">
       </section>
       <section class="mp1-ds-height-section">
         <span>Рост</span>
         <label for="mp1-ds-height-from">От</label>
-        <input id="mp1-ds-height-from" name="mp1-ds-height-from" type="text">
+        <input id="mp1-ds-height-from" name="mp1-ds-height-from" value="160" type="text">
         <label for="mp1-ds-height-to">До</label>
-        <input for="mp1-ds-height-to" name="mp1-ds-height-to" type="text">
+        <input for="mp1-ds-height-to" name="mp1-ds-height-to" value="190" type="text">
       </section>
       <section class="mp1-ds-weight-section">
         <span>Вес</span>
         <label for="mp1-ds-weight-from">От</label>
-        <input id="mp1-ds-weight-from" name="mp1-ds-weight-from" type="text">
+        <input id="mp1-ds-weight-from" name="mp1-ds-weight-from" value="45" type="text">
         <label for="mp1-ds-weight-to">До</label>
-        <input for="mp1-ds-weight-to" name="mp1-ds-weight-to" type="text">
+        <input for="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
+      </section>
+      <section>
+        <label for="mp1-ds-zodiac">Знак зодиака</label>
+        <select name="mp1-ds-zodiac" id="mp1-ds-zodiac">
+          <option value="aquarius">Водолей</option>
+          <option value="pisces">Рыбы</option>
+          <option value="aries">Овен</option>
+          <option value="taurus">Телец</option>
+          <option value="gemini">Близнецы</option>
+          <option value="cancer">Рак</option>
+          <option value="leo">Лев</option>
+          <option value="virgo">Дева</option>
+          <option value="libra">Весы</option>
+          <option value="scorpio">Скорпион</option>
+          <option value="sagittarius">Стрелец</option>
+          <option value="capricorn">Козерог</option>
+        </select>
       </section>
       <section class="mp1-ds-weight-section">
         <span>Цвет глаз</span>
@@ -50,7 +67,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
         <label for="mp1-ds-eyes-green">Зелёные</label>
         <input id="mp1-ds-eyes-green" name="mp1-ds-eyes-green" type="checkbox">
       </section>
-      <button type="submit">Искать</button>
+      <button id="mp1-ds-submit-btn" type="submit">Искать</button>
     </form>
   </div>
 </div>
