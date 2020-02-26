@@ -195,7 +195,7 @@ class LadiesApplicationAdmin extends WP_List_Table
     /**
      * Handles data query and filter, sorting, and pagination.
      */
-    public function prepare_items($qwery) {
+    public function prepare_items($qwery="") {
 
         $this->_column_headers = $this->get_column_info();
 
@@ -221,25 +221,29 @@ class LadiesApplicationAdmin extends WP_List_Table
         $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $qwery);
     }
 
-	public function countAge($dateOfBirth){
-		$date = new DateTime("@$dateOfBirth");
-		$now = new DateTime();
-		$interval = $now->diff($date);
-		return $interval->y;
-	}
 
     public function get_minAge()
      {
      	$minAge = $this->clientRepository->maxAge(self::TABLE_LADIES);
-	     return $this->countAge($minAge[0]->date_of_birth);//['date_of_birth'];
+	    return $this->getCurrentAge($minAge[0]->date_of_birth);
      }
 
 	public function get_maxAge()
 	{
-		$maxAge = $this->clientRepository->mixAge(self::TABLE_LADIES);
-		return $this->countAge($maxAge[0]->date_of_birth);//['date_of_birth'];
+		$maxAge = $this->clientRepository->minAge(self::TABLE_LADIES);
+		return $this->getCurrentAge($maxAge[0]->date_of_birth); //['date_of_birth'];
 	}
 
+	public function getCurrentAge ($timestamp){
+    	$age = date('Y')-date('Y',$timestamp);
+    	if (date('n')<date('n',$timestamp)){
+    		$age--;
+	    }
+    	if((date('n')==date('n',$timestamp))&&(date('j')<date('j',$timestamp)) ){
+			$age--;
+	    }
+	return $age;
+	}
 
     public function process_bulk_action() {
 

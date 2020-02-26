@@ -125,10 +125,8 @@ class LadiesMenu
                         <div class="meta-box-sortables ui-sortable">
                             <form method="post">
                                 <?php
-
-	                                $this->ladiesApplicationAdmin->prepare_items($_GET);
-	                                $this->ladiesApplicationAdmin->display();
-
+	                                    $this->ladiesApplicationAdmin->prepare_items($_GET);
+	                                    $this->ladiesApplicationAdmin->display();
                                  ?>
                             </form>
                         </div>
