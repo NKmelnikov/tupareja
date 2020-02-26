@@ -204,13 +204,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        if (isset($qwery['ladiesSearch'])&& $qwery['ladiesSearch']!="")
-        {
-        	$total_items = $this->clientRepository->recordCount(self::TABLE_LADIES,$qwery['ladiesSearch']);
-        }
-        else{
-	        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES);
-        }
+        $total_items = $this->clientRepository->recordCount(self::TABLE_LADIES,$qwery);
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -231,7 +225,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 	public function get_maxAge()
 	{
 		$maxAge = $this->clientRepository->minAge(self::TABLE_LADIES);
-		return $this->getCurrentAge($maxAge[0]->date_of_birth); //['date_of_birth'];
+		return $this->getCurrentAge($maxAge[0]->date_of_birth);
 	}
 
 	public function getCurrentAge ($timestamp){

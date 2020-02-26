@@ -122,21 +122,31 @@ class ClientRepository
      */
     public function recordCount($table,$qwery="")
     {
-		if($qwery==""){
-			$sql = sprintf(
-				"SELECT COUNT(*) FROM %s",
-				$table
-			);
-		}
-        else{
-	        $sql = sprintf(
-		        "SELECT COUNT(*) FROM %s WHERE `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s'",
-		        $table,
-		        $qwery,
-		        $qwery,
-		        $qwery
-	        );
-        }
+	    if(isset($qwery['ladiesSearch']) && $qwery['ladiesSearch']!=""){
+		    $sql = sprintf(
+			    "SELECT COUNT(*) FROM %s WHERE (`name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s') AND (`date_of_birth` BETWEEN %d AND %d)",
+			    $table,
+			    $qwery['ladiesSearch'],
+			    $qwery['ladiesSearch'],
+			    $qwery['ladiesSearch'],
+			    time()-($qwery['ladiesMaxAge']*31556926),
+			    time()-($qwery['ladiesMinAge']*31556926)
+		    );
+
+
+	    }elseif (isset($qwery['ladiesMaxAge'])&& $qwery['ladiesMaxAge']!=""){
+		    $sql = sprintf(
+			    "SELECT COUNT(*) FROM %s WHERE `date_of_birth` BETWEEN %d AND %d",
+			    $table,
+			    time()-($qwery['ladiesMaxAge']*31556926),
+			    time()-($qwery['ladiesMinAge']*31556926)
+		    );
+	    }else {
+		    $sql = sprintf(
+			    "SELECT COUNT(*) FROM %s",
+			    $table
+		    );
+	    }
 
         return $this->db->get_var($sql);
     }
