@@ -77,7 +77,7 @@ class LadiesMenu
     {
         ?>
         <div class="wrap">
-	        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	        <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.css">
 	        <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesAdmin.css">
 	        <h2>Анкеты девушек</h2>
 			<form class="ladiesSearch" method="GET">
@@ -95,8 +95,8 @@ class LadiesMenu
 				</div>
 
 
-				<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+				<script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-1.12.4.js"></script>
+				<script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.js"></script>
 				<script>
                   $( function() {
                     $("#slider-range").slider({
