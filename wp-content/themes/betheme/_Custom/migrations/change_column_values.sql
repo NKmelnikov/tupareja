@@ -46,7 +46,7 @@ create unique index wp_men_id_uindex
 
 alter table wp_men modify name tinytext null;
 
-alter table wp_men modify date_of_birth tinytext null;
+alter table wp_men modify date_of_birth int null;
 
 alter table wp_men modify email tinytext null;
 

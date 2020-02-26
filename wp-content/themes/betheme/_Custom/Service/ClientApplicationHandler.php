@@ -140,10 +140,9 @@ class ClientApplicationHandler
         return $age;
     }
 
-    public function getZodiac($dateOfBirth){
-        $d = explode('-', $dateOfBirth);
-        $day = $d[2];
-        $month = $d[1];
+    public function getZodiac($timestamp){
+        $day = date('j',$timestamp);
+        $month = date('n',$timestamp);
 
         if(($month==1 && $day>20)||($month==2 && $day<20)) {
             $mysign = "aquarius";

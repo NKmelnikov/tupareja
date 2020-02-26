@@ -13,10 +13,8 @@
                     type: 'GET',
                     data: getParams,
                     success: (data) => {
-                        console.log(data);
-
-                        // resolve(JSON.parse(data));
-                        // mp1.ladiesArray = JSON.parse(data);
+                        resolve(JSON.parse(data));
+                        mp1.ladiesArray = JSON.parse(data);
                     },
                     error: data => reject(data)
                 });
@@ -74,15 +72,22 @@
             let dsArray = [];
             ladiesArray.forEach((item, i) => {
                 if(
-                    (item['age'] >= paramArray['mp1-ds-age-from'] && item['age'] <= paramArray['mp1-ds-age-to']) ||
-                    (item['height'] >= paramArray['mp1-ds-height-from'] && item['height'] <= paramArray['mp1-ds-height-to']) ||
-                    (item['weight'] >= paramArray['mp1-ds-weight-from'] && item['weight'] <= paramArray['mp1-ds-weight-to']) ||
-                    (item['zodiac'] === paramArray['mp1-ds-zodiac'])
+                    (item['age'] >= paramArray['mp1-ds-age-from'] && item['age'] <= paramArray['mp1-ds-age-to']) &&
+                    (item['height'] >= paramArray['mp1-ds-height-from'] && item['height'] <= paramArray['mp1-ds-height-to']) &&
+                    (item['weight'] >= paramArray['mp1-ds-weight-from'] && item['weight'] <= paramArray['mp1-ds-weight-to'])
                 ){
                     dsArray.push(item);
                 }
+
+                if(item['zodiac'] === 'aquarius' && paramArray['mp1-ds-aquarius'] === 'on')
+                {
+                    dsArray.push(item);
+                }
+
+                if(item['zodiac'] === 'pisces' && paramArray['mp1-ds-pisces'] === 'on'){
+                    dsArray.push(item);
+                }
             });
-            console.log(dsArray);
             return mp1.renderLadyGrid(dsArray);
             // if()
             // console.log(paramArray);

@@ -40,21 +40,30 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
         <input for="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
       </section>
       <section>
-        <label for="mp1-ds-zodiac">Знак зодиака</label>
-        <select name="mp1-ds-zodiac" id="mp1-ds-zodiac">
-          <option value="aquarius">Водолей</option>
-          <option value="pisces">Рыбы</option>
-          <option value="aries">Овен</option>
-          <option value="taurus">Телец</option>
-          <option value="gemini">Близнецы</option>
-          <option value="cancer">Рак</option>
-          <option value="leo">Лев</option>
-          <option value="virgo">Дева</option>
-          <option value="libra">Весы</option>
-          <option value="scorpio">Скорпион</option>
-          <option value="sagittarius">Стрелец</option>
-          <option value="capricorn">Козерог</option>
-        </select>
+        <label for="mp1-ds-aquarius">Водолей</label>
+        <input id="mp1-ds-aquarius" name="mp1-ds-aquarius" type="checkbox">
+        <label for="mp1-ds-pisces">Рыбы</label>
+        <input id="mp1-ds-pisces" name="mp1-ds-pisces" type="checkbox">
+        <label for="mp1-ds-aries">Овен</label>
+        <input id="mp1-ds-aries" name="mp1-ds-aries" type="checkbox">
+        <label for="mp1-ds-taurus">Телец</label>
+        <input id="mp1-ds-taurus" name="mp1-ds-taurus" type="checkbox">
+        <label for="mp1-ds-gemini">Близнецы</label>
+        <input id="mp1-ds-gemini" name="mp1-ds-gemini" type="checkbox">
+        <label for="mp1-ds-cancer">Рак</label>
+        <input id="mp1-ds-cancer" name="mp1-ds-cancer" type="checkbox">
+        <label for="mp1-ds-leo">Лев</label>
+        <input id="mp1-ds-leo" name="mp1-ds-leo" type="checkbox">
+        <label for="mp1-ds-virgo">Дева</label>
+        <input id="mp1-ds-virgo" name="mp1-ds-virgo" type="checkbox">
+        <label for="mp1-ds-libra">Весы</label>
+        <input id="mp1-ds-libra" name="mp1-ds-libra" type="checkbox">
+        <label for="mp1-ds-scorpio">Скорпион</label>
+        <input id="mp1-ds-scorpio" name="mp1-ds-scorpio" type="checkbox">
+        <label for="mp1-ds-sagittarius">Стрелец</label>
+        <input id="mp1-ds-sagittarius" name="mp1-ds-sagittarius" type="checkbox">
+        <label for="mp1-ds-capricorn">Козерог</label>
+        <input id="mp1-ds-capricorn" name="mp1-ds-capricorn" type="checkbox">
       </section>
       <section class="mp1-ds-weight-section">
         <span>Цвет глаз</span>
