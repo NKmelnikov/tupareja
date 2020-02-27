@@ -37,7 +37,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <input type="text" required name="me1-name" id="me1-name" min="2" max="255" class="me1-input" placeholder="Ф.И.О" value="<?php echo $man['name']; ?>">
       <span class="error-box error-me1-name"></span>
       <label for="me1-dateOfBirth">Дата рождения</label>
-      <input type="text" required name="me1-dateOfBirth" id="me1-dateOfBirth" min="2" max="255" class="me1-input" placeholder="Дата рождения" value="<?php echo $man['date_of_birth']; ?>">
+      <input type="text" required name="me1-dateOfBirth" id="me1-dateOfBirth" min="2" max="255" class="me1-input" placeholder="Дата рождения" value="<?php echo date('Y-m-d',$man['date_of_birth']); ?>">
       <span class="error-box error-me1-dateOfBirth"></span>
       <label for="me1-email">Email</label>
       <input type="email" required name="me1-email" id="me1-email" min="2" max="255" class="me1-input" placeholder="Email" value="<?php echo $man['email']; ?>">
