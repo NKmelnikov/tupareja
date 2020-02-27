@@ -25,8 +25,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
             <input type="text" required name="ma1-name" id="ma1-name" min="2" max="255" class="ma1-input" placeholder="Ф.И.О">
             <span class="error-box error-ma1-name"></span>
 
-            <input type="text" required name="ma1-dateOfBirth" id="ma1-dateOfBirth" min="2" max="255" class="ma1-input" placeholder="Дата рождения">
-            <span class="error-box error-ma1-dateOfBirth"></span>
+	          <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required name="ma1-dateOfBirth" id="ma1-dateOfBirth" maxlength="125" class="ma1-input" placeholder="Дата рождения">
+	          <span class="error-box error-ma1-dateOfBirth"></span>
 
             <input type="email" required name="ma1-email" id="ma1-email" min="2" max="255" class="ma1-input" placeholder="Email">
             <span class="error-box error-ma1-email"></span>

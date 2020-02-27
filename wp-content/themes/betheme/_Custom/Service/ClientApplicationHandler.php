@@ -33,7 +33,7 @@ class ClientApplicationHandler
         return ['success' => 'Ваша анкета была успешно подана, после подтверждения модератором, она появится на сайте.'];
     }
 
-    public function mensAction($post)
+    public function menAction($post)
     {
         $post = $this->validatePostMen($post);
         $first_key = key($post);
@@ -81,7 +81,7 @@ class ClientApplicationHandler
         require_once '../Helper/CustomHelper.php';
         $post =  [
             'name' => CustomHelper::sanitiseText($post['ma1-name']),
-            'date_of_birth' => CustomHelper::sanitiseText($post['ma1-dateOfBirth']),
+            'date_of_birth' => strtotime(CustomHelper::sanitiseText($post['ma1-dateOfBirth'])),
             'email' => sanitize_email($post['ma1-email']),
             'phone' => CustomHelper::sanitiseText($post['ma1-phone']),
             'town' => CustomHelper::sanitiseText($post['ma1-town']),
