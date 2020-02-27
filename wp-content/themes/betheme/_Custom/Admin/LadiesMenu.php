@@ -82,7 +82,7 @@ class LadiesMenu
 	        <h2>Анкеты девушек</h2>
 			<form class="ladiesSearch" method="GET">
 				<input type="hidden" name="page" value="ladies_applications">
-				<input type="search" name="ladiesSearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['ladiesSearch'])&& ($_GET['ladiesSearch']!="")) echo $_GET['ladiesSearch']?>">
+				<input type="search" name="querySearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
 
 				<div class="filterAgeWrap">
 					<label for="ladiesAge">Возраст:</label>
