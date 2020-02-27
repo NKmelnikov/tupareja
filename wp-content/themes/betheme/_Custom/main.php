@@ -39,42 +39,42 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
         <label for="mp1-ds-weight-to">До</label>
         <input for="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
       </section>
-      <section>
+      <section class="mp1-ds-zodiac-section">
         <label for="mp1-ds-aquarius">Водолей</label>
-        <input id="mp1-ds-aquarius" name="mp1-ds-aquarius" type="checkbox">
+        <input id="mp1-ds-aquarius" class="zodiac-input" name="mp1-ds-aquarius" type="checkbox">
         <label for="mp1-ds-pisces">Рыбы</label>
-        <input id="mp1-ds-pisces" name="mp1-ds-pisces" type="checkbox">
+        <input id="mp1-ds-pisces" class="zodiac-input" name="mp1-ds-pisces" type="checkbox">
         <label for="mp1-ds-aries">Овен</label>
-        <input id="mp1-ds-aries" name="mp1-ds-aries" type="checkbox">
+        <input id="mp1-ds-aries" class="zodiac-input" name="mp1-ds-aries" type="checkbox">
         <label for="mp1-ds-taurus">Телец</label>
-        <input id="mp1-ds-taurus" name="mp1-ds-taurus" type="checkbox">
+        <input id="mp1-ds-taurus" class="zodiac-input" name="mp1-ds-taurus" type="checkbox">
         <label for="mp1-ds-gemini">Близнецы</label>
-        <input id="mp1-ds-gemini" name="mp1-ds-gemini" type="checkbox">
+        <input id="mp1-ds-gemini" class="zodiac-input" name="mp1-ds-gemini" type="checkbox">
         <label for="mp1-ds-cancer">Рак</label>
-        <input id="mp1-ds-cancer" name="mp1-ds-cancer" type="checkbox">
+        <input id="mp1-ds-cancer" class="zodiac-input" name="mp1-ds-cancer" type="checkbox">
         <label for="mp1-ds-leo">Лев</label>
-        <input id="mp1-ds-leo" name="mp1-ds-leo" type="checkbox">
+        <input id="mp1-ds-leo" class="zodiac-input" name="mp1-ds-leo" type="checkbox">
         <label for="mp1-ds-virgo">Дева</label>
-        <input id="mp1-ds-virgo" name="mp1-ds-virgo" type="checkbox">
+        <input id="mp1-ds-virgo" class="zodiac-input" name="mp1-ds-virgo" type="checkbox">
         <label for="mp1-ds-libra">Весы</label>
-        <input id="mp1-ds-libra" name="mp1-ds-libra" type="checkbox">
+        <input id="mp1-ds-libra" class="zodiac-input" name="mp1-ds-libra" type="checkbox">
         <label for="mp1-ds-scorpio">Скорпион</label>
-        <input id="mp1-ds-scorpio" name="mp1-ds-scorpio" type="checkbox">
+        <input id="mp1-ds-scorpio" class="zodiac-input" name="mp1-ds-scorpio" type="checkbox">
         <label for="mp1-ds-sagittarius">Стрелец</label>
-        <input id="mp1-ds-sagittarius" name="mp1-ds-sagittarius" type="checkbox">
+        <input id="mp1-ds-sagittarius" class="zodiac-input" name="mp1-ds-sagittarius" type="checkbox">
         <label for="mp1-ds-capricorn">Козерог</label>
-        <input id="mp1-ds-capricorn" name="mp1-ds-capricorn" type="checkbox">
+        <input id="mp1-ds-capricorn" class="zodiac-input" name="mp1-ds-capricorn" type="checkbox">
       </section>
-      <section class="mp1-ds-weight-section">
+      <section class="mp1-ds-eye-section">
         <span>Цвет глаз</span>
         <label for="mp1-ds-eyes-blue">Голубые</label>
-        <input id="mp1-ds-eyes-blue" name="mp1-ds-eyes-blue" type="checkbox">
+        <input id="mp1-ds-eyes-blue" class="eyes-input" name="mp1-ds-eyes-blue" type="checkbox">
         <label for="mp1-ds-eyes-hazel">Карьи</label>
-        <input id="mp1-ds-eyes-hazel" name="mp1-ds-eyes-hazel" type="checkbox">
+        <input id="mp1-ds-eyes-hazel" class="eyes-input" name="mp1-ds-eyes-hazel" type="checkbox">
         <label for="mp1-ds-eyes-gray">Серые</label>
-        <input id="mp1-ds-eyes-gray" name="mp1-ds-eyes-gray" type="checkbox">
+        <input id="mp1-ds-eyes-gray" class="eyes-input" name="mp1-ds-eyes-gray" type="checkbox">
         <label for="mp1-ds-eyes-green">Зелёные</label>
-        <input id="mp1-ds-eyes-green" name="mp1-ds-eyes-green" type="checkbox">
+        <input id="mp1-ds-eyes-green" class="eyes-input" name="mp1-ds-eyes-green" type="checkbox">
       </section>
       <button id="mp1-ds-submit-btn" type="submit">Искать</button>
     </form>

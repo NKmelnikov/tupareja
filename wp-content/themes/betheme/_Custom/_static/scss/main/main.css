@@ -84,5 +84,8 @@
     text-align: center; }
   .mp1-lower-section #mp1-ds-form {
     display: flex; }
+    .mp1-lower-section #mp1-ds-form .mp1-ds-zodiac-section, .mp1-lower-section #mp1-ds-form .mp1-ds-eye-section {
+      display: flex;
+      flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */

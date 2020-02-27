@@ -83,5 +83,10 @@
   }
   #mp1-ds-form{
     display: flex;
+
+    .mp1-ds-zodiac-section, .mp1-ds-eye-section{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

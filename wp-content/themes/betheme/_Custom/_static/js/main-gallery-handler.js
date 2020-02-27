@@ -4,14 +4,15 @@
         deepSearchSubmitButton: $('#mp1-ds-submit-btn'),
         deepSearchForm: $('#mp1-ds-form'),
         ladiesArray: [],
+        zodiacCheckedArray: [],
+        eyesCheckedArray: [],
 
 
-        grabLadies(getParams) {
+        grabLadies() {
             return new Promise(function (resolve, reject) {
                 $.ajax({
                     url: '/wp-content/themes/betheme/_Custom/Actions/getLadiesForGallery.php',
                     type: 'GET',
-                    data: getParams,
                     success: (data) => {
                         resolve(JSON.parse(data));
                         mp1.ladiesArray = JSON.parse(data);
@@ -45,6 +46,8 @@
                                 <span class="mp1-image-hover-container__age"><b>Возраст:${item.age}</span>
                                 <span class="mp1-image-hover-container__height"><b>Рост:</b>${item.height}</span>
                                 <span class="mp1-image-hover-container__profession"><b>Профессия:</b>${item.profession}</span>
+                                <span class="mp1-image-hover-container__profession"><b>Зодиак:</b>${item.zodiac}</span>
+                                <span class="mp1-image-hover-container__profession"><b>Цвет_глаз:</b>${item.eye_color}</span>
                               </div>
                           </section>
                       </a>
@@ -56,7 +59,7 @@
 
         },
 
-        createParamArray(form){
+        createParamArray(form) {
             let paramPairs = [];
             let a = form.split('&');
             a.forEach((item, i) => {
@@ -67,33 +70,46 @@
             return paramPairs;
         },
 
-        deepSearch(ladiesArray, paramArray){
-            console.log(paramArray);
+        nonCheckBoxLogic(item, paramArray) {
+            return (item['age'] >= paramArray['mp1-ds-age-from'] && item['age'] <= paramArray['mp1-ds-age-to']) &&
+                (item['height'] >= paramArray['mp1-ds-height-from'] && item['height'] <= paramArray['mp1-ds-height-to']) &&
+                (item['weight'] >= paramArray['mp1-ds-weight-from'] && item['weight'] <= paramArray['mp1-ds-weight-to']);
+        },
+
+        deepSearch(ladiesArray, paramArray) {
             let dsArray = [];
             ladiesArray.forEach((item, i) => {
-                if(
-                    (item['age'] >= paramArray['mp1-ds-age-from'] && item['age'] <= paramArray['mp1-ds-age-to']) &&
-                    (item['height'] >= paramArray['mp1-ds-height-from'] && item['height'] <= paramArray['mp1-ds-height-to']) &&
-                    (item['weight'] >= paramArray['mp1-ds-weight-from'] && item['weight'] <= paramArray['mp1-ds-weight-to'])
-                ){
+                if (
+                    mp1.nonCheckBoxLogic(item, paramArray) &&
+                    (mp1.zodiacCheckedArray === undefined || mp1.zodiacCheckedArray.length === 0) &&
+                    (mp1.eyesCheckedArray === undefined || mp1.eyesCheckedArray.length === 0)
+                ) {
+                    dsArray.push(item);
+                } else if (
+                    mp1.nonCheckBoxLogic(item, paramArray) &&
+                    mp1.zodiacCheckedArray.includes(item['zodiac']) &&
+                    (mp1.eyesCheckedArray === undefined || mp1.eyesCheckedArray.length === 0)
+                ) {
+                    dsArray.push(item);
+                } else if (
+                    mp1.nonCheckBoxLogic(item, paramArray) &&
+                    mp1.eyesCheckedArray.includes(item['eye_color']) &&
+                    (mp1.zodiacCheckedArray === undefined || mp1.zodiacCheckedArray.length === 0)
+                ) {
+                    dsArray.push(item);
+                } else if (
+                    mp1.nonCheckBoxLogic(item, paramArray) &&
+                    mp1.zodiacCheckedArray.includes(item['zodiac']) &&
+                    mp1.eyesCheckedArray.includes(item['eye_color'])
+                ) {
                     dsArray.push(item);
                 }
 
-                if(item['zodiac'] === 'aquarius' && paramArray['mp1-ds-aquarius'] === 'on')
-                {
-                    dsArray.push(item);
-                }
-
-                if(item['zodiac'] === 'pisces' && paramArray['mp1-ds-pisces'] === 'on'){
-                    dsArray.push(item);
-                }
             });
+
             return mp1.renderLadyGrid(dsArray);
-            // if()
-            // console.log(paramArray);
-            // let ageFrom = array[0]['mp1-ds-age-from'];
-            // console.log(ageFrom);
         }
+
     };
 
     $("#accordion").accordion({
@@ -103,16 +119,29 @@
     });
 
     $(document).ready(() => {
-        let getParams = null;
-        mp1.grabLadies(getParams)
+        mp1.grabLadies()
             .then((data) => mp1.renderLadyGrid(data));
 
-        setTimeout(function () {
-        }, 2000);
+        $('.zodiac-input').change(function () {
+            mp1.zodiacCheckedArray = [];
+            $('.zodiac-input:checked').each(function () {
+                let z = $(this).attr('id').split('-');
+                let zodiac = z[2];
+                mp1.zodiacCheckedArray.push(zodiac);
+            });
+        });
+
+        $('.eyes-input').change(function () {
+            mp1.eyesCheckedArray = [];
+            $('.eyes-input:checked').each(function () {
+                let z = $(this).attr('id').split('-');
+                let eye = z[3];
+                mp1.eyesCheckedArray.push(eye);
+            });
+        });
 
         mp1.deepSearchSubmitButton.on('click', (e) => {
             e.preventDefault();
-
             let paramArray = mp1.createParamArray(mp1.deepSearchForm.serialize());
             mp1.deepSearch(mp1.ladiesArray, paramArray);
         });
