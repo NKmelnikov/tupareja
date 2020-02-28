@@ -12,6 +12,11 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.min.js"></script>
 
 <h2>Галерея девушек</h2>
+<section class="mp1-main-search">
+  <label for="mp1-main-search-input"></label>
+  <input class="mp1-main-search__input" id="mp1-main-search-input" name="mp1-main-search-input" type="text">
+  <button class="mp1-main-search__btn" id="mp1-main-search-btn">искать</button>
+</section>
 <div class="mp1-wrapper"></div>
 <div class="mp1-lower-section">
   <div id="pagination"></div>
