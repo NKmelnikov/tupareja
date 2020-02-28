@@ -43,7 +43,7 @@ class MenApplicationAdminUpdate
 		$post =  [
 			'id' => CustomHelper::sanitiseText($post['me1-id']),
 			'name' => CustomHelper::sanitiseText($post['me1-name']),
-			'date_of_birth' => CustomHelper::sanitiseText($post['me1-dateOfBirth']),
+			'date_of_birth' => strtotime(CustomHelper::sanitiseText($post['me1-dateOfBirth'])),
 			'email' => sanitize_email($post['me1-email']),
 			'phone' => CustomHelper::sanitiseText($post['me1-phone']),
 			'country' => CustomHelper::sanitiseText($post['me1-country']),

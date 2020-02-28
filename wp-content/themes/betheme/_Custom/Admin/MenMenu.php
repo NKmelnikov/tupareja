@@ -79,13 +79,24 @@ class MenMenu
         <div class="wrap">
             <h2>Анкеты мужчин</h2>
 
+	        <form class="menSearch" method="GET">
+		        <input type="hidden" name="page" value="men_applications">
+		        <input type="search" name="querySearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
+
+
+
+
+		        <input type="submit" value="Поиск" class="button action">
+
+	        </form>
+
             <div id="poststuff">
                 <div id="post-body" class="metabox-holder">
                     <div id="post-body-content">
                         <div class="meta-box-sortables ui-sortable">
                             <form method="post">
                                 <?php
-                                $this->MenApplicationAdmin->prepare_items();
+                                $this->MenApplicationAdmin->prepare_items($_GET);
                                 $this->MenApplicationAdmin->display(); ?>
                             </form>
                         </div>

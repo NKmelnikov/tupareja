@@ -77,12 +77,12 @@ class LadiesMenu
     {
         ?>
         <div class="wrap">
-	        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	        <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.css">
 	        <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesAdmin.css">
 	        <h2>Анкеты девушек</h2>
 			<form class="ladiesSearch" method="GET">
 				<input type="hidden" name="page" value="ladies_applications">
-				<input type="search" name="ladiesSearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['ladiesSearch'])&& ($_GET['ladiesSearch']!="")) echo $_GET['ladiesSearch']?>">
+				<input type="search" name="querySearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
 
 				<div class="filterAgeWrap">
 					<label for="ladiesAge">Возраст:</label>
@@ -95,8 +95,8 @@ class LadiesMenu
 				</div>
 
 
-				<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+				<script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-1.12.4.js"></script>
+				<script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.js"></script>
 				<script>
                   $( function() {
                     $("#slider-range").slider({
@@ -125,10 +125,8 @@ class LadiesMenu
                         <div class="meta-box-sortables ui-sortable">
                             <form method="post">
                                 <?php
-
-	                                $this->ladiesApplicationAdmin->prepare_items($_GET);
-	                                $this->ladiesApplicationAdmin->display();
-
+	                                    $this->ladiesApplicationAdmin->prepare_items($_GET);
+	                                    $this->ladiesApplicationAdmin->display();
                                  ?>
                             </form>
                         </div>

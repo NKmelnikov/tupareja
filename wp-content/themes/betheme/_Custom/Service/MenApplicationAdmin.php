@@ -62,13 +62,6 @@ class MenApplicationAdmin extends WP_List_Table
                 absint( $item['id'] ),
                 $edit_nonce
             ),
-            /*'activate' => sprintf(
-                '<a href="?page=%s&action=%s&customer=%s&_wpnonce=%s">Activate</a>',
-                esc_attr( $_REQUEST['page'] ),
-                'activate',
-                absint( $item['id'] ),
-                $activate_nonce
-            ),*/
         ];
 
         return $title . $this->row_actions( $actions );
@@ -85,6 +78,7 @@ class MenApplicationAdmin extends WP_List_Table
     public function column_default($item, $column_name ) {
         $_item = $item[ $column_name ];
         switch ( $column_name ) {
+	        case 'id':
             case 'name':
             case 'date of birth':
             case 'email':
@@ -119,6 +113,7 @@ class MenApplicationAdmin extends WP_List_Table
     function get_columns() {
         return [
             'cb'      => '<input type="checkbox" />',
+	        'id'    => __( 'ID', 'sp' ),
             'name'    => __( 'Имя', 'sp' ),
             'email' => __( 'email', 'sp' ),
             'phone'    => __( 'phone', 'sp' ),
@@ -154,7 +149,7 @@ class MenApplicationAdmin extends WP_List_Table
     /**
      * Handles data query and filter, sorting, and pagination.
      */
-    public function prepare_items() {
+    public function prepare_items($query="") {
 
         $this->_column_headers = $this->get_column_info();
 
@@ -163,7 +158,7 @@ class MenApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        $total_items  = $this->clientRepository->recordCount(self::TABLE_MEN);
+        $total_items  = $this->clientRepository->recordCount(self::TABLE_MEN,$query);
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -171,7 +166,7 @@ class MenApplicationAdmin extends WP_List_Table
         ] );
 
 
-        $this->items = $this->clientRepository->getElement(self::TABLE_MEN, $per_page, $current_page );
+        $this->items = $this->clientRepository->getElement(self::TABLE_MEN, $per_page, $current_page, $query);
     }
 
     public function process_bulk_action() {

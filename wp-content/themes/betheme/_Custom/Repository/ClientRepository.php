@@ -51,23 +51,50 @@ class ClientRepository
      *
      * @return mixed
      */
-    public function getElement($table,$per_page = 10, $page_number = 1, $qwery="")
+    public function getElement($table,$per_page = 10, $page_number = 1, $query)
     {
-    	if($qwery==""){
-		    $sql = sprintf(
-			    "SELECT * FROM %s",
-			    $table
-		    );
+    	if(isset($query['page']) && $query['page']=="ladies_applications"){
+		    if(isset($query['querySearch']) && $query['querySearch']!=""){
+			    $sql = sprintf(
+				    "SELECT * FROM %s WHERE (`id` LIKE '%s' OR `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s') AND (`date_of_birth` BETWEEN %d AND %d)",
+				    $table,
+				    $query['querySearch'],
+				    $query['querySearch'],
+				    $query['querySearch'],
+				    $query['querySearch'],
+				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-($query['ladiesMinAge']*31556926)
+			    );
+		    }elseif (isset($query['ladiesMaxAge'])&& $query['ladiesMaxAge']!=""){
+			    $sql = sprintf(
+				    "SELECT * FROM %s WHERE `date_of_birth` BETWEEN %d AND %d",
+				    $table,
+
+				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-($query['ladiesMinAge']*31556926)
+			    );
+		    }else{
+			    $sql = sprintf(
+				    "SELECT * FROM %s",
+				    $table
+			    );
+		    }
+	    }elseif (isset($query['page']) && $query['page']=="men_applications"){
+		    if(isset($query['querySearch']) && $query['querySearch']!=""){
+			    $sql = sprintf(
+				    "SELECT * FROM %s WHERE`id` LIKE '%s' OR `name` LIKE '%s'",
+				    $table,
+				    $query['querySearch'],
+				    $query['querySearch']
+			    );
+		    }else{
+			    $sql = sprintf(
+				    "SELECT * FROM %s",
+				    $table
+			    );
+		    }
 	    }
-    	else{
-		    $sql = sprintf(
-			    "SELECT * FROM %s WHERE `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s'",
-			    $table,
-			    $qwery,
-			    $qwery,
-			    $qwery
-		    );
-	    }
+
 
         if (!empty($_REQUEST['orderby'])) {
             $sql .= ' ORDER BY ' . esc_sql($_REQUEST['orderby']);
@@ -106,23 +133,51 @@ class ClientRepository
      *
      * @return null|string
      */
-    public function recordCount($table,$qwery)
+    public function recordCount($table,$query="")
     {
-		if($qwery==""){
-			$sql = sprintf(
-				"SELECT COUNT(*) FROM %s",
-				$table
-			);
-		}
-        else{
-	        $sql = sprintf(
-		        "SELECT COUNT(*) FROM %s WHERE `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s'",
-		        $table,
-		        $qwery,
-		        $qwery,
-		        $qwery
-	        );
-        }
+    	if(isset($query['page']) && $query['page']=="ladies_applications")
+	    {
+		    if(isset($query['querySearch']) && $query['querySearch']!=""){
+			    $sql = sprintf(
+				    "SELECT COUNT(*) FROM %s WHERE (`id` LIKE '%s' OR `name` LIKE '%s' OR `lname` LIKE '%s' OR `fname` LIKE '%s') AND (`date_of_birth` BETWEEN %d AND %d)",
+				    $table,
+				    $query['querySearch'],
+				    $query['querySearch'],
+				    $query['querySearch'],
+				    $query['querySearch'],
+				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-($query['ladiesMinAge']*31556926)
+			    );
+		    }elseif (isset($query['ladiesMaxAge'])&& $query['ladiesMaxAge']!=""){
+			    $sql = sprintf(
+				    "SELECT COUNT(*) FROM %s WHERE `date_of_birth` BETWEEN %d AND %d",
+				    $table,
+				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-($query['ladiesMinAge']*31556926)
+			    );
+		    }else {
+			    $sql = sprintf(
+				    "SELECT COUNT(*) FROM %s",
+				    $table
+			    );
+		    }
+	    }elseif (isset($query['page']) && $query['page']=="men_applications")
+	    {
+		    if(isset($query['querySearch']) && $query['querySearch']!=""){
+			    $sql = sprintf(
+				    "SELECT COUNT(*) FROM %s WHERE `id` LIKE '%s' OR `name` LIKE '%s'",
+				    $table,
+				    $query['querySearch'],
+				    $query['querySearch']
+			    );
+		    }else {
+			    $sql = sprintf(
+				    "SELECT COUNT(*) FROM %s",
+				    $table
+			    );
+		    }
+	    }
+
 
         return $this->db->get_var($sql);
     }

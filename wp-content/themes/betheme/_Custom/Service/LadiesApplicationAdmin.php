@@ -87,6 +87,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         $image_src = $this->handle_image_src($_item);
         //Todo default image
         switch ( $column_name ) {
+	        case 'id':
             case 'activated':
             case 'name':
 	        case 'lname':
@@ -144,6 +145,7 @@ class LadiesApplicationAdmin extends WP_List_Table
     function get_columns() {
         return [
             'cb'      => '<input type="checkbox" />',
+	        'id'    => __( 'ID', 'sp' ),
             'main_image_path'      => __( 'Обложка', 'sp' ),
             'activated'    => __( 'Активирован', 'sp' ),
             'name'    => __( 'Имя', 'sp' ),
@@ -195,7 +197,7 @@ class LadiesApplicationAdmin extends WP_List_Table
     /**
      * Handles data query and filter, sorting, and pagination.
      */
-    public function prepare_items($qwery) {
+    public function prepare_items($query="") {
 
         $this->_column_headers = $this->get_column_info();
 
@@ -204,7 +206,7 @@ class LadiesApplicationAdmin extends WP_List_Table
 
         $per_page     = $this->get_items_per_page( 'customers_per_page', 10);
         $current_page = $this->get_pagenum();
-        $total_items  = $this->clientRepository->recordCount(self::TABLE_LADIES,$qwery);
+        $total_items = $this->clientRepository->recordCount(self::TABLE_LADIES,$query);
 
         $this->set_pagination_args( [
             'total_items' => $total_items, //WE have to calculate the total number of items
@@ -212,20 +214,32 @@ class LadiesApplicationAdmin extends WP_List_Table
         ] );
 
 
-        $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $qwery);
+        $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $query);
     }
-     public function get_minAge()
+
+
+    public function get_minAge()
      {
-     	$minAge = $this->clientRepository->minAge(self::TABLE_LADIES);
-	     return $minAge[0]->date_of_birth;//['date_of_birth'];
+     	$minAge = $this->clientRepository->maxAge(self::TABLE_LADIES);
+	    return $this->getCurrentAge($minAge[0]->date_of_birth);
      }
 
 	public function get_maxAge()
 	{
-		$maxAge = $this->clientRepository->maxAge(self::TABLE_LADIES);
-		return $maxAge[0]->date_of_birth;//['date_of_birth'];
+		$maxAge = $this->clientRepository->minAge(self::TABLE_LADIES);
+		return $this->getCurrentAge($maxAge[0]->date_of_birth);
 	}
 
+	public function getCurrentAge ($timestamp){
+    	$age = date('Y')-date('Y',$timestamp);
+    	if (date('n')<date('n',$timestamp)){
+    		$age--;
+	    }
+    	if((date('n')==date('n',$timestamp))&&(date('j')<date('j',$timestamp)) ){
+			$age--;
+	    }
+	return $age;
+	}
 
     public function process_bulk_action() {
 
