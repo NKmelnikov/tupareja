@@ -10,9 +10,12 @@ $clientRepository = new ClientRepository();
 if(isset($_GET['id'])&& $_GET['id']!="")
 {
 	$person = $clientRepository->getById(TABLE_LADIES,$_GET['id']);
+	if (!isset($person[0])) unset($person); elseif ($person[0]->activated==0) unset($person);
 }
 
-
+if(!isset($_GET['id'])||!isset($person)){
+	header('Location: /404');
+}
 ?><!DOCTYPE html>
 <?php
 	if ($_GET && key_exists('mfn-rtl', $_GET)):

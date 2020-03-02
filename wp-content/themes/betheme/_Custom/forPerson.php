@@ -8,6 +8,14 @@ use Repository\ClientRepository;
 get_header( 'person' );
 $clientRepository = new ClientRepository();
 
+function convertImgPath($src){
+	preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
+	if (!empty($new_src)) {
+		return $new_src[0][0];
+	}
+	return '';
+}
+
 function getCurrentAge($timestamp)
 {
 	$age = date('Y') - date('Y', $timestamp);
@@ -22,12 +30,7 @@ function getCurrentAge($timestamp)
 
 
 $person = $clientRepository->getById(TABLE_LADIES,$_GET['id']);
-//spl_autoload_register(function ($class) {
-//    echo 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
-//    echo "/wp-content/themes/betheme/_Custom/$class.php";
-//
-//    require_once "/wp-content/themes/betheme/_Custom/$class.php";
-//});
+
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 ?>
   <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/person/person.css">
@@ -36,7 +39,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="content_wrapper clearfix ">
 
       <section class="pr1-lvl1-wrap pr1-wrap">
-	      <div class="left"><img width="300" src="<?php echo $person[0]->main_image_path;?>" alt="<?php echo $person[0]->name; ?>"></div>
+	      <div class="left"><img width="300" src="<?php echo convertImgPath($person[0]->main_image_path);?>" alt="<?php echo $person[0]->name; ?>"></div>
 	      <div class="right">
 		      <ul>
 			      <li><span>Имя:</span> <?php echo $person[0]->name;?></li>
@@ -58,22 +61,20 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	    <section class="pr1-lvl2-wrap pr1-wrap">
 		    <p><span>О себе:</span> <?php echo $person[0]->about;?></p>
 		    <?php if ($person[0]->wishes_to_man!=""){?>
-		    <p><span>О партнере:</span> <?php echo $person[0]->about;?></p>
+		    <p><span>О партнере:</span> <?php echo $person[0]->wishes_to_man;?></p>
 			<?php }?>
 	    </section>
 	    <section class="pr1-gallery pr1-wrap">
 		    <?php $images=explode(",",$person[0]->path_to_images);
 		    foreach ($images as $img)
 		    {?>
-		    <a href="<?php echo $img;?>" data-lightbox="roadtrip"><img width="150" src="<?php echo $img;?>" alt=""></a>
+		    <a href="<?php echo convertImgPath($img);?>" data-lightbox="roadtrip"><img width="150" src="<?php echo convertImgPath($img);?>" alt=""></a>
 		    <?php }?>
 	    </section>
 	    <section class="pr1-video pr1-wrap">
-		    <video src="<?php echo $person[0]->video_link;?>" controls></video>
+		    <video src="<?php echo convertImgPath($person[0]->video_link);?>" controls></video>
 	    </section>
     </div>
-
-
   </div>
 
 
