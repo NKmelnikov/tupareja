@@ -1,0 +1,44 @@
+@import "../variables";
+@import "../global";
+
+#__lpform_la1-name {
+  display: none;
+}
+
+#Content {
+  @media #{$mobile} {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.pr1-wrap{
+  width: 70%;
+  margin: 0 auto 40px auto;
+  display: flex;
+
+}
+.pr1-lvl1-wrap{
+  .left{
+    margin-right: 40px;
+  }
+  .right{
+
+    ul{
+      li{
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.pr1-lvl2-wrap{
+  flex-direction: column;
+  p{
+    span{
+      font-weight: bold;
+    }
+  }
+}

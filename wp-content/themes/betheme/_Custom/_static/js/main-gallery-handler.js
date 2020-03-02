@@ -41,7 +41,7 @@
                     mp1.galleryWrapper.empty();
                     data.forEach((item, i) => {
                         let lady = `
-                        <a href="#">
+                        <a href="person-page/?page=lady&id=${item.id}" target="_blank">
                             <section class="mp1-lady-container">
                                 <div class="mp1-image-container" style="background: url('${item.browser_path}') no-repeat"></div>
                                 <div class="mp1-image-hover-container">

@@ -1,11 +1,18 @@
 <?php
-/**
- * The Header for our theme.
- *
- * @package Betheme
- * @author Muffin group
- * @link https://muffingroup.com
- */
+require_once '_Custom/Repository/ClientRepository.php';
+use Repository\ClientRepository;
+const TABLE_LADIES = 'wp_ladies';
+
+$clientRepository = new ClientRepository();
+
+
+
+if(isset($_GET['id'])&& $_GET['id']!="")
+{
+	$person = $clientRepository->getById(TABLE_LADIES,$_GET['id']);
+}
+
+
 ?><!DOCTYPE html>
 <?php
 	if ($_GET && key_exists('mfn-rtl', $_GET)):
@@ -16,9 +23,11 @@
 <?php endif; ?>
 
 <head>
+	<title><?php echo $person[0]->name; ?></title>
 <meta charset="<?php bloginfo('charset'); ?>" />
 <?php wp_head(); ?>
-
+	<link href="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/css/lightbox.css" rel="stylesheet" />
+	<script src="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/js/lightbox.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -162,7 +171,7 @@
 
 										if ($title_show) {
 											$title_tag = mfn_opts_get('subheader-title-tag', 'h1');
-											echo '<'. esc_attr($title_tag) .' class="title">'. wp_kses(mfn_page_title(), mfn_allowed_html()) .'</'. esc_attr($title_tag) .'>';
+											echo '<'. esc_attr($title_tag) .' class="title">'. $person[0]->name .'</'. esc_attr($title_tag) .'>';
 										}
 
 										if ($breadcrumbs_show) {
