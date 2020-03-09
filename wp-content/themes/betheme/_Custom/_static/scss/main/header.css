@@ -66,9 +66,9 @@
     @media (max-width: 768px) {
       #Top_bar .top_bar_left .menu_wrapper .responsive-menu-toggle, #Footer .top_bar_left .menu_wrapper .responsive-menu-toggle {
         display: block; } }
-  #Top_bar .top_bar_left #menu-menu, #Top_bar .top_bar_left #menu-menu-1, #Footer .top_bar_left #menu-menu, #Footer .top_bar_left #menu-menu-1 {
+  #Top_bar .top_bar_left .menu.menu-main, #Footer .top_bar_left .menu.menu-main {
     display: flex; }
-    #Top_bar .top_bar_left #menu-menu li, #Top_bar .top_bar_left #menu-menu-1 li, #Footer .top_bar_left #menu-menu li, #Footer .top_bar_left #menu-menu-1 li {
+    #Top_bar .top_bar_left .menu.menu-main li, #Footer .top_bar_left .menu.menu-main li {
       text-transform: uppercase;
       word-wrap: break-word;
       text-align: center;
