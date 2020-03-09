@@ -163,7 +163,7 @@ if (! function_exists('mfn_styles')) {
 		wp_enqueue_style('style', get_stylesheet_uri(), false, MFN_THEME_VERSION);
 
 		wp_enqueue_style('mfn-base', get_theme_file_uri('/css/base.css'), false, MFN_THEME_VERSION);
-		//wp_enqueue_style('mfn-layout', get_theme_file_uri('/css/layout.css'), false, MFN_THEME_VERSION);
+		wp_enqueue_style('mfn-layout', get_theme_file_uri('/css/layout.css'), false, MFN_THEME_VERSION);
 		wp_enqueue_style('mfn-shortcodes', get_theme_file_uri('/css/shortcodes.css'), false, MFN_THEME_VERSION);
 
 		// plugins
