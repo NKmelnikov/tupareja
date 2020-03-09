@@ -151,12 +151,7 @@
 
     };
 
-    $("#accordion").accordion({
-        header: "h6",
-        collapsible: true,
-        active: false,
-        animated: 'bounceslide'
-    });
+
 
     $(document).ready(() => {
         mp1.grabLadies()
@@ -181,7 +176,6 @@
         mp1.mainSearchBtn.on('click', () => {
             mp1.mainSearch(mp1.ladiesArray);
         });
-
         $('.mfn-main-slider').append('<div class="mp1-slider-elem">' +
           '<h2>International Matchmaking Office</h2>' +
           '<p> We help hearts find each other</p>' +
@@ -190,6 +184,19 @@
           '<a class="mp1-slider-b mp1-slider-man" href="/men-application/">Регистрация для мужчин</a>' +
           '</div>' +
           '</div>');
+
+      $('#mp1-ds-form').hide();
+      $("#accordion").click(function (e) {
+        if ($(this).hasClass('active')){
+          $('#mp1-ds-form').slideUp(300);
+          $(this).removeClass('active');
+        }
+        else {
+          $('#mp1-ds-form').slideDown(300);
+          $(this).addClass('active');
+        }
+
+      });
     });
     //TODO loading cloak
 })(jQuery);

@@ -96,13 +96,14 @@
   padding: 2px 0px 0px 3px;
   box-sizing: border-box;
   border-radius: 20px;
-  background: #182872; }
-  #accordion #ui-id-1 {
+  background: #182872;
+  cursor: pointer; }
+  #accordion h6 {
     color: #e4ca87;
     border: #e4ca87 1px solid;
     box-sizing: border-box;
     width: 194px;
-    height: 34px;
+    height: 36px;
     border-radius: 16px;
     text-align: center;
     background: none;
@@ -113,11 +114,15 @@
   justify-content: space-between; }
   .mp1-lower-section #accordion .ui-accordion-header {
     text-align: center; }
-  .mp1-lower-section #mp1-ds-form {
-    display: flex; }
-    .mp1-lower-section #mp1-ds-form .mp1-ds-zodiac-section, .mp1-lower-section #mp1-ds-form .mp1-ds-eye-section {
-      display: flex;
-      flex-direction: column; }
+
+#mp1-ds-form {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  #mp1-ds-form .mp1-ds-zodiac-section, #mp1-ds-form .mp1-ds-eye-section {
+    display: flex;
+    flex-direction: column; }
 
 .mp1-main-search {
   margin-bottom: 20px;
