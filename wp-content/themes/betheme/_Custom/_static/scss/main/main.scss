@@ -142,6 +142,11 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+
+  @media #{$mobile} {
+    flex-direction: column;
+  }
+
   .mp1-gallery-title{
     background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
     height: 185px;
