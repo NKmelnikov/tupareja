@@ -48,9 +48,7 @@ $translate['wpml-no'] = mfn_opts_get('translate') ? mfn_opts_get('translate-wpml
 	}
 ?>
 
-<div class="header_placeholder"></div>
-
-<div id="Top_bar" class="loading">
+<div id="Top_bar">
 
 	<div class="container">
 		<div class="column one">

@@ -2193,7 +2193,7 @@
    * The scroll event is sent to an element when the user scrolls to a different place in the element.
    */
 
-  $(window).scroll(function() {
+  /*$(window).scroll(function() {
 
     // Header | Sticky
     mfnSticky();
@@ -2204,7 +2204,7 @@
     // One Page | Scroll | Active Section
     onePageActive();
 
-  });
+  });*/
 
   /**
    * $(window).load

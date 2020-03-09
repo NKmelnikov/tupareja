@@ -33,35 +33,39 @@
     width: 0; }
   100% {
     width: 100%; } }
-#Top_bar .logo {
+#Top_bar .logo, #Footer .logo {
   padding-top: 10px; }
-#Top_bar .header-right-block h1 {
+#Top_bar .header-right-block h1, #Footer .header-right-block h1 {
   font-size: 30px;
   text-align: center;
   font-style: italic;
   color: #c4923f; }
-#Top_bar .top_bar_left {
+#Top_bar .top_bar_left, #Footer .top_bar_left {
   display: flex;
   justify-content: space-between; }
-  #Top_bar .top_bar_left .menu_wrapper .responsive-menu-toggle {
+  #Top_bar .top_bar_left .menu_wrapper .responsive-menu-toggle, #Footer .top_bar_left .menu_wrapper .responsive-menu-toggle {
     display: none; }
-  #Top_bar .top_bar_left #menu-menu {
+  #Top_bar .top_bar_left #menu-menu, #Top_bar .top_bar_left #menu-menu-1, #Footer .top_bar_left #menu-menu, #Footer .top_bar_left #menu-menu-1 {
     display: flex; }
-    #Top_bar .top_bar_left #menu-menu li {
+    #Top_bar .top_bar_left #menu-menu li, #Top_bar .top_bar_left #menu-menu-1 li, #Footer .top_bar_left #menu-menu li, #Footer .top_bar_left #menu-menu-1 li {
       text-transform: uppercase;
       word-wrap: break-word;
       text-align: center;
       margin: 0 10px;
       font-family: "Comfortaa", sans-serif;
       line-height: 18px; }
-#Top_bar .top_bar_left:before {
+#Top_bar .top_bar_left:before, #Footer .top_bar_left:before {
   content: none; }
-#Top_bar .column {
+#Top_bar .column, #Footer .column {
   margin: 0; }
-#Top_bar .column:after {
+#Top_bar .column:after, #Footer .column:after {
   content: none; }
 
 .mfn-main-slider {
   margin-bottom: 50px; }
+
+#Footer {
+  border-top: #0931a2 2px solid;
+  padding: 15px 0; }
 
 /*# sourceMappingURL=header.css.map */
