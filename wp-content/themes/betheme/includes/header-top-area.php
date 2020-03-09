@@ -53,10 +53,16 @@ $translate['wpml-no'] = mfn_opts_get('translate') ? mfn_opts_get('translate-wpml
 	<div class="container">
 		<div class="column one">
 
+
+      <div class="header-special-mobile">
+          <?php get_template_part('includes/include', 'logo'); ?>
+        <p class="header-special-mobile__title">International Matchmaking Office</p>
+      </div>
+
+
 			<div class="top_bar_left clearfix">
 
 				<?php get_template_part('includes/include', 'logo'); ?>
-
 				<div class="header-right-block">
 					<div class="header-title">
 						<h1>International Matchmaking Office</h1>

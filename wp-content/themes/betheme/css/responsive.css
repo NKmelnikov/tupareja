@@ -443,8 +443,6 @@ html,body{overflow-x:hidden}
 @media only screen and (max-width: 767px)
 {
 	body{min-width:0;}
-	#Wrapper{max-width:90%;max-width:calc(100% - 67px);}
-
 	.section_wrapper .mcb-wrap,
 	.section_wrapper .column,
   .container .column,

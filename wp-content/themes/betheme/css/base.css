@@ -558,7 +558,6 @@ body.admin-bar{position:relative}
 
 #Wrapper{max-width:1240px;margin:0 auto;overflow:hidden}
 
-.layout-boxed{padding:25px 0}
 .layout-boxed.boxed-no-margin{padding:0}
 .layout-boxed #Wrapper{box-shadow:0 0 15px rgba(0,0,0,.06)}
 
