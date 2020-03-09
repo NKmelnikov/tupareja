@@ -134,14 +134,63 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
 
+  .mp1-ds-form-line{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    label{
+      margin-right: 10px;
+
+    }
+  }
   .mp1-ds-zodiac-section, .mp1-ds-eye-section{
     display: flex;
     flex-direction: column;
+    .mp1-ds-form-line{
+      margin-bottom: 0;
+      label{
+        margin-bottom: 0;
+      }
+    }
+  }
+  input[type="text"]{
+    background: #ffffff;
+    border: #182872 1px solid;
+    height: 40px;
+    width: 75px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
+  button#mp1-ds-submit-btn{
+    height: 40px;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #ffffff !important;
+    background: #182872!important;
+    border: #182872 2px solid!important;
+  }
+  button#mp1-ds-submit-btn:hover{
+    background: #ffffff!important;
+    color: #182872 !important;
   }
 }
+@media #{$mobile} {
+  #mp1-ds-form{
+    flex-direction: column;
+    justify-content: flex-start;
+    .mp1-ds-zodiac-section, .mp1-ds-eye-section{
+      margin-bottom: 20px;
+    }
 
+  }
+}
 .mp1-main-search{
   margin-bottom: 20px;
   padding-top: 70px;
