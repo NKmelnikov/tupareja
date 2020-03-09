@@ -4,6 +4,7 @@
 #Top_bar, #Footer {
 
   .header-special-mobile {
+    position: relative;
     margin-top: 10px;
     display: none;
     @media #{$mobile} {
@@ -16,6 +17,14 @@
       text-align: center;
       font-size: 16px;
 
+    }
+
+    .responsive-menu-toggle{
+      position: absolute;
+
+      top:5px;
+      right: 15px;
+      font-size: 20px;
     }
   }
 
@@ -124,9 +133,18 @@
     padding: 40px 20px;
     box-sizing: border-box;
     background: rgba(24,40,114,0.86);
-    bottom:100px;
+    bottom:60px;
     right: 30px;
     z-index: 10;
+
+    @media #{$mobile} {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 90%;
+      font-size: 14px;
+    }
+
     h2{
       color: #e48d05;
       font-size: 28px;
@@ -145,14 +163,30 @@
       bottom: -15px;
       display: flex;
       justify-content: flex-end;
+
+      @media #{$mobile} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom: -100px;
+        margin: 0 auto;
+      }
+
       .mp1-slider-b{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 53px;
         width: 243px;
         box-sizing: border-box;
         color: #ffffff;
-        padding: 8px 0 0 14px;
+        font-size: 14px;
+        padding-right: 10px;
         text-decoration: none;
+
       }
       .mp1-slider-lady{
         background: url("/wp-content/themes/betheme/_Custom/_static/img/slider-bt-left.png") no-repeat center center;
