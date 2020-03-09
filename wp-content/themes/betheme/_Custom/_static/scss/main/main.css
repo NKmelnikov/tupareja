@@ -37,6 +37,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media (max-width: 768px) {
+    .mp1-wrapper {
+      justify-content: center; } }
   .mp1-wrapper .mp1-lady-container {
     position: relative;
     margin-bottom: 15px; }
@@ -81,10 +84,16 @@
   .mp1-wrapper .mp1-lady-container:hover .mp1-image-hover-container {
     opacity: 0.9; }
 
+#pagination {
+  height: 100%; }
+
 .paginationjs-pages ul {
   display: flex; }
   .paginationjs-pages ul li {
     padding: 0 5px; }
+    @media (max-width: 768px) {
+      .paginationjs-pages ul li {
+        font-size: 26px; } }
     .paginationjs-pages ul li.active {
       background: #86c0c7;
       border-radius: 2px; }
@@ -125,6 +134,9 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 768px) {
+    .mp1-main-search {
+      flex-direction: column; } }
   .mp1-main-search .mp1-gallery-title {
     background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
     height: 185px;
@@ -196,11 +208,19 @@
       position: absolute;
       left: 30px;
       bottom: 70px; }
+      @media (max-width: 768px) {
+        .mp1-video-block .mp1-video-description .mp1-video-contact {
+          width: 90%;
+          height: auto;
+          left: 0;
+          right: 0;
+          margin: 0 auto; } }
       .mp1-video-block .mp1-video-description .mp1-video-contact h3, .mp1-video-block .mp1-video-description .mp1-video-contact p {
         font-family: "Comfortaa", sans-serif;
         color: #ffffff; }
       .mp1-video-block .mp1-video-description .mp1-video-contact p {
-        line-height: 22px; }
+        line-height: 22px;
+        text-align: justify; }
       .mp1-video-block .mp1-video-description .mp1-video-contact .mp1-video-link {
         background: #182872;
         font-family: "Comfortaa", sans-serif;
@@ -213,6 +233,11 @@
         bottom: -35px;
         right: 30px;
         text-decoration: none; }
+        @media (max-width: 768px) {
+          .mp1-video-block .mp1-video-description .mp1-video-contact .mp1-video-link {
+            left: 0;
+            right: 0;
+            margin: 0 auto; } }
         .mp1-video-block .mp1-video-description .mp1-video-contact .mp1-video-link span {
           border: #e4ca87 1px solid;
           display: flex;
@@ -237,6 +262,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 150px; }
+  @media (max-width: 768px) {
+    .mp1-b3-wrap {
+      flex-direction: column; } }
   .mp1-b3-wrap .mp1-b3-elem {
     height: 488px;
     width: 432px;
@@ -244,17 +272,23 @@
     justify-content: center;
     align-items: flex-end; }
     .mp1-b3-wrap .mp1-b3-elem a {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: url("/wp-content/themes/betheme/_Custom/_static/img/b3-bt-bg.png") no-repeat center center;
       height: 53px;
       width: 243px;
       box-sizing: border-box;
       color: #ffffff;
-      padding: 8px 0 0 14px;
+      padding: 0 10px 0 0;
       text-decoration: none; }
   .mp1-b3-wrap .mp1-b3-lady {
     background: url("/wp-content/themes/betheme/_Custom/_static/img/b3-lady.png") no-repeat bottom center;
     margin-right: 85px; }
+    @media (max-width: 768px) {
+      .mp1-b3-wrap .mp1-b3-lady {
+        margin-right: 0;
+        background-position: -40px 0; } }
   .mp1-b3-wrap .mp1-b3-men {
     background: url("/wp-content/themes/betheme/_Custom/_static/img/b3-man.png") no-repeat bottom center; }
 
@@ -271,14 +305,26 @@
     .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title2 {
       color: #e48d05;
       font-size: 20px; }
+  @media (max-width: 768px) {
+    .mp1-advantage .mp1-advantage-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
   .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line {
     display: flex;
     justify-content: center;
     justify-items: stretch; }
+    @media (max-width: 768px) {
+      .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line {
+        flex-direction: column; } }
     .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem {
       width: 230px;
       margin: 0 99px;
       position: relative; }
+      @media (max-width: 768px) {
+        .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem {
+          margin: 30px 0; } }
       .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem .mp1-advantage-icon {
         background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-bg.png") no-repeat center center;
         display: flex;
@@ -297,6 +343,8 @@
       position: absolute;
       top: -40px;
       left: 0;
+      right: 0;
+      margin: 0 auto;
       z-index: 0; }
     .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description {
       text-align: center; }
