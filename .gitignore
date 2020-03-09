@@ -6,3 +6,9 @@ wp-content/uploads/*
 .idea/
 
 wp-content/themes/betheme/_Custom/_static/scss/men/menEdit.css.map
+
+wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesAdmin.css.map
+
+wp-content/themes/betheme/_Custom/_static/scss/main/main.css.map
+
+wp-content/themes/betheme/_Custom/_static/scss/person/person.css.map
