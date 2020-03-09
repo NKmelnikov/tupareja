@@ -259,6 +259,12 @@
   display: flex;
   justify-content: center;
   margin-bottom: 150px;
+
+  @media #{$mobile} {
+    flex-direction: column;
+  }
+
+
   .mp1-b3-elem{
     height: 488px;
     width: 432px;
