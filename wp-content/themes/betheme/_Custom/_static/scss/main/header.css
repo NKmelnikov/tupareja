@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
+.error-input {
+  border: 1px solid #d95c55 !important; }
+
+.error-box {
+  color: #d95c55;
+  font-size: 12px; }
+
+.alert-danger {
+  background: #d95c55; }
+
+.alert-success {
+  background: #48c675; }
+
+.meter {
+  display: none;
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden; }
+
+.meter span {
+  display: block;
+  height: 100%; }
+
+.progress {
+  background-color: #0f8252;
+  animation: progressBar 2s ease-in-out;
+  animation-fill-mode: both; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+#Top_bar .logo {
+  padding-top: 10px; }
+#Top_bar .header-right-block h1 {
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  color: #c4923f; }
+#Top_bar .top_bar_left {
+  display: flex;
+  justify-content: space-between; }
+  #Top_bar .top_bar_left .menu_wrapper .responsive-menu-toggle {
+    display: none; }
+  #Top_bar .top_bar_left #menu-menu {
+    display: flex; }
+    #Top_bar .top_bar_left #menu-menu li {
+      text-transform: uppercase;
+      word-wrap: break-word;
+      text-align: center;
+      margin: 0 10px;
+      font-family: "Comfortaa", sans-serif;
+      line-height: 18px; }
+#Top_bar .top_bar_left:before {
+  content: none; }
+#Top_bar .column {
+  margin: 0; }
+#Top_bar .column:after {
+  content: none; }
+
+.mfn-main-slider {
+  margin-bottom: 50px; }
+
+/*# sourceMappingURL=header.css.map */

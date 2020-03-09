@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
 .error-input {
   border: 1px solid #d95c55 !important; }
 
@@ -90,6 +90,7 @@
       border-radius: 2px; }
 
 #accordion {
+  margin-top: 60px;
   width: 200px;
   height: 40px;
   padding: 2px 0px 0px 3px;
@@ -119,19 +120,34 @@
       flex-direction: column; }
 
 .mp1-main-search {
-  background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg-wt.png") no-repeat top center;
-  min-height: 185px;
   margin-bottom: 20px;
   padding-top: 70px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between; }
+  .mp1-main-search .mp1-gallery-title {
+    background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
+    height: 185px;
+    min-width: 453px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    text-align: center; }
+    .mp1-main-search .mp1-gallery-title h2 {
+      color: #ffffff;
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 30px; }
+    .mp1-main-search .mp1-gallery-title p {
+      color: #e48d05;
+      font-size: 16px;
+      line-height: 16px; }
   .mp1-main-search .mp1-main-search-wrap {
+    padding-top: 60px;
     position: relative; }
     .mp1-main-search .mp1-main-search-wrap label {
       position: absolute;
       left: 9px;
-      top: 5px; }
+      top: 65px; }
     .mp1-main-search .mp1-main-search-wrap #mp1-main-search-input {
       border: #182872 1px solid;
       height: 40px;
@@ -141,7 +157,7 @@
     .mp1-main-search .mp1-main-search-wrap #mp1-main-search-btn {
       position: absolute;
       right: 7px;
-      top: 5px;
+      top: 65px;
       border: none;
       height: 32px;
       width: 32px;
@@ -149,6 +165,9 @@
       background: url("/wp-content/themes/betheme/_Custom/_static/img/search-icon.png") no-repeat center center; }
       .mp1-main-search .mp1-main-search-wrap #mp1-main-search-btn :hover {
         background-color: #ffffff !important; }
+
+.mp1-lower-section {
+  margin-bottom: 50px; }
 
 .mp1-video-block {
   width: 100%;
@@ -178,11 +197,13 @@
       left: 30px;
       bottom: 70px; }
       .mp1-video-block .mp1-video-description .mp1-video-contact h3, .mp1-video-block .mp1-video-description .mp1-video-contact p {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Comfortaa", sans-serif;
         color: #ffffff; }
+      .mp1-video-block .mp1-video-description .mp1-video-contact p {
+        line-height: 22px; }
       .mp1-video-block .mp1-video-description .mp1-video-contact .mp1-video-link {
         background: #182872;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Comfortaa", sans-serif;
         color: #e4ca87;
         width: 230px;
         height: 50px;
@@ -221,7 +242,7 @@
     width: 432px;
     display: flex;
     justify-content: center;
-    align-items: end; }
+    align-items: flex-end; }
     .mp1-b3-wrap .mp1-b3-elem a {
       display: block;
       background: url("/wp-content/themes/betheme/_Custom/_static/img/b3-bt-bg.png") no-repeat center center;
@@ -278,7 +299,7 @@
   .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description {
     text-align: center; }
     .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-title {
-      font-family: "Montserrat", sans-serif;
+      font-family: "Comfortaa", sans-serif;
       font-size: 18px;
       color: #1c1f3e;
       text-transform: uppercase;
@@ -291,7 +312,7 @@
       line-height: 10px;
       margin-bottom: 5px; }
     .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-desc {
-      font-family: "Montserrat", sans-serif;
+      font-family: "Comfortaa", sans-serif;
       margin-top: 30px;
       line-height: 16px;
       font-size: 14px;

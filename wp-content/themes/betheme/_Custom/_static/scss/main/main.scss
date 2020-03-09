@@ -82,6 +82,7 @@
   }
 }
 #accordion{
+  margin-top: 60px;
   width: 200px;
   height: 40px;
   padding: 2px 0px 0px 3px;
@@ -122,19 +123,37 @@
   }
 }
 .mp1-main-search{
-  background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg-wt.png") no-repeat top center;
-  min-height: 185px;
   margin-bottom: 20px;
   padding-top: 70px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  .mp1-gallery-title{
+    background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
+    height: 185px;
+    min-width: 453px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    text-align: center;
+    h2{
+      color: #ffffff;
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    p{
+      color: #e48d05;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
   .mp1-main-search-wrap{
+    padding-top: 60px;
     position: relative;
     label{
       position: absolute;
       left: 9px;
-      top: 5px;
+      top: 65px;
     }
     #mp1-main-search-input{
       border: #182872 1px solid;
@@ -146,7 +165,7 @@
     #mp1-main-search-btn{
       position: absolute;
       right: 7px;
-      top: 5px;
+      top: 65px;
       border: none;
       height: 32px;
       width: 32px;
@@ -159,7 +178,9 @@
   }
 
 }
-
+.mp1-lower-section{
+  margin-bottom: 50px;
+}
 .mp1-video-block{
   width: 100%;
   height: 680px;
@@ -183,6 +204,9 @@
       h3, p{
         font-family: $main-font;
         color: #ffffff;
+      }
+      p{
+        line-height: 22px;
       }
       background: rgba(28,31,62,0.77);
       border: #dbc283 1px solid;
@@ -240,7 +264,7 @@
     width: 432px;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     a{
       display: block;
       background: url("/wp-content/themes/betheme/_Custom/_static/img/b3-bt-bg.png") no-repeat center center;

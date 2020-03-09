@@ -19,6 +19,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	  <button class="mp1-main-search__btn" id="mp1-main-search-btn"></button>
 	</div>
 
+
+	<div class="mp1-gallery-title">
+		<h2>Галлерея девушек</h2>
+		<p>Найди свою вторую половину</p>
+	</div>
+
 	<div id="accordion">
 		<h6>Расширенный поиск</h6>
 		<form id="mp1-ds-form" action="">

@@ -18,6 +18,7 @@
 <head>
 <meta charset="<?php bloginfo('charset'); ?>" />
 <?php wp_head(); ?>
+	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/main/header.css">
 
 </head>
 

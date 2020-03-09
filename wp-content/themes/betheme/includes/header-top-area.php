@@ -59,42 +59,35 @@ $translate['wpml-no'] = mfn_opts_get('translate') ? mfn_opts_get('translate-wpml
 
 				<?php get_template_part('includes/include', 'logo'); ?>
 
-				<div class="menu_wrapper">
-					<?php
-						if ((mfn_header_style(true) != 'header-overlay') && (mfn_opts_get('menu-style') != 'hide')) {
+				<div class="header-right-block">
+					<div class="header-title">
+						<h1>International Matchmaking Office</h1>
+					</div>
+					<div class="menu_wrapper">
+						<?php
+							if ((mfn_header_style(true) != 'header-overlay') && (mfn_opts_get('menu-style') != 'hide')) {
 
-							// main menu
+								// main menu
 
-							mfn_wp_nav_menu();
+								mfn_wp_nav_menu();
 
-							// responsive menu button
+								// responsive menu button
 
-							$mb_class = '';
-							if (mfn_opts_get('header-menu-mobile-sticky')) {
-								$mb_class .= ' is-sticky';
+								$mb_class = '';
+								if (mfn_opts_get('header-menu-mobile-sticky')) {
+									$mb_class .= ' is-sticky';
+								}
+
+								echo '<a class="responsive-menu-toggle '. esc_attr($mb_class) .'" href="#">';
+								if ($menu_text = trim(mfn_opts_get('header-menu-text'))) {
+									echo '<span>'. wp_kses($menu_text, mfn_allowed_html()) .'</span>';
+								} else {
+									echo '<i class="icon-menu-fine"></i>';
+								}
+								echo '</a>';
 							}
-
-							echo '<a class="responsive-menu-toggle '. esc_attr($mb_class) .'" href="#">';
-							if ($menu_text = trim(mfn_opts_get('header-menu-text'))) {
-								echo '<span>'. wp_kses($menu_text, mfn_allowed_html()) .'</span>';
-							} else {
-								echo '<i class="icon-menu-fine"></i>';
-							}
-							echo '</a>';
-						}
-					?>
-				</div>
-
-				<div class="secondary_menu_wrapper">
-					<?php mfn_wp_secondary_menu(); ?>
-				</div>
-
-				<div class="banner_wrapper">
-					<?php echo wp_kses_post(mfn_opts_get('header-banner')); ?>
-				</div>
-
-				<div class="search_wrapper">
-					<?php get_search_form(true); ?>
+						?>
+					</div>
 				</div>
 
 			</div>
