@@ -171,9 +171,10 @@
       width: 32px;
       box-shadow: none;
       background: url("/wp-content/themes/betheme/_Custom/_static/img/search-icon.png") no-repeat center center;
-      :hover{
-        background-color: #ffffff!important;
-      }
+
+    }
+    #mp1-main-search-btn:hover{
+      background: url("/wp-content/themes/betheme/_Custom/_static/img/search-icon.png") no-repeat center center!important;
     }
   }
 

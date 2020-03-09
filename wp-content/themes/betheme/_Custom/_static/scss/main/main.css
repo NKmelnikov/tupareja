@@ -163,8 +163,8 @@
       width: 32px;
       box-shadow: none;
       background: url("/wp-content/themes/betheme/_Custom/_static/img/search-icon.png") no-repeat center center; }
-      .mp1-main-search .mp1-main-search-wrap #mp1-main-search-btn :hover {
-        background-color: #ffffff !important; }
+    .mp1-main-search .mp1-main-search-wrap #mp1-main-search-btn:hover {
+      background: url("/wp-content/themes/betheme/_Custom/_static/img/search-icon.png") no-repeat center center !important; }
 
 .mp1-lower-section {
   margin-bottom: 50px; }

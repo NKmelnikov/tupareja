@@ -67,5 +67,8 @@
 #Footer {
   border-top: #0931a2 2px solid;
   padding: 15px 0; }
+  #Footer .top_bar_left {
+    max-width: 1300px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=header.css.map */
