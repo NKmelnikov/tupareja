@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../global";
 
-#Top_bar{
+#Top_bar, #Footer{
   .logo{
     padding-top: 10px;
   }
@@ -22,7 +22,7 @@
       }
     }
 
-    #menu-menu{
+    #menu-menu, #menu-menu-1{
       display: flex;
       li{
         text-transform: uppercase;
@@ -47,4 +47,8 @@
 }
 .mfn-main-slider{
   margin-bottom: 50px;
+}
+#Footer{
+  border-top: #0931a2 2px solid;
+  padding: 15px 0;
 }

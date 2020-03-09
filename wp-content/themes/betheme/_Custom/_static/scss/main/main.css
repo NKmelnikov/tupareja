@@ -258,64 +258,66 @@
   .mp1-b3-wrap .mp1-b3-men {
     background: url("/wp-content/themes/betheme/_Custom/_static/img/b3-man.png") no-repeat bottom center; }
 
-.mp1-advantage .mp1-advantage-title-group {
-  padding-top: 100px;
-  background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-title-bg.png") no-repeat top center;
-  min-height: 277px;
-  text-align: center; }
-  .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title {
-    color: #ffffff;
-    font-size: 40px; }
-  .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title2 {
-    color: #e48d05;
-    font-size: 20px; }
-.mp1-advantage .mp1-advantage-wrap .mp1-advantage-line {
-  display: flex;
-  justify-content: center;
-  justify-items: stretch; }
-  .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem {
-    width: 230px;
-    margin: 0 99px;
-    position: relative; }
-    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem .mp1-advantage-icon {
-      background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-bg.png") no-repeat center center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 150px;
-      z-index: 1;
-      position: relative;
-      margin-bottom: 60px; }
-  .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem:before {
-    content: "";
-    display: block;
-    background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-elem-bg.png") no-repeat center center;
-    width: 230px;
-    height: 230px;
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 0; }
-  .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description {
+.mp1-advantage {
+  margin-bottom: 100px; }
+  .mp1-advantage .mp1-advantage-title-group {
+    padding-top: 100px;
+    background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-title-bg.png") no-repeat top center;
+    min-height: 277px;
     text-align: center; }
-    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-title {
-      font-family: "Comfortaa", sans-serif;
-      font-size: 18px;
-      color: #1c1f3e;
-      text-transform: uppercase;
-      line-height: 5px;
-      font-weight: bold;
-      margin-bottom: 5px; }
-    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-delimiter {
-      color: #1c1f3e;
-      font-size: 60px;
-      line-height: 10px;
-      margin-bottom: 5px; }
-    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-desc {
-      font-family: "Comfortaa", sans-serif;
-      margin-top: 30px;
-      line-height: 16px;
-      font-size: 14px;
-      color: #e48d05; }
+    .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title {
+      color: #ffffff;
+      font-size: 40px; }
+    .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title2 {
+      color: #e48d05;
+      font-size: 20px; }
+  .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line {
+    display: flex;
+    justify-content: center;
+    justify-items: stretch; }
+    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem {
+      width: 230px;
+      margin: 0 99px;
+      position: relative; }
+      .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem .mp1-advantage-icon {
+        background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-bg.png") no-repeat center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        z-index: 1;
+        position: relative;
+        margin-bottom: 60px; }
+    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-elem:before {
+      content: "";
+      display: block;
+      background: url("/wp-content/themes/betheme/_Custom/_static/img/advantage-elem-bg.png") no-repeat center center;
+      width: 230px;
+      height: 230px;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      z-index: 0; }
+    .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description {
+      text-align: center; }
+      .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-title {
+        font-family: "Comfortaa", sans-serif;
+        font-size: 18px;
+        color: #1c1f3e;
+        text-transform: uppercase;
+        line-height: 5px;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-delimiter {
+        color: #1c1f3e;
+        font-size: 60px;
+        line-height: 10px;
+        margin-bottom: 5px; }
+      .mp1-advantage .mp1-advantage-wrap .mp1-advantage-line .mp1-advantage-description .mp1-advantage-elem-desc {
+        font-family: "Comfortaa", sans-serif;
+        margin-top: 30px;
+        line-height: 16px;
+        font-size: 14px;
+        color: #e48d05; }
 
 /*# sourceMappingURL=main.css.map */
