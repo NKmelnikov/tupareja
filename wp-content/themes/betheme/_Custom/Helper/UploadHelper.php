@@ -193,7 +193,7 @@ class UploadHelper {
                 $imageWithWm = $file['tmp_name'];
                 if (move_uploaded_file($file['tmp_name'], $target)){
 	                $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_main_watermark.png');
+	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_main_watermark_V2.png');
 	                imagealphablending($watermark, false);
 	                imagesavealpha($watermark, true);
 	                $img = imagecreatefromjpeg($target);
@@ -201,15 +201,15 @@ class UploadHelper {
 	                $img_h = imagesy($img);
 	                $wtrmrk_w = imagesx($watermark);
 	                $wtrmrk_h = imagesy($watermark);
-	                $dst_x = $img_w - $wtrmrk_w; // For centering the watermark on any image
-	                $dst_y = $img_h - $wtrmrk_h; // For centering the watermark on any image
+	                $dst_x = $img_w - $wtrmrk_w - 10; // For centering the watermark on any image
+	                $dst_y = $img_h - $wtrmrk_h - 30; // For centering the watermark on any image
 	                imagecopy($img, $watermark, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
 	                imagejpeg($img, $target, 100);
 	                imagedestroy($img);
 	                imagedestroy($watermark);
 
 
-	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_watermark_2.png');
+	                $watermark = imagecreatefrompng($actual_link.'==');
 	                imagealphablending($watermark, false);
 	                imagesavealpha($watermark, true);
 	                $img = imagecreatefromjpeg($target);

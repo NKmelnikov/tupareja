@@ -66,6 +66,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	</section>
 	<section class="mp1-ds-zodiac-section">
 		<span>Знак зодиака</span>
+		<div class="mp1-ds-form-line-3">
+		<div class="mp1-ds-form-line-2">
 		<div class="mp1-ds-form-line">
 			<label for="mp1-ds-aquarius">Водолей</label>
 			<input id="mp1-ds-aquarius" class="zodiac-input" name="mp1-ds-aquarius" type="checkbox">
@@ -90,6 +92,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			<label for="mp1-ds-cancer">Рак</label>
 			<input id="mp1-ds-cancer" class="zodiac-input" name="mp1-ds-cancer" type="checkbox">
 		</div>
+		</div>
+		<div class="mp1-ds-form-line-2">
 		<div class="mp1-ds-form-line">
 			<label for="mp1-ds-leo">Лев</label>
 			<input id="mp1-ds-leo" class="zodiac-input" name="mp1-ds-leo" type="checkbox">
@@ -113,6 +117,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 		<div class="mp1-ds-form-line">
 			<label for="mp1-ds-capricorn">Козерог</label>
 			<input id="mp1-ds-capricorn" class="zodiac-input" name="mp1-ds-capricorn" type="checkbox">
+		</div>
+		</div>
 		</div>
 	</section>
 	<section class="mp1-ds-eye-section">

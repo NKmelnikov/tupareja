@@ -125,22 +125,35 @@
     text-align: center; }
 
 #mp1-ds-form {
-  padding-bottom: 20px;
+  padding: 0 20px 20px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%; }
+  align-items: flex-start; }
   #mp1-ds-form .mp1-ds-form-line {
     margin-bottom: 20px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center; }
     #mp1-ds-form .mp1-ds-form-line label {
       margin-right: 10px; }
   #mp1-ds-form .mp1-ds-zodiac-section, #mp1-ds-form .mp1-ds-eye-section {
     display: flex;
     flex-direction: column; }
+    #mp1-ds-form .mp1-ds-zodiac-section .mp1-ds-form-line-3, #mp1-ds-form .mp1-ds-eye-section .mp1-ds-form-line-3 {
+      display: flex;
+      flex-direction: row; }
+      @media (max-width: 768px) {
+        #mp1-ds-form .mp1-ds-zodiac-section .mp1-ds-form-line-3, #mp1-ds-form .mp1-ds-eye-section .mp1-ds-form-line-3 {
+          flex-direction: column; } }
+    #mp1-ds-form .mp1-ds-zodiac-section .mp1-ds-form-line-2, #mp1-ds-form .mp1-ds-eye-section .mp1-ds-form-line-2 {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px; }
+      @media (max-width: 768px) {
+        #mp1-ds-form .mp1-ds-zodiac-section .mp1-ds-form-line-2, #mp1-ds-form .mp1-ds-eye-section .mp1-ds-form-line-2 {
+          margin-right: 0; } }
     #mp1-ds-form .mp1-ds-zodiac-section .mp1-ds-form-line, #mp1-ds-form .mp1-ds-eye-section .mp1-ds-form-line {
+      justify-content: space-between;
       margin-bottom: 0; }
       #mp1-ds-form .mp1-ds-zodiac-section .mp1-ds-form-line label, #mp1-ds-form .mp1-ds-eye-section .mp1-ds-form-line label {
         margin-bottom: 0; }
@@ -167,22 +180,24 @@
 @media (max-width: 768px) {
   #mp1-ds-form {
     flex-direction: column;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    align-items: center; }
     #mp1-ds-form .mp1-ds-zodiac-section, #mp1-ds-form .mp1-ds-eye-section {
       margin-bottom: 20px; } }
 .mp1-main-search {
   margin-bottom: 20px;
-  padding-top: 70px;
+  padding: 70px 20px 0 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between; }
   @media (max-width: 768px) {
     .mp1-main-search {
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: center; } }
   .mp1-main-search .mp1-gallery-title {
     background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
     height: 185px;
-    min-width: 453px;
+    width: 453px;
     box-sizing: border-box;
     padding-top: 60px;
     text-align: center; }
@@ -195,6 +210,12 @@
       color: #e48d05;
       font-size: 16px;
       line-height: 16px; }
+    @media (max-width: 768px) {
+      .mp1-main-search .mp1-gallery-title {
+        width: 100%;
+        padding-top: 50px; }
+        .mp1-main-search .mp1-gallery-title h2 {
+          margin-bottom: 10px; } }
   .mp1-main-search .mp1-main-search-wrap {
     padding-top: 60px;
     position: relative; }
