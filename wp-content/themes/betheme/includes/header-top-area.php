@@ -60,6 +60,11 @@ $translate['wpml-no'] = mfn_opts_get('translate') ? mfn_opts_get('translate-wpml
         <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i><a>
             <?php mfn_wp_nav_menu(); ?>
       </div>
+      <script>
+          $('.responsive-menu-toggle').click(function () {
+            $('#menu').toggleClass('active');
+          })
+      </script>
 
 
 			<div class="top_bar_left clearfix">

@@ -3,6 +3,9 @@
 
 #Top_bar, #Footer {
 
+  #menu.active{
+    display: block;
+  }
   .header-special-mobile {
     position: relative;
     margin-top: 10px;

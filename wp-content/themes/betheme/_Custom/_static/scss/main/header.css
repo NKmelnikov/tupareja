@@ -33,6 +33,8 @@
     width: 0; }
   100% {
     width: 100%; } }
+#Top_bar #menu.active, #Footer #menu.active {
+  display: block; }
 #Top_bar .header-special-mobile, #Footer .header-special-mobile {
   position: relative;
   margin-top: 10px;
