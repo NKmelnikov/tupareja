@@ -209,7 +209,7 @@ class UploadHelper {
 	                imagedestroy($watermark);
 
 
-	                $watermark = imagecreatefrompng($actual_link.'==');
+	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_watermark_2.png');
 	                imagealphablending($watermark, false);
 	                imagesavealpha($watermark, true);
 	                $img = imagecreatefromjpeg($target);

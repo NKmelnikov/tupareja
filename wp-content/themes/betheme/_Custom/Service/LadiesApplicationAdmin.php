@@ -161,18 +161,8 @@ class LadiesApplicationAdmin extends WP_List_Table
             'date_of_birth' => __('Дата Рождения (д.м.г)', 'sp'),
             'email' => __('email', 'sp'),
             'phone' => __('phone', 'sp'),
-            'family_status' => __('family_status', 'sp'),
-            'kids' => __('kids', 'sp'),
-            'height' => __('height', 'sp'),
-            'weight' => __('weight', 'sp'),
-            'eye_color' => __('eye_color', 'sp'),
-            'languages' => __('languages', 'sp'),
             'profession' => __('profession', 'sp'),
-            'town' => __('town', 'sp'),
             'country' => __('country', 'sp'),
-            'man_wish_age' => __('man_wish_age', 'sp'),
-            'video_link' => __('video_link', 'sp'),
-            'about' => __('about', 'sp'),
         ];
     }
 

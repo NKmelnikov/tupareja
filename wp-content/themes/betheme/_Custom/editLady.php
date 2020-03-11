@@ -36,7 +36,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	    <div class="le1-name-container">
 		    <div class="le1-name-box">
 			    <label for="le1-lname">Фамилия</label>
-			    <input type="text" required name="le1-lname" id="le1-lname" maxlength="125" class="le1-input" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
+			    <input type="text" name="le1-lname" id="le1-lname" maxlength="125" class="le1-input" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
 			    <span class="error-box error-le1-lname"></span>
 		    </div>
 		    <div class="le1-name-box">
@@ -46,7 +46,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 		    </div>
 		    <div class="le1-fname-box">
 			    <label for="le1-fname">Отчество</label>
-			    <input type="text" required name="le1-fname" id="le1-fname" maxlength="125" class="le1-input" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
+			    <input type="text" name="le1-fname" id="le1-fname" maxlength="125" class="le1-input" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
 			    <span class="error-box error-le1-fname"></span>
 		    </div>
 	    </div>
@@ -98,7 +98,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <input type="text" required name="le1-languages" id="le1-languages" min="2" max="255" class="le1-input" placeholder="Иностранные языки" value="<?php echo $lady['languages']; ?>">
       <span class="error-box error-le1-languages"></span>
       <label for="le1-smoking">Курите ли Вы?</label>
-      <input type="text" required name="le1-smoking" id="le1-smoking" min="2" max="255" class="le1-input" placeholder="Курите ли Вы?" value="<?php echo $lady['smoking']; ?>">
+      <input type="text" name="le1-smoking" id="le1-smoking" min="2" max="255" class="le1-input" placeholder="Курите ли Вы?" value="<?php echo $lady['smoking']; ?>">
       <span class="error-box error-le1-smoking"></span>
       <label for="le1-man-wish-age">Желаемый возраст мужчины</label>
       <input type="text" name="le1-man-wish-age" id="le1-man-wish-age" min="2" max="255" class="le1-input" placeholder="Желаемый возраст мужчины" value="<?php echo $lady['man_wish_age']; ?>">
