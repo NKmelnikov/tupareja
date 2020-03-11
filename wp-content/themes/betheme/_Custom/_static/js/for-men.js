@@ -52,7 +52,7 @@
 
         sendAjaxTelegram(data) {
             let botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ';
-            let chatId = '-395677332';
+            let chatId = '-1001312503507';
             let text = 'Новая !мужская! анкета' + "\n";
             text += `Имя: ${data['name']}` + "\n";
             text += `Email: ${data['email']}` + "\n";
