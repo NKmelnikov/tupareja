@@ -32,5 +32,40 @@
     width: 0; }
   100% {
     width: 100%; } }
+.heart-box {
+  width: 100%;
+  position: relative; }
+  .heart-box__heart-small {
+    position: absolute;
+    width: 63px;
+    height: 61px; }
+    .heart-box__heart-small.rotated {
+      transform: rotateY(180deg); }
+    .heart-box__heart-small.hs1 {
+      top: 95px;
+      left: 0;
+      transform: scale(0.6) rotateY(180deg);
+      animation: hs1 1.5s linear infinite; }
+    .heart-box__heart-small.hs2 {
+      top: 15px;
+      right: -15px;
+      animation: hs2 1.7s linear infinite; }
+  .heart-box__heart-big {
+    position: absolute;
+    width: 164px;
+    height: 159px; }
+    .heart-box__heart-big.rotated {
+      transform: rotateY(180deg); }
+
+@keyframes hs1 {
+  0%, 100% {
+    top: 95px; }
+  50% {
+    top: 85px; } }
+@keyframes hs2 {
+  0%, 100% {
+    top: 15px; }
+  50% {
+    top: 5px; } }
 
 /*# sourceMappingURL=global.css.map */

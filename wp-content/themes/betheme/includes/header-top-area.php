@@ -49,10 +49,12 @@ $translate['wpml-no'] = mfn_opts_get('translate') ? mfn_opts_get('translate-wpml
 ?>
 
 <div id="Top_bar">
-
 	<div class="container">
 		<div class="column one">
-
+      <div class="heart-box heart-box-main-header">
+        <img class="heart-box__heart-small rotated header-section hs1" src="/wp-content/themes/betheme/_Custom/_static/img/heart-small.png" alt="">
+        <img class="heart-box__heart-small header-section hs2" src="/wp-content/themes/betheme/_Custom/_static/img/heart-small.png" alt="">
+      </div>
 
       <div class="header-special-mobile">
           <?php get_template_part('includes/include', 'logo'); ?>
