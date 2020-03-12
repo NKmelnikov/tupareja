@@ -131,11 +131,11 @@
                 let lname = item.lname.toLowerCase();
                 let fname = item.fname.toLowerCase();
                 let searchVal = mp1.mainSearchInput.val().toLowerCase().trim();
-                if(
+                if (
                     name.includes(searchVal) ||
                     lname.includes(searchVal) ||
                     fname.includes(searchVal)
-                ){
+                ) {
                     mp1.mainSearchArray.push(item)
                 } else if (
                     searchVal.includes(name) ||
@@ -150,7 +150,6 @@
         }
 
     };
-
 
 
     $(document).ready(() => {
@@ -177,26 +176,39 @@
             mp1.mainSearch(mp1.ladiesArray);
         });
         $('.mfn-main-slider').append('<div class="mp1-slider-elem">' +
-          '<h2>International Matchmaking Office</h2>' +
-          '<p> We help hearts find each other</p>' +
-          '<div class="mp1-slider-b-wrap">' +
-          '<a class="mp1-slider-b mp1-slider-lady" href="/for-ladies/">Регистрация для девушек</a>' +
-          '<a class="mp1-slider-b mp1-slider-man" href="/men-application/">Регистрация для мужчин</a>' +
-          '</div>' +
-          '</div>');
+            '<h2>International Matchmaking Office</h2>' +
+            '<p> We help hearts find each other</p>' +
+            '<div class="mp1-slider-b-wrap">' +
+            '<a class="mp1-slider-b mp1-slider-lady" href="/for-ladies/">Регистрация для девушек</a>' +
+            '<a class="mp1-slider-b mp1-slider-man" href="/men-application/">Регистрация для мужчин</a>' +
+            '</div>' +
+            '</div>');
 
-      $('#mp1-ds-form').hide();
-      $("#accordion").click(function (e) {
-        if ($(this).hasClass('active')){
-          $('#mp1-ds-form').slideUp(300);
-          $(this).removeClass('active');
-        }
-        else {
-          $('#mp1-ds-form').slideDown(300);
-          $(this).addClass('active');
-        }
+        $('#mp1-ds-form').hide();
+        $("#accordion").click(function (e) {
+            if ($(this).hasClass('active')) {
+                $('#mp1-ds-form').slideUp(300);
+                $(this).removeClass('active');
+            } else {
+                $('#mp1-ds-form').slideDown(300);
+                $(this).addClass('active');
+            }
 
-      });
+        });
+
+        let video = document.getElementById("mp1-bg-video");
+        video.volume = 0.3;
+        video.pause();
+        console.log(video.volume);
+
+        $(document).on('scroll', function () {
+            if ($(this).scrollTop() >= $('.mp1-lower-section').position().top - 200 && $(this).scrollTop() <= $('.mp1-b3-wrap').position().top - 200) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        })
+
     });
     //TODO loading cloak
 })(jQuery);

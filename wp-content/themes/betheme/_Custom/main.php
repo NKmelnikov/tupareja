@@ -160,7 +160,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			<a class="mp1-video-link" href="/contact/"><span>Наши контакты</span></a>
 		</div>
 	</div>
-	<video loop="" muted="" autoplay="" class="mp1-bg-video">
+	<video loop="" autoplay="" class="mp1-bg-video" id="mp1-bg-video">
 		<source src="/wp-content/themes/betheme/_Custom/_static/video/hearts-video.mp4">
 	</video>
 </section>
