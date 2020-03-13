@@ -12,12 +12,19 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.min.js"></script>
 
 <!--<h2>Галерея девушек</h2>-->
+<div class="heart-box heart-box-search-top">
+  <img class="heart-box__heart-big search-top-section hs3" src="/wp-content/themes/betheme/_Custom/_static/img/big-right.png" alt="">
+  <img class="heart-box__heart-medium search-top-section hs5" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
+  <img class="heart-box__heart-medium search-top-section hs4" src="/wp-content/themes/betheme/_Custom/_static/img/medium-left.png" alt="">
+</div>
 <section class="mp1-main-search">
+
 	<div class="mp1-main-search-wrap">
 	  <label for="mp1-main-search-input">Поиск</label>
 	  <input class="mp1-main-search__input" id="mp1-main-search-input" name="mp1-main-search-input" type="text">
 	  <button class="mp1-main-search__btn" id="mp1-main-search-btn"></button>
 	</div>
+
 
 
 	<div class="mp1-gallery-title">
@@ -164,6 +171,11 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 		<source src="/wp-content/themes/betheme/_Custom/_static/video/hearts-video.mp4">
 	</video>
 </section>
+<div class="heart-box heart-box-search-top">
+  <img class="heart-box__heart-big search-top-section hs6" src="/wp-content/themes/betheme/_Custom/_static/img/big-right.png" alt="">
+  <img class="heart-box__heart-medium search-top-section hs7" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
+  <img class="heart-box__heart-medium search-top-section hs8" src="/wp-content/themes/betheme/_Custom/_static/img/medium-left.png" alt="">
+</div>
 <section class="mp1-b3-wrap">
 	<div class="mp1-b3-lady mp1-b3-elem">
 		<a href="/for-ladies/">Регистрация для девушек</a>
