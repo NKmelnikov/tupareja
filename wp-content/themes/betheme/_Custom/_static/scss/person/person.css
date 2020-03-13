@@ -33,6 +33,48 @@
     width: 0; }
   100% {
     width: 100%; } }
+.heart-box {
+  width: 100%;
+  position: relative; }
+  .heart-box__heart-small {
+    position: absolute;
+    width: 33px;
+    height: 32px; }
+    .heart-box__heart-small.hs1 {
+      top: 110px;
+      left: 0;
+      animation: upDown 2.3s linear .1s infinite; }
+  .heart-box__heart-medium {
+    position: absolute;
+    width: 63px;
+    height: 62px; }
+    .heart-box__heart-medium.hs2 {
+      top: 15px;
+      right: -15px;
+      animation: upDown 2.1s linear .1s infinite; }
+    .heart-box__heart-medium.hs4 {
+      top: 150px;
+      right: 200px;
+      animation: upDown 2.3s linear .1s infinite; }
+    .heart-box__heart-medium.hs5 {
+      top: -90px;
+      right: 400px;
+      z-index: 10;
+      animation: upDown 2.6s linear .1s infinite; }
+  .heart-box__heart-big {
+    position: absolute;
+    width: 164px;
+    height: 159px; }
+    .heart-box__heart-big.hs3 {
+      top: 10px;
+      left: 175px;
+      animation: upDown 2.1s linear .1s infinite; }
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translate3d(0, 0, 0); }
+  50% {
+    transform: translate3d(0, 6px, 0); } }
 #__lpform_la1-name {
   display: none; }
 
