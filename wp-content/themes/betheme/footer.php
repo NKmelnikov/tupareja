@@ -1,4 +1,8 @@
-	<footer id="Footer" class="clearfix">
+<div class="heart-box heart-box-main-header">
+  <img class="heart-box__heart-small footer-section hs10" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">
+  <img class="heart-box__heart-medium footer-section hs11" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
+</div>
+<footer id="Footer" class="clearfix">
 		<div class="top_bar_left clearfix">
 
 			<?php get_template_part('includes/include', 'logo'); ?>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
 .error-input {
   border: 1px solid #d95c55 !important; }
 
@@ -43,6 +44,21 @@
       top: 110px;
       left: 0;
       animation: upDown 2.3s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-small.hs1 {
+          left: 60px; } }
+    .heart-box__heart-small.hs8 {
+      top: 150px;
+      right: 300px;
+      animation: upDown 2.9s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-small.hs8 {
+          top: 500px; } }
+    .heart-box__heart-small.hs10 {
+      top: 30px;
+      left: 245px;
+      z-index: 10;
+      animation: upDown 2.9s linear .1s infinite; }
   .heart-box__heart-medium {
     position: absolute;
     width: 63px;
@@ -51,15 +67,43 @@
       top: 15px;
       right: -15px;
       animation: upDown 2.1s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-medium.hs2 {
+          top: 0;
+          right: 5px; } }
     .heart-box__heart-medium.hs4 {
       top: 150px;
       right: 200px;
       animation: upDown 2.3s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-medium.hs4 {
+          top: 300px; } }
     .heart-box__heart-medium.hs5 {
       top: -90px;
       right: 400px;
       z-index: 10;
       animation: upDown 2.6s linear .1s infinite; }
+    .heart-box__heart-medium.hs6 {
+      top: -185px;
+      left: 340px;
+      z-index: 10;
+      animation: upDown 2.2s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-medium.hs6 {
+          display: none; } }
+    .heart-box__heart-medium.hs9 {
+      top: 0px;
+      left: 60%;
+      z-index: 10;
+      animation: upDown 2.6s linear .1s infinite; }
+    .heart-box__heart-medium.hs11 {
+      top: 40px;
+      right: 210px;
+      z-index: 10;
+      animation: upDown 2.4s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-medium.hs11 {
+          display: none; } }
   .heart-box__heart-big {
     position: absolute;
     width: 164px;
@@ -68,6 +112,15 @@
       top: 10px;
       left: 175px;
       animation: upDown 2.1s linear .1s infinite; }
+    .heart-box__heart-big.hs7 {
+      top: 200px;
+      right: 45%;
+      z-index: 10;
+      animation: upDown 2.6s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-big.hs7 {
+          top: -200px;
+          left: 100px; } }
 
 @keyframes upDown {
   0%, 100% {

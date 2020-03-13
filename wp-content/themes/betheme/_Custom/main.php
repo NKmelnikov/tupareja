@@ -171,10 +171,10 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 		<source src="/wp-content/themes/betheme/_Custom/_static/video/hearts-video.mp4">
 	</video>
 </section>
-<div class="heart-box heart-box-search-top">
-  <img class="heart-box__heart-big search-top-section hs6" src="/wp-content/themes/betheme/_Custom/_static/img/big-right.png" alt="">
-  <img class="heart-box__heart-medium search-top-section hs7" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
-  <img class="heart-box__heart-medium search-top-section hs8" src="/wp-content/themes/betheme/_Custom/_static/img/medium-left.png" alt="">
+<div class="heart-box heart-box-shirts">
+  <img class="heart-box__heart-medium shirts-section hs6" src="/wp-content/themes/betheme/_Custom/_static/img/medium-left.png" alt="">
+  <img class="heart-box__heart-big shirts-section hs7" src="/wp-content/themes/betheme/_Custom/_static/img/big-left.png" alt="">
+  <img class="heart-box__heart-small shirts-section hs8" src="/wp-content/themes/betheme/_Custom/_static/img/small-right.png" alt="">
 </div>
 <section class="mp1-b3-wrap">
 	<div class="mp1-b3-lady mp1-b3-elem">
@@ -185,6 +185,10 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	</div>
 
 </section>
+
+<div class="heart-box heart-box-advantage">
+  <img class="heart-box__heart-medium advantage-section hs9" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
+</div>
 <section class="mp1-advantage">
 	<div class="mp1-advantage-title-group">
 		<h2 class="mp1-advantage-title">Our advantages</h2>

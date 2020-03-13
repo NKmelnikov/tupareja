@@ -60,7 +60,7 @@
 
   .top_bar_left {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     .logo {
       padding-top: 10px;
@@ -134,6 +134,10 @@
   .top_bar_left{
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  .logo{
+    display: block!important;
   }
 }
 

@@ -1,3 +1,4 @@
+@import "variables";
 
 .error-input {
   border: 1px solid #d95c55 !important;
@@ -44,7 +45,7 @@
   }
 }
 
-.heart-box{
+.heart-box {
   width: 100%;
   position: relative;
 
@@ -53,12 +54,31 @@
     width: 33px;
     height: 32px;
 
-    &.hs1{
-      top:110px;
+    &.hs1 {
+      top: 110px;
       left: 0;
       animation: upDown 2.3s linear .1s infinite;
+      @media #{$mobile} {
+        left: 60px;
+      }
     }
 
+    &.hs8 {
+      top: 150px;
+      right: 300px;
+      animation: upDown 2.9s linear .1s infinite;
+
+      @media #{$mobile} {
+        top: 500px;
+      }
+    }
+
+    &.hs10 {
+      top: 30px;
+      left: 245px;
+      z-index: 10;
+      animation: upDown 2.9s linear .1s infinite;
+    }
 
   }
 
@@ -67,24 +87,62 @@
     width: 63px;
     height: 62px;
 
-    &.hs2{
+    &.hs2 {
       top: 15px;
       right: -15px;
       animation: upDown 2.1s linear .1s infinite;
+      @media #{$mobile} {
+        top: 0;
+        right: 5px;
+      }
     }
 
-    &.hs4{
+    &.hs4 {
       top: 150px;
       right: 200px;
       animation: upDown 2.3s linear .1s infinite;
+
+      @media #{$mobile} {
+        top: 300px;
+      }
     }
 
-    &.hs5{
+    &.hs5 {
       top: -90px;
       right: 400px;
       z-index: 10;
       animation: upDown 2.6s linear .1s infinite;
     }
+
+    &.hs6 {
+      top: -185px;
+      left: 340px;
+      z-index: 10;
+      animation: upDown 2.2s linear .1s infinite;
+
+      @media #{$mobile} {
+       display: none;
+      }
+    }
+
+    &.hs9 {
+      top: 0px;
+      left: 60%;
+      z-index: 10;
+      animation: upDown 2.6s linear .1s infinite;
+    }
+
+    &.hs11 {
+      top: 40px;
+      right: 210px;
+      z-index: 10;
+      animation: upDown 2.4s linear .1s infinite;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+
   }
 
   &__heart-big {
@@ -92,10 +150,22 @@
     width: 164px;
     height: 159px;
 
-    &.hs3{
+    &.hs3 {
       top: 10px;
       left: 175px;
       animation: upDown 2.1s linear .1s infinite;
+    }
+
+    &.hs7 {
+      top: 200px;
+      right: 45%;
+      z-index: 10;
+      animation: upDown 2.6s linear .1s infinite;
+
+      @media #{$mobile} {
+        top: -200px;
+        left: 100px;
+      }
     }
   }
 }
