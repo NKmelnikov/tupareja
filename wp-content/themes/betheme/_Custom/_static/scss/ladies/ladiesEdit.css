@@ -190,7 +190,8 @@
       font-weight: bold; }
   .le1_input_section .le1-name-container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
     .le1_input_section .le1-name-container div {
       display: flex;
       flex-direction: column; }
@@ -224,7 +225,7 @@
     transform: scale(0.95); }
   .le1_bottom_section__button-save {
     background: #0c6856; }
-  .le1_bottom_section__button-activate {
+  .le1_bottom_section__button-translate {
     background: #1f5168; }
   .le1_bottom_section__button-delete {
     background: #682e37; }
