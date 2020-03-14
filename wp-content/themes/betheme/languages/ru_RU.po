@@ -11076,6 +11076,8 @@ msgstr "Дополнительная информация"
 msgid "Product Description"
 msgstr "Описание продукта"
 
+msgid "penis"
+msgstr "Пенис"
 #~ msgid "This post is password protected. Enter the password to view any comments."
 #~ msgstr "Эта публикация защищена паролем. Введите пароль для просмотра комментариев."
 

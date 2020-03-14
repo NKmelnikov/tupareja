@@ -1,6 +1,7 @@
 <?php
 require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
 require_once 'Repository/ClientRepository.php';
+require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 use Repository\ClientRepository;
 const TABLE_LADIES = 'wp_ladies';
 
@@ -8,6 +9,7 @@ if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
     echo 'Lady not found (';
     die();
 }
+
 $clientRepository = new ClientRepository();
 $lady = $clientRepository->getById(TABLE_LADIES, $_GET['customer']);
 $lady = (array)$lady[0];
@@ -21,13 +23,13 @@ if(empty($_GET['_wpnonce'])){
   echo 'You are not allow to be here';
   die();
 }
+
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
-
+$v = \Helper\CustomHelper::version();
 ?>
-<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesEdit.css">
 
-<script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
-
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v='.$v ?>">
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js' ?>">
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateLady.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
@@ -138,5 +140,5 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <button class="le1_bottom_section__button-save" type="submit">Сохранить</button>
     <!-- <button class="le1_bottom_section__button-activate" type="button">Активировать</button> -->
   </section>
-  <script src="<?php echo $pathToCustom . '_static/js/ladies-edit.js' ?>"></script>
+  <script src="<?= $pathToCustom . '_static/js/ladies-edit.js?v='.$v ?>"></script>
 </form>

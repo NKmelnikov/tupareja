@@ -3,19 +3,20 @@
 Template Name: Main
 */
 get_header();
-
+require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
+$v = \Helper\CustomHelper::version();
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 ?>
-<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/main/main.css">
-<script src="/wp-content/themes/betheme/_Custom/_static/libs/pagination.min.js"></script>
-<script src="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="<?= $pathToCustom .'_static/scss/main/main.css?v='.$v ?>">
+<script src="<?= $pathToCustom . '_static/libs/pagination.min.js'?>"></script>
+<script src="<?= $pathToCustom . '_static/libs/jquery-ui.min.js'?>"></script>
 
 <!--<h2>Галерея девушек</h2>-->
 <div class="heart-box heart-box-search-top">
-  <img class="heart-box__heart-big search-top-section hs3" src="/wp-content/themes/betheme/_Custom/_static/img/big-right.png" alt="">
-  <img class="heart-box__heart-medium search-top-section hs5" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
-  <img class="heart-box__heart-medium search-top-section hs4" src="/wp-content/themes/betheme/_Custom/_static/img/medium-left.png" alt="">
+  <img class="heart-box__heart-big search-top-section hs3" src="<?= $pathToCustom . '_static/img/big-right.png?v='.$v ?>" alt="">
+  <img class="heart-box__heart-medium search-top-section hs5" src="<?= $pathToCustom . '_static/img/medium-right.png?v='.$v ?>" alt="">
+  <img class="heart-box__heart-medium search-top-section hs4" src="<?= $pathToCustom . '_static/img/medium-left.png?v='.$v ?>" alt="">
 </div>
 <section class="mp1-main-search">
 
@@ -25,10 +26,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	  <button class="mp1-main-search__btn" id="mp1-main-search-btn"></button>
 	</div>
 
-
-
 	<div class="mp1-gallery-title">
-		<h2>Галлерея девушек</h2>
+		<h2><?php _e('Галерея девушек', 'betheme') ?></h2>
 		<p>Найди свою вторую половину</p>
 	</div>
 
@@ -156,7 +155,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 </div>
 
-<script src="<?php echo $pathToCustom . '_static/js/main-gallery-handler.js' ?>"></script>
+<script src="<?= $pathToCustom . '_static/js/main-gallery-handler.js?v='.$v ?>"></script>
 
 
 <section class="mp1-video-block">
@@ -167,14 +166,15 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			<a class="mp1-video-link" href="/contact/"><span>Наши контакты</span></a>
 		</div>
 	</div>
-	<video loop="" autoplay="" class="mp1-bg-video" id="mp1-bg-video">
-		<source src="/wp-content/themes/betheme/_Custom/_static/video/hearts-video.mp4">
+	<video loop="" autoplay="" muted="" class="mp1-bg-video" id="mp1-bg-video">
+		<source src="<?= $pathToCustom . '_static/video/hearts-video.mp4?v='.$v ?>">
 	</video>
+  <p class="click-to-mute">click on screen <br> to mute\unmute</p>
 </section>
 <div class="heart-box heart-box-shirts">
-  <img class="heart-box__heart-medium shirts-section hs6" src="/wp-content/themes/betheme/_Custom/_static/img/medium-left.png" alt="">
-  <img class="heart-box__heart-big shirts-section hs7" src="/wp-content/themes/betheme/_Custom/_static/img/big-left.png" alt="">
-  <img class="heart-box__heart-small shirts-section hs8" src="/wp-content/themes/betheme/_Custom/_static/img/small-right.png" alt="">
+  <img class="heart-box__heart-medium shirts-section hs6" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
+  <img class="heart-box__heart-big shirts-section hs7" src="<?= $pathToCustom . '_static/img/big-left.png?v='. $v?>" alt="">
+  <img class="heart-box__heart-small shirts-section hs8" src="<?= $pathToCustom . '_static/img/small-right.png?v='. $v?>" alt="">
 </div>
 <section class="mp1-b3-wrap">
 	<div class="mp1-b3-lady mp1-b3-elem">
@@ -187,7 +187,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 </section>
 
 <div class="heart-box heart-box-advantage">
-  <img class="heart-box__heart-medium advantage-section hs9" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
+  <img class="heart-box__heart-medium advantage-section hs9" src="<?= $pathToCustom . '_static/img/medium-right.png?v='. $v?>" alt="">
 </div>
 <section class="mp1-advantage">
 	<div class="mp1-advantage-title-group">
@@ -198,7 +198,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	<div class="mp1-advantage-wrap">
 		<div class="mp1-advantage-line">
 			<div class="mp1-advantage-elem">
-				<div class="mp1-advantage-icon"><img src="/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-1.png"></div>
+				<div class="mp1-advantage-icon"><img src="<?= $pathToCustom . '_static/img/advantage-icon-1.png?v='. $v?>"></div>
 				<div class="mp1-advantage-description">
 					<h3 class="mp1-advantage-elem-title">РЕГИСТРАЦИЯ</h3>
 					<p class="mp1-advantage-elem-delimiter">...</p>
@@ -208,7 +208,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			</div>
 
 			<div class="mp1-advantage-elem">
-				<div class="mp1-advantage-icon"><img src="/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-2.png"></div>
+				<div class="mp1-advantage-icon"><img src="<?= $pathToCustom . '_static/img/advantage-icon-2.png?v='. $v?>"></div>
 				<div class="mp1-advantage-description">
 					<h3 class="mp1-advantage-elem-title">ИНДИВИДУАЛЬНО</h3>
 					<p class="mp1-advantage-elem-delimiter">...</p>
@@ -217,7 +217,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			</div>
 
 			<div class="mp1-advantage-elem">
-				<div class="mp1-advantage-icon"><img src="/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-3.png"></div>
+				<div class="mp1-advantage-icon"><img src="<?= $pathToCustom . '_static/img/advantage-icon-3.png?v='. $v?>"></div>
 				<div class="mp1-advantage-description">
 					<h3 class="mp1-advantage-elem-title">КОНФИДЕНЦИАЛЬНО</h3>
 					<p class="mp1-advantage-elem-delimiter">...</p>
@@ -229,7 +229,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 		<div class="mp1-advantage-line">
 			<div class="mp1-advantage-elem">
-				<div class="mp1-advantage-icon"><img src="/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-4.png"></div>
+				<div class="mp1-advantage-icon"><img src="<?= $pathToCustom . '_static/img/advantage-icon-4.png?v='. $v?>"></div>
 				<div class="mp1-advantage-description">
 					<h3 class="mp1-advantage-elem-title">ОПЫТ</h3>
 					<p class="mp1-advantage-elem-delimiter">...</p>
@@ -238,7 +238,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			</div>
 
 			<div class="mp1-advantage-elem">
-				<div class="mp1-advantage-icon"><img src="/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-5.png"></div>
+				<div class="mp1-advantage-icon"><img src="<?= $pathToCustom . '_static/img/advantage-icon-5.png?v='. $v?>"></div>
 				<div class="mp1-advantage-description">
 					<h3 class="mp1-advantage-elem-title">ГАРАНТИРОВАННО</h3>
 					<p class="mp1-advantage-elem-delimiter">...</p>
@@ -251,7 +251,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 		<div class="mp1-advantage-line">
 			<div class="mp1-advantage-elem">
-				<div class="mp1-advantage-icon"><img src="/wp-content/themes/betheme/_Custom/_static/img/advantage-icon-6.png"></div>
+				<div class="mp1-advantage-icon"><img src="<?= $pathToCustom . '_static/img/advantage-icon-6.png?v='. $v?>"></div>
 				<div class="mp1-advantage-description">
 					<h3 class="mp1-advantage-elem-title">ЭФФЕКТИВНО</h3>
 					<p class="mp1-advantage-elem-delimiter">...</p>

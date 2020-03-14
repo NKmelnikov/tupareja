@@ -11,7 +11,6 @@
         mainSearchArray: [],
         deepSearchArray: [],
 
-
         grabLadies() {
             return new Promise(function (resolve, reject) {
                 $.ajax({
@@ -197,18 +196,36 @@
         });
 
         let video = document.getElementById("mp1-bg-video");
+        let clicked = false;
         video.volume = 0.3;
         video.pause();
-        console.log(video.volume);
+
+        $('.mp1-video-block').click(() => {
+            video.muted = !video.muted;
+            video.play();
+            clicked = true;
+        });
 
         $(document).on('scroll', function () {
-            if ($(this).scrollTop() >= $('.mp1-lower-section').position().top - 200 && $(this).scrollTop() <= $('.mp1-b3-wrap').position().top - 200) {
-                video.play();
-            } else {
-                video.pause();
+            if (!clicked) {
+                if ($(this).scrollTop() >= $('.mp1-lower-section').position().top - 200 && $(this).scrollTop() <= $('.mp1-b3-wrap').position().top - 200) {
+                    video.play();
+                    video.muted = false;
+                } else {
+                    video.pause();
+                    video.muted = true;
+                }
             }
-        })
+        });
+
+        // $('html').css('position', 'relative');
+        // $('html').append('  <div class="cloak">\n' +
+        //     '    <div class="spinner"></div>\n' +
+        //     '  </div>');
+        //
+        // window.addEventListener('load', function () {
+        //     $('.cloak').remove();
+        // })
 
     });
-    //TODO loading cloak
 })(jQuery);

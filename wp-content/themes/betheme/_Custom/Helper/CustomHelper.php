@@ -13,9 +13,9 @@ class CustomHelper
         return $text;
     }
 
-    public static function validateFile($text){
-
-
-        return $text;
+    public static function version() {
+        $configFile = 'config.ini';
+        $valueArray = parse_ini_file($configFile);
+        return $valueArray['version'];
     }
 }
