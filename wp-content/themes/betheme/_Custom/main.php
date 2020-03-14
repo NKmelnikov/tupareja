@@ -27,7 +27,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	</div>
 
 	<div class="mp1-gallery-title">
-		<h2><?php _e('Галерея девушек', 'betheme') ?></h2>
+		<h2><?php __('Галерея девушек', 'betheme') ?></h2>
 		<p>Найди свою вторую половину</p>
 	</div>
 

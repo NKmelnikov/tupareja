@@ -165,6 +165,16 @@
   100% {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+#Top_bar .main-translation, #Footer .main-translation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  right: 120px;
+  width: 50px; }
+  #Top_bar .main-translation li span, #Footer .main-translation li span {
+    padding: 0 8px;
+    margin: 0; }
 #Top_bar #menu.active, #Footer #menu.active {
   display: block; }
 #Top_bar .header-special-mobile, #Footer .header-special-mobile {
@@ -219,7 +229,7 @@
       font-family: "Comfortaa", sans-serif;
       line-height: 18px; }
       #Top_bar .top_bar_left .menu.menu-main li span, #Footer .top_bar_left .menu.menu-main li span {
-        font-size: 14px; }
+        font-size: 12px; }
 #Top_bar .top_bar_left:before, #Footer .top_bar_left:before {
   content: none; }
 #Top_bar .column, #Footer .column {

@@ -3,6 +3,23 @@
 
 #Top_bar, #Footer {
 
+  .main-translation{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top:0;
+    right:120px;
+    width: 50px;
+
+    li {
+
+      span {
+        padding: 0 8px;
+        margin:0;
+      }
+    }
+  }
+
   #menu.active{
     display: block;
   }
@@ -88,7 +105,7 @@
         line-height: 18px;
 
         span{
-          font-size: 14px
+          font-size: 12px
         }
       }
     }
