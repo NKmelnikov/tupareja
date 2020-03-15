@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Betheme\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-14 14:58+0000\n"
+"PO-Revision-Date: 2020-03-15 13:16+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -11082,3 +11082,172 @@ msgstr ""
 
 msgid "header_main"
 msgstr "Inicio"
+
+msgid "header_about_us"
+msgstr "Sobre nosotros"
+
+msgid "header_service"
+msgstr "Servicios"
+
+msgid "header_man_tips"
+msgstr "Recomendaciones para hombres"
+
+msgid "header_lady_tips"
+msgstr "Рекоммендации девушкам"
+
+msgid "header_lady_application"
+msgstr "Регистрация девушек"
+
+msgid "header_man_application"
+msgstr "Inscripción de hombres"
+
+msgid "header_contacts"
+msgstr "Contacto"
+
+msgid "slider_we_help_hearts"
+msgstr "Ayudamos a los corazones a encontrarse"
+
+msgid "registration_for_ladies"
+msgstr "Регистрация для девушек"
+
+msgid "registration_for_men"
+msgstr "Inscripción para hombres"
+
+msgid "gallery_search"
+msgstr "buscar"
+
+msgid "gallery_ladies"
+msgstr "Galería de chicas"
+
+msgid "gallery_find_your_couple"
+msgstr "Encuentra tu alma gemela"
+
+msgid "gallery_deep_search"
+msgstr "Busqueda avanzada"
+
+msgid "search_from"
+msgstr "desde"
+
+msgid "search_to"
+msgstr "hasta"
+
+msgid "search_age"
+msgstr "años"
+
+msgid "search_height"
+msgstr "altura"
+
+msgid "search_weight"
+msgstr "peso"
+
+msgid "search_zodiac"
+msgstr "Zodiaco"
+
+msgid "search_zodiac_aquarius"
+msgstr "Acuario"
+
+msgid "search_zodiac_pisces"
+msgstr "Piscis"
+
+msgid "search_zodiac_aries"
+msgstr "Aries"
+
+msgid "search_zodiac_taurus"
+msgstr "Tauro"
+
+msgid "search_zodiac_gemini"
+msgstr "Geminis"
+
+msgid "search_zodiac_cancer"
+msgstr "Сáncer"
+
+msgid "search_zodiac_leo"
+msgstr "Leo"
+
+msgid "search_zodiac_virgo"
+msgstr "Virgo"
+
+msgid "search_zodiac_libra"
+msgstr "Libra"
+
+msgid "search_zodiac_scorpio"
+msgstr "Escorpión"
+
+msgid "search_zodiac_sagittarius"
+msgstr "Sagitario"
+
+msgid "search_zodiac_capricorn"
+msgstr "Capricornio"
+
+msgid "search_eye_color"
+msgstr "Color de los ojos"
+
+msgid "search_eye_blue"
+msgstr "Azul"
+
+msgid "search_eye_hazel"
+msgstr "Avellana"
+
+msgid "search_eye_gray"
+msgstr "Gris"
+
+msgid "search_eye_green"
+msgstr "Verde"
+
+msgid "search_search"
+msgstr "Buscar"
+
+msgid "click_to_mute"
+msgstr "haga clic para silenciar"
+
+msgid "advantages_our"
+msgstr "Nuestras ventajas"
+
+msgid "advantages_find_love"
+msgstr "Encuentra tu amor"
+
+msgid "advantages_registration"
+msgstr "Registro"
+
+msgid "advantages_registration_text"
+msgstr "Inscripción en la agencia desde 500 euros"
+
+msgid "advantages_individual"
+msgstr "Individualmente"
+
+msgid "advantages_individual_text"
+msgstr ""
+"Con la ayuda de un psicólogo, seleccionamos a las chicas que son ideales "
+"para ti."
+
+msgid "advantages_confidential"
+msgstr "Confidencial"
+
+msgid "advantages_confidential_text"
+msgstr ""
+"¡Toda la información de contacto, así como el nombre y la fecha de "
+"nacimiento completa son estrictamente confidenciales y no se publican en el "
+"sitio!"
+
+msgid "advantages_exp"
+msgstr "Experiencia"
+
+msgid "advantages_exp_text"
+msgstr ""
+"Nuestra agencia matrimonial ha estado creando familias felices desde 2001, y "
+"sabemos exactamente cómo hacerlo."
+
+msgid "advantages_guaranty"
+msgstr "Garantizado"
+
+msgid "advantages_guaranty_text"
+msgstr ""
+"Trabajamos juntos hasta que te cases, y hacemos todo lo posible por esto"
+
+msgid "advantages_effective"
+msgstr "Efectivamente"
+
+msgid "advantages_effective_text"
+msgstr ""
+"Organice fechas rápidamente: esta es la única forma de establecer una "
+"relación con una niña"

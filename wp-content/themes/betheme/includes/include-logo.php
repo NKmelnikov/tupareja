@@ -1,7 +1,10 @@
 <?php
+$pathToCustom = '/wp-content/themes/betheme/_Custom/';
+$pathToLogo = (get_locale() === 'ru_RU') ? $pathToCustom . '_static/img/tupareja-logo-ua.png' : $pathToCustom . '_static/img/tupareja-logo-es.png';
+
 echo '<div class="logo">
-		<a id="logo" href="'.esc_url(get_home_url()).'">
-		<img class="main-logo" src="/wp-content/themes/betheme/_Custom/_static/img/tupareja-logo-es.png"  alt=""/>
+		<a id="logo" href="' . esc_url(get_home_url()) . '">
+		<img class="main-logo" src="'.$pathToLogo.'"  alt=""/>
 </a>';
 
 echo '</div>';

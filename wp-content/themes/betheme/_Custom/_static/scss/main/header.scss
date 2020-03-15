@@ -54,8 +54,14 @@
     }
 
     .logo {
+
       @media #{$mobile} {
         display: none;
+      }
+
+      .main-logo{
+        width: 270px;
+        height: 122px;
       }
     }
   }

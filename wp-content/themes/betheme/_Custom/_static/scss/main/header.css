@@ -99,7 +99,7 @@
       animation: upDown 3s linear .1s infinite; }
     .heart-box__heart-medium.hs11 {
       top: 40px;
-      right: 210px;
+      right: 170px;
       z-index: 10;
       animation: upDown 2.4s linear .1s infinite; }
       @media (max-width: 768px) {
@@ -200,6 +200,9 @@
 @media (max-width: 768px) {
   #Top_bar .top_bar_left .logo, #Footer .top_bar_left .logo {
     display: none; } }
+#Top_bar .top_bar_left .logo .main-logo, #Footer .top_bar_left .logo .main-logo {
+  width: 270px;
+  height: 122px; }
 @media (max-width: 768px) {
   #Top_bar .header-right-block, #Footer .header-right-block {
     display: none; } }

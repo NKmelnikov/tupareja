@@ -20,26 +20,32 @@
 						?>
             <nav id="menu-bot">
               <ul id="menu-menu-2" class="menu menu-main">
-                <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
-                  <a href="http://melnikovshop.loc/"><span>Главная</span></a>
+                <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
+                  <a href="http://melnikovshop.loc/es/"><span><?php _e('header_main', 'betheme') ?></span></a>
                 </li>
-                <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/our-ladies/"><span>Галерея девушек</span></a>
+                <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="http://melnikovshop.loc/es/our-ladies/"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                 </li>
-                <li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/service/"><span>Услуги</span></a>
+                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="http://melnikovshop.loc/es/service/"><span><?php _e('header_service', 'betheme') ?></span></a>
                 </li>
-                <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/tips-tricks/"><span>Советы и рекомендации</span></a>
+                  <?php if (get_locale() === 'ru_RU'): ?>
+                    <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="http://melnikovshop.loc/es/tips-tricks/"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
+                    </li>
+                  <?php else: ?>
+                    <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="http://melnikovshop.loc/es/tips-tricks/"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
+                    </li>
+                  <?php endif; ?>
+                <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="http://melnikovshop.loc/es/for-ladies/"><span><?php _e('header_lady_application', 'betheme') ?></span></a>
                 </li>
-                <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/for-ladies/"><span>Для девушек</span></a>
+                <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="http://melnikovshop.loc/es/men-application/"><span><?php _e('header_man_application', 'betheme') ?></span></a>
                 </li>
-                <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/men-application/"><span>Заявка для мужчин</span></a>
-                </li>
-                <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/contact/"><span>Контакты</span></a>
+                <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="http://melnikovshop.loc/es/contact/"><span><?php _e('header_contacts', 'betheme') ?></span></a>
                 </li>
               </ul>
             </nav>

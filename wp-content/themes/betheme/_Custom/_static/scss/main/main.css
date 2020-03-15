@@ -99,7 +99,7 @@
       animation: upDown 3s linear .1s infinite; }
     .heart-box__heart-medium.hs11 {
       top: 40px;
-      right: 210px;
+      right: 170px;
       z-index: 10;
       animation: upDown 2.4s linear .1s infinite; }
       @media (max-width: 768px) {
@@ -502,7 +502,7 @@
     text-align: center; }
     .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title {
       color: #ffffff;
-      font-size: 40px; }
+      font-size: 27px; }
     .mp1-advantage .mp1-advantage-title-group .mp1-advantage-title2 {
       color: #e48d05;
       font-size: 20px; }

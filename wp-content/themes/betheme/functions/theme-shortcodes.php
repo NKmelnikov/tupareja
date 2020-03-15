@@ -5282,7 +5282,15 @@ if (! function_exists('sc_slider_plugin')) {
 			// Revolution Slider
 
 			$output .= '<div class="mfn-main-slider mfn-rev-slider">';
-				$output .= do_shortcode('[rev_slider '. esc_attr($rev) .']');
+			$output .= '<div class="mp1-slider-elem">';
+			$output .= '<h2>International Matchmaking Office</h2>';
+			$output .= '<p> We help hearts find each other</p>';
+			$output .= '<div class="mp1-slider-b-wrap">';
+			$output .= '<a class="mp1-slider-b mp1-slider-lady" href="/for-ladies/">Регистрация для девушек</a>';
+			$output .= '<a class="mp1-slider-b mp1-slider-man" href="/men-application/">Регистрация для мужчин</a>';
+			$output .= '</div>';
+			$output .= '</div>';
+			$output .= do_shortcode('[rev_slider '. esc_attr($rev) .']');
 			$output .= '</div>';
 
 		} elseif ($layer) {
