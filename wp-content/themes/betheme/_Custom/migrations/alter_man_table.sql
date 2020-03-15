@@ -85,3 +85,6 @@ alter table wp_men
 alter table wp_men
 	add partner_attraction text null;
 
+	alter table wp_men
+    add path_to_images text null;
+
