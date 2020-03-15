@@ -37,10 +37,14 @@
   flex-direction: column;
   justify-items: center;
 
-
-  .ma1-input-section{
+  .ma1-comoveas-section{
+    h3{
+      text-align: center;
+    }
+  }
+  .ma1-input-section, .ma1-comoveas-wrap{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     @media #{$mobile} {
       flex-direction: column;
@@ -53,9 +57,23 @@
         width: 100%;
       }
 
-      input{
+      input, select {
         width: 100%;
         margin-bottom: 0;
+      }
+
+      select {
+        color: gray;
+        height: 35px;
+        box-sizing: border-box;
+
+        option {
+          color: gray;
+        }
+      }
+
+      select:active {
+        color: black;
       }
 
       textarea{
