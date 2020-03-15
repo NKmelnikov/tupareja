@@ -101,6 +101,10 @@
 
     };
 
+  $('.ma1-input').on('input', () => {
+    ma1.clearErrors();
+  });
+
     ma1.submitBtn.on('click', (e) => {
         e.preventDefault();
 
