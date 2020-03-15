@@ -3,6 +3,23 @@
 
 #Top_bar, #Footer {
 
+  .main-translation{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top:0;
+    right:120px;
+    width: 50px;
+
+    li {
+
+      span {
+        padding: 0 8px;
+        margin:0;
+      }
+    }
+  }
+
   #menu.active{
     display: block;
   }
@@ -37,8 +54,14 @@
     }
 
     .logo {
+
       @media #{$mobile} {
         display: none;
+      }
+
+      .main-logo{
+        width: 270px;
+        height: 122px;
       }
     }
   }
@@ -60,7 +83,7 @@
 
   .top_bar_left {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     .logo {
       padding-top: 10px;
@@ -88,7 +111,7 @@
         line-height: 18px;
 
         span{
-          font-size: 14px
+          font-size: 12px
         }
       }
     }
@@ -134,6 +157,10 @@
   .top_bar_left{
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  .logo{
+    display: block!important;
   }
 }
 

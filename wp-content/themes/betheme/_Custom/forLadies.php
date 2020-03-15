@@ -3,21 +3,22 @@
 Template Name: for Ladies
 */
 get_header();
-
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
+require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
+$v = \Helper\CustomHelper::version();
 ?>
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.css">
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-gallery.min.css">
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-new.min.css">
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/libs/animate.css">
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladies.css">
+  <link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.css'?>">
+  <link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-gallery.min.css'?>">
+  <link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-new.min.css'?>">
+  <link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/animate.css'?>">
+  <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladies.css?v='.$v?>">
 
-  <!--  <script src="/wp-content/themes/betheme/_Custom/_static/js/jquery-3.4.1.slim.min.js"></script>-->
-  <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/jquery.fine-uploader.min.js"></script>
-  <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/dnd.min.js"></script>
-  <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.core.min.js"></script>
-  <script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.js"></script>
-  <script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
+  <!--  <script src="<?= $pathToCustom . '_static/js/jquery-3.4.1.slim.min.js'?>"></script>-->
+  <script src="<?= $pathToCustom . '_static/fine-uploader/jquery.fine-uploader.min.js'?>"></script>
+  <script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js'?>"></script>
+  <script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.core.min.js'?>"></script>
+  <script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.js'?>"></script>
+  <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js'?>"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
@@ -197,7 +198,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
           <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template
           ====================================================================== -->
-          <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js' ?>"></script>
+          <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js?v='.$v ?> ?>"></script>
 
         </section>
         <section class="la1-bottom-section">
@@ -212,7 +213,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       </form>
     </div>
 
-    <script src="<?php echo $pathToCustom . '_static/js/for-ladies.js' ?>"></script>
+    <script src="<?php echo $pathToCustom . '_static/js/for-ladies.js?v='.$v ?>"></script>
   </div>
 
 <?php get_footer();

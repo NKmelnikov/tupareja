@@ -290,6 +290,14 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 150px;
+
+  .click-to-mute {
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    color: #dbc283;
+    font-size: 10px;
+  }
   .mp1-video-description{
     position: absolute;
     top: 6px;
@@ -427,7 +435,7 @@
     text-align: center;
     .mp1-advantage-title{
       color: #ffffff;
-      font-size: 40px;
+      font-size: 27px;
     }
     .mp1-advantage-title2{
       color: #e48d05;

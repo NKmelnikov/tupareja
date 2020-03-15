@@ -10872,3 +10872,165 @@ msgstr ""
 #: /Applications/XAMPP/xamppfiles/htdocs/betheme/woocommerce/single-product/tabs/description.php:25
 msgid "Product Description"
 msgstr ""
+#=========================================================================================================
+msgid "header_main"
+msgstr "Мain"
+
+msgid "header_about_us"
+msgstr "About"
+
+msgid "header_service"
+msgstr "Service"
+
+msgid "header_man_tips"
+msgstr "Men tips"
+
+msgid "header_lady_tips"
+msgstr "Ladies tips"
+
+msgid "header_lady_application"
+msgstr "Ladie`s Application"
+
+msgid "header_man_application"
+msgstr "Men`s Application"
+
+msgid "header_contacts"
+msgstr "Contact"
+
+msgid "slider_we_help_hearts"
+msgstr "We help hearts find each other"
+
+msgid "registration_for_ladies"
+msgstr "Registration for ladies"
+
+msgid "registration_for_men"
+msgstr "Registration for men"
+
+msgid "gallery_search"
+msgstr "search"
+
+msgid "gallery_ladies"
+msgstr "Ladies gallery"
+
+msgid "gallery_find_your_couple"
+msgstr "find your couple"
+
+msgid "gallery_deep_search"
+msgstr "Advanced Search"
+
+msgid "search_from"
+msgstr "Advanced Search"
+
+msgid "search_to"
+msgstr "Advanced Search"
+
+msgid "search_age"
+msgstr "Advanced Search"
+
+msgid "search_height"
+msgstr "Advanced Search"
+
+msgid "search_weight"
+msgstr "Advanced Search"
+
+msgid "search_zodiac"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_aquarius"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_pisces"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_aries"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_taurus"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_gemini"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_cancer"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_leo"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_virgo"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_libra"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_scorpio"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_sagittarius"
+msgstr "Advanced Search"
+
+msgid "search_zodiac_capricorn"
+msgstr "Advanced Search"
+
+msgid "search_eye_color"
+msgstr "Advanced Search"
+
+msgid "search_eye_blue"
+msgstr "Advanced Search"
+
+msgid "search_eye_hazel"
+msgstr "Advanced Search"
+
+msgid "search_eye_gray"
+msgstr "Advanced Search"
+
+msgid "search_eye_green"
+msgstr "Advanced Search"
+
+msgid "search_search"
+msgstr "Advanced Search"
+
+msgid "click_to_mute"
+msgstr "Click to mute"
+
+msgid "advantages_our"
+msgstr "Our advantages"
+
+msgid "advantages_find_love"
+msgstr "Find love"
+
+msgid "advantages_registration"
+msgstr "Registration"
+
+msgid "advantages_registration_text"
+msgstr "Registration free"
+
+msgid "advantages_individual"
+msgstr "Registration"
+
+msgid "advantages_individual_text"
+msgstr "Registration"
+
+msgid "advantages_confidential"
+msgstr "Registration"
+
+msgid "advantages_confidential_text"
+msgstr "Registration"
+
+msgid "advantages_exp"
+msgstr "Registration"
+
+msgid "advantages_exp_text"
+msgstr "Registration"
+
+msgid "advantages_guaranty"
+msgstr "Registration"
+
+msgid "advantages_guaranty_text"
+msgstr "Registration"
+
+msgid "advantages_effective"
+msgstr "Registration"
+
+msgid "advantages_effective_text"
+msgstr "Registration"
