@@ -9,18 +9,18 @@ require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 $v = \Helper\CustomHelper::version();
 
 ?>
-	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-new.min.css">
-	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader-gallery.min.css">
-	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.css">
+	<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-new.min.css' ?>">
+	<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-gallery.min.css' ?>">
+	<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.css' ?>">
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/animate.css' ?>">
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/men/men.css?v=' . $v ?>">
   <script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js' ?>"></script>
   <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js' ?>"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
 
-	<script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/jquery.fine-uploader.min.js"></script>
-	<script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.core.min.js"></script>
-	<script src="/wp-content/themes/betheme/_Custom/_static/fine-uploader/fine-uploader.min.js"></script>
+	<script src="<?= $pathToCustom . '_static/fine-uploader/jquery.fine-uploader.min.js' ?>"></script>
+	<script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.core.min.js' ?>"></script>
+	<script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.js' ?>"></script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
       <article class="ma1-article">
