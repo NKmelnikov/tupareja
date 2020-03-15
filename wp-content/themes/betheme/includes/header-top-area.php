@@ -46,6 +46,7 @@ if (mfn_header_style(true) == 'header-overlay') {
     echo '<i class="close icon-cancel-fine"></i>';
     echo '</a>';
 }
+$homeUrl = str_replace('/es', '' , get_home_url() );
 ?>
 
 <div id="Top_bar">
@@ -53,10 +54,10 @@ if (mfn_header_style(true) == 'header-overlay') {
     <div class="column one">
       <ul class="main-translation">
         <li id="menu-item-wpglobus_menu_switch_es" class="menu-item menu-item-type-custom menu-item-object-custom menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
-          <a href="http://melnikovshop.loc/es/"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_es"></span></span></a>
+          <a href="<?= esc_url($homeUrl) . '/es/'?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_es"></span></span></a>
         </li>
         <li id="menu-item-wpglobus_menu_switch_ru" class="menu-item menu-item-type-custom menu-item-object-custom sub_menu_item_wpglobus_menu_switch wpglobus-selector-link">
-          <a href="http://melnikovshop.loc/"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
+          <a href="<?= esc_url($homeUrl) ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
         </li>
       </ul>
       <div class="heart-box heart-box-main-header">
