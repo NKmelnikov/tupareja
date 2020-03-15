@@ -250,7 +250,7 @@ $v = \Helper\CustomHelper::version();
 
 		      <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template
 			  ====================================================================== -->
-		      <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js' ?>"></script>
+		      <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js?v=' . $v ?>"></script>
 
 	      </section>
 
