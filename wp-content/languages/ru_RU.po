@@ -17404,3 +17404,6 @@ msgstr "Ключ активации:"
 #: wp-activate.php:126
 msgid "Activation Key Required"
 msgstr "Требуется ключ активации"
+
+msgid "hello penis"
+msgstr "Привет мир"

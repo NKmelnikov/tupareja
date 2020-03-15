@@ -496,6 +496,14 @@ if (! function_exists('mfn_slider')) {
 
 			case 'rev':
 				$slider = '<div class="mfn-main-slider mfn-rev-slider">';
+                $slider .= '<div class="mp1-slider-elem">';
+                $slider .= '<h2>International Matchmaking Office</h2>';
+                $slider .= '<p>' . __('slider_we_help_hearts', 'betheme') .'</p>';
+                $slider .= '<div class="mp1-slider-b-wrap">';
+                $slider .= '<a class="mp1-slider-b mp1-slider-lady" href="/for-ladies/">' . __('registration_for_ladies', 'betheme') .'</a>';
+                $slider .= '<a class="mp1-slider-b mp1-slider-man" href="/men-application/">' . __('registration_for_men', 'betheme') .'</a>';
+                $slider .= '</div>';
+                $slider .= '</div>';
 					$slider .= do_shortcode('[rev_slider '. get_post_meta($id, 'mfn-post-slider', true) .']');
 				$slider .= '</div>';
 				break;

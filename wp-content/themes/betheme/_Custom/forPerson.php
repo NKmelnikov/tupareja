@@ -4,7 +4,8 @@ Template Name: forPerson
 */
 
 use Repository\ClientRepository;
-
+require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
+$v = \Helper\CustomHelper::version();
 get_header( 'person' );
 $clientRepository = new ClientRepository();
 
@@ -28,12 +29,11 @@ function getCurrentAge($timestamp)
 	return $age;
 }
 
-
 $person = $clientRepository->getById(TABLE_LADIES,$_GET['id']);
-
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
+
 ?>
-  <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/person/person.css">
+  <link rel="stylesheet" href="<?= $pathToCustom .'_static/scss/person/person.css?v='.$v ?>">
 
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">

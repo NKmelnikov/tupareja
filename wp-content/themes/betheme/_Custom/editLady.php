@@ -1,6 +1,7 @@
 <?php
 require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
 require_once 'Repository/ClientRepository.php';
+require_once 'Helper/CustomHelper.php';
 use Repository\ClientRepository;
 const TABLE_LADIES = 'wp_ladies';
 
@@ -8,6 +9,7 @@ if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
     echo 'Lady not found (';
     die();
 }
+
 $clientRepository = new ClientRepository();
 $lady = $clientRepository->getById(TABLE_LADIES, $_GET['customer']);
 $lady = (array)$lady[0];
@@ -21,13 +23,12 @@ if(empty($_GET['_wpnonce'])){
   echo 'You are not allow to be here';
   die();
 }
+
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
-
+$v = \Helper\CustomHelper::version();
 ?>
-<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesEdit.css">
 
-<script src="/wp-content/themes/betheme/_Custom/_static/libs/bootstrap.notify.min.js"></script>
-
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v='.$v ?>">
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateLady.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
@@ -36,17 +37,17 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	    <div class="le1-name-container">
 		    <div class="le1-name-box">
 			    <label for="le1-lname">Фамилия</label>
-			    <input type="text" name="le1-lname" id="le1-lname" maxlength="125" class="le1-input" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
+			    <input type="text" name="le1-lname" id="le1-lname" maxlength="125" class="le1-input translate-value" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
 			    <span class="error-box error-le1-lname"></span>
 		    </div>
 		    <div class="le1-name-box">
 			    <label for="le1-name">Имя</label>
-			    <input type="text" required name="le1-name" id="le1-name" maxlength="125" class="le1-input" placeholder="Имя" value="<?php echo $lady['name']; ?>">
+			    <input type="text" required name="le1-name" id="le1-name" maxlength="125" class="le1-input translate-value" placeholder="Имя" value="<?php echo $lady['name']; ?>">
 			    <span class="error-box error-le1-name"></span>
 		    </div>
 		    <div class="le1-fname-box">
 			    <label for="le1-fname">Отчество</label>
-			    <input type="text" name="le1-fname" id="le1-fname" maxlength="125" class="le1-input" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
+			    <input type="text" name="le1-fname" id="le1-fname" maxlength="125" class="le1-input translate-value" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
 			    <span class="error-box error-le1-fname"></span>
 		    </div>
 	    </div>
@@ -60,19 +61,19 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <input type="text" required name="le1-phone" id="le1-phone" min="2" max="255" class="le1-input" placeholder="Телефон" value="<?php echo $lady['phone']; ?>">
       <span class="error-box error-le1-phone"></span>
       <label for="le1-profession">Профессия</label>
-      <input type="text" required name="le1-profession" id="le1-profession" min="2" max="255" class="le1-input" placeholder="Профессия" value="<?php echo $lady['profession']; ?>">
+      <input type="text" required name="le1-profession" id="le1-profession" min="2" max="255" class="le1-input translate-value" placeholder="Профессия" value="<?php echo $lady['profession']; ?>">
       <span class="error-box error-le1-profession"></span>
       <label for="le1-familyStatus">Семейное положение</label>
-      <input type="text" required name="le1-familyStatus" id="le1-familyStatus" min="2" max="255" class="le1-input" placeholder="Семейное положение" value="<?php echo $lady['family_status']; ?>">
+      <input type="text" required name="le1-familyStatus" id="le1-familyStatus" min="2" max="255" class="le1-input translate-value" placeholder="Семейное положение" value="<?php echo $lady['family_status']; ?>">
       <span class="error-box error-le1-familyStatus"></span>
       <label for="le1-kids">Дети</label>
-      <input type="text" required name="le1-kids" id="le1-kids" min="2" max="255" class="le1-input" placeholder="Дети" value="<?php echo $lady['kids']; ?>">
+      <input type="text" required name="le1-kids" id="le1-kids" min="2" max="255" class="le1-input" placeholder="Дети translate-value" value="<?php echo $lady['kids']; ?>">
       <span class="error-box error-le1-kids"></span>
       <label for="le1-video-link">Ссылка на видео о себе</label>
       <input type="text" required name="le1-video-link" id="le1-video-link" min="2" max="255" class="le1-input" placeholder="Ссылка на видео о себе" value="<?php echo $lady['video_link']; ?>">
       <span class="error-box error-le1-video-link"></span>
       <label for="le1-about">О себе</label>
-      <textarea rows="4" cols="50" required name="le1-about" id="le1-about" class="le1-input" placeholder="О себе"><?php echo $lady['about']; ?></textarea>
+      <textarea rows="4" cols="50" required name="le1-about" id="le1-about" class="le1-input translate-value" placeholder="О себе"><?php echo $lady['about']; ?></textarea>
       <span class="error-box error-le1-about"></span>
       <label for="le1-path-to-images">Пути к фотографиям</label>
       <textarea rows="4" cols="50" type="text" name="le1-path-to-images" id="le1-path-to-images"><?php echo $lady['path_to_images']; ?></textarea>
@@ -86,25 +87,25 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <input type="text" required name="le1-weight" id="le1-weight" min="2" max="255" class="le1-input" placeholder="Вес" value="<?php echo $lady['weight']; ?>">
       <span class="error-box error-le1-weight"></span>
       <label for="le1-eyeColor">Цвет глаз</label>
-      <input type="text" required name="le1-eyeColor" id="le1-eyeColor" min="2" max="255" class="le1-input" placeholder="Цвет глаз" value="<?php echo $lady['eye_color']; ?>">
+      <input type="text" required name="le1-eyeColor" id="le1-eyeColor" min="2" max="255" class="le1-input translate-value" placeholder="Цвет глаз" value="<?php echo $lady['eye_color']; ?>">
       <span class="error-box error-le1-eyeColor"></span>
       <label for="le1-town">Город</label>
-      <input type="text" required name="le1-town" id="le1-town" min="2" max="255" class="le1-input" placeholder="Город" value="<?php echo $lady['town']; ?>">
+      <input type="text" required name="le1-town" id="le1-town" min="2" max="255" class="le1-input translate-value" placeholder="Город" value="<?php echo $lady['town']; ?>">
       <span class="error-box error-le1-town"></span>
       <label for="le1-country">Страна</label>
-      <input type="text" required name="le1-country" id="le1-country" min="2" max="255" class="le1-input" placeholder="Страна" value="<?php echo $lady['country']; ?>">
+      <input type="text" required name="le1-country" id="le1-country" min="2" max="255" class="le1-input translate-value" placeholder="Страна" value="<?php echo $lady['country']; ?>">
       <span class="error-box error-le1-country"></span>
       <label for="le1-languages">Иностранные языки</label>
-      <input type="text" required name="le1-languages" id="le1-languages" min="2" max="255" class="le1-input" placeholder="Иностранные языки" value="<?php echo $lady['languages']; ?>">
+      <input type="text" required name="le1-languages" id="le1-languages" min="2" max="255" class="le1-input translate-value" placeholder="Иностранные языки" value="<?php echo $lady['languages']; ?>">
       <span class="error-box error-le1-languages"></span>
       <label for="le1-smoking">Курите ли Вы?</label>
-      <input type="text" name="le1-smoking" id="le1-smoking" min="2" max="255" class="le1-input" placeholder="Курите ли Вы?" value="<?php echo $lady['smoking']; ?>">
+      <input type="text" name="le1-smoking" id="le1-smoking" min="2" max="255" class="le1-input translate-value" placeholder="Курите ли Вы?" value="<?php echo $lady['smoking']; ?>">
       <span class="error-box error-le1-smoking"></span>
       <label for="le1-man-wish-age">Желаемый возраст мужчины</label>
       <input type="text" name="le1-man-wish-age" id="le1-man-wish-age" min="2" max="255" class="le1-input" placeholder="Желаемый возраст мужчины" value="<?php echo $lady['man_wish_age']; ?>">
       <span class="error-box error-le1-man-wish-age"></span>
       <label for="le1-wishes-to-man">Пожелания к потенциальному партнёру</label>
-      <textarea rows="4" cols="50" name="le1-wishes-to-man" id="le1-wishes-to-man" class="le1-input" placeholder="Пожелания к потенциальному партнёру"><?php echo $lady['wishes_to_man']; ?></textarea>
+      <textarea rows="4" cols="50" name="le1-wishes-to-man" id="le1-wishes-to-man" class="le1-input translate-value" placeholder="Пожелания к потенциальному партнёру"><?php echo $lady['wishes_to_man']; ?></textarea>
       <span class="error-box error-le1-wishes-to-man"></span>
 
       <label for="le1-main-image-path">Путь к главной фотографии</label>
@@ -136,7 +137,10 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	</section>
   <section class="le1_bottom_section">
     <button class="le1_bottom_section__button-save" type="submit">Сохранить</button>
-    <!-- <button class="le1_bottom_section__button-activate" type="button">Активировать</button> -->
+    <button class="le1_bottom_section__button-translate" type="button">Перевести</button>
   </section>
-  <script src="<?php echo $pathToCustom . '_static/js/ladies-edit.js' ?>"></script>
+
+  <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js'?>"></script>
+  <script src="<?= $pathToCustom . '_static/js/ladies-edit.js?v='.$v ?>"></script>
+  <script src="<?= $pathToCustom . '_static/js/ladies-edit-translate.js?v='.$v ?>"></script>
 </form>
