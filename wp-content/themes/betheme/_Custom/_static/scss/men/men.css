@@ -192,24 +192,34 @@
   display: flex;
   flex-direction: column;
   justify-items: center; }
-  .ma1-wrapper .ma1-input-section {
+  .ma1-wrapper .ma1-comoveas-section h3 {
+    text-align: center; }
+  .ma1-wrapper .ma1-input-section, .ma1-wrapper .ma1-comoveas-wrap {
     display: flex;
-    justify-content: center; }
+    justify-content: space-between; }
     @media (max-width: 768px) {
-      .ma1-wrapper .ma1-input-section {
+      .ma1-wrapper .ma1-input-section, .ma1-wrapper .ma1-comoveas-wrap {
         flex-direction: column; } }
-    .ma1-wrapper .ma1-input-section__first-box, .ma1-wrapper .ma1-input-section__second-box {
+    .ma1-wrapper .ma1-input-section__first-box, .ma1-wrapper .ma1-input-section__second-box, .ma1-wrapper .ma1-comoveas-wrap__first-box, .ma1-wrapper .ma1-comoveas-wrap__second-box {
       width: 48%; }
       @media (max-width: 768px) {
-        .ma1-wrapper .ma1-input-section__first-box, .ma1-wrapper .ma1-input-section__second-box {
+        .ma1-wrapper .ma1-input-section__first-box, .ma1-wrapper .ma1-input-section__second-box, .ma1-wrapper .ma1-comoveas-wrap__first-box, .ma1-wrapper .ma1-comoveas-wrap__second-box {
           width: 100%; } }
-      .ma1-wrapper .ma1-input-section__first-box input, .ma1-wrapper .ma1-input-section__second-box input {
+      .ma1-wrapper .ma1-input-section__first-box input, .ma1-wrapper .ma1-input-section__first-box select, .ma1-wrapper .ma1-input-section__second-box input, .ma1-wrapper .ma1-input-section__second-box select, .ma1-wrapper .ma1-comoveas-wrap__first-box input, .ma1-wrapper .ma1-comoveas-wrap__first-box select, .ma1-wrapper .ma1-comoveas-wrap__second-box input, .ma1-wrapper .ma1-comoveas-wrap__second-box select {
         width: 100%;
         margin-bottom: 0; }
-      .ma1-wrapper .ma1-input-section__first-box textarea, .ma1-wrapper .ma1-input-section__second-box textarea {
+      .ma1-wrapper .ma1-input-section__first-box select, .ma1-wrapper .ma1-input-section__second-box select, .ma1-wrapper .ma1-comoveas-wrap__first-box select, .ma1-wrapper .ma1-comoveas-wrap__second-box select {
+        color: gray;
+        height: 35px;
+        box-sizing: border-box; }
+        .ma1-wrapper .ma1-input-section__first-box select option, .ma1-wrapper .ma1-input-section__second-box select option, .ma1-wrapper .ma1-comoveas-wrap__first-box select option, .ma1-wrapper .ma1-comoveas-wrap__second-box select option {
+          color: gray; }
+      .ma1-wrapper .ma1-input-section__first-box select:active, .ma1-wrapper .ma1-input-section__second-box select:active, .ma1-wrapper .ma1-comoveas-wrap__first-box select:active, .ma1-wrapper .ma1-comoveas-wrap__second-box select:active {
+        color: black; }
+      .ma1-wrapper .ma1-input-section__first-box textarea, .ma1-wrapper .ma1-input-section__second-box textarea, .ma1-wrapper .ma1-comoveas-wrap__first-box textarea, .ma1-wrapper .ma1-comoveas-wrap__second-box textarea {
         width: 100%;
         margin-bottom: 0; }
-      .ma1-wrapper .ma1-input-section__first-box .error-box, .ma1-wrapper .ma1-input-section__second-box .error-box {
+      .ma1-wrapper .ma1-input-section__first-box .error-box, .ma1-wrapper .ma1-input-section__second-box .error-box, .ma1-wrapper .ma1-comoveas-wrap__first-box .error-box, .ma1-wrapper .ma1-comoveas-wrap__second-box .error-box {
         height: 20px;
         display: block;
         margin-bottom: 5px; }
