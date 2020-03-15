@@ -62,7 +62,7 @@ class ClientRepository
 				    $query['querySearch'],
 				    $query['querySearch'],
 				    $query['querySearch'],
-				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-(($query['ladiesMaxAge']+1)*31556926),
 				    time()-($query['ladiesMinAge']*31556926)
 			    );
 		    }elseif (isset($query['ladiesMaxAge'])&& $query['ladiesMaxAge']!=""){
@@ -70,7 +70,7 @@ class ClientRepository
 				    "SELECT * FROM %s WHERE `date_of_birth` BETWEEN %d AND %d",
 				    $table,
 
-				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-(($query['ladiesMaxAge']+1)*31556926),
 				    time()-($query['ladiesMinAge']*31556926)
 			    );
 		    }else{
@@ -145,14 +145,14 @@ class ClientRepository
 				    $query['querySearch'],
 				    $query['querySearch'],
 				    $query['querySearch'],
-				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-(($query['ladiesMaxAge']+1)*31556926),
 				    time()-($query['ladiesMinAge']*31556926)
 			    );
 		    }elseif (isset($query['ladiesMaxAge'])&& $query['ladiesMaxAge']!=""){
 			    $sql = sprintf(
 				    "SELECT COUNT(*) FROM %s WHERE `date_of_birth` BETWEEN %d AND %d",
 				    $table,
-				    time()-($query['ladiesMaxAge']*31556926),
+				    time()-(($query['ladiesMaxAge']+1)*31556926),
 				    time()-($query['ladiesMinAge']*31556926)
 			    );
 		    }else {

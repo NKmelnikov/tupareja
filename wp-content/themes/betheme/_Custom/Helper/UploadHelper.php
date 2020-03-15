@@ -199,14 +199,25 @@ class UploadHelper {
 	                $img = imagecreatefromjpeg($target);
 	                $img_w = imagesx($img);
 	                $img_h = imagesy($img);
+	                $scale = ($img_w/682)*100;
 	                $wtrmrk_w = imagesx($watermark);
 	                $wtrmrk_h = imagesy($watermark);
+	                $wm_h=round($wtrmrk_h*$scale);
+	                $wm_w=round($wtrmrk_w*$scale);
+	                /*$new_wt=imagecreatetruecolor($wm_w, $wm_h);/*
+	                imagecopyresampled($new_wt, $watermark, 0, 0, 0, 0,$wm_w, $wm_h, $wtrmrk_w, $wtrmrk_h);
+	                */
+	                $new_wt=$watermark;
+	                $wtrmrk_w = imagesx($new_wt);
+	                $wtrmrk_h = imagesy($new_wt);
+
 	                $dst_x = $img_w - $wtrmrk_w - 10; // For centering the watermark on any image
 	                $dst_y = $img_h - $wtrmrk_h - 30; // For centering the watermark on any image
-	                imagecopy($img, $watermark, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
+	                imagecopy($img, $new_wt, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
 	                imagejpeg($img, $target, 100);
 	                imagedestroy($img);
 	                imagedestroy($watermark);
+	                imagedestroy($new_wt);
 
 
 	                $watermark = imagecreatefrompng($actual_link.'/wp-content/uploads/2020/02/tupareja_watermark_2.png');
@@ -215,14 +226,23 @@ class UploadHelper {
 	                $img = imagecreatefromjpeg($target);
 	                $img_w = imagesx($img);
 	                $img_h = imagesy($img);
+	                $scale = ($img_w/682)*100;
 	                $wtrmrk_w = imagesx($watermark);
 	                $wtrmrk_h = imagesy($watermark);
+	                $wm_h=round($wtrmrk_h*$scale);
+	                $wm_w=round($wtrmrk_w*$scale);
+	                /*$new_wt=imagecreatetruecolor($wm_w, $wm_h);
+	                imagecopyresampled($new_wt, $watermark, 0, 0, 0, 0,$wm_w, $wm_h, $wtrmrk_w, $wtrmrk_h);*/
+	                $new_wt=$watermark;
+	                $wtrmrk_w = imagesx($new_wt);
+	                $wtrmrk_h = imagesy($new_wt);
 	                $dst_x = ($img_w / 2) - ($wtrmrk_w / 2);
 	                $dst_y = ($img_h / 2) - ($wtrmrk_h / 2);
-	                imagecopy($img, $watermark, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
+	                imagecopy($img, $new_wt, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
 	                imagejpeg($img, $target, 100);
 	                imagedestroy($img);
 	                imagedestroy($watermark);
+	                imagedestroy($new_wt);
 
 
 
