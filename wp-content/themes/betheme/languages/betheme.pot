@@ -10990,6 +10990,15 @@ msgstr "Advanced Search"
 msgid "search_search"
 msgstr "Advanced Search"
 
+msgid "video_dear"
+msgstr "Dear someone"
+
+msgid "video_text"
+msgstr "Video text"
+
+msgid "video_contacts"
+msgstr "Contact us"
+
 msgid "click_to_mute"
 msgstr "Click to mute"
 

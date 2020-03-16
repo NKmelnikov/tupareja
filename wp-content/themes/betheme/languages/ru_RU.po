@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betheme\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-15 13:03+0000\n"
+"PO-Revision-Date: 2020-03-16 21:04+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -11614,6 +11614,20 @@ msgstr "Зелёные"
 msgid "search_search"
 msgstr "Искать"
 
+msgid "video_dear"
+msgstr "Дорогие девушки"
+
+msgid "video_text"
+msgstr ""
+"Наша основная цель – подарить вам уникальную возможность познакомиться с "
+"испанскими надежными мужчинами, а испанским мужчинам найти свою музу среди "
+"украинских красавиц, которые ищут именно вас и чтобы вы смогли построить "
+"добрые, крепкие, стабильные и доверительные отношения, а все остальное "
+"зависит от вас."
+
+msgid "video_contacts"
+msgstr "Наши контакты"
+
 msgid "click_to_mute"
 msgstr "кликни, чтобы заглушить"
 
@@ -11627,42 +11641,39 @@ msgid "advantages_registration"
 msgstr "Регистрация"
 
 msgid "advantages_registration_text"
-msgstr "Регистрация в агенстве бесплатно!!"
+msgstr "Бесплатная регистрация для девушек."
 
 msgid "advantages_individual"
 msgstr "Индивидуально"
 
 msgid "advantages_individual_text"
-msgstr "С помощью психолога подбираем идеальных для Вас мужчин"
+msgstr "С помощью психолога подберем для вас испанскую пару. "
 
 msgid "advantages_confidential"
 msgstr "Конфиденциально"
 
 msgid "advantages_confidential_text"
 msgstr ""
-"Вся контактная информация, а также фамилия и полная дата рождения — строго "
-"конфиденциальны и не публикуются на сайте!"
+"Все ваши данные и ваши фотографии будут защищены нашей компанией и не будут "
+"использованы другими агенствами без нашего на то разрешения. "
 
 msgid "advantages_exp"
 msgstr "Опыт"
 
 msgid "advantages_exp_text"
-msgstr ""
-"Наше брачное агентство создает счастливые семьи с 2001 года, и мы точно "
-"знаем, как это делается"
+msgstr "Наша компания создает счастливые пары и мы знаем как это сделать."
 
 msgid "advantages_guaranty"
 msgstr "Гарантированно"
 
 msgid "advantages_guaranty_text"
 msgstr ""
-"Мы сотрудничаем до тех пор, пока Вы не выйдете замуж, и делаем для этого все "
-"возможное"
+"Мы сотрудничаем и работает с вами до тех пор пока вы найдёте себе пару и "
+"сделаем для этого все возможное."
 
 msgid "advantages_effective"
 msgstr "Эффективно"
 
 msgid "advantages_effective_text"
 msgstr ""
-"Быстро организовываем свидания - это единственный способ сформировать "
-"отношение к мужчине"
+"Организовываем романтические свидания и ивенты знакомств в Испании и Украине."

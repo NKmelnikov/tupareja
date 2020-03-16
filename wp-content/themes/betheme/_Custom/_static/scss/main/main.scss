@@ -329,12 +329,24 @@
       }
 
       h3, p{
+
         font-family: $main-font;
         color: #ffffff;
+
+        .es & {
+          font-size: 18px;
+          padding:3px 0;
+          margin: 0;
+          line-height: 20px;
+        }
       }
-      p{
+      p {
         line-height: 22px;
         text-align: justify;
+
+        .es & {
+          font-size: 12px;
+        }
       }
 
 
