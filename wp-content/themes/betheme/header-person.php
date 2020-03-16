@@ -18,9 +18,9 @@ if(!isset($_GET['id'])||!isset($person)){
 }
 ?><!DOCTYPE html>
 <?php
-	if ($_GET && key_exists('mfn-rtl', $_GET)):
-		echo '<html class="no-js" lang="ar" dir="rtl">';
-	else:
+if ($_GET && key_exists('mfn-rtl', $_GET)):
+	echo '<html class="no-js" lang="ar" dir="rtl">';
+else:
 ?>
 <html <?php language_attributes(); ?> class="no-js<?php echo esc_attr(mfn_user_os()); ?>"<?php mfn_tag_schema(); ?>>
 <?php endif; ?>
@@ -29,8 +29,9 @@ if(!isset($_GET['id'])||!isset($person)){
 	<title><?php echo $person[0]->name; ?></title>
 <meta charset="<?php bloginfo('charset'); ?>" />
 <?php wp_head(); ?>
-	<link href="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/css/lightbox.css" rel="stylesheet" />
-	<script src="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/js/lightbox.js"></script>
+	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/main/header.css?v=<?= time() ?>">
+	<link href="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/css/lightbox.css?v=<?= time() ?>" rel="stylesheet" />
+	<script src="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/js/lightbox.js?v=<?= time() ?>"></script>
 </head>
 
 <body <?php body_class(); ?>>
