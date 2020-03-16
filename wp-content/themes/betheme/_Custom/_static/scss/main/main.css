@@ -419,9 +419,16 @@
       .mp1-video-block .mp1-video-description .mp1-video-contact h3, .mp1-video-block .mp1-video-description .mp1-video-contact p {
         font-family: "Comfortaa", sans-serif;
         color: #ffffff; }
+        .es .mp1-video-block .mp1-video-description .mp1-video-contact h3, .es .mp1-video-block .mp1-video-description .mp1-video-contact p {
+          font-size: 18px;
+          padding: 3px 0;
+          margin: 0;
+          line-height: 20px; }
       .mp1-video-block .mp1-video-description .mp1-video-contact p {
         line-height: 22px;
         text-align: justify; }
+        .es .mp1-video-block .mp1-video-description .mp1-video-contact p {
+          font-size: 12px; }
       .mp1-video-block .mp1-video-description .mp1-video-contact .mp1-video-link {
         background: #182872;
         font-family: "Comfortaa", sans-serif;
@@ -568,5 +575,3 @@
         line-height: 16px;
         font-size: 14px;
         color: #e48d05; }
-
-/*# sourceMappingURL=main.css.map */

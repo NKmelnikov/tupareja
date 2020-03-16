@@ -20,32 +20,32 @@
 						?>
             <nav id="menu-bot">
               <ul id="menu-menu-2" class="menu menu-main">
-                <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
-                  <a href="http://melnikovshop.loc/es/"><span><?php _e('header_main', 'betheme') ?></span></a>
+                <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
+                  <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
+                </li>
+                <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/our-ladies/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/es/our-ladies/"><span><?php _e('header_about_us', 'betheme') ?></span></a>
-                </li>
-                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/es/service/"><span><?php _e('header_service', 'betheme') ?></span></a>
+                  <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?></span></a>
                 </li>
                   <?php if (get_locale() === 'ru_RU'): ?>
-                    <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="http://melnikovshop.loc/es/tips-tricks/"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
+                    <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
                     </li>
                   <?php else: ?>
                     <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="http://melnikovshop.loc/es/tips-tricks/"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
+                      <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
                     </li>
                   <?php endif; ?>
                 <li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/es/for-ladies/"><span><?php _e('header_lady_application', 'betheme') ?></span></a>
+                  <a href="<?= get_home_url() .'/for-ladies/' ?>"><span><?php _e('header_lady_application', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/es/men-application/"><span><?php _e('header_man_application', 'betheme') ?></span></a>
+                  <a href="<?= get_home_url() .'/men-application/' ?>"><span><?php _e('header_man_application', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="http://melnikovshop.loc/es/contact/"><span><?php _e('header_contacts', 'betheme') ?></span></a>
+                  <a href="<?= get_home_url() .'/contact/' ?>"><span><?php _e('header_contacts', 'betheme') ?></span></a>
                 </li>
               </ul>
             </nav>

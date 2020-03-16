@@ -25,7 +25,7 @@ if(empty($_GET['_wpnonce'])){
 }
 
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
-$v = \Helper\CustomHelper::version();
+$v = \Helper\CustomHelper::instance()->version();
 ?>
 
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v='.$v ?>">

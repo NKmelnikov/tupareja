@@ -11,8 +11,21 @@
 	if ($_GET && key_exists('mfn-rtl', $_GET)):
 		echo '<html class="no-js" lang="ar" dir="rtl">';
 	else:
+
+  $languageClass = '';
+	switch (get_locale()) {
+      case 'ru_RU':
+          $languageClass = 'ru';
+          break;
+      case 'es_ES':
+          $languageClass = 'es';
+          break;
+      default:
+          $languageClass = 'ru';
+          break;
+  }
 ?>
-<html <?php language_attributes(); ?> class="no-js<?php echo esc_attr(mfn_user_os()); ?>"<?php mfn_tag_schema(); ?>>
+<html <?php language_attributes(); ?> class="no-js<?php echo esc_attr(mfn_user_os()); ?> <?= $languageClass ?>"<?php mfn_tag_schema(); ?>>
 <?php endif; ?>
 
 <head>

@@ -4,7 +4,7 @@ Template Name: Main
 */
 get_header();
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::version();
+$v = \Helper\CustomHelper::instance()->version();
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 ?>
@@ -161,9 +161,9 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <section class="mp1-video-block">
 	<div class="mp1-video-description">
 		<div class="mp1-video-contact">
-			<h3>Дорогие девушки</h3>
-			<p>Наша основная цель – подарить вам уникальную возможность познакомиться с испанскими надежными мужчинами, а испанским мужчинам найти свою музу среди украинских красавиц, которые ищут  именно вас и чтобы вы смогли построить добрые, крепкие, стабильные и доверительные отношения, а все остальное зависит от вас.</p>
-			<a class="mp1-video-link" href="/contact/"><span>Наши контакты</span></a>
+			<h3><?php _e('video_dear', 'betheme') ?></h3>
+			<p><?php _e('video_text', 'betheme') ?></p>
+			<a class="mp1-video-link" href="/contact/"><span><?php _e('video_contacts', 'betheme') ?></span></a>
 		</div>
 	</div>
 	<video loop="" autoplay="" muted="" class="mp1-bg-video" id="mp1-bg-video">
