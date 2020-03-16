@@ -24,7 +24,7 @@ if (empty($_GET['_wpnonce'])) {
 }
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::version();
+$v = \Helper\CustomHelper::instance()->version();
 
 ?>
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/men/menEdit.css?v=' .$v ?>">

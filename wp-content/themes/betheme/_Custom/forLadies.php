@@ -5,7 +5,7 @@ Template Name: for Ladies
 get_header();
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::version();
+$v = \Helper\CustomHelper::instance()->version();
 ?>
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.css'?>">
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-gallery.min.css'?>">

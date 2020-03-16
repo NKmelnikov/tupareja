@@ -5,7 +5,7 @@ Template Name: forPerson
 
 use Repository\ClientRepository;
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::version();
+$v = \Helper\CustomHelper::instance()->version();
 get_header( 'person' );
 $clientRepository = new ClientRepository();
 

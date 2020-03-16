@@ -4,7 +4,7 @@ Template Name: Main
 */
 get_header();
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::version();
+$v = \Helper\CustomHelper::instance()->version();
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 ?>
