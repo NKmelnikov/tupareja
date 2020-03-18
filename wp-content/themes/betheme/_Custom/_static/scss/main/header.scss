@@ -3,46 +3,55 @@
 
 #Top_bar, #Footer {
 
-  .main-translation{
+  .main-translation {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top:0;
-    right:120px;
+    top: 0;
+    right: 120px;
     width: 50px;
+
+    @media #{$mobile} {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
 
     li {
 
       span {
         padding: 0 8px;
-        margin:0;
+        margin: 0;
+        cursor: pointer;
       }
     }
   }
 
-  #menu.active{
+  #menu.active {
     display: block;
   }
+
   .header-special-mobile {
     position: relative;
     margin-top: 10px;
     display: none;
     @media #{$mobile} {
+      margin-top: 40px;
       display: flex;
       flex-direction: column;
     }
 
-    &__title{
+    &__title {
       color: #c4923f;
       text-align: center;
       font-size: 16px;
 
     }
 
-    .responsive-menu-toggle{
+    .responsive-menu-toggle {
       position: absolute;
 
-      top:5px;
+      top: 5px;
       right: 15px;
       font-size: 20px;
     }
@@ -59,7 +68,7 @@
         display: none;
       }
 
-      .main-logo{
+      .main-logo {
         width: 270px;
         height: 122px;
       }
@@ -78,6 +87,38 @@
       padding-left: 10%;
       font-style: italic;
       color: #daad20;
+    }
+
+    .service-dropdown{
+      position: relative;
+      display: inline-block;
+    }
+
+    .service-dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 199;
+      text-transform: capitalize;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+
+
+      a {
+        white-space: nowrap;
+        padding: 6px 0;
+        width: 100%;
+      }
+
+    }
+
+    .service-dropdown:hover .service-dropdown-content {
+      display: flex;
+
     }
   }
 
@@ -110,7 +151,7 @@
         font-family: $main-font;
         line-height: 18px;
 
-        span{
+        span {
           font-size: 12px
         }
       }
@@ -135,7 +176,8 @@
   margin-bottom: 50px;
   position: relative;
 }
-.mfn-main-slider:after, .mfn-main-slider:before{
+
+.mfn-main-slider:after, .mfn-main-slider:before {
   content: "";
   background: #ffffff;
   display: block;
@@ -145,34 +187,38 @@
   left: 0;
   z-index: 10;
 }
-.mfn-main-slider:after{
-  top:10px;
+
+.mfn-main-slider:after {
+  top: 10px;
 }
-.mfn-main-slider:before{
+
+.mfn-main-slider:before {
   bottom: 10px;
 }
-#Footer{
+
+#Footer {
   border-top: #0931a2 2px solid;
   padding: 15px 0;
-  .top_bar_left{
+
+  .top_bar_left {
     max-width: 1300px;
     margin: 0 auto;
   }
 
-  .logo{
-    display: block!important;
+  .logo {
+    display: block !important;
   }
 }
 
-.mfn-main-slider{
-  .mp1-slider-elem{
+.mfn-main-slider {
+  .mp1-slider-elem {
     position: absolute;
     width: 570px;
     height: 190px;
     padding: 40px 20px;
     box-sizing: border-box;
-    background: rgba(24,40,114,0.86);
-    bottom:60px;
+    background: rgba(24, 40, 114, 0.86);
+    bottom: 60px;
     right: 30px;
     z-index: 10;
 
@@ -184,19 +230,21 @@
       font-size: 14px;
     }
 
-    h2{
+    h2 {
       color: #e48d05;
       font-size: 28px;
       font-style: italic;
       line-height: 30px;
     }
-    p{
+
+    p {
       color: #ffffff;
       font-size: 18px;
       line-height: 18px;
       font-style: italic;
     }
-    .mp1-slider-b-wrap{
+
+    .mp1-slider-b-wrap {
       position: absolute;
       right: 10px;
       bottom: -15px;
@@ -214,7 +262,7 @@
         margin: 0 auto;
       }
 
-      .mp1-slider-b{
+      .mp1-slider-b {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -227,14 +275,19 @@
         text-decoration: none;
 
       }
-      .mp1-slider-lady{
+
+      .mp1-slider-lady {
         background: url("/wp-content/themes/betheme/_Custom/_static/img/slider-bt-left.png") no-repeat center center;
         margin-right: 10px;
       }
-      .mp1-slider-man{
+
+      .mp1-slider-man {
         background: url("/wp-content/themes/betheme/_Custom/_static/img/slider-bt-right.png") no-repeat center center;
         width: 248px;
       }
     }
   }
 }
+
+
+

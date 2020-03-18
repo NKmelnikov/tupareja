@@ -11043,3 +11043,105 @@ msgstr "Registration"
 
 msgid "advantages_effective_text"
 msgstr "Registration"
+
+msgid "service_our"
+msgstr "Our Services"
+
+msgid "service_find_your_love"
+msgstr "Find your love"
+
+msgid "service_more_button"
+msgstr "find more"
+
+msgid "service_title_1"
+msgstr "title 1"
+
+msgid "service_text_1"
+msgstr "text 1"
+
+msgid "service_title_2"
+msgstr "title 2"
+
+msgid "service_text_2"
+msgstr "text 2"
+
+msgid "service_title_3"
+msgstr "title 3"
+
+msgid "service_text_3"
+msgstr "text 3"
+
+msgid "service_title_4"
+msgstr "title 4"
+
+msgid "service_text_4"
+msgstr "text 4"
+
+msgid "service_title_5"
+msgstr "title 5"
+
+msgid "service_text_5"
+msgstr "text 5"
+
+msgid "service_title_6"
+msgstr "title 6"
+
+msgid "service_text_6"
+msgstr "text 6"
+
+msgid "service_title_7"
+msgstr "title 7"
+
+msgid "service_text_7"
+msgstr "text 7"
+
+msgid "service_path_to_happiness"
+msgstr "The path to the happiness"
+
+msgid "service_step_title_1"
+msgstr "The path to the happiness"
+
+msgid "service_step_text_1"
+msgstr "The path to the happiness"
+
+msgid "service_step_title_2"
+msgstr "The path to the happiness"
+
+msgid "service_step_text_2"
+msgstr "The path to the happiness"
+
+msgid "service_step_title_3"
+msgstr "The path to the happiness"
+
+msgid "service_step_text_3"
+msgstr "The path to the happiness"
+
+msgid "service_step_title_4"
+msgstr "The path to the happiness"
+
+msgid "service_step_text_4"
+msgstr "The path to the happiness"
+
+msgid "service_article_1"
+msgstr "service article"
+
+msgid "service_article_1"
+msgstr "service article"
+
+msgid "service_article_2"
+msgstr "service article"
+
+msgid "service_article_3"
+msgstr "service article"
+
+msgid "service_article_4"
+msgstr "service article"
+
+msgid "service_article_5"
+msgstr "service article"
+
+msgid "service_article_6"
+msgstr "service article"
+
+msgid "service_article_7"
+msgstr "service article"

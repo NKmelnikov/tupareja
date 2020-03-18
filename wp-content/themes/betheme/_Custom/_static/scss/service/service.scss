@@ -1,5 +1,294 @@
 @import "../global";
 
-.os1-wrapper{
+.os1-wrapper {
 
+  .os1-title {
+    background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
+    height: 185px;
+    width: 453px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    text-align: center;
+
+    h2 {
+      color: #ffffff;
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: #e48d05;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @media #{$mobile} {
+      width: 100%;
+      padding-top: 50px;
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  &-service {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 5px 0px rgba(198, 198, 198, 0.5);
+
+    @media #{$mobile} {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+
+    .os1-service-img-box {
+      margin-right: 30px;
+
+      @media #{$mobile} {
+        margin: 0;
+      }
+
+      &__image {
+        width: 400px;
+        height: 350px;
+
+        @media #{$mobile} {
+          width: 350px;
+          height: 250px;
+        }
+
+        &.image1 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_1.jpg') no-repeat 50% 5%;
+        }
+
+        &.image2 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_2.jpg') no-repeat 50% 5%;
+          background-size: 550px;
+        }
+
+        &.image3 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_3.jpg') no-repeat;
+
+          @media #{$mobile} {
+            background-size: 300px;
+            background-position: 50% 50%;
+          }
+        }
+
+        &.image4 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_4.jpg') no-repeat 50% 5%;
+          background-size: 550px;
+        }
+
+        &.image5 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_5.jpg') no-repeat 50% 5%;
+          background-size: 550px;
+        }
+
+        &.image6 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_6.jpg') no-repeat 0% 5%;
+          background-size: 700px;
+        }
+
+        &.image7 {
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_7.jpg') no-repeat 50% 5%;
+          background-size: 550px;
+        }
+      }
+    }
+
+    .os1-service-text-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+
+      span {
+        display: block;
+      }
+
+      &__title {
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+
+        @media #{$mobile} {
+          padding: 10px 0;
+          font-size: 20px;
+        }
+      }
+
+      &__text {
+        margin: 20px 0;
+
+        @media #{$mobile} {
+          margin: 10px 0;
+        }
+      }
+
+      &__btn {
+        background: #182872;
+        font-family: $main-font;
+        color: #e4ca87;
+        width: 230px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 2px;
+        text-decoration: none;
+        transition: .2s linear;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+
+        &:active {
+          transform: scale(.95);
+        }
+
+        span {
+          border: #e4ca87 1px solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 224px;
+          height: 44px;
+        }
+      }
+    }
+  }
+
+  &-happiness {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    background: url("/wp-content/themes/betheme/_Custom/_static/img/steps-background.jpg") no-repeat 50% 60%;
+
+    @media #{$mobile} {
+      background: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      border-bottom: 2px solid #e4ca87;
+      width: 100%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      border-top: 2px solid #e4ca87;
+      width: 100%;
+    }
+
+    .os1-title {
+      margin-bottom: 30px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+      }
+
+    }
+
+    .os1-step-box {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+
+      @media #{$mobile} {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .os1-step-elem {
+        width: 200px;
+
+        @media #{$mobile} {
+          margin: 30px 0;
+        }
+
+        .os1-step-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1;
+          margin-bottom: 60px;
+        }
+
+        .os1-step-description {
+          text-align: center;
+
+          .os1-step-elem-title {
+            font-family: $main-font;
+            font-size: 14px;
+            color: #1c1f3e;
+            text-transform: uppercase;
+            line-height: 5px;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+
+          .os1-step-elem-delimiter {
+            color: #1c1f3e;
+            font-size: 60px;
+            line-height: 10px;
+            margin-bottom: 5px;
+          }
+
+          .os1-step-elem-desc {
+            font-family: $main-font;
+            margin-top: 30px;
+            line-height: 16px;
+            font-size: 12px;
+            color: #1c1f3e;
+          }
+        }
+      }
+    }
+  }
+}
+
+#Subheader {
+  display: none;
+}
+
+.sp-wrapper {
+  padding: 20px;
+
+  .sp-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .sp-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-height: 500px;
+    }
+  }
+
+  article {
+    padding-top: 10px;
+  }
 }

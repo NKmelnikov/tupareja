@@ -72,7 +72,37 @@ $homeUrlES = $customHelper::instance()->host_es();
           <?php get_template_part('includes/include', 'logo'); ?>
         <p class="header-special-mobile__title">International Matchmaking Office</p>
         <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i><a>
-                <?php mfn_wp_nav_menu(); ?>
+            <nav id="menu">
+              <ul id="menu-menu-3" class="menu menu-main">
+                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
+                  <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
+                </li>
+                <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/our-ladies/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
+                </li>
+                <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?></span></a>
+                </li>
+                  <?php if (get_locale() === 'ru_RU'): ?>
+                    <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
+                    </li>
+                  <?php else: ?>
+                    <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
+                    </li>
+                  <?php endif; ?>
+                <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/for-ladies/' ?>"><span><?php _e('header_lady_application', 'betheme') ?></span></a>
+                </li>
+                <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/men-application/' ?>"><span><?php _e('header_man_application', 'betheme') ?></span></a>
+                </li>
+                <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/contact/' ?>"><span><?php _e('header_contacts', 'betheme') ?></span></a>
+                </li>
+              </ul>
+            </nav>
       </div>
       <script>
           $('.responsive-menu-toggle').click(function () {
@@ -102,8 +132,17 @@ $homeUrlES = $customHelper::instance()->host_es();
                     <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() .'/our-ladies/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                     </li>
-                    <li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?></span></a>
+                    <li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
+                      <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?> </span><span class="triangle-turn">&#9668;</span></a>
+                      <div class="service-dropdown-content">
+                        <a href="<?= get_home_url() .'/our-service/dates-ucraine/' ?>"><span><?php _e('service_title_1', 'betheme') ?></span></a>
+                        <a href="<?= get_home_url() .'/our-service/trip-to-spain/' ?>"><span><?php _e('service_title_2', 'betheme') ?></span></a>
+                        <a href="<?= get_home_url() .'/our-service/event-dates/' ?>"><span><?php _e('service_title_3', 'betheme') ?></span></a>
+                        <a href="<?= get_home_url() .'/our-service/translator/' ?>"><span><?php _e('service_title_4', 'betheme') ?></span></a>
+                        <a href="<?= get_home_url() .'/our-service/transfer/' ?>"><span><?php _e('service_title_5', 'betheme') ?></span></a>
+                        <a href="<?= get_home_url() .'/our-service/flowers/' ?>"><span><?php _e('service_title_6', 'betheme') ?></span></a>
+                        <a href="<?= get_home_url() .'/our-service/wedding/' ?>"><span><?php _e('service_title_7', 'betheme') ?></span></a>
+                      </div>
                     </li>
                       <?php if (get_locale() === 'ru_RU'): ?>
                         <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -125,6 +164,14 @@ $homeUrlES = $customHelper::instance()->host_es();
                     </li>
                   </ul>
                 </nav>
+                <script>
+                    $('.service-dropdown').mouseenter(function () {
+                        $('.triangle-turn').html('&#9660');
+                    })
+                    $('.service-dropdown').mouseleave(function () {
+                        $('.triangle-turn').html('&#9668');
+                    })
+                </script>
                   <?php
 
                   // responsive menu button
