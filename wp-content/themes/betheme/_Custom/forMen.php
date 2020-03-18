@@ -24,7 +24,16 @@ $v = \Helper\CustomHelper::instance()->version();
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
       <article class="ma1-article">
-        <p>Вся контактная информация, а также фамилия и полная дата рождения — строго конфиденциальны и не публикуются на сайте!</p>
+        <p>
+          El siguiente cuestionario es imprescindible para que lo conozcan las chicas
+          que a usted le interesen. Con esto proporcionará una información fundamental
+          para despertar el interés de las chicas. Rellene el cuestionario con toda la
+          información sobre usted, aportando de 4 a 5 fotos claras, vestido de forma
+          ocasional, de trabajo, deporte, por favor no fotos oscuras ni sin camiseta
+          o camisa. Además rellene el apartado sobre su preferencia en la eleccion de
+          la mujer. Toda esta información se tratará de forma confidencial para uso
+          interno y sólo para las chicas que a usted le interese.
+        </p>
       </article>
       <form action="<?php echo $pathToCustom . 'Actions/submitApplicationMan.php' ?>" class="ma1-wrapper" id="ma1-form" method="post" enctype="multipart/form-data">
         <section class="ma1-input-section">
