@@ -81,6 +81,11 @@
       right: 85px;
       z-index: 10;
       animation: upDown 2.7s linear .1s infinite; }
+    .heart-box__heart-small.hs19 {
+      top: -100px;
+      left: 200px;
+      z-index: 10;
+      animation: upDown 2.7s linear .1s infinite; }
   .heart-box__heart-medium {
     position: absolute;
     width: 63px;
@@ -173,6 +178,14 @@
       animation: upDown 2.3s linear .1s infinite; }
       @media (max-width: 768px) {
         .heart-box__heart-big.hs13 {
+          display: none; } }
+    .heart-box__heart-big.hs18 {
+      top: -150px;
+      right: 50px;
+      z-index: 10;
+      animation: upDown 2.3s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-big.hs18 {
           display: none; } }
 
 @keyframes upDown {

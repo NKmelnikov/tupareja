@@ -35,7 +35,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_1', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_1', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/dates-ucraine/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/dates-ucraine/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="os1-wrapper-service">
@@ -45,7 +45,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_2', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_2', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/trip-to-spain/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/trip-to-spain/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="os1-wrapper-service">
@@ -55,7 +55,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_3', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_3', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/event-dates/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/event-dates/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="os1-wrapper-service">
@@ -65,7 +65,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_4', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_4', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/translator/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/translator/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="os1-wrapper-service">
@@ -75,7 +75,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_5', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_5', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/transfer/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/transfer/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="os1-wrapper-service">
@@ -85,7 +85,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_6', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_6', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/flowers/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/flowers/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="os1-wrapper-service">
@@ -95,7 +95,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="os1-service-text-box">
       <span class="os1-service-text-box__title"><?php _e('service_title_7', 'betheme') ?></span>
       <span class="os1-service-text-box__text"><?php _e('service_text_7', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="/our-service/wedding/"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/wedding/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <div class="heart-box heart-box-advantage">

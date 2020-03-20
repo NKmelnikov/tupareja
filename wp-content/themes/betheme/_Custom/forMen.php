@@ -144,7 +144,7 @@ $v = \Helper\CustomHelper::instance()->version();
 
         </section>
 	    <section class="ma1-comoveas-section">
-		    <h3>Comoveas a tu pareja:</h3>
+		    <h3>Como veas a tu pareja:</h3>
 		    <div class="ma1-comoveas-wrap">
 			    <div class="ma1-input-section__first-box">
 				    <input type="text" required name="ma1-partner_age_difference" id="ma1-partner_age_difference" min="2" max="255" class="ma1-input" placeholder="diferencia máxima deedad">

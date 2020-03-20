@@ -11145,3 +11145,84 @@ msgstr "service article"
 
 msgid "service_article_7"
 msgstr "service article"
+
+msgid "rec_ladies_main_title"
+msgstr "Title"
+
+msgid "rec_title_1"
+msgstr "Title"
+
+msgid "rec_text_1"
+msgstr "Text"
+
+msgid "rec_article_1"
+msgstr "Article"
+
+msgid "rec_title_2"
+msgstr "Title"
+
+msgid "rec_text_2"
+msgstr "Text"
+
+msgid "rec_article_2"
+msgstr "Article"
+
+msgid "rec_title_3"
+msgstr "Title"
+
+msgid "rec_text_3"
+msgstr "Text"
+
+msgid "rec_article_3"
+msgstr "Article"
+
+msgid "rec_title_4"
+msgstr "Title"
+
+msgid "rec_text_4"
+msgstr "Text"
+
+msgid "rec_article_4"
+msgstr "Article"
+
+msgid "rec_men_main_title"
+msgstr "Title"
+
+msgid "rec_title_5"
+msgstr "Title"
+
+msgid "rec_text_5"
+msgstr "Text"
+
+msgid "rec_text_5"
+msgstr "Text"
+
+msgid "rec_article_5"
+msgstr "Article"
+
+msgid "rec_title_6"
+msgstr "Title"
+
+msgid "rec_text_6"
+msgstr "Text"
+
+msgid "rec_article_6"
+msgstr "Article"
+
+msgid "rec_title_7"
+msgstr "Title"
+
+msgid "rec_text_7"
+msgstr "Text"
+
+msgid "rec_article_7"
+msgstr "Article"
+
+msgid "rec_title_8"
+msgstr "Title"
+
+msgid "rec_text_8"
+msgstr "Text"
+
+msgid "rec_article_8"
+msgstr "Article"

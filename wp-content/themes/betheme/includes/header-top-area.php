@@ -85,11 +85,11 @@ $homeUrlES = $customHelper::instance()->host_es();
                 </li>
                   <?php if (get_locale() === 'ru_RU'): ?>
                     <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
+                      <a href="<?= get_home_url() .'/recommendations-lady/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
                     </li>
                   <?php else: ?>
                     <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
+                      <a href="<?= get_home_url() .'/recommendations-men/' ?>"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
                     </li>
                   <?php endif; ?>
                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -145,12 +145,24 @@ $homeUrlES = $customHelper::instance()->host_es();
                       </div>
                     </li>
                       <?php if (get_locale() === 'ru_RU'): ?>
-                        <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span></a>
+                        <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
+                          <a href="<?= get_home_url() .'/recommendations-lady/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
+                          <div class="service-dropdown-content">
+                            <a href="<?= get_home_url() .'/recommendations-lady/ua-es-man/' ?>"><span><?php _e('rec_title_1', 'betheme') ?></span></a>
+                            <a href="<?= get_home_url() .'/recommendations-lady/ladies-mistakes/' ?>"><span><?php _e('rec_title_2', 'betheme') ?></span></a>
+                            <a href="<?= get_home_url() .'/recommendations-lady/es-man/' ?>"><span><?php _e('rec_title_3', 'betheme') ?></span></a>
+                            <a href="<?= get_home_url() .'/recommendations-lady/es-attitude/' ?>"><span><?php _e('rec_title_4', 'betheme') ?></span></a>
+                          </div>
                         </li>
                       <?php else: ?>
-                        <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page">
-                          <a href="<?= get_home_url() .'/tips-tricks/' ?>"><span><?php _e('header_man_tips', 'betheme') ?></span></a>
+                        <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
+                          <a href="<?= get_home_url() .'/recommendations-men/' ?>"><span><?php _e('header_man_tips', 'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
+                          <div class="service-dropdown-content">
+                            <a href="<?= get_home_url() .'/recommendations-men/ua-es-lady/' ?>"><span><?php _e('rec_title_5', 'betheme') ?></span></a>
+                            <a href="<?= get_home_url() .'/recommendations-men/men-mistakes/' ?>"><span><?php _e('rec_title_6', 'betheme') ?></span></a>
+                            <a href="<?= get_home_url() .'/recommendations-men/ua-lady/' ?>"><span><?php _e('rec_title_7', 'betheme') ?></span></a>
+                            <a href="<?= get_home_url() .'/recommendations-men/ua-attitude/' ?>"><span><?php _e('rec_title_8', 'betheme') ?></span></a>
+                          </div>
                         </li>
                       <?php endif; ?>
                     <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -166,10 +178,10 @@ $homeUrlES = $customHelper::instance()->host_es();
                 </nav>
                 <script>
                     $('.service-dropdown').mouseenter(function () {
-                        $('.triangle-turn').html('&#9660');
+                        $(this).find('.triangle-turn').html('&#9660');
                     })
                     $('.service-dropdown').mouseleave(function () {
-                        $('.triangle-turn').html('&#9668');
+                        $(this).find('.triangle-turn').html('&#9668');
                     })
                 </script>
                   <?php
