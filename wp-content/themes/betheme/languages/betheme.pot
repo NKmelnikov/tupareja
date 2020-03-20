@@ -11227,6 +11227,37 @@ msgstr "Text"
 msgid "rec_article_8"
 msgstr "Article"
 
+msgid "contact_contact"
+msgstr "Contact"
+
+msgid "contact_address"
+msgstr "Address"
+
+msgid "contact_address_text"
+msgstr "Address Text"
+
+msgid "contact_from_text"
+msgstr "Address Form Text"
+
+msgid "contact_from_name"
+msgstr "Name"
+
+msgid "contact_from_email"
+msgstr "Name"
+
+msgid "contact_from_subject"
+msgstr "Subject"
+
+msgid "contact_from_details"
+msgstr "Details"
+
+msgid "contact_from_message"
+msgstr "Message"
+
+msgid "contact_from_submit"
+msgstr "Submit"
+
+
 msgid "about_title"
 msgstr "about_title"
 

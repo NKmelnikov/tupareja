@@ -179,7 +179,8 @@ $homeUrlES = $customHelper::instance()->host_es();
                 <script>
                     $('.service-dropdown').mouseenter(function () {
                         $(this).find('.triangle-turn').html('&#9660');
-                    })
+                    });
+
                     $('.service-dropdown').mouseleave(function () {
                         $(this).find('.triangle-turn').html('&#9668');
                     })
