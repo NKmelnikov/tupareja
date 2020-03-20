@@ -251,6 +251,9 @@
     border-top: 2px solid white;
     border-bottom: 2px solid white; }
 
+#Subheader {
+  display: none; }
+
 #Top_bar .main-translation, #Footer .main-translation {
   position: absolute;
   display: flex;
