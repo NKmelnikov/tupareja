@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Betheme\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-20 20:33+0000\n"
+"PO-Revision-Date: 2020-03-20 22:16+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -12672,47 +12672,6 @@ msgstr "Mensaje"
 
 msgid "contact_from_submit"
 msgstr "Enviar"
-
-msgid "maxim_penis"
-msgstr "Peniso"
-
-msgid "contact_contact"
-msgstr "Contacto"
-
-msgid "contact_address"
-msgstr "Habla a"
-
-msgid "contact_address_text"
-msgstr ""
-"Solom'yanska sq.2 <br>\n"
-"of 801 <br>\n"
-"Kyiv 03035 Ucrania"
-
-msgid "contact_from_text"
-msgstr ""
-"Puede hacer cualquier pregunta enviándonosla por correo a través del "
-"formulario de comentarios"
-
-msgid "contact_from_name"
-msgstr "Nombre"
-
-msgid "contact_from_email"
-msgstr "Email"
-
-msgid "contact_from_subject"
-msgstr "Sujeto"
-
-msgid "contact_from_details"
-msgstr "Details"
-
-msgid "contact_from_message"
-msgstr "Mensaje"
-
-msgid "contact_from_submit"
-msgstr "Enviar"
-
-msgid "maxim_penis"
-msgstr "Peniso"
 
 msgid "about_title"
 msgstr "Acerca de nosotros"

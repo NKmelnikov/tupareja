@@ -16,6 +16,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	<div class="paralax-box__border"></div>
 </section>
 
+<div class="heart-box heart-box-search-top">
+	<img class="heart-box__heart-big search-top-section hs3" src="<?= $pathToCustom . '_static/img/big-right.png?v='.$v ?>" alt="">
+	<img class="heart-box__heart-medium search-top-section hs5" src="<?= $pathToCustom . '_static/img/medium-right.png?v='.$v ?>" alt="">
+	<img class="heart-box__heart-medium search-top-section hs4" src="<?= $pathToCustom . '_static/img/medium-left.png?v='.$v ?>" alt="">
+</div>
+
 <section class="about-wrapper-title">
 	<div class="about-title">
 		<h2><?php _e('about_title', 'betheme') ?></h2>
@@ -70,7 +76,11 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 		</div>
 	</div>
 </section>
-
+<div class="heart-box heart-box-shirts">
+	<img class="heart-box__heart-medium shirts-section hs6" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
+	<img class="heart-box__heart-big shirts-section hs7" src="<?= $pathToCustom . '_static/img/big-left.png?v='. $v?>" alt="">
+	<img class="heart-box__heart-small shirts-section hs8" src="<?= $pathToCustom . '_static/img/small-right.png?v='. $v?>" alt="">
+</div>
 <section class="about-b3-wrap">
 	<div class="about-b3-lady about-b3-elem">
 		<a href="/for-ladies/"><?php _e('registration_for_ladies', 'betheme') ?></a>
@@ -83,15 +93,9 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 
 
-<div class="heart-box heart-box-shirts">
-  <img class="heart-box__heart-medium shirts-section hs6" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
-  <img class="heart-box__heart-big shirts-section hs7" src="<?= $pathToCustom . '_static/img/big-left.png?v='. $v?>" alt="">
-  <img class="heart-box__heart-small shirts-section hs8" src="<?= $pathToCustom . '_static/img/small-right.png?v='. $v?>" alt="">
-</div>
 
-<div class="heart-box heart-box-advantage">
-  <img class="heart-box__heart-medium advantage-section hs9" src="<?= $pathToCustom . '_static/img/medium-right.png?v='. $v?>" alt="">
-</div>
+
+
 <?php
 get_footer();
 ?>
