@@ -13085,6 +13085,41 @@ msgstr "Сообщение"
 msgid "contact_from_submit"
 msgstr "Отправить"
 
+msgid "contact_contact"
+msgstr "Контакты"
+
+msgid "contact_address"
+msgstr "Адрес"
+
+msgid "contact_address_text"
+msgstr ""
+"Солом`янська пл.2, <br>\n"
+"оф. 801 <br>\n"
+"Київ - 03035 Україна"
+
+msgid "contact_from_text"
+msgstr ""
+"Вы можете задать любой вопрос, отправив его нам на почту, через форму "
+"обратной связи"
+
+msgid "contact_from_name"
+msgstr "Имя"
+
+msgid "contact_from_email"
+msgstr "Email"
+
+msgid "contact_from_subject"
+msgstr "Тема"
+
+msgid "contact_from_details"
+msgstr "Details"
+
+msgid "contact_from_message"
+msgstr "Сообщение"
+
+msgid "contact_from_submit"
+msgstr "Отправить"
+
 msgid "about_title"
 msgstr "О нас"
 
