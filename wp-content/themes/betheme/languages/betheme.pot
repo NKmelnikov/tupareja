@@ -11226,3 +11226,36 @@ msgstr "Text"
 
 msgid "rec_article_8"
 msgstr "Article"
+
+msgid "about_title"
+msgstr "about_title"
+
+msgid "about_elem_1"
+msgstr "about_elem_1"
+
+msgid "about_elem_2"
+msgstr "about_elem_2"
+
+msgid "about_elem_3"
+msgstr "about_elem_3"
+
+msgid "about_elem_4"
+msgstr "about_elem_4"
+
+msgid "guarant_title"
+msgstr "guarant_title"
+
+msgid "guarant_title_text"
+msgstr "guarant_title_text"
+
+msgid "guarant_elem_1"
+msgstr "guarant_elem_1"
+
+msgid "guarant_elem_2"
+msgstr "guarant_elem_2"
+
+msgid "guarant_elem_3"
+msgstr "guarant_elem_3"
+
+msgid "guarant_elem_4"
+msgstr "guarant_elem_4"
