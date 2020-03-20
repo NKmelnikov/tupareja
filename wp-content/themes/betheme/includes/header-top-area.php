@@ -78,7 +78,7 @@ $homeUrlES = $customHelper::instance()->host_es();
                   <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() .'/our-ladies/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
+                  <a href="<?= get_home_url() .'/about/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?></span></a>
@@ -130,7 +130,7 @@ $homeUrlES = $customHelper::instance()->host_es();
                       <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() .'/our-ladies/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
+                      <a href="<?= get_home_url() .'/about/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
                       <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?> </span><span class="triangle-turn">&#9668;</span></a>
