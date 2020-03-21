@@ -18,7 +18,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   <img class="heart-box__heart-medium search-top-section hs5" src="<?= $pathToCustom . '_static/img/medium-right.png?v='.$v ?>" alt="">
   <img class="heart-box__heart-medium search-top-section hs4" src="<?= $pathToCustom . '_static/img/medium-left.png?v='.$v ?>" alt="">
 </div>
-<section class="mp1-main-search">
+<section id="main-gallery" class="mp1-main-search">
 
 	<div class="mp1-main-search-wrap">
 	  <label for="mp1-main-search-input"><?php _e('gallery_search', 'betheme') ?></label>

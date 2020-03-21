@@ -102,18 +102,18 @@
             if (data.error) {
                 this.showNotification('danger', data.error)
             } else {
-                let noti = la1.showNotification('success', '<strong>Saving files</strong>.');
+                let noti = la1.showNotification('success', `<strong>${data.success0}</strong>.`);
                 $('.meter').show();
                 setTimeout(function () {
-                    noti.update('message', '<strong>Files are saved</strong>.');
+                    noti.update('message', `<strong>${data.success1}</strong>.`);
                     $('.meter').hide();
                 }, 2000);
                 setTimeout(function () {
-                    noti.update('message', data.success);
-                }, 3000);
+                    noti.update('message', data.success2);
+                }, 4000);
                 setTimeout(() => {
                     location.replace(this.homeUrl)
-                }, 7000)
+                }, 9000)
             }
         },
 

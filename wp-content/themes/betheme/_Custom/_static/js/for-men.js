@@ -1,6 +1,6 @@
 (function ($) {
     var ma1 = {
-        homeUrl: location.protocol + '//' + location.host,
+        homeUrl: location.protocol + '//' + location.host + 'es/',
         submitBtn: $('.ma1-submit'),
         mensForm: $('#ma1-form'),
 
@@ -10,14 +10,18 @@
         },
 
         showNotification(type, message, timeOut = 7000) {
-            $.notify({
+            return $.notify({
                 message: message,
             }, {
                 type: type,
                 delay: timeOut,
-                template: '<div data-notify="container" class="ma1-notification alert alert-{0}" role="alert">' +
-                                '<div data-notify="message">{2}</div>' +
-                          '</div>',
+                allow_dismiss: false,
+                template: '<div data-notify="container" class="la1-notification alert alert-{0}" role="alert">' +
+                    '<div data-notify="message">{2}</div>' +
+                    '<div class="meter">' +
+                    '<span style="width:100%;"><span class="progress"></span></span>' +
+                    '</div>' +
+                    '</div>',
                 placement: {
                     from: "bottom"
                 },
@@ -86,10 +90,18 @@
             if (data.error) {
                 this.showNotification('danger', data.error)
             } else {
-                this.showNotification('success', data.success);
+                let noti = ma1.showNotification('success', `<strong>${data.success0}</strong>.`);
+                $('.meter').show();
+                setTimeout(function () {
+                    noti.update('message', `<strong>${data.success1}</strong>.`);
+                    $('.meter').hide();
+                }, 2000);
+                setTimeout(function () {
+                    noti.update('message', data.success2);
+                }, 4000);
                 setTimeout(() => {
                     location.replace(this.homeUrl)
-                }, 7000)
+                }, 9000)
             }
         },
 

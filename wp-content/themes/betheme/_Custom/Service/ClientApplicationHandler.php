@@ -31,7 +31,11 @@ class ClientApplicationHandler
         }
 
         $this->clientRepository->insertApplication(self::TABLE_LADIES, $post);
-        return ['success' => 'Ваша анкета была успешно подана, после подтверждения модератором, она появится на сайте.'];
+        return [
+            'success0' => __('system_files_loading', 'betheme'),
+            'success1' => __('system_files_loaded', 'betheme'),
+            'success2' => __('cah_lady_application', 'betheme')
+        ];
     }
 
     public function menAction($post)
@@ -44,7 +48,11 @@ class ClientApplicationHandler
         }
 
         $this->clientRepository->insertApplication(self::TABLE_MEN, $post);
-        return ['success' => 'Ваша анкета была успешно подана'];
+        return [
+            'success0' => __('system_files_loading', 'betheme'),
+            'success1' => __('system_files_loaded', 'betheme'),
+            'success2' => __('cah_man_application', 'betheme')
+        ];
     }
 
     private function validatePostLadies($post)
@@ -136,13 +144,13 @@ class ClientApplicationHandler
 
         switch (true){
             case $emailExist:
-                return  ['error' => 'this Email is already taken'];
+                return  ['error' => __('cah_email_taken', 'betheme')];
                 break;
             case $phoneExist:
-                return  ['error' => 'this Phone is already taken'];
+                return  ['error' => __('cah_phone_taken', 'betheme')];
                 break;
             case !$validateCaptcha->success:
-                return  ['error' => 'captcha is not checked'];
+                return  ['error' => __('cah_captcha_not_checked', 'betheme')];
                 break;
         }
 

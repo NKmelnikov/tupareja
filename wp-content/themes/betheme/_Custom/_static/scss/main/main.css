@@ -194,6 +194,13 @@
       @media (max-width: 768px) {
         .heart-box__heart-big.hs18 {
           display: none; } }
+    .heart-box__heart-big.hs19 {
+      top: 10px;
+      left: 175px;
+      animation: upDown 2.1s linear .1s infinite; }
+      @media (max-width: 768px) {
+        .heart-box__heart-big.hs19 {
+          display: none; } }
 
 @keyframes upDown {
   0%, 100% {
@@ -257,6 +264,9 @@
     height: 106px;
     border-top: 2px solid white;
     border-bottom: 2px solid white; }
+
+.mfn-main-slider {
+  min-height: 500px; }
 
 .mp1-wrapper {
   display: flex;

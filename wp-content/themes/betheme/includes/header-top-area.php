@@ -129,6 +129,9 @@ $homeUrlES = $customHelper::instance()->host_es();
                     <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
                       <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
                     </li>
+                    <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="<?= get_home_url() .'/#main-gallery' ?>"><span><?php _e('header_our_ladies', 'betheme') ?></span></a>
+                    </li>
                     <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() .'/about/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                     </li>
@@ -186,9 +189,7 @@ $homeUrlES = $customHelper::instance()->host_es();
                     })
                 </script>
                   <?php
-
                   // responsive menu button
-
                   $mb_class = '';
                   if (mfn_opts_get('header-menu-mobile-sticky')) {
                       $mb_class .= ' is-sticky';

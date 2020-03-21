@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Betheme\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-20 21:57+0000\n"
+"PO-Revision-Date: 2020-03-21 22:57+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -11083,6 +11083,9 @@ msgstr ""
 msgid "header_main"
 msgstr "Inicio"
 
+msgid "header_our_ladies"
+msgstr "Our ladies"
+
 msgid "header_about_us"
 msgstr "Sobre nosotros"
 
@@ -12739,3 +12742,32 @@ msgstr "novias en línea"
 
 msgid "guarant_elem_4"
 msgstr "hombres en busca"
+
+msgid "cah_lady_application"
+msgstr ""
+"Su perfil se envió correctamente, después de la confirmación del moderador, "
+"aparecerá en el sitio"
+
+msgid "cah_man_application"
+msgstr ""
+"Su solicitud se ha enviado correctamente y el operador se comunicará con "
+"usted a la brevedad."
+
+msgid "cah_email_taken"
+msgstr "Este correo electrónico ya está en uso"
+
+msgid "cah_phone_taken"
+msgstr "Este teléfono ya está ocupado"
+
+msgid "cah_captcha_not_checked"
+msgstr "Captcha no está marcada"
+
+msgid "cfh_contact_form_sent"
+msgstr ""
+"Gracias, la carta fue enviada, el operador lo contactará a la brevedad."
+
+msgid "system_files_loading"
+msgstr "Cargando archivos"
+
+msgid "system_files_loaded"
+msgstr "Archivos cargados"

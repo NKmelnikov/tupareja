@@ -27,7 +27,7 @@ class ContactFormHandler
         }
 
         $this->sendEmail($post);
-        return ['success' => 'Спасибо. Ваше письмо отправлено. В ближайшее время мы ответим.'];
+        return ['success' => __('cfh_contact_form_sent', 'betheme')];
     }
 
     private function sendEmail($post)
@@ -84,7 +84,7 @@ class ContactFormHandler
 
         $validateCaptcha = $this->validReCaptcha();
         if (!$validateCaptcha->success) {
-            return ['error' => 'captcha is not checked'];
+            return ['error' => __('cah_captcha_not_checked', 'betheme')];
         }
 
         return $post;

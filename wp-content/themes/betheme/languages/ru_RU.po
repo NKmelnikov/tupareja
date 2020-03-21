@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betheme\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-20 21:57+0000\n"
+"PO-Revision-Date: 2020-03-21 22:58+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -11238,7 +11238,7 @@ msgstr ""
 #: Applications/XAMPP/xamppfiles/htdocs/betheme/muffin-options/theme-options.php:5440
 #: Applications/XAMPP/xamppfiles/htdocs/betheme/muffin-options/theme-options.php:5476
 msgid ".ttf"
-msgstr ""
+msgstr "О нас"
 
 #: Applications/XAMPP/xamppfiles/htdocs/betheme/muffin-options/theme-options.php:5442
 #: Applications/XAMPP/xamppfiles/htdocs/betheme/muffin-options/theme-options.php:5478
@@ -11505,6 +11505,9 @@ msgstr "Описание продукта"
 
 msgid "header_main"
 msgstr "Главная"
+
+msgid "header_our_ladies"
+msgstr "Галерея девушек"
 
 msgid "header_about_us"
 msgstr "О нас"
@@ -13051,34 +13054,39 @@ msgstr ""
 "    </p>\n"
 
 msgid "contact_contact"
-msgstr "Contact"
+msgstr "Контакты"
 
 msgid "contact_address"
-msgstr "Address"
+msgstr "Адрес"
 
 msgid "contact_address_text"
-msgstr "Address Text"
+msgstr ""
+"Солом`янська пл.2, <br>\n"
+"оф. 801 <br>\n"
+"Київ - 03035 Україна"
 
 msgid "contact_from_text"
-msgstr "Address Form Text"
+msgstr ""
+"Вы можете задать любой вопрос, отправив его нам на почту, через форму "
+"обратной связи"
 
 msgid "contact_from_name"
-msgstr "Name"
+msgstr "Имя"
 
 msgid "contact_from_email"
-msgstr "Name"
+msgstr "Email"
 
 msgid "contact_from_subject"
-msgstr "Subject"
+msgstr "Тема"
 
 msgid "contact_from_details"
 msgstr "Details"
 
 msgid "contact_from_message"
-msgstr "Message"
+msgstr "Сообщение"
 
 msgid "contact_from_submit"
-msgstr "Submit"
+msgstr "Отправить"
 
 msgid "about_title"
 msgstr "О нас"
@@ -13145,3 +13153,31 @@ msgstr "Невест на сайте"
 
 msgid "guarant_elem_4"
 msgstr "Мужчины в поиске"
+
+msgid "cah_lady_application"
+msgstr ""
+"Ваша анкета была успешно подана, после подтверждения модератором, она "
+"появится на сайте."
+
+msgid "cah_man_application"
+msgstr ""
+"Ваша анкета была успешно подана, в ближайшее время с вами свяжется оператор"
+
+msgid "cah_email_taken"
+msgstr "Имейл уже существует"
+
+msgid "cah_phone_taken"
+msgstr "Телефонный номер уже занят"
+
+msgid "cah_captcha_not_checked"
+msgstr "Капча не подтверждена"
+
+msgid "cfh_contact_form_sent"
+msgstr ""
+"Спасибо. Письмо было отправлено, в ближайшее время с вами свяжется оператор."
+
+msgid "system_files_loading"
+msgstr "Загрузка файлов"
+
+msgid "system_files_loaded"
+msgstr "Файлы загружены"

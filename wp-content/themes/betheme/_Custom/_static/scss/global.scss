@@ -263,6 +263,16 @@
         display: none;
       }
     }
+
+    &.hs19 {
+      top: 10px;
+      left: 175px;
+      animation: upDown 2.1s linear .1s infinite;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
   }
 }
 

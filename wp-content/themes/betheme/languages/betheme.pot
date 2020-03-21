@@ -10876,6 +10876,9 @@ msgstr ""
 msgid "header_main"
 msgstr "Мain"
 
+msgid "header_our_ladies"
+msgstr "Our ladies"
+
 msgid "header_about_us"
 msgstr "About"
 
@@ -11321,3 +11324,28 @@ msgstr "guarant_elem_3"
 
 msgid "guarant_elem_4"
 msgstr "guarant_elem_4"
+
+msgid "cah_lady_application"
+msgstr "Your application was successfully sent"
+
+msgid "cah_man_application"
+msgstr "Your application was successfully sent"
+
+msgid "cah_email_taken"
+msgstr "This email is already taken"
+
+msgid "cah_phone_taken"
+msgstr "This phone is already taken"
+
+msgid "cah_captcha_not_checked"
+msgstr "Captcha is not cheked"
+
+msgid "cfh_contact_form_sent"
+msgstr "Letter was sent"
+
+msgid "system_files_loading"
+msgstr "Loading Files"
+
+msgid "system_files_loaded"
+msgstr "Files uploaded"
+

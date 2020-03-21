@@ -17,7 +17,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 </section>
 
 <div class="heart-box heart-box-search-top">
-	<img class="heart-box__heart-big search-top-section hs3" src="<?= $pathToCustom . '_static/img/big-right.png?v='.$v ?>" alt="">
+	<img class="heart-box__heart-big search-top-section hs19" src="<?= $pathToCustom . '_static/img/big-right.png?v='.$v ?>" alt="">
 	<img class="heart-box__heart-medium search-top-section hs5" src="<?= $pathToCustom . '_static/img/medium-right.png?v='.$v ?>" alt="">
 	<img class="heart-box__heart-medium search-top-section hs4" src="<?= $pathToCustom . '_static/img/medium-left.png?v='.$v ?>" alt="">
 </div>
