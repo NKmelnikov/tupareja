@@ -1,5 +1,13 @@
 @import "variables";
 
+.la1-notification {
+  transition: 0.2s ease-in-out !important;
+  min-width: 300px;
+  color: white;
+  display: flex;
+  padding: 20px;
+}
+
 .error-input {
   border: 1px solid #d95c55 !important;
 }

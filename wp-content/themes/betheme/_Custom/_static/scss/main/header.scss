@@ -1,6 +1,10 @@
 @import "../variables";
 @import "../global";
 
+body,html {
+  overflow-x: visible!important;
+
+}
 #Subheader{
   display: none;
 }

@@ -4,15 +4,19 @@ namespace Helper;
 
 
 use RuntimeException;
+require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
 
 class CustomHelper
 {
+
     /** @var self */
     private static $instance;
-    private $configFilePath = 'wp-content/themes/betheme/_Custom/Helper/config.ini';
+    private $configFilePath = ABSPATH . 'wp-content/themes/betheme/_Custom/Helper/config.ini';
     private $version;
     private $host_ru;
     private $host_es;
+    private $email_from = 'info@tuparejaucraniana.com';
+    private $email_from_name = 'Elena';
 
     public function __construct()
     {
@@ -56,6 +60,16 @@ class CustomHelper
     public function host_es()
     {
         return (string)$this->host_es;
+    }
+
+    public function email_from()
+    {
+        return (string)$this->email_from;
+    }
+
+    public function email_from_name()
+    {
+        return (string)$this->email_from_name;
     }
 
     /**

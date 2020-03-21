@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
+.la1-notification {
+  transition: 0.2s ease-in-out !important;
+  min-width: 300px;
+  color: white;
+  display: flex;
+  padding: 20px; }
+
 .error-input {
   border: 1px solid #d95c55 !important; }
 

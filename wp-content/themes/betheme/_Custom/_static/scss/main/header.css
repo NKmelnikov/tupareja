@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese");
+.la1-notification {
+  transition: 0.2s ease-in-out !important;
+  min-width: 300px;
+  color: white;
+  display: flex;
+  padding: 20px; }
+
 .error-input {
   border: 1px solid #d95c55 !important; }
 
@@ -251,6 +258,9 @@
     border-top: 2px solid white;
     border-bottom: 2px solid white; }
 
+body, html {
+  overflow-x: visible !important; }
+
 #Subheader {
   display: none; }
 
@@ -446,5 +456,3 @@
     .mfn-main-slider .mp1-slider-elem .mp1-slider-b-wrap .mp1-slider-man {
       background: url("/wp-content/themes/betheme/_Custom/_static/img/slider-bt-right.png") no-repeat center center;
       width: 248px; }
-
-/*# sourceMappingURL=header.css.map */
