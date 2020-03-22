@@ -1,8 +1,11 @@
 <?php
 require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
+require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 require_once 'Repository/ClientRepository.php';
 
 use Repository\ClientRepository;
+use Helper\CustomHelper;
+
 const TABLE_MEN = 'wp_men';
 
 if (empty($_GET['customer']) && !is_numeric($_GET['customer'])) {
@@ -23,8 +26,10 @@ if (empty($_GET['_wpnonce'])) {
     die();
 }
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
-require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::instance()->version();
+
+CustomHelper::build();
+$config = CustomHelper::instance();
+$v = $config->version();
 
 ?>
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/men/menEdit.css?v=' .$v ?>">

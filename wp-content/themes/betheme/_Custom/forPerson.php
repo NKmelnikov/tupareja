@@ -3,9 +3,10 @@
 Template Name: forPerson
 */
 
-use Repository\ClientRepository;
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$v = \Helper\CustomHelper::instance()->version();
+use Repository\ClientRepository;
+use Helper\CustomHelper;
+
 get_header( 'person' );
 $clientRepository = new ClientRepository();
 
@@ -32,6 +33,9 @@ function getCurrentAge($timestamp)
 $person = $clientRepository->getById(TABLE_LADIES,$_GET['id']);
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
+CustomHelper::build();
+$config = CustomHelper::instance();
+$v = $config->version();
 ?>
   <link rel="stylesheet" href="<?= $pathToCustom .'_static/scss/person/person.css?v='.$v ?>">
 

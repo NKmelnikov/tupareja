@@ -2,7 +2,10 @@
 require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
 require_once 'Repository/ClientRepository.php';
 require_once 'Helper/CustomHelper.php';
+
 use Repository\ClientRepository;
+use Helper\CustomHelper;
+
 const TABLE_LADIES = 'wp_ladies';
 
 if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
@@ -25,7 +28,11 @@ if(empty($_GET['_wpnonce'])){
 }
 
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
-$v = \Helper\CustomHelper::instance()->version();
+
+CustomHelper::build();
+$config = CustomHelper::instance();
+$v = $config->version();
+
 ?>
 
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v='.$v ?>">
