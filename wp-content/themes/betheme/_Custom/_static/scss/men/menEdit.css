@@ -266,33 +266,41 @@
     border-bottom: 2px solid white; }
 
 .me1-wrapper {
+  padding-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', Arial, sans-serif; }
 
-.me1_input_section {
+.me1-input-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
-  .me1_input_section__first-box, .me1_input_section__second-box {
+  .me1-input-section__first-box, .me1-input-section__second-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 49%; }
-    .me1_input_section__first-box input, .me1_input_section__first-box textarea, .me1_input_section__second-box input, .me1_input_section__second-box textarea {
+    .me1-input-section__first-box input, .me1-input-section__first-box textarea, .me1-input-section__second-box input, .me1-input-section__second-box textarea {
       padding: 5px;
       margin: 5px;
       width: 100%; }
-    .me1_input_section__first-box label, .me1_input_section__second-box label {
+    .me1-input-section__first-box label, .me1-input-section__second-box label {
       font-size: 16px;
       font-weight: bold; }
+  .me1-input-section .me1-name-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .me1-input-section .me1-name-container div {
+      display: flex;
+      flex-direction: column; }
 
 .me1_photo_section {
   display: flex; }
   .me1_photo_section img {
-    max-width: 400px;
+    max-width: 200px;
     margin: 5px; }
     .me1_photo_section img.main-image {
       border: 3px solid orange; }
@@ -318,7 +326,7 @@
     transform: scale(0.95); }
   .me1_bottom_section__button-save {
     background: #0c6856; }
-  .me1_bottom_section__button-activate {
+  .me1_bottom_section__button-translate {
     background: #1f5168; }
   .me1_bottom_section__button-delete {
     background: #682e37; }

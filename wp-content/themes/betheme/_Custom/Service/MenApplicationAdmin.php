@@ -77,15 +77,19 @@ class MenApplicationAdmin extends WP_List_Table
      */
     public function column_default($item, $column_name ) {
         $_item = $item[ $column_name ];
+	    $image_src = $this->handle_image_src($_item);
         switch ( $column_name ) {
 	        case 'id':
             case 'name':
             case 'date of birth':
             case 'email':
             case 'phone':
-	        case 'country':
             case 'town':
                 return $_item;
+	        case 'date_of_birth':
+		        return sprintf("%s \nВозраст:(%s)", date('d-m-Y', $_item), $this->getCurrentAge($_item));
+	        case 'path_to_images':
+		        return "<img src='$image_src' width='39' height='50'>";
             default:
                 return print_r( $item, true ); //Show the whole array for troubleshooting purposes
         }
@@ -114,13 +118,26 @@ class MenApplicationAdmin extends WP_List_Table
         return [
             'cb'      => '<input type="checkbox" />',
 	        'id'    => __( 'ID', 'sp' ),
+	        'path_to_images' => __('Обложка', 'sp'),
             'name'    => __( 'Имя', 'sp' ),
+	        'date_of_birth' => __('Дата Рождения (д.м.г)', 'sp'),
             'email' => __( 'email', 'sp' ),
-            'phone'    => __( 'phone', 'sp' ),
-	        'country'    => __( 'country', 'sp' ),
+            'phone'    => __( 'Телефон', 'sp' ),
             'town'    => __( 'town', 'sp' ),
         ];
     }
+
+	public function getCurrentAge($timestamp)
+	{
+		$age = date('Y') - date('Y', $timestamp);
+		if (date('n') < date('n', $timestamp)) {
+			$age--;
+		}
+		if ((date('n') == date('n', $timestamp)) && (date('j') < date('j', $timestamp))) {
+			$age--;
+		}
+		return $age;
+	}
 
     /**
      * Columns to make sortable.
@@ -133,6 +150,16 @@ class MenApplicationAdmin extends WP_List_Table
         ];
     }
 
+	public function handle_image_src($src)
+	{
+		preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
+//        echo print_r($new_src[0],true);
+		if (!empty($new_src)) {
+			return $new_src[0][0];
+		}
+
+		return '/wp-content/themes/betheme/images/woman-default-picture.png';
+	}
     /**
      * Returns an associative array containing the bulk action
      *
