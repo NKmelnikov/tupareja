@@ -87,7 +87,6 @@ class MenMenu
 
 
 		        <input type="submit" value="Поиск" class="button action">
-
 	        </form>
 
             <div id="poststuff">

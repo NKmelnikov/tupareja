@@ -2,15 +2,16 @@
 @import "../global";
 
 .me1-wrapper{
+  padding-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-.me1_input_section{
+.me1-input-section{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   &__first-box, &__second-box {
@@ -25,9 +26,21 @@
       margin:5px;
       width: 100%;
     }
+
     label{
       font-size: 16px;
       font-weight: bold;
+    }
+  }
+
+  .me1-name-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -35,7 +48,7 @@
   display: flex;
 
   img{
-    max-width: 400px;
+    max-width: 200px;
     margin: 5px;
 
     &.main-image{
@@ -43,7 +56,7 @@
     }
   }
 }
-.me1_bottom_section{
+.me1_bottom_section {
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -66,14 +79,14 @@
   }
 
   button:active{
-  transform: scale(.95);
+    transform: scale(.95);
   }
 
   &__button-save{
     background: #0c6856;
   }
 
-  &__button-activate{
+  &__button-translate{
     background: #1f5168;
   }
 
@@ -81,3 +94,4 @@
     background: #682e37;
   }
 }
+
