@@ -20,7 +20,7 @@
 						?>
             <nav id="menu-bot">
               <ul id="menu-menu-2" class="menu menu-main">
-                <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
+                <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-82 ">
                   <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page">

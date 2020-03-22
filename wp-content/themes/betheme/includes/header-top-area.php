@@ -74,7 +74,7 @@ $homeUrlES = $customHelper::instance()->host_es();
         <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i><a>
             <nav id="menu">
               <ul id="menu-menu-3" class="menu menu-main">
-                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82 current_page_item">
+                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
                   <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
