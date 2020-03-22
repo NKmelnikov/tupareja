@@ -2,6 +2,7 @@
 require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 require_once 'Repository/ClientRepository.php';
+require_once 'Helper/CustomHelper.php';
 
 use Repository\ClientRepository;
 use Helper\CustomHelper;
