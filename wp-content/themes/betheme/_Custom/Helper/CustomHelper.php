@@ -2,9 +2,10 @@
 
 namespace Helper;
 
-
 use RuntimeException;
 require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
+require_once ABSPATH . 'wp-includes/pomo/mo.php';
+use MO;
 
 class CustomHelper
 {
@@ -98,5 +99,12 @@ class CustomHelper
         $text = sanitize_text_field($text);
 
         return $text;
+    }
+
+    public static function getTranslationByLocale($key, $locale) {
+        $mo = new MO;
+        $mofile = get_template_directory() . '/languages/' . $locale . '.mo';
+        $mo->import_from_file($mofile);
+        return $mo->translate($key);
     }
 }

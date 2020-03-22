@@ -16,6 +16,10 @@ class ClientRepository
 
     public function insertApplication($table, $post)
     {
+        if (isset($post['locale'])) {
+            unset($post['locale']);
+        }
+
         $this->db->insert($table, $post);
     }
 

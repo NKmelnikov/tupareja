@@ -1233,6 +1233,15 @@ function get_translations_for_domain( $domain ) {
 	return $noop_translations;
 }
 
+function __2($string, $textdomain, $locale){
+    global $l10n;
+    if(isset($l10n[$textdomain])) $backup = $l10n[$textdomain];
+    load_textdomain($textdomain, get_template_directory() . '/languages/'. $locale . '.mo');
+    $translation = __($string,$textdomain);
+    if(isset($bkup)) $l10n[$textdomain] = $backup;
+    return $translation;
+}
+
 /**
  * Whether there are translations for the text domain.
  *

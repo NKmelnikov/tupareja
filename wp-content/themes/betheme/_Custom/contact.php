@@ -62,6 +62,7 @@ $defaultUrl = $config->host_ru();
     </div>
     <div class="form-block">
       <form action="<?= $pathToCustom . 'Actions/sendContactFormEmail.php' ?>" method="POST" id="cf1-form">
+        <input type="hidden" name="locale" id="cf1-local" value="<?= get_locale() ?>"/>
         <div class="name-email-box">
           <div class="name-email-box__item">
             <input type="text" name="name" id="cf1-name" class="cf1-input" required placeholder="<?php _e('contact_from_name', 'betheme') ?>"/>

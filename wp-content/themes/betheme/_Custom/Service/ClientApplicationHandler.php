@@ -32,9 +32,9 @@ class ClientApplicationHandler
 
         $this->clientRepository->insertApplication(self::TABLE_LADIES, $post);
         return [
-            'success0' => __('system_files_loading', 'betheme'),
-            'success1' => __('system_files_loaded', 'betheme'),
-            'success2' => __('cah_lady_application', 'betheme')
+            'success0' => __(CustomHelper::getTranslationByLocale('system_files_loading', $post['locale'])),
+            'success1' => __(CustomHelper::getTranslationByLocale('system_files_loaded', $post['locale'])),
+            'success2' => __(CustomHelper::getTranslationByLocale('cah_lady_application', $post['locale']))
         ];
     }
 
@@ -49,9 +49,9 @@ class ClientApplicationHandler
 
         $this->clientRepository->insertApplication(self::TABLE_MEN, $post);
         return [
-            'success0' => __('system_files_loading', 'betheme'),
-            'success1' => __('system_files_loaded', 'betheme'),
-            'success2' => __('cah_man_application', 'betheme')
+            'success0' => __(CustomHelper::getTranslationByLocale('system_files_loading', $post['locale'])),
+            'success1' => __(CustomHelper::getTranslationByLocale('system_files_loaded', $post['locale'])),
+            'success2' => __(CustomHelper::getTranslationByLocale('cah_lady_application', $post['locale']))
         ];
     }
 
@@ -59,6 +59,7 @@ class ClientApplicationHandler
     {
         require_once '../Helper/CustomHelper.php';
         $post =  [
+            'locale' => CustomHelper::sanitiseText($post['la1-locale']),
             'name' => CustomHelper::sanitiseText($post['la1-name']),
             'lname' => CustomHelper::sanitiseText($post['la1-lname']),
             'fname' => CustomHelper::sanitiseText($post['la1-fname']),
@@ -89,6 +90,7 @@ class ClientApplicationHandler
     {
         require_once '../Helper/CustomHelper.php';
         $post =  [
+            'locale' => CustomHelper::sanitiseText($post['ma1-locale']),
             'name' => CustomHelper::sanitiseText($post['ma1-name']),
             'date_of_birth' => strtotime(CustomHelper::sanitiseText($post['ma1-dateOfBirth'])),
             'email' => sanitize_email($post['ma1-email']),
@@ -144,13 +146,13 @@ class ClientApplicationHandler
 
         switch (true){
             case $emailExist:
-                return  ['error' => __('cah_email_taken', 'betheme')];
+                return  ['error' => __(CustomHelper::getTranslationByLocale('cah_email_taken', $post['locale']))];
                 break;
             case $phoneExist:
-                return  ['error' => __('cah_phone_taken', 'betheme')];
+                return  ['error' => __(CustomHelper::getTranslationByLocale('cah_phone_taken', $post['locale']))];
                 break;
             case !$validateCaptcha->success:
-                return  ['error' => __('cah_captcha_not_checked', 'betheme')];
+                return  ['error' => __(CustomHelper::getTranslationByLocale('cah_captcha_not_checked', $post['locale']))];
                 break;
         }
 

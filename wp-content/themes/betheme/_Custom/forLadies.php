@@ -39,6 +39,7 @@ $v = \Helper\CustomHelper::instance()->version();
         </ul>
       </article>
       <form action="<?php echo $pathToCustom . 'Actions/submitApplicationLady.php' ?>" class="la1-wrapper" id="la1-form" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="la1-locale" id="cf1-local" value="<?= get_locale() ?>"/>
         <section class="la1-input-section">
           <div class="la1-input-section__first-box">
             <div class="la1-name-container">

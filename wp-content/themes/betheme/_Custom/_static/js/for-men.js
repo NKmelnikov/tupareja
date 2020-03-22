@@ -1,6 +1,6 @@
 (function ($) {
     var ma1 = {
-        homeUrl: location.protocol + '//' + location.host + 'es/',
+        homeUrl: location.protocol + '//' + location.host + '/es/',
         submitBtn: $('.ma1-submit'),
         mensForm: $('#ma1-form'),
 
@@ -108,6 +108,9 @@
         submitApplicationClient() {
             if (ma1.validateHtml().length === 0) {
                 this.sendAjax();
+            } else {
+                this.showNotification('danger', 'Errores en los campos de entrada.');
+                grecaptcha.reset();
             }
         },
 

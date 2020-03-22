@@ -43,7 +43,7 @@
                 success: function (response) {
                     cf1.validate(response);
                 },
-                error: function(err){
+                error: function (err) {
                     console.log(err);
                 }
             });
@@ -72,6 +72,8 @@
         sendContactForm() {
             if (this.validateHtml().length === 0) {
                 this.sendAjax();
+            } else {
+                grecaptcha.reset();
             }
         },
 

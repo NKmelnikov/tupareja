@@ -27,7 +27,7 @@ class ContactFormHandler
         }
 
         $this->sendEmail($post);
-        return ['success' => __('cfh_contact_form_sent', 'betheme')];
+        return ['success' => CustomHelper::getTranslationByLocale('cfh_contact_form_sent', $post['locale'])];
     }
 
     private function sendEmail($post)
@@ -80,11 +80,12 @@ class ContactFormHandler
             'email' => sanitize_email($post['email']),
             'subject' => CustomHelper::sanitiseText($post['subject']),
             'message' => CustomHelper::sanitiseText($post['message']),
+            'locale' => CustomHelper::sanitiseText($post['locale']),
         ];
 
         $validateCaptcha = $this->validReCaptcha();
         if (!$validateCaptcha->success) {
-            return ['error' => __('cah_captcha_not_checked', 'betheme')];
+            return ['error' => CustomHelper::getTranslationByLocale('cah_captcha_not_checked', $post['locale'])];
         }
 
         return $post;

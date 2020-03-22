@@ -120,6 +120,9 @@
         submitApplicationClient() {
             if (this.validateHtml().length === 0) {
                 this.sendAjaxVideo();
+            } else {
+                this.showNotification('danger', 'Ошибки в полях ввода.');
+                grecaptcha.reset();
             }
         },
 
