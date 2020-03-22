@@ -324,7 +324,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px; }
+    margin: 20px 0; }
     @media (max-width: 768px) {
       .la1-wrapper .la1-bottom-section {
         flex-direction: column; } }
@@ -366,6 +366,6 @@
     color: #ffffff !important; }
 
 .la1-input {
-  border: 1px solid transparent; }
+  border: 1px solid rgba(0, 0, 0, 0.08); }
 
 /*# sourceMappingURL=ladies.css.map */
