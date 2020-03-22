@@ -204,7 +204,7 @@ $v = \Helper\CustomHelper::instance()->version();
         </section>
         <section class="la1-bottom-section">
             <input type="button" id="la1-fake-file-input" value="Загрузить видео" />
-            <input required type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
+            <input type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
             <span id="la1-fileName-text"></span>
             <span class="error-box error-la1-video-upload"></span>
 	        <div id="upload-info"></div>
