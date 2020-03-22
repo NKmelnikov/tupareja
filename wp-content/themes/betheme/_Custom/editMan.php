@@ -33,7 +33,6 @@ $v = $config->version();
 
 ?>
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/men/menEdit.css?v=' .$v ?>">
-<link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js'?>">
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateMan.php' ?>" class="me1-wrapper" id="me1-form" method="post" enctype="multipart/form-data">
   <input type="hidden" name="me1-id" id="me1-id" value="<?php echo $_GET['customer'] ?>">
@@ -221,5 +220,6 @@ $v = $config->version();
     <button class="me1_bottom_section__button-save" type="submit">Сохранить</button>
     <!-- <button class="le1_bottom_section__button-activate" type="button">Активировать</button> -->
   </section>
+  <script src="<?php echo $pathToCustom . '_static/libs/bootstrap.notify.min.js'?>"></script>
   <script src="<?php echo $pathToCustom . '_static/js/men-edit.js?v='.$v ?>"></script>
 </form>
