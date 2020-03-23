@@ -72,12 +72,14 @@ $v = $config->version();
 		    <?php $images=explode(",",$person[0]->path_to_images);
 		    foreach ($images as $img)
 		    {?>
-		    <a href="<?php echo convertImgPath($img);?>" data-lightbox="roadtrip"><img width="150" src="<?php echo convertImgPath($img);?>" alt=""></a>
+		    <a href="<?php echo convertImgPath($img);?>" data-lightbox="roadtrip"><img src="<?php echo convertImgPath($img);?>" alt=""></a>
 		    <?php }?>
 	    </section>
+      <?php if($person[0]->video_link !== 'http://no_video'): ?>
 	    <section class="pr1-video pr1-wrap">
 		    <video src="<?php echo convertImgPath($person[0]->video_link);?>" controls></video>
 	    </section>
+      <?php endif;?>
     </div>
   </div>
 

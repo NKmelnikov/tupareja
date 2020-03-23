@@ -13,17 +13,18 @@
 }
 
 .pr1-wrap{
-  width: 70%;
-  margin: 0 auto 40px auto;
+  width: 100%;
   display: flex;
 
 }
 .pr1-lvl1-wrap{
+  justify-content: center;
+
   .left{
-    margin-right: 40px;
+
   }
   .right{
-
+    margin-left: 10px;
     ul{
       li{
         span{
@@ -40,5 +41,33 @@
     span{
       font-weight: bold;
     }
+  }
+}
+
+.pr1-gallery{
+  display: flex;
+  justify-content: space-between;
+
+  a {
+
+    img {
+      height: auto;
+      width: auto;
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+}
+
+.pr1-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  video {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
   }
 }

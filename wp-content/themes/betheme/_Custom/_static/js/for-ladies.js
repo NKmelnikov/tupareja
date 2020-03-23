@@ -22,7 +22,7 @@
                 template: '<div data-notify="container" class="la1-notification alert alert-{0}" role="alert">' +
                     '<div data-notify="message">{2}</div>' +
                     '<div class="meter">' +
-                        '<span style="width:100%;"><span class="progress"></span></span>' +
+                    '<span style="width:100%;"><span class="progress"></span></span>' +
                     '</div>' +
                     '</div>',
                 placement: {
@@ -36,8 +36,11 @@
         },
 
         sendAjax(url_video) {
-            let telegramArray = {name: $('#la1-name').val(), email: $('#la1-email').val(), phone: $('#la1-phone').val()};
-
+            let telegramArray = {
+                name: $('#la1-name').val(),
+                email: $('#la1-email').val(),
+                phone: $('#la1-phone').val()
+            };
             let data = this.ladiesForm.serialize();
             data += '&video_link=' + url_video;
             data['g-recaptcha-response'] = grecaptcha.getResponse();
@@ -53,6 +56,7 @@
         },
 
         sendAjaxVideo() {
+            console.log('sendAjaxVideo');
             let file_video = la1.uploadInput.prop('files')[0];
             let data_video = new FormData();
             data_video.append('file', file_video);
@@ -73,16 +77,19 @@
             let botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ';
             let chatId = '-1001312503507';
             let text = 'Новая !женская! анкета' + "\n";
-                text += `Имя: ${data['name']}` + "\n";
-                text += `Email: ${data['email']}` + "\n";
-                text += `Телефон: ${data['phone']}` + "\n";
+            text += `Имя: ${data['name']}` + "\n";
+            text += `Email: ${data['email']}` + "\n";
+            text += `Телефон: ${data['phone']}` + "\n";
 
 
             let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
             $.ajax({
                 url: url,
                 type: 'POST',
-                data:{chat_id:chatId,text:text},
+                data: {
+                    chat_id: chatId,
+                    text: text
+                },
                 success: function (response) {
 
                 }
@@ -119,7 +126,11 @@
 
         submitApplicationClient() {
             if (this.validateHtml().length === 0) {
-                this.sendAjaxVideo();
+                if (document.getElementById("la1-video-upload").files.length == 0) {
+                    this.sendAjax("no_video");
+                } else {
+                    this.sendAjaxVideo();
+                }
             } else {
                 this.showNotification('danger', 'Ошибки в полях ввода.');
                 grecaptcha.reset();
@@ -166,7 +177,7 @@
     $('#la1-eyeColor').on('change', function () {
         $(this).css('color', 'gray');
 
-        if($(this).val() !== ''){
+        if ($(this).val() !== '') {
             $(this).css('color', 'black');
         }
     })

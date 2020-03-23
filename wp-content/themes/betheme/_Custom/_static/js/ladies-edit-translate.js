@@ -28,7 +28,9 @@
         },
 
         changeInputData(response){
+            console.log(response);
             le1.translatedValArr = response.text[0].split('|');
+            console.log(le1.translatedValArr);
             this.translateValue.each(function (i) {
                 $(this).val(le1.translatedValArr[i]);
             });
@@ -40,6 +42,7 @@
                 le1.currentValArr.push($(this).val());
             });
             let text = le1.currentValArr.join('|');
+            console.log(text);
             le1.sendTranslateAjax(text);
         },
 
