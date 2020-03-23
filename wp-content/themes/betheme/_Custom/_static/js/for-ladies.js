@@ -107,7 +107,8 @@
         validate(data) {
             data = JSON.parse(data);
             if (data.error) {
-                this.showNotification('danger', data.error)
+                this.showNotification('danger', data.error);
+                grecaptcha.reset();
             } else {
                 let noti = la1.showNotification('success', `<strong>${data.success0}</strong>.`);
                 $('.meter').show();

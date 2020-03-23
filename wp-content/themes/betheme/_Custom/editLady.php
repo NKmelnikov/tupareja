@@ -74,7 +74,7 @@ $v = $config->version();
       <input type="text" required name="le1-familyStatus" id="le1-familyStatus" min="2" max="255" class="le1-input translate-value" placeholder="Семейное положение" value="<?php echo $lady['family_status']; ?>">
       <span class="error-box error-le1-familyStatus"></span>
       <label for="le1-kids">Дети</label>
-      <input type="text" required name="le1-kids" id="le1-kids" min="2" max="255" class="le1-input" placeholder="Дети translate-value" value="<?php echo $lady['kids']; ?>">
+      <input type="text" required name="le1-kids" id="le1-kids" min="2" max="255" class="le1-input translate-value" placeholder="Дети translate-value" value="<?php echo $lady['kids']; ?>">
       <span class="error-box error-le1-kids"></span>
       <label for="le1-video-link">Ссылка на видео о себе</label>
       <input type="text" required name="le1-video-link" id="le1-video-link" min="2" max="255" class="le1-input" placeholder="Ссылка на видео о себе" value="<?php echo $lady['video_link']; ?>">
