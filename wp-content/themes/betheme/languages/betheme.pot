@@ -11346,6 +11346,30 @@ msgstr "Letter was sent"
 msgid "system_files_loading"
 msgstr "Loading Files"
 
-msgid "system_files_loaded"
-msgstr "Files uploaded"
+msgid "person_country"
+msgstr "Country"
+
+msgid "person_town"
+msgstr "Town"
+
+msgid "person_profession"
+msgstr "Profession"
+
+msgid "person_smoking"
+msgstr "Smoking"
+
+msgid "person_languages"
+msgstr "Languages"
+
+msgid "person_family_status"
+msgstr "Family status"
+
+msgid "person_kids"
+msgstr "Kids"
+
+msgid "person_about_myself"
+msgstr "About myself"
+
+msgid "person_about_target"
+msgstr "About target"
 

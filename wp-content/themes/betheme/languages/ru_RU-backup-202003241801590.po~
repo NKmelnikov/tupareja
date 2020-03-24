@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betheme\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-21 22:09+0000\n"
+"PO-Revision-Date: 2020-03-24 17:59+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -11506,6 +11506,9 @@ msgstr "Описание продукта"
 msgid "header_main"
 msgstr "Главная"
 
+msgid "header_our_ladies"
+msgstr "Галерея девушек"
+
 msgid "header_about_us"
 msgstr "О нас"
 
@@ -11833,21 +11836,21 @@ msgid "service_step_title_1"
 msgstr "Шаг первый"
 
 msgid "service_step_text_1"
-msgstr "Регистрация на сайте - после которой, с Вами свяжется на менеджер."
+msgstr "Регистрация и заполнение анкеты на сайте"
 
 msgid "service_step_title_2"
 msgstr "Шаг второй"
 
 msgid "service_step_text_2"
-msgstr "Заполнение анкеты на нашем сайте"
+msgstr "Размещение фото и мини видео презентации"
 
 msgid "service_step_title_3"
 msgstr "Шаг третий"
 
 msgid "service_step_text_3"
 msgstr ""
-"Личная встреча с матчмейкоером в офисе. Это позволит точно определить, какой "
-"кандидат Вам подходит"
+"Встреча с матчмейкером в офисе для личного знакомства. Это позволит лучше "
+"узнать вас и более точно определить какой кандидат вам подходит. "
 
 msgid "service_step_title_4"
 msgstr "Шаг четвёртый"
@@ -13176,5 +13179,29 @@ msgstr ""
 msgid "system_files_loading"
 msgstr "Загрузка файлов"
 
-msgid "system_files_loaded"
-msgstr "Файлы загружены"
+msgid "person_country"
+msgstr "Страна"
+
+msgid "person_town"
+msgstr "Город"
+
+msgid "person_profession"
+msgstr "Профессия"
+
+msgid "person_smoking"
+msgstr "Курение"
+
+msgid "person_languages"
+msgstr "Иностранные языки"
+
+msgid "person_family_status"
+msgstr "Семейное положение"
+
+msgid "person_kids"
+msgstr "Дети"
+
+msgid "person_about_myself"
+msgstr "О себе"
+
+msgid "person_about_target"
+msgstr "О партнёре"
