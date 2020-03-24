@@ -48,9 +48,9 @@
                                 <div class="mp1-image-hover-container">
                                   <span class="mp1-image-hover-container__name">${item.name}</span>
                                   <span class="mp1-image-hover-container__divider"></span>
-                                  <span class="mp1-image-hover-container__age"><b>Edad:${item.age}</span>
-                                  <span class="mp1-image-hover-container__height"><b>Crecimiento:</b>${item.height}</span>
-                                  <span class="mp1-image-hover-container__profession"><b>Profesión:</b>${item.profession}</span>
+                                  <span class="mp1-image-hover-container__age"><b>Edad: </b>${item.age}</span>
+                                  <span class="mp1-image-hover-container__height"><b>Altura: </b>${item.height}</span>
+                                  <span class="mp1-image-hover-container__profession"><b>Profesión: </b>${item.profession}</span>
                                 </div>
                             </section>
                          </a>`;

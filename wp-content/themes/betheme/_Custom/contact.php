@@ -19,7 +19,7 @@ $defaultUrl = $config->host_ru();
 
 <main class="cf1-wrapper">
   <section class="cf1-wrapper-image">
-    <img class="cf1-image" src="<?= $defaultUrl . '/wp-content/uploads/2018/11/model2-contact-main-bg.jpg' ?>"/>
+    <img class="cf1-image" src="<?= $defaultUrl . '/wp-content/themes/betheme/_Custom/_static/img/contact_page.jpeg' ?>"/>
   </section>
 
   <section class="cf1-wrapper-info">
