@@ -25,7 +25,7 @@
           break;
   }
 ?>
-<html <?php language_attributes(); ?> class="no-js<?php echo esc_attr(mfn_user_os()); ?> <?= $languageClass ?>"<?php mfn_tag_schema(); ?>>
+<html <?php language_attributes(); ?> class="noselect no-js<?php echo esc_attr(mfn_user_os()); ?> <?= $languageClass ?>"<?php mfn_tag_schema(); ?>>
 <?php endif; ?>
 
 <head>

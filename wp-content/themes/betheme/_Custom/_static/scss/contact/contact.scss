@@ -6,7 +6,13 @@
 
     img {
       height: 700px;
+
+      @media #{$mobile} {
+        height: 300px;
+      }
     }
+
+
   }
 
   &-info {
@@ -15,8 +21,17 @@
     align-items: flex-start;
     padding: 20px;
 
+    @media #{$mobile} {
+      flex-direction: column;
+    }
+
     .text-block {
       width: 50%;
+
+      @media #{$mobile} {
+        width: 100%;
+        margin-bottom: 20px;
+      }
 
       .title-block {
         font-size: 18px;
@@ -28,6 +43,10 @@
     .form-block {
       width: 50%;
 
+      @media #{$mobile} {
+        width: 100%;
+      }
+
       form {
         display: flex;
         flex-direction: column;
@@ -36,18 +55,18 @@
       }
 
       input, textarea {
-        border: 1px solid rgba(0,0,0,.08);
+        border: 1px solid rgba(0, 0, 0, .08);
         width: 100%;
         margin: 0;
       }
 
-      .name-email-box{
+      .name-email-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
 
-        &__item{
+        &__item {
           display: flex;
           flex-direction: column;
           width: 49%;
@@ -58,6 +77,7 @@
         }
 
       }
+
       .error-box {
         height: 25px;
       }
@@ -65,13 +85,21 @@
       button {
         width: 200px;
         margin: 0;
+
+        @media #{$mobile} {
+          margin-top: 20px;
+        }
       }
 
-      .captcha-block{
+      .captcha-block {
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @media #{$mobile} {
+          flex-direction: column;
+        }
       }
     }
   }
