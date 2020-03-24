@@ -59,7 +59,9 @@ $config = CustomHelper::instance();
 $v = $config->version();
 ?>
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/person/person.css?v=' . $v ?>">
-
+  <script language="JavaScript">
+      document.oncontextmenu =new Function("return false;")
+  </script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
 
