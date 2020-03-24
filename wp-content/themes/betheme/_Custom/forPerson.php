@@ -62,7 +62,8 @@ $v = $config->version();
   <script language="JavaScript">
       document.oncontextmenu =new Function("return false;")
   </script>
-  <div id="Content" class="container">
+
+  <div id="Content" class="noselect container">
     <div class="content_wrapper clearfix ">
 
       <section class="pr1-lvl1-wrap pr1-wrap">
