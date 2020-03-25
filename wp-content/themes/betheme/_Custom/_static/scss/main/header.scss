@@ -229,6 +229,18 @@ body, html {
   .logo {
     display: block !important;
   }
+
+  #menu-bot{
+    ul{
+      li{
+        a{
+          span{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .mfn-main-slider {

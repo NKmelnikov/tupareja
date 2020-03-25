@@ -29,9 +29,9 @@
 <?php endif; ?>
 
 <head>
-  <script language="JavaScript">
-      document.oncontextmenu =new Function("return false;")
-  </script>
+<!--  <script language="JavaScript">-->
+<!--      document.oncontextmenu =new Function("return false;")-->
+<!--  </script>-->
 
 <?php wp_head(); ?>
   <meta charset="<?php bloginfo('charset'); ?>" />
@@ -47,9 +47,8 @@
   <meta property="twitter:title" content="Tu Pareja Ucraniana">
   <meta property="twitter:description" content="Tu Pareja Ucraniana. Encuentra tu amor.">
   <meta property="twitter:image" content="/wp-content/themes/betheme/_Custom/_static/img/tupareja-logo-es.png">
-  
+
 	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/main/header.css?v=<?= time() ?>">
-  <link rel="shortcut icon" href="/wp-content/themes/betheme/_Custom/_static/img/32x32_fav_trns_32x32_logomark.png" />
 </head>
 
 <body onselectstart="return false" <?php body_class(); ?>>

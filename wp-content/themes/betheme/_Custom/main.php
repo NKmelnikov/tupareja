@@ -21,8 +21,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <section id="main-gallery" class="mp1-main-search">
 
 	<div class="mp1-main-search-wrap">
-	  <label for="mp1-main-search-input"><?php _e('gallery_search', 'betheme') ?></label>
-	  <input class="mp1-main-search__input" id="mp1-main-search-input" name="mp1-main-search-input" type="text">
+	  <input class="mp1-main-search__input" id="mp1-main-search-input" name="mp1-main-search-input" type="text" placeholder="<?php _e('gallery_search', 'betheme') ?>">
 	  <button class="mp1-main-search__btn" id="mp1-main-search-btn"></button>
 	</div>
 
