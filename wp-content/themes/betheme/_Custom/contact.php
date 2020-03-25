@@ -8,7 +8,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 $config = \Helper\CustomHelper::instance();
 $v = $config->version();
-$defaultUrl = $config->host_ru();
+$defaultUrl = $config->host_es();
 
 ?>
 <script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js'?>"></script>
