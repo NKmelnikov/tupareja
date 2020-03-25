@@ -32,10 +32,24 @@
   <script language="JavaScript">
       document.oncontextmenu =new Function("return false;")
   </script>
-<meta charset="<?php bloginfo('charset'); ?>" />
-<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/main/header.css?v=<?= time() ?>">
 
+<?php wp_head(); ?>
+  <meta charset="<?php bloginfo('charset'); ?>" />
+  <meta name="keywords" content="tu, pareja, ucraniana">
+  <meta name="author" content="https://melnikovshop.online">
+  <meta property="og:title" content="Tu Pareja Ucraniana">
+  <meta property="og:description" content="Tu Pareja Ucraniana. Encuentra tu amor.">
+  <meta property="og:image" content="/wp-content/themes/betheme/_Custom/_static/img/tupareja-logo-es.png">
+  <meta property="og:url" content="https://tuparejaucraniana.com/">
+
+  <meta property="twitter:card" content="/wp-content/themes/betheme/_Custom/_static/img/tupareja-logo-es.png">
+  <meta property="twitter:url" content="https://tuparejaucraniana.com/">
+  <meta property="twitter:title" content="Tu Pareja Ucraniana">
+  <meta property="twitter:description" content="Tu Pareja Ucraniana. Encuentra tu amor.">
+  <meta property="twitter:image" content="/wp-content/themes/betheme/_Custom/_static/img/tupareja-logo-es.png">
+  
+	<link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/main/header.css?v=<?= time() ?>">
+  <link rel="shortcut icon" href="/wp-content/themes/betheme/_Custom/_static/img/32x32_fav_trns_32x32_logomark.png" />
 </head>
 
 <body onselectstart="return false" <?php body_class(); ?>>
