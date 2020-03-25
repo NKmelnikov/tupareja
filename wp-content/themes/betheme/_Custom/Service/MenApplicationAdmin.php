@@ -158,7 +158,7 @@ class MenApplicationAdmin extends WP_List_Table
 			return $new_src[0][0];
 		}
 
-		return '/wp-content/themes/betheme/images/woman-default-picture.png';
+		return '/wp-content/themes/betheme/images/default_man_photo.jpg';
 	}
     /**
      * Returns an associative array containing the bulk action

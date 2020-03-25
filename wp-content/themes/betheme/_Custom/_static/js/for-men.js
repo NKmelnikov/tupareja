@@ -90,14 +90,14 @@
             if (data.error) {
                 this.showNotification('danger', data.error)
             } else {
-                let noti = ma1.showNotification('success', `<strong>${data.success0}</strong>.`);
+                let noti = ma1.showNotification('success', `<strong>Cargando archivos...</strong>.`);
                 $('.meter').show();
                 setTimeout(function () {
-                    noti.update('message', `<strong>${data.success1}</strong>.`);
+                    noti.update('message', `<strong>Los archivos están cargados</strong>.`);
                     $('.meter').hide();
                 }, 2000);
                 setTimeout(function () {
-                    noti.update('message', data.success2);
+                    noti.update('message', 'Gracias, el operador lo contactará a la brevedad.');
                 }, 4000);
                 setTimeout(() => {
                     location.replace(this.homeUrl)

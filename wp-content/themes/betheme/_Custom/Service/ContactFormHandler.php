@@ -42,13 +42,13 @@ class ContactFormHandler
                     ],
                     'To' => [
                         [
-                            'Email' => $post['email'],
-                            'Name' => $post['name']
+                            'Email' => $this->helper->email_from(),
+                            'Name' => $this->helper->email_from_name()
                         ]
                     ],
                     'Subject' => $post['subject'],
                     'TextPart' => "",
-                    'HTMLPart' => "<p>" . $post['message'] . "</p>",
+                    'HTMLPart' => "<h3>Name:". $post['name'] ."</h3><br><h3>From:". $post['email'] ."</h3><br><p>" . $post['message'] . "</p>",
                     'CustomID' => "AppGettingStartedTest"
                 ]
             ]
