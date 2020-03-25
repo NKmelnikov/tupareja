@@ -115,7 +115,7 @@ class ClientRepository
      */
     public function getLadiesForGallery()
     {
-        $sql = "SELECT * FROM wp_ladies WHERE activated='1'";
+        $sql = "SELECT * FROM wp_ladies WHERE activated='1' ORDER BY `id` DESC";
         return $this->db->get_results($sql, 'ARRAY_A');
     }
     /**

@@ -38,6 +38,7 @@
                 },
                 callback: function (data, pagination) {
                     mp1.galleryWrapper.empty();
+                    data = data.sort().reverse();
                     data.forEach((item, i) => {
                         let lady = `
                         <a href="person-page/?page=lady&id=${item.id}" target="_blank">
@@ -48,6 +49,7 @@
                                 <div class="mp1-image-hover-container">
                                   <span class="mp1-image-hover-container__name">${item.name}</span>
                                   <span class="mp1-image-hover-container__divider"></span>
+                                  <span class="mp1-image-hover-container__age"><b>id: </b>${item.id}</span>
                                   <span class="mp1-image-hover-container__age"><b>Edad: </b>${item.age}</span>
                                   <span class="mp1-image-hover-container__height"><b>Altura: </b>${item.height}</span>
                                   <span class="mp1-image-hover-container__profession"><b>Profesión: </b>${item.profession}</span>
