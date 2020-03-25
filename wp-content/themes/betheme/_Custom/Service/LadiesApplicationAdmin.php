@@ -174,6 +174,7 @@ class LadiesApplicationAdmin extends WP_List_Table
     public function get_sortable_columns()
     {
         return [
+            'id' => ['id', true],
             'activated' => ['activated', true],
             'name' => ['name', true],
             'family_status' => ['name', false]
@@ -255,7 +256,7 @@ class LadiesApplicationAdmin extends WP_List_Table
             if (!wp_verify_nonce($nonce, 'sp_delete_customer')) {
                 die('Go get a life script kiddies');
             } else {
-                $this->clientRepository->deleteElement(self::TABLE_LADIES, absint($_GET['customer']));
+                @$this->clientRepository->deleteElement(self::TABLE_LADIES, absint($_GET['customer']));
 
                 wp_redirect(esc_url(add_query_arg()));
                 exit;
