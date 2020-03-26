@@ -5,6 +5,9 @@
  * Instead, this should be required via the endpoint.php or endpoint-cors.php
  * file(s).
  */
+require_once 'CustomHelper.php';
+
+use Helper\CustomHelper;
 
 class UploadHelper
 {
@@ -18,6 +21,7 @@ class UploadHelper
     public $chunksExpireIn = 604800; // One week
 
     protected $uploadName;
+
 
     /**
      * Get the original filename
@@ -101,6 +105,8 @@ class UploadHelper
     public function handleUpload($uploadDirectory, $name = null)
     {
 
+        CustomHelper::build();
+        $helper = CustomHelper::instance();
         if (is_writable($this->chunksFolder) &&
             1 == mt_rand(1, 1 / $this->chunksCleanupProbability)) {
 
@@ -198,7 +204,7 @@ class UploadHelper
                 $imageWithWm = $file['tmp_name'];
                 if (move_uploaded_file($file['tmp_name'], $target)) {
                     $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-                    $watermark = imagecreatefrompng($actual_link . '/wp-content/uploads/2020/02/tupareja_main_watermark_V2.png');
+                    $watermark = imagecreatefrompng($helper->host_es() . '/wp-content/themes/betheme/_Custom/Helper/tupareja_main_watermark_V2.png');
                     imagealphablending($watermark, false);
                     imagesavealpha($watermark, true);
                     $img = imagecreatefromjpeg($target);
@@ -214,7 +220,7 @@ class UploadHelper
                     imagedestroy($watermark);
 
 
-                    $watermark = imagecreatefrompng($actual_link . '/wp-content/uploads/2020/02/tupareja_watermark_2.png');
+                    $watermark = imagecreatefrompng($helper->host_es() . '/wp-content/themes/betheme/_Custom/Helper/tupareja_watermark_2.png');
                     imagealphablending($watermark, false);
                     imagesavealpha($watermark, true);
                     $img = imagecreatefromjpeg($target);
