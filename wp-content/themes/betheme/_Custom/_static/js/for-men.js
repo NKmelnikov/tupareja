@@ -1,6 +1,6 @@
 (function ($) {
     var ma1 = {
-        homeUrl: location.protocol + '//' + location.host + '/es/',
+        homeUrl: location.protocol + '//' + location.host,
         submitBtn: $('.ma1-submit'),
         mensForm: $('#ma1-form'),
 
@@ -33,34 +33,29 @@
         },
 
         sendAjax() {
-            let telegramArray = {
-                name: $('#ma1-name').val(),
-                email: $('#ma1-email').val(),
-                phone: $('#ma1-phone').val()
-            };
-
             let data = this.mensForm.serialize();
             data['g-recaptcha-response'] = grecaptcha.getResponse();
-
             $.ajax({
                 url: this.mensForm.attr('action'),
                 type: 'POST',
                 data: data,
                 success: function (response) {
                     ma1.validate(response);
-                    ma1.sendAjaxTelegram(telegramArray)
 
                 }
             });
         },
 
-        sendAjaxTelegram(data) {
-            let botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ';
-            let chatId = '-1001312503507';
-            let text = 'Новая !мужская! анкета' + "\n";
-            text += `Имя: ${data['name']}` + "\n";
-            text += `Email: ${data['email']}` + "\n";
-            text += `Телефон: ${data['phone']}` + "\n";
+        sendAjaxTelegram() {
+            let name = $('#ma1-name').val(),
+                email = $('#ma1-email').val(),
+                phone = $('#ma1-phone').val(),
+                botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ',
+                chatId = '-1001312503507',
+                text = '*Nuevo perfil de hombre*' + "\n";
+            text += `*Nombre*: ${name}` + "\n";
+            text += `*Email*: ${email}` + "\n";
+            text += `*Teléfono*: ${phone}` + "\n";
 
 
             let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -69,7 +64,8 @@
                 type: 'POST',
                 data: {
                     chat_id: chatId,
-                    text: text
+                    text: text,
+                    parse_mode: 'Markdown'
                 },
                 success: function (response) {
 
@@ -90,6 +86,7 @@
             if (data.error) {
                 this.showNotification('danger', data.error)
             } else {
+                ma1.sendAjaxTelegram();
                 let noti = ma1.showNotification('success', `<strong>Cargando archivos...</strong>.`);
                 $('.meter').show();
                 setTimeout(function () {
@@ -101,7 +98,7 @@
                 }, 4000);
                 setTimeout(() => {
                     location.replace(this.homeUrl)
-                }, 9000)
+                }, 9000);
             }
         },
 
@@ -116,9 +113,9 @@
 
     };
 
-  $('.ma1-input').on('input', () => {
-    ma1.clearErrors();
-  });
+    $('.ma1-input').on('input', () => {
+        ma1.clearErrors();
+    });
 
     ma1.submitBtn.on('click', (e) => {
         e.preventDefault();

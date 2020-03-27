@@ -1,6 +1,6 @@
 (function ($) {
     let la1 = {
-        homeUrl: location.protocol + '//' + location.host,
+        homeUrl: location.protocol + '//' + location.host + '/ru/',
         submitBtn: $('.la1-submit'),
         ladiesForm: $('#la1-form'),
         uploadInput: $('#la1-video-upload'),
@@ -50,7 +50,6 @@
                 data: data,
                 success: function (response) {
                     la1.validate(response);
-                    la1.sendAjaxTelegram(telegramArray)
                 }
             });
         },
@@ -73,13 +72,16 @@
             });
         },
 
-        sendAjaxTelegram(data) {
-            let botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ';
-            let chatId = '-1001312503507';
-            let text = 'Новая !женская! анкета' + "\n";
-            text += `Имя: ${data['name']}` + "\n";
-            text += `Email: ${data['email']}` + "\n";
-            text += `Телефон: ${data['phone']}` + "\n";
+        sendAjaxTelegram() {
+            let name = $('#la1-name').val(),
+                email = $('#la1-email').val(),
+                phone = $('#la1-phone').val(),
+                botToken = '542831533:AAHGt0Q4YVi0EuLkOpkDqdyzpQD5IInzCHQ',
+                chatId = '-1001312503507',
+                text = '*Nuevo perfil de chica*' + "\n";
+            text += `*Nombre*: ${name}` + "\n";
+            text += `*Email*: ${email}` + "\n";
+            text += `*Teléfono*: ${phone}` + "\n";
 
 
             let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -88,7 +90,8 @@
                 type: 'POST',
                 data: {
                     chat_id: chatId,
-                    text: text
+                    text: text,
+                    parse_mode: 'Markdown'
                 },
                 success: function (response) {
 
@@ -110,6 +113,7 @@
                 this.showNotification('danger', data.error);
                 grecaptcha.reset();
             } else {
+                la1.sendAjaxTelegram();
                 let noti = la1.showNotification('success', `<strong>Загрузка файлов...</strong>`);
                 $('.meter').show();
                 setTimeout(function () {
@@ -121,7 +125,7 @@
                 }, 4000);
                 setTimeout(() => {
                     location.replace(this.homeUrl)
-                }, 9000)
+                }, 9000);
             }
         },
 
