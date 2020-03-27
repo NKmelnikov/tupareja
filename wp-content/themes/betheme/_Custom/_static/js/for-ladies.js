@@ -110,14 +110,14 @@
                 this.showNotification('danger', data.error);
                 grecaptcha.reset();
             } else {
-                let noti = la1.showNotification('success', `<strong>${data.success0}</strong>.`);
+                let noti = la1.showNotification('success', `<strong>Загрузка файлов...</strong>.`);
                 $('.meter').show();
                 setTimeout(function () {
-                    noti.update('message', `<strong>${data.success1}</strong>.`);
+                    noti.update('message', `<strong>Файлы загружены!</strong>.`);
                     $('.meter').hide();
                 }, 2000);
                 setTimeout(function () {
-                    noti.update('message', data.success2);
+                    noti.update('message', 'Спасибо. Ваша анкета появится на сайте, после проверки администратором');
                 }, 4000);
                 setTimeout(() => {
                     location.replace(this.homeUrl)

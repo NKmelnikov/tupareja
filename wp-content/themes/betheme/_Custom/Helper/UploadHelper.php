@@ -195,7 +195,8 @@ class UploadHelper
             return array("success" => true, "uuid" => $uuid, "path" => $targetFolder);
         } else {
             # non-chunked upload
-            $target = join(DIRECTORY_SEPARATOR, array($uploadDirectory, date("Y"), date("d.m"), time() . '--' . $name));
+            $target = join(DIRECTORY_SEPARATOR, array($uploadDirectory, date("Y"), date("m.d"), time() . '--' . $name));
+            $ext = pathinfo($target, PATHINFO_EXTENSION);
             if ($target) {
                 $this->uploadName = basename($target);
                 if (!is_dir(dirname($target))) {
@@ -207,7 +208,14 @@ class UploadHelper
                     $watermark = imagecreatefrompng($helper->host_es() . '/wp-content/themes/betheme/_Custom/Helper/tupareja_main_watermark_V2.png');
                     imagealphablending($watermark, false);
                     imagesavealpha($watermark, true);
-                    $img = imagecreatefromjpeg($target);
+                    switch ($ext) {
+                        case 'png':
+                            $img = imagecreatefrompng($target);
+                            break;
+                        default:
+                            $img = imagecreatefromjpeg($target);
+                            break;
+                    }
                     $img_w = imagesx($img);
                     $img_h = imagesy($img);
                     $wtrmrk_w = imagesx($watermark);
