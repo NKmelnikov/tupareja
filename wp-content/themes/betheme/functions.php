@@ -18,6 +18,8 @@ add_filter('widget_text', 'do_shortcode');
 
 add_filter('the_excerpt', 'shortcode_unautop');
 add_filter('the_excerpt', 'do_shortcode');
+add_filter( 'auto_update_plugin', '__return_false' );
+add_filter( 'auto_update_theme', '__return_false' );
 
 /**
  * White Label
