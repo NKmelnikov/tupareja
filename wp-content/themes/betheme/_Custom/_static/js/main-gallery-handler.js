@@ -127,24 +127,20 @@
             mp1.mainSearchArray = [];
             ladiesArray.forEach((item, i) => {
                 let name = item.name.toLowerCase();
-                let lname = item.lname.toLowerCase();
-                let fname = item.fname.toLowerCase();
+                let id = item.id;
                 let searchVal = mp1.mainSearchInput.val().toLowerCase().trim();
                 if (
                     name.includes(searchVal) ||
-                    lname.includes(searchVal) ||
-                    fname.includes(searchVal)
+                    id.includes(searchVal)
                 ) {
                     mp1.mainSearchArray.push(item)
                 } else if (
                     searchVal.includes(name) ||
-                    searchVal.includes(lname) ||
-                    searchVal.includes(fname)
+                    searchVal.includes(id)
                 ) {
                     mp1.mainSearchArray.push(item)
                 }
             });
-
             return mp1.renderLadyGrid(mp1.mainSearchArray);
         }
 
@@ -172,6 +168,7 @@
         });
 
         mp1.mainSearchBtn.on('click', () => {
+            console.log(mp1.ladiesArray);
             mp1.mainSearch(mp1.ladiesArray);
         });
 
@@ -210,15 +207,5 @@
                 }
             }
         });
-
-        // $('html').css('position', 'relative');
-        // $('html').append('  <div class="cloak">\n' +
-        //     '    <div class="spinner"></div>\n' +
-        //     '  </div>');
-        //
-        // window.addEventListener('load', function () {
-        //     $('.cloak').remove();
-        // })
-
     });
 })(jQuery);
