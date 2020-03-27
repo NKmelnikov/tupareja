@@ -71,7 +71,7 @@ class ClientRepository
 			    );
 		    }elseif (isset($query['ladiesMaxAge'])&& $query['ladiesMaxAge']!=""){
 			    $sql = sprintf(
-				    "SELECT * FROM %s WHERE `date_of_birth` BETWEEN %d AND %d",
+				    "SELECT * FROM %s WHERE `date_of_birth` BETWEEN %d AND %d ",
 				    $table,
 
 				    time()-($query['ladiesMaxAge']*31556926),
@@ -104,6 +104,7 @@ class ClientRepository
             $sql .= ' ORDER BY ' . esc_sql($_REQUEST['orderby']);
             $sql .= !empty($_REQUEST['order']) ? ' ' . esc_sql($_REQUEST['order']) : ' ASC';
         }
+        $sql .= ' ORDER BY id DESC';
         $sql .= " LIMIT $per_page";
         $sql .= ' OFFSET ' . ($page_number - 1) * $per_page;
         $result = $this->db->get_results($sql, 'ARRAY_A');
