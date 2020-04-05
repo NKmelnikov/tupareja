@@ -129,6 +129,10 @@ class LadiesMenu
 	                                    $this->ladiesApplicationAdmin->display();
                                  ?>
                             </form>
+                          <form method="POST">
+                            <input type="hidden" name="resetPosition" value="1">
+                            <button>Сброс позиций</button>
+                          </form>
                           <script>
                             $(function () {
                               $('input.change_position').focusout(function () {

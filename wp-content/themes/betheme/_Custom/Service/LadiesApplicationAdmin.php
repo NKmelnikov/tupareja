@@ -221,14 +221,19 @@ class LadiesApplicationAdmin extends WP_List_Table
             'total_items' => $total_items, //WE have to calculate the total number of items
             'per_page' => $per_page //WE have to determine how many items to show on a page
         ]);
-
-        if (isset($query['old_position'])&& $query['old_position']!="")
+        if (isset($_POST['resetPosition']) && $_POST['resetPosition']==1)
         {
+            $this->clientRepository->resetPosition();
+        }else{
+            if (isset($query['old_position'])&& $query['old_position']!="")
+            {
 
-            if (isset($query['new_position']) && $query['new_position']!="" && $query['new_position']!=$query['old_position']){
-                $this->clientRepository->changePosition($query['new_position'],$query['old_position']);
+                if (isset($query['new_position']) && $query['new_position']!="" && $query['new_position']!=$query['old_position']){
+                    $this->clientRepository->changePosition($query['new_position'],$query['old_position']);
+                }
             }
         }
+
         $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $query);
     }
 

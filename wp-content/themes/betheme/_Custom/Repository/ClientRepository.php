@@ -21,13 +21,26 @@ class ClientRepository
         }
 
         $this->db->insert($table, $post);
-        $sql = sprintf("SELECT `id`,`position` FROM %s ORDER BY `position` DESC",
+        $sql = sprintf("SELECT `id`,`position` FROM %s ORDER BY `position` ASC",
             $table);
+        $result=$this->db->get_results($sql, ARRAY_A);
+
+        foreach ($result as $elem){
+            if ($elem['position']==""){
+                $elem['position']=1;
+            }else{
+            $elem['position']++;
+            }
+            $this->db->update($table,$elem,['id'=>$elem['id']]);
+        }
+    }
+    public function resetPosition(){
+        $sql = sprintf("SELECT `id`,`position` FROM `wp_ladies` ORDER BY `id` DESC");
         $result=$this->db->get_results($sql, ARRAY_A);
         $i=1;
         foreach ($result as $elem){
-            $elem['position']++;
-            $this->db->update($table,$elem,['id'=>$elem['id']]);
+            $elem['position']=$i;
+            $this->db->update("wp_ladies",$elem,['id'=>$elem['id']]);
             $i++;
         }
     }
