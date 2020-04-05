@@ -53,6 +53,7 @@ class LadiesApplicationAdminUpdate
 			'height' => CustomHelper::sanitiseText($post['le1-height']),
 			'weight' => CustomHelper::sanitiseText($post['le1-weight']),
 			'eye_color' => CustomHelper::sanitiseText($post['le1-eyeColor']),
+			'hair_color' => CustomHelper::sanitiseText($post['le1-hair_color']),
 			'languages' => CustomHelper::sanitiseText($post['le1-languages']),
 			'profession' => CustomHelper::sanitiseText($post['le1-profession']),
 			'town' => CustomHelper::sanitiseText($post['le1-town']),

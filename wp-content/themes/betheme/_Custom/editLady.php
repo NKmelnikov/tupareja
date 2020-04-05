@@ -37,6 +37,9 @@ $v = $config->version();
 
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v='.$v ?>">
 
+<link href="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/css/lightbox.css?v=<?= time() ?>" rel="stylesheet" />
+<script src="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/js/lightbox.js?v=<?= time() ?>"></script>
+
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateLady.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
 	<section class="le1_input_section">
@@ -93,9 +96,18 @@ $v = $config->version();
       <label for="le1-weight">Вес</label>
       <input type="text" required name="le1-weight" id="le1-weight" min="2" max="255" class="le1-input" placeholder="Вес" value="<?php echo $lady['weight']; ?>">
       <span class="error-box error-le1-weight"></span>
-      <label for="le1-eyeColor">Цвет глаз</label>
-      <input type="text" required name="le1-eyeColor" id="le1-eyeColor" min="2" max="255" class="le1-input translate-value" placeholder="Цвет глаз" value="<?php echo $lady['eye_color']; ?>">
-      <span class="error-box error-le1-eyeColor"></span>
+      <div class="le1-color-container">
+        <div class="le1-color-box">
+          <label for="le1-eyeColor">Цвет глаз</label>
+          <input type="text" required name="le1-eyeColor" id="le1-eyeColor" min="2" max="255" class="le1-input translate-value" placeholder="Цвет глаз" value="<?php echo $lady['eye_color']; ?>">
+          <span class="error-box error-le1-eyeColor"></span>
+        </div>
+        <div class="le1-color-box">
+          <label for="le1-hair_color">Цвет волос</label>
+          <input type="text" required name="le1-hair_color" id="le1-hair_color" min="2" max="255" class="le1-input translate-value" placeholder="Цвет волос" value="<?php echo $lady['hair_color']; ?>">
+          <span class="error-box error-le1-hair_color"></span>
+        </div>
+      </div>
       <label for="le1-town">Город</label>
       <input type="text" required name="le1-town" id="le1-town" min="2" max="255" class="le1-input translate-value" placeholder="Город" value="<?php echo $lady['town']; ?>">
       <span class="error-box error-le1-town"></span>
@@ -124,12 +136,14 @@ $v = $config->version();
   <?php
   $pathArray = explode(',',$lady['path_to_images']);
   $mainImage = str_replace(ABSPATH, get_home_url() . '/', $lady['main_image_path']);
-
+    ?>
+    <a href="<?php echo $mainImage;?>" data-lightbox="roadtrip"><img src="<?php echo $mainImage;?>" class="main-image" alt="lady image"></a>
+    <?php
   foreach ($pathArray as $image){
     $image = str_replace(ABSPATH, get_home_url() . '/', $image);
     $mainImageClass = ($image == $mainImage) ? 'main-image' : '';
     ?>
-    <img src="<?php echo $image;?>" class="<?php echo $mainImageClass;?>" alt="lady image">
+    <a href="<?php echo $image;?>" data-lightbox="roadtrip"><img src="<?php echo $image;?>" class="<?php echo $mainImageClass;?>" alt="lady image"></a>
     <?php
   }
 

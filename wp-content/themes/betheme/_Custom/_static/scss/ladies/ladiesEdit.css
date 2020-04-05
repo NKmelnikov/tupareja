@@ -303,13 +303,18 @@
     .le1_input_section__first-box label, .le1_input_section__second-box label {
       font-size: 16px;
       font-weight: bold; }
-  .le1_input_section .le1-name-container {
+  .le1_input_section .le1-name-container, .le1_input_section .le1-color-container {
     display: flex;
     justify-content: space-between;
-    width: 100%; }
-    .le1_input_section .le1-name-container div {
+    width: 100%;
+    box-sizing: border-box; }
+    .le1_input_section .le1-name-container div, .le1_input_section .le1-color-container div {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 50%; }
+      .le1_input_section .le1-name-container div input, .le1_input_section .le1-color-container div input {
+        margin-right: 0;
+        margin-left: 0; }
 
 .le1_photo_section {
   display: flex; }
