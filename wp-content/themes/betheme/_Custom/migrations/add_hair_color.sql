@@ -1,2 +1,2 @@
 alter table wp_ladies
-	add hair_color tinytext null after eye_color;
+	add hair_color tinytext 'blond' after eye_color;

@@ -97,8 +97,7 @@ $v = \Helper\CustomHelper::instance()->version();
                   <option value="hazel">Карие</option>
                   <option value="gray">Серые</option>
                   <option value="green">Зелёные</option>
-                  <option value="Marrón">Коричневый</option>
-                  <option value="Negro">Чёрный</option>
+                  <option value="black">Чёрный</option>
                 </select>
                 <span class="error-box error-la1-eyeColor"></span>
               </div>
@@ -106,9 +105,9 @@ $v = \Helper\CustomHelper::instance()->version();
               <div class="la1-color-box">
                 <select required name="la1-hair_color" id="la1-hair_color"  class="la1-input">
                   <option value="">Цвет волос*</option>
-                  <option value="pelirroja">Рыжая</option>
-                  <option value="morena">Брюнетка</option>
-                  <option value="rubia">Блондинка</option>
+                  <option value="ginger">Рыжая</option>
+                  <option value="brunette">Брюнетка</option>
+                  <option value="blond">Блондинка</option>
                 </select>
                 <span class="error-box error-la1-eyeColor"></span>
               </div>

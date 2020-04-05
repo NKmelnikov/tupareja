@@ -36,39 +36,41 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 </section>
 
 <form id="mp1-ds-form" action="">
-	<section class="mp1-ds-age-section">
-		<span><?php _e('search_age', 'betheme') ?></span>
-		<div class="mp1-ds-form-line">
-			<label for="mp1-ds-age-from"><?php _e('search_from', 'betheme') ?></label>
-			<input id="mp1-ds-age-from" name="mp1-ds-age-from" value="18" type="text">
-		</div>
-		<div class="mp1-ds-form-line">
-			<label for="mp1-ds-age-to"><?php _e('search_to', 'betheme') ?></label>
-			<input for="mp1-ds-age-to" name="mp1-ds-age-to" value="60" type="text">
-		</div>
-	</section>
-	<section class="mp1-ds-height-section">
-		<span><?php _e('search_height', 'betheme') ?></span>
-		<div class="mp1-ds-form-line">
-			<label for="mp1-ds-height-from"><?php _e('search_from', 'betheme') ?></label>
-			<input id="mp1-ds-height-from" name="mp1-ds-height-from" value="160" type="text">
-		</div>
-		<div class="mp1-ds-form-line">
-			<label for="mp1-ds-height-to"><?php _e('search_to', 'betheme') ?></label>
-			<input for="mp1-ds-height-to" name="mp1-ds-height-to" value="190" type="text">
-		</div>
-	</section>
-	<section class="mp1-ds-weight-section">
-		<span><?php _e('search_weight', 'betheme') ?></span>
-		<div class="mp1-ds-form-line">
-			<label for="mp1-ds-weight-from"><?php _e('search_from', 'betheme') ?></label>
-			<input id="mp1-ds-weight-from" name="mp1-ds-weight-from" value="45" type="text">
-		</div>
-		<div class="mp1-ds-form-line">
-			<label for="mp1-ds-weight-to"><?php _e('search_to', 'betheme') ?></label>
-			<input for="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
-		</div>
-	</section>
+  <div class="number-search-wrapper">
+    <section class="mp1-ds-age-section">
+      <span><?php _e('search_age', 'betheme') ?></span>
+      <div class="mp1-ds-form-line">
+        <label for="mp1-ds-age-from" class="label-from"><?php _e('search_from', 'betheme') ?></label>
+        <input id="mp1-ds-age-from" name="mp1-ds-age-from" value="18" type="text">
+      </div>
+      <div class="mp1-ds-form-line">
+        <label for="mp1-ds-age-to" class="label-to"><?php _e('search_to', 'betheme') ?></label>
+        <input for="mp1-ds-age-to" name="mp1-ds-age-to" value="60" type="text">
+      </div>
+    </section>
+    <section class="mp1-ds-height-section">
+      <span><?php _e('search_height', 'betheme') ?></span>
+      <div class="mp1-ds-form-line">
+        <label for="mp1-ds-height-from" class="label-from"><?php _e('search_from', 'betheme') ?></label>
+        <input id="mp1-ds-height-from" name="mp1-ds-height-from" value="160" type="text">
+      </div>
+      <div class="mp1-ds-form-line">
+        <label for="mp1-ds-height-to" class="label-to"><?php _e('search_to', 'betheme') ?></label>
+        <input for="mp1-ds-height-to" name="mp1-ds-height-to" value="190" type="text">
+      </div>
+    </section>
+    <section class="mp1-ds-weight-section">
+      <span><?php _e('search_weight', 'betheme') ?></span>
+      <div class="mp1-ds-form-line">
+        <label for="mp1-ds-weight-from" class="label-from"><?php _e('search_from', 'betheme') ?></label>
+        <input id="mp1-ds-weight-from" name="mp1-ds-weight-from" value="45" type="text">
+      </div>
+      <div class="mp1-ds-form-line">
+        <label for="mp1-ds-weight-to" class="label-to"><?php _e('search_to', 'betheme') ?></label>
+        <input for="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
+      </div>
+    </section>
+  </div>
 	<section class="mp1-ds-zodiac-section">
 		<span><?php _e('search_zodiac', 'betheme') ?></span>
 		<div class="mp1-ds-form-line-3">
@@ -144,14 +146,32 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 			<label for="mp1-ds-eyes-green"><?php _e('search_eye_green', 'betheme') ?></label>
 			<input id="mp1-ds-eyes-green" class="eyes-input" name="mp1-ds-eyes-green" type="checkbox">
 		</div>
+    <div class="mp1-ds-form-line">
+      <label for="mp1-ds-eyes-black"><?php _e('search_eye_black', 'betheme') ?></label>
+      <input id="mp1-ds-eyes-black" class="eyes-input" name="mp1-ds-eyes-black" type="checkbox">
+    </div>
 	</section>
+  <section class="mp1-ds-hair-section">
+    <span><?php _e('search_hair_color', 'betheme') ?></span>
+    <div class="mp1-ds-form-line">
+      <label for="mp1-ds-hair-ginger"><?php _e('search_hair_ginger', 'betheme') ?></label>
+      <input id="mp1-ds-hair-ginger" class="hair-input" name="mp1-ds-hair-ginger" type="checkbox">
+    </div>
+    <div class="mp1-ds-form-line">
+      <label for="mp1-ds-hair-brunette"><?php _e('search_hair_brunette', 'betheme') ?></label>
+      <input id="mp1-ds-hair-brunette" class="hair-input" name="mp1-ds-hair-brunette" type="checkbox">
+    </div>
+    <div class="mp1-ds-form-line">
+      <label for="mp1-ds-hair-blond"><?php _e('search_hair_blond', 'betheme') ?></label>
+      <input id="mp1-ds-hair-blond" class="hair-input" name="mp1-ds-hair-blond" type="checkbox">
+    </div>
+  </section>
 	<button id="mp1-ds-submit-btn" type="submit"><?php _e('search_search', 'betheme') ?></button>
 </form>
 
 <div class="mp1-wrapper"></div>
 <div class="mp1-lower-section">
   <div id="pagination"></div>
-
 </div>
 
 <script src="<?= $pathToCustom . '_static/js/main-gallery-handler.js?v='.$v ?>"></script>
