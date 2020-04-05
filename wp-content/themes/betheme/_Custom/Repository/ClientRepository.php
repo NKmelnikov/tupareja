@@ -155,7 +155,12 @@ class ClientRepository
             $sql .= ' ORDER BY ' . esc_sql($_REQUEST['orderby']);
             $sql .= !empty($_REQUEST['order']) ? ' ' . esc_sql($_REQUEST['order']) : ' ASC';
         }else{
-        $sql .= ' ORDER BY position ASC';
+            if($query['page']=="men_applications"){
+                $sql .= ' ORDER BY id DESC';
+            }else{
+                $sql .= ' ORDER BY position ASC';
+            }
+
         }
         $sql .= " LIMIT $per_page";
         $sql .= ' OFFSET ' . ($page_number - 1) * $per_page;
