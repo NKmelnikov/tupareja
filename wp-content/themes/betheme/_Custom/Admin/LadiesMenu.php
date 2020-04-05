@@ -129,6 +129,18 @@ class LadiesMenu
 	                                    $this->ladiesApplicationAdmin->display();
                                  ?>
                             </form>
+                          <script>
+                            $(function () {
+                              $('input.change_position').focusout(function () {
+                                let elem_id = $(this).attr("data-id");
+                                let elem_a = $('a.change_position[data-id="'+elem_id+'"]');
+                                let url = elem_a.attr("href");
+                                url+="&old_position="+$('input.old_position[data-id="'+elem_id+'"]').val();
+                                url+="&new_position="+$('input.new_position[data-id="'+elem_id+'"]').val();
+                                elem_a.attr("href",url);
+                              });
+                            });
+                          </script>
                         </div>
                     </div>
                 </div>

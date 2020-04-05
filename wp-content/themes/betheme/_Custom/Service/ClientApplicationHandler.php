@@ -71,6 +71,7 @@ class ClientApplicationHandler
             'height' => CustomHelper::sanitiseText($post['la1-height']),
             'weight' => CustomHelper::sanitiseText($post['la1-weight']),
             'eye_color' => CustomHelper::sanitiseText($post['la1-eyeColor']),
+            'hair_color' => CustomHelper::sanitiseText($post['la1-hair_color']),
             'languages' => CustomHelper::sanitiseText($post['la1-languages']),
             'profession' => CustomHelper::sanitiseText($post['la1-profession']),
             'town' => CustomHelper::sanitiseText($post['la1-town']),
