@@ -149,7 +149,8 @@ $v = $config->version();
   $mainImage = str_replace(ABSPATH, get_home_url() . '/', $lady['main_image_path']);
     ?>
     <div class="image-wrap">
-      <button class="delete-image">Удалить</button>
+      <button class="delete-image main-image">Удалить</button>
+      <button class="change-main-image main-image">Сделать главным</button>
     <a class="main-image" href="<?php echo $mainImage;?>" data-lightbox="roadtrip"><img src="<?php echo $mainImage;?>" class="main-image" alt="lady image"></a>
     </div>
     <?php
@@ -159,6 +160,7 @@ $v = $config->version();
     ?>
     <div class="image-wrap">
       <button class="delete-image">Удалить</button>
+      <button class="change-main-image">Сделать главным</button>
     <a href="<?php echo $image;?>" data-lightbox="roadtrip"><img src="<?php echo $image;?>" class="<?php echo $mainImageClass;?>" alt="lady image"></a>
     </div>
     <?php

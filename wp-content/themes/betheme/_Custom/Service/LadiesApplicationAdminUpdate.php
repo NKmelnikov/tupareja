@@ -48,6 +48,7 @@ class LadiesApplicationAdminUpdate
 		if($post['le1-path-to-images-1']!="")
         {
             $post['le1-path-to-images']= $post['le1-path-to-images'].",".$post['le1-path-to-images-1'];
+            $post['le1-path-to-images'] = str_replace($post['le1-main-image-path'].",","",$post['le1-path-to-images']);
         }
         $post =  [
 			'id' => CustomHelper::sanitiseText($post['le1-id']),

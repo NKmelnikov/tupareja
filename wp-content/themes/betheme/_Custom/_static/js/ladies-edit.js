@@ -7,16 +7,64 @@
         deleteImage(elem){
           elem.parent().remove();
           let str ="";
-          let images = $('.image-wrap a').each(function (i) {
-            if (i==0){ str+=$(this).attr("href");}
-            else {
-            str+=","+$(this).attr("href");
+          let i=0;
+          $('.image-wrap a').each(function () {
+            if (!$(this).hasClass("main-image")){
+              if (i==0){ str+=$(this).attr("href"); i++;}
+              else {
+              str+=","+$(this).attr("href");
+              }
             }
           });
           console.log(str);
             $('#le1-path-to-images').val(str);
         },
+      deleteMainImage(elem){
+        elem.parent().remove();
+        $('.image-wrap button').eq(0).addClass("main-image");
+        let images = $('.image-wrap a');
+        let image = images.eq(0);
+        $("#le1-main-image-path").val(image.attr("href"));
+        image.addClass("main-image");
+        $('.image-wrap a.main-image img').addClass("main-image");
 
+        let str ="";
+        let i=0;
+        images.each(function () {
+          if (!$(this).hasClass("main-image")){
+            if (i==0){ str+=$(this).attr("href"); i++;}
+            else {
+              str+=","+$(this).attr("href");
+            }
+          }
+        });
+        console.log(str);
+        $('#le1-path-to-images').val(str);
+
+      },
+
+      changeMainImage(elem){
+          $('.image-wrap .main-image').removeClass("main-image");
+          elem.parent().children("button.delete-image").addClass("main-image");
+        elem.parent().children("a").addClass("main-image");
+        elem.parent().children("a").children("img").addClass("main-image");
+        $("#le1-main-image-path").val($('.image-wrap a.main-image').attr("href"));
+
+        let images = $('.image-wrap a');
+        let str ="";
+        let i=0;
+        images.each(function () {
+          if (!$(this).hasClass("main-image")){
+            if (i==0){ str+=$(this).attr("href"); i++;}
+            else {
+              str+=","+$(this).attr("href");
+            }
+          }
+        });
+        console.log(str);
+        $('#le1-path-to-images').val(str);
+
+      },
         clearErrors() {
             $('.error-box').text(''); //clear error spans
             $('.le1-input').removeClass('error-input');
@@ -84,8 +132,19 @@
     };
     $("button.delete-image").click(function (e) {
       e.preventDefault();
-      le1.deleteImage($(this));
+      if(!$(this).hasClass("main-image")){
+        le1.deleteImage($(this));
+      }else{
+        le1.deleteMainImage($(this));
+      }
+
     });
+  $("button.change-main-image").click(function (e) {
+    e.preventDefault();
+    if(!$(this).hasClass("main-image")){
+      le1.changeMainImage($(this));
+    }
+  });
     le1.saveBtn.on('click', (e) => {
         e.preventDefault();
 
