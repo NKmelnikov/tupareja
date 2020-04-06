@@ -3,14 +3,14 @@ var pathArray = [];
 
 function makeMain($, id) {
     $(`#make_main-0`).attr("checked", true);
-    $('#la1-main-image-path, #ma1-main-image-path, #le1-main-image-path-1').val(pathArray[0]);
+    $('#la1-main-image-path, #ma1-main-image-path').val(pathArray[0]);
 
     $(`#make_main-${id}`).change(function () {
         $(`.make-main-checkbox`).attr("checked", false);
         $(`#make_main-${id}`).attr("checked", true);
 
         if ($(this).is(':checked')) {
-            $('#la1-main-image-path, #ma1-main-image-path, #le1-main-image-path-1').val(pathArray[id]);
+            $('#la1-main-image-path, #ma1-main-image-path').val(pathArray[id]);
         }
     });
 }
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             $(`.qq-file-id-${id}`).prepend(`<input name="make_main" id="make_main-${id}" class="make-main-checkbox" type="checkbox">Главная`);
             updateImagesPathes($,responseJSON);
             makeMain($, id);
-            $('#la1-path-to-images, #ma1-path-to-images, #le1-path-to-images-1').val(pathArray);
+            $('#la1-path-to-images, #ma1-path-to-images').val(pathArray);
             $('.la1-submit, .ma1-submit').attr('disabled', false);
         });
     })(jQuery);
