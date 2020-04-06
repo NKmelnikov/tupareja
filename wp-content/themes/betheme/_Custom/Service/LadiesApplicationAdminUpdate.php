@@ -40,7 +40,16 @@ class LadiesApplicationAdminUpdate
 	private function validatePost($post)
 	{
 		require_once '../Helper/CustomHelper.php';
-		$post =  [
+        if($post['le1-main-image-path-1']!="")
+        {
+            $post['le1-path-to-images']= $post['le1-path-to-images'].",".$post['le1-main-image-path'];
+            $post['le1-main-image-path']= $post['le1-main-image-path-1'];
+        }
+		if($post['le1-path-to-images-1']!="")
+        {
+            $post['le1-path-to-images']= $post['le1-path-to-images'].",".$post['le1-path-to-images-1'];
+        }
+        $post =  [
 			'id' => CustomHelper::sanitiseText($post['le1-id']),
 			'lname' => CustomHelper::sanitiseText($post['le1-lname']),
 			'name' => CustomHelper::sanitiseText($post['le1-name']),
