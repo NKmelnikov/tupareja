@@ -89,14 +89,31 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="number" required name="la1-weight" id="la1-weight" maxlength="125" class="la1-input" placeholder="Вес (кг)*">
             <span class="error-box error-la1-weight"></span>
 
-            <select required name="la1-eyeColor" id="la1-eyeColor"  class="la1-input">
-              <option value="">Цвет глаз*</option>
-              <option value="blue">Голубые</option>
-              <option value="hazel">Карие</option>
-              <option value="gray">Серые</option>
-              <option value="green">Зелёные</option>
-            </select>
-            <span class="error-box error-la1-eyeColor"></span>
+            <div class="la1-color-container">
+              <div class="la1-color-box">
+                <select required name="la1-eyeColor" id="la1-eyeColor"  class="la1-input">
+                  <option value="">Цвет глаз*</option>
+                  <option value="blue">Голубые</option>
+                  <option value="hazel">Карие</option>
+                  <option value="gray">Серые</option>
+                  <option value="green">Зелёные</option>
+                  <option value="black">Чёрный</option>
+                </select>
+                <span class="error-box error-la1-eyeColor"></span>
+              </div>
+
+              <div class="la1-color-box">
+                <select required name="la1-hair_color" id="la1-hair_color"  class="la1-input">
+                  <option value="">Цвет волос*</option>
+                  <option value="ginger">Рыжая</option>
+                  <option value="brunette">Брюнетка</option>
+                  <option value="blond">Блондинка</option>
+                </select>
+                <span class="error-box error-la1-eyeColor"></span>
+              </div>
+
+            </div>
+
 
             <input type="text" required name="la1-town" id="la1-town" maxlength="125" class="la1-input" placeholder="Город*">
             <span class="error-box error-la1-town"></span>

@@ -36,8 +36,8 @@ class LadiesMenu
     {
 
         $hook = add_menu_page(
-            'Анкеты девушек',
-            'Анкеты девушек',
+            'Ladies applications',
+            'Ladies applications',
             'manage_options',
             'ladies_applications',
             [$this, 'plugin_settings_page'],
@@ -79,13 +79,13 @@ class LadiesMenu
         <div class="wrap">
 	        <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/libs/jquery-ui.css">
 	        <link rel="stylesheet" href="/wp-content/themes/betheme/_Custom/_static/scss/ladies/ladiesAdmin.css">
-	        <h2>Анкеты девушек</h2>
+	        <h2>Ladies Applications</h2>
 			<form class="ladiesSearch" method="GET">
 				<input type="hidden" name="page" value="ladies_applications">
-				<input type="search" name="querySearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
+				<input type="search" name="querySearch" placeholder="Name or ID" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
 
 				<div class="filterAgeWrap">
-					<label for="ladiesAge">Возраст:</label>
+					<label for="ladiesAge">Age:</label>
 					<div class="slideAge">
 						<input type="text" name="ladiesMinAge" id="ladiesMinAge" class="inputLadiesAge" readonly value="">
 						<span>-</span>
@@ -116,7 +116,7 @@ class LadiesMenu
                   } );
 				</script>
 
-				<input type="submit" value="Поиск" class="button action">
+				<input type="submit" value="Search" class="button action">
 
 			</form>
             <div id="poststuff">
@@ -129,6 +129,22 @@ class LadiesMenu
 	                                    $this->ladiesApplicationAdmin->display();
                                  ?>
                             </form>
+                          <form method="POST">
+                            <input type="hidden" name="resetPosition" value="1">
+                            <button class="reset-position-option">Reset positions</button>
+                          </form>
+                          <script>
+                            $(function () {
+                              $('input.change_position').focusout(function () {
+                                let elem_id = $(this).attr("data-id");
+                                let elem_a = $('a.change_position[data-id="'+elem_id+'"]');
+                                let url = elem_a.attr("href");
+                                url+="&old_position="+$('input.old_position[data-id="'+elem_id+'"]').val();
+                                url+="&new_position="+$('input.new_position[data-id="'+elem_id+'"]').val();
+                                elem_a.attr("href",url);
+                              });
+                            });
+                          </script>
                         </div>
                     </div>
                 </div>

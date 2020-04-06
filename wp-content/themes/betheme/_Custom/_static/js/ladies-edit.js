@@ -4,6 +4,19 @@
         saveBtn : $('.le1_bottom_section__button-save'),
         ladiesForm: $('#le1-form'),
 
+        deleteImage(elem){
+          elem.parent().remove();
+          let str ="";
+          let images = $('.image-wrap a').each(function (i) {
+            if (i==0){ str+=$(this).attr("href");}
+            else {
+            str+=","+$(this).attr("href");
+            }
+          });
+          console.log(str);
+            $('#le1-path-to-images').val(str);
+        },
+
         clearErrors() {
             $('.error-box').text(''); //clear error spans
             $('.le1-input').removeClass('error-input');
@@ -69,7 +82,10 @@
         }
 
     };
-
+    $("button.delete-image").click(function (e) {
+      e.preventDefault();
+      le1.deleteImage($(this));
+    });
     le1.saveBtn.on('click', (e) => {
         e.preventDefault();
 

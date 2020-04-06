@@ -51,6 +51,22 @@ function eyeColorMap($color)
     return $es_color;
 }
 
+function hairColorMap($color)
+{
+    switch ($color) {
+        case 'ginger':
+            $es_color = 'pelirroja';
+            break;
+        case 'brunette':
+            $es_color = 'morena';
+            break;
+        default:
+            $es_color = 'rubia';
+            break;
+    }
+    return $es_color;
+}
+
 $person = $clientRepository->getById(TABLE_LADIES, $_GET['id']);
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
@@ -95,6 +111,9 @@ $v = $config->version();
             </li>
             <li>
               <span><?php _e('search_eye_color', 'betheme') ?>:</span> <?php echo eyeColorMap($person[0]->eye_color); ?>
+            </li>
+            <li>
+              <span><?php _e('search_hair_color', 'betheme') ?>:</span> <?php echo hairColorMap($person[0]->hair_color); ?>
             </li>
             <li>
               <span><?php _e('person_profession', 'betheme') ?>:</span> <?php echo $person[0]->profession; ?>

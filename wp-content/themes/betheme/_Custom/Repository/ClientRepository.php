@@ -21,6 +21,57 @@ class ClientRepository
         }
 
         $this->db->insert($table, $post);
+        $sql = sprintf("SELECT `id`,`position` FROM %s ORDER BY `position` ASC",
+            $table);
+        $result=$this->db->get_results($sql, ARRAY_A);
+
+        foreach ($result as $elem){
+            if ($elem['position']==""){
+                $elem['position']=1;
+            }else{
+            $elem['position']++;
+            }
+            $this->db->update($table,$elem,['id'=>$elem['id']]);
+        }
+    }
+    public function resetPosition(){
+        $sql = sprintf("SELECT `id`,`position` FROM `wp_ladies` ORDER BY `id` DESC");
+        $result=$this->db->get_results($sql, ARRAY_A);
+        $i=1;
+        foreach ($result as $elem){
+            $elem['position']=$i;
+            $this->db->update("wp_ladies",$elem,['id'=>$elem['id']]);
+            $i++;
+        }
+    }
+    public function changePosition($new_position,$old_position){
+        if ($new_position<$old_position){
+           $sql= sprintf("SELECT `id`,`position` FROM `wp_ladies` WHERE `position` BETWEEN %d AND %d",
+               $new_position,
+               $old_position);
+           $result = $this->db->get_results($sql,ARRAY_A);
+           foreach ($result as $position){
+               if ($position['position']!=$old_position){
+                   $position['position']++;
+               }elseif ($position['position']==$old_position){
+                   $position['position']=$new_position;
+               }
+               $this->db->update("wp_ladies",$position,['id'=>$position['id']]);
+           }
+        }elseif ($new_position>$old_position){
+            $sql= sprintf("SELECT `id`,`position` FROM `wp_ladies` WHERE `position` BETWEEN %d AND %d",
+                $old_position,
+                $new_position);
+            $result = $this->db->get_results($sql,ARRAY_A);
+            foreach ($result as $position){
+                if ($position['position']!=$old_position){
+                    $position['position']--;
+                }elseif ($position['position']==$old_position){
+                    $position['position']=$new_position;
+                }
+                $this->db->update("wp_ladies",$position,['id'=>$position['id']]);
+            }
+        }
     }
 
     public function updateApplication($table,$post)
@@ -103,8 +154,14 @@ class ClientRepository
         if (!empty($_REQUEST['orderby'])) {
             $sql .= ' ORDER BY ' . esc_sql($_REQUEST['orderby']);
             $sql .= !empty($_REQUEST['order']) ? ' ' . esc_sql($_REQUEST['order']) : ' ASC';
+        }else{
+            if($query['page']=="men_applications"){
+                $sql .= ' ORDER BY id DESC';
+            }else{
+                $sql .= ' ORDER BY position ASC';
+            }
+
         }
-        $sql .= ' ORDER BY id DESC';
         $sql .= " LIMIT $per_page";
         $sql .= ' OFFSET ' . ($page_number - 1) * $per_page;
         $result = $this->db->get_results($sql, 'ARRAY_A');
@@ -116,7 +173,7 @@ class ClientRepository
      */
     public function getLadiesForGallery()
     {
-        $sql = "SELECT * FROM wp_ladies WHERE activated='1' ORDER BY `id` DESC";
+        $sql = "SELECT * FROM wp_ladies WHERE activated='1' ORDER BY `position` ASC";
         return $this->db->get_results($sql, 'ARRAY_A');
     }
     /**

@@ -10990,6 +10990,21 @@ msgstr "Advanced Search"
 msgid "search_eye_green"
 msgstr "Advanced Search"
 
+msgid "search_eye_black"
+msgstr "Advanced Search"
+
+msgid "search_hair_color"
+msgstr "Advanced Search"
+
+msgid "search_hair_ginger"
+msgstr "Advanced Search"
+
+msgid "search_hair_brunette"
+msgstr "Advanced Search"
+
+msgid "search_hair_blond"
+msgstr "Advanced Search"
+
 msgid "search_search"
 msgstr "Advanced Search"
 

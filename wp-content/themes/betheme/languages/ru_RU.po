@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betheme\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-24 19:25+0000\n"
+"PO-Revision-Date: 2020-04-05 14:45+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -11619,6 +11619,21 @@ msgstr "Серые"
 
 msgid "search_eye_green"
 msgstr "Зелёные"
+
+msgid "search_eye_black"
+msgstr "Черный"
+
+msgid "search_hair_color"
+msgstr "Цвет волос"
+
+msgid "search_hair_ginger"
+msgstr "Рыжая"
+
+msgid "search_hair_brunette"
+msgstr "Брюнетка"
+
+msgid "search_hair_blond"
+msgstr "Блондинка"
 
 msgid "search_search"
 msgstr "Искать"

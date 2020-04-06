@@ -90,6 +90,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         $image_src = $this->handle_image_src($_item);
         switch ($column_name) {
             case 'id':
+
             case 'activated':
             case 'name':
             case 'lname':
@@ -113,6 +114,11 @@ class LadiesApplicationAdmin extends WP_List_Table
                 return sprintf("%s \nВозраст:(%s)", date('d-m-Y', $_item), $this->getCurrentAge($_item));
             case 'main_image_path':
                 return "<img src='$image_src' width='39' height='50'>";
+            case 'position':
+                return "  <input class='change_position old_position' type='hidden' value='$_item' data-id='".$item['id']."'>
+                          <input class='change_position new_position' type='number' value='$_item' data-id='".$item['id']."' style='width:50px;'>
+                          <a class='change_position' href='".$_SERVER['REQUEST_URI']."' data-id='".$item['id']."' style='border:1px solid #016087; padding: 5px; border-radius: 5px'>ОК</a>
+</form>";
             default:
                 return print_r($item, true); //Show the whole array for troubleshooting purposes
         }
@@ -153,12 +159,13 @@ class LadiesApplicationAdmin extends WP_List_Table
         return [
             'cb' => '<input type="checkbox" />',
             'id' => __('ID', 'sp'),
-            'main_image_path' => __('Обложка', 'sp'),
-            'activated' => __('Активирован', 'sp'),
-            'name' => __('Имя', 'sp'),
-            'lname' => __('Фамилия', 'sp'),
-            'fname' => __('Отчество', 'sp'),
-            'date_of_birth' => __('Дата Рождения (д.м.г)', 'sp'),
+            'position' =>__('Position in gallery', 'sp'),
+            'main_image_path' => __('Picture', 'sp'),
+            'activated' => __('Activated?', 'sp'),
+            'name' => __('Name', 'sp'),
+            'lname' => __('LastName', 'sp'),
+            'fname' => __('FathersName', 'sp'),
+            'date_of_birth' => __('Date of Birth (d.m.Y)', 'sp'),
             'email' => __('email', 'sp'),
             'phone' => __('phone', 'sp'),
             'profession' => __('profession', 'sp'),
@@ -176,6 +183,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         return [
             'id' => ['id', true],
             'activated' => ['activated', true],
+            'position' => ['position', true],
             'name' => ['name', true],
             'family_status' => ['name', false]
         ];
@@ -214,7 +222,18 @@ class LadiesApplicationAdmin extends WP_List_Table
             'total_items' => $total_items, //WE have to calculate the total number of items
             'per_page' => $per_page //WE have to determine how many items to show on a page
         ]);
+        if (isset($_POST['resetPosition']) && $_POST['resetPosition']==1)
+        {
+            $this->clientRepository->resetPosition();
+        }else{
+            if (isset($query['old_position'])&& $query['old_position']!="")
+            {
 
+                if (isset($query['new_position']) && $query['new_position']!="" && $query['new_position']!=$query['old_position']){
+                    $this->clientRepository->changePosition($query['new_position'],$query['old_position']);
+                }
+            }
+        }
 
         $this->items = $this->clientRepository->getElement(self::TABLE_LADIES, $per_page, $current_page, $query);
     }

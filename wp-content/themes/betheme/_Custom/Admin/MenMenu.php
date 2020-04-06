@@ -36,8 +36,8 @@ class MenMenu
     {
 
         $hook = add_menu_page(
-            'Анкеты мужчин',
-            'Анкеты мужчин',
+            'Men`s applications',
+            'Men`s applications',
             'manage_options',
             'men_applications',
             [$this, 'plugin_settings_page'],
@@ -77,16 +77,16 @@ class MenMenu
     {
         ?>
         <div class="wrap">
-            <h2>Анкеты мужчин</h2>
+            <h2>Men`s application</h2>
 
 	        <form class="menSearch" method="GET">
 		        <input type="hidden" name="page" value="men_applications">
-		        <input type="search" name="querySearch" placeholder="Например Имя или Фамилию" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
+		        <input type="search" name="querySearch" placeholder="Name or ID" value="<?php if(isset($_GET['querySearch'])&& ($_GET['querySearch']!="")) echo $_GET['querySearch']?>">
 
 
 
 
-		        <input type="submit" value="Поиск" class="button action">
+		        <input type="submit" value="Search" class="button action">
 	        </form>
 
             <div id="poststuff">

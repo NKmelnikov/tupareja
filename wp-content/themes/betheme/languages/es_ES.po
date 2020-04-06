@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Betheme\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-03-24 19:48+0000\n"
+"PO-Revision-Date: 2020-04-05 15:08+0000\n"
 "Last-Translator: nkmelnikov <Nkmelnikov@hotmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -11135,13 +11135,13 @@ msgid "search_to"
 msgstr "hasta"
 
 msgid "search_age"
-msgstr "años"
+msgstr "Años"
 
 msgid "search_height"
-msgstr "altura"
+msgstr "Altura"
 
 msgid "search_weight"
-msgstr "peso"
+msgstr "Peso"
 
 msgid "search_zodiac"
 msgstr "Zodiaco"
@@ -11189,13 +11189,28 @@ msgid "search_eye_blue"
 msgstr "Azul"
 
 msgid "search_eye_hazel"
-msgstr "Avellana"
+msgstr "Marrón"
 
 msgid "search_eye_gray"
 msgstr "Gris"
 
 msgid "search_eye_green"
 msgstr "Verde"
+
+msgid "search_eye_black"
+msgstr "Negro"
+
+msgid "search_hair_color"
+msgstr "Color de cabello"
+
+msgid "search_hair_ginger"
+msgstr "Pelirroja"
+
+msgid "search_hair_brunette"
+msgstr "Morena"
+
+msgid "search_hair_blond"
+msgstr "Rubia"
 
 msgid "search_search"
 msgstr "Buscar"
@@ -12778,7 +12793,7 @@ msgid "person_country"
 msgstr "País"
 
 msgid "person_town"
-msgstr "Pueblo"
+msgstr "Ciudad"
 
 msgid "person_profession"
 msgstr "Profesión"

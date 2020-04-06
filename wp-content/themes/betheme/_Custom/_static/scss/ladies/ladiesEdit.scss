@@ -32,14 +32,19 @@
     }
   }
 
-  .le1-name-container{
+  .le1-name-container, .le1-color-container{
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    box-sizing: border-box;
     div {
       display: flex;
       flex-direction: column;
+      width: 50%;
+      input{
+        margin-right:0;
+        margin-left: 0;
+      }
     }
   }
 }
