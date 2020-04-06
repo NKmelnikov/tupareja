@@ -107,4 +107,104 @@ class CustomHelper
         $mo->import_from_file($mofile);
         return $mo->translate($key);
     }
+
+    function convertImgPath($src)
+    {
+        preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
+        if (!empty($new_src)) {
+            return $new_src[0][0];
+        }
+        return '';
+    }
+
+    function getCurrentAge($timestamp)
+    {
+        $age = date('Y') - date('Y', $timestamp);
+        if (date('n') < date('n', $timestamp)) {
+            $age--;
+        }
+        if ((date('n') == date('n', $timestamp)) && (date('j') < date('j', $timestamp))) {
+            $age--;
+        }
+        return $age;
+    }
+
+
+    function eyeColorMap($color)
+    {
+        switch ($color) {
+            case 'hazel':
+                $es_color = 'avellana';
+                break;
+            case 'gray':
+                $es_color = 'gris';
+                break;
+            case 'green':
+                $es_color = 'verde';
+                break;
+            default:
+                $es_color = 'azul';
+                break;
+        }
+        return $es_color;
+    }
+
+    function hairColorMap($color)
+    {
+        switch ($color) {
+            case 'ginger':
+                $es_color = 'pelirroja';
+                break;
+            case 'brunette':
+                $es_color = 'morena';
+                break;
+            default:
+                $es_color = 'rubia';
+                break;
+        }
+        return $es_color;
+    }
+
+    public function getZodiac($timestamp){
+        $day = date('j',$timestamp);
+        $month = date('n',$timestamp);
+
+        if(($month==1 && $day>20)||($month==2 && $day<20)) {
+            $mysign = "aquarius";
+        }
+        if(($month==2 && $day>18 )||($month==3 && $day<21)) {
+            $mysign = "pisces";
+        }
+        if(($month==3 && $day>20)||($month==4 && $day<21)) {
+            $mysign = "aries";
+        }
+        if(($month==4 && $day>20)||($month==5 && $day<22)) {
+            $mysign = "taurus";
+        }
+        if(($month==5 && $day>21)||($month==6 && $day<22)) {
+            $mysign = "gemini";
+        }
+        if(($month==6 && $day>21)||($month==7 && $day<24)) {
+            $mysign = "cancer";
+        }
+        if(($month==7 && $day>23)||($month==8 && $day<24)) {
+            $mysign = "leo";
+        }
+        if(($month==8 && $day>23)||($month==9 && $day<24)) {
+            $mysign = "virgo";
+        }
+        if(($month==9 && $day>23)||($month==10 && $day<24)) {
+            $mysign = "libra";
+        }
+        if(($month==10 && $day>23)||($month==11 && $day<23)) {
+            $mysign = "scorpio";
+        }
+        if(($month==11 && $day>22)||($month==12 && $day<23)) {
+            $mysign = "sagittarius";
+        }
+        if(($month==12 && $day>22)||($month==1 && $day<21)) {
+            $mysign = "capricorn";
+        }
+        return $mysign;
+    }
 }

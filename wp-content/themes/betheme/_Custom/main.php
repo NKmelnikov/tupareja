@@ -45,7 +45,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       </div>
       <div class="mp1-ds-form-line">
         <label for="mp1-ds-age-to" class="label-to"><?php _e('search_to', 'betheme') ?></label>
-        <input for="mp1-ds-age-to" name="mp1-ds-age-to" value="60" type="text">
+        <input id="mp1-ds-age-to" name="mp1-ds-age-to" value="60" type="text">
       </div>
     </section>
     <section class="mp1-ds-height-section">
@@ -56,7 +56,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       </div>
       <div class="mp1-ds-form-line">
         <label for="mp1-ds-height-to" class="label-to"><?php _e('search_to', 'betheme') ?></label>
-        <input for="mp1-ds-height-to" name="mp1-ds-height-to" value="190" type="text">
+        <input id="mp1-ds-height-to" name="mp1-ds-height-to" value="190" type="text">
       </div>
     </section>
     <section class="mp1-ds-weight-section">
@@ -67,7 +67,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       </div>
       <div class="mp1-ds-form-line">
         <label for="mp1-ds-weight-to" class="label-to"><?php _e('search_to', 'betheme') ?></label>
-        <input for="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
+        <input id="mp1-ds-weight-to" name="mp1-ds-weight-to" value="70" type="text">
       </div>
     </section>
   </div>
@@ -165,8 +165,15 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <label for="mp1-ds-hair-blond"><?php _e('search_hair_blond', 'betheme') ?></label>
       <input id="mp1-ds-hair-blond" class="hair-input" name="mp1-ds-hair-blond" type="checkbox">
     </div>
+    <div class="mp1-ds-form-line">
+      <label for="mp1-ds-hair-chestnut"><?php _e('search_hair_chestnut', 'betheme') ?></label>
+      <input id="mp1-ds-hair-chestnut" class="hair-input" name="mp1-ds-hair-chestnut" type="checkbox">
+    </div>
   </section>
-	<button id="mp1-ds-submit-btn" type="submit"><?php _e('search_search', 'betheme') ?></button>
+  <div class="mp1-ds-btn-container">
+    <button id="mp1-ds-submit-btn" type="submit"><?php _e('search_search', 'betheme') ?></button>
+    <a id="mp1-reset-search" href="javascript:void(0)"><?php _e('search_reset_search', 'betheme') ?></a>
+  </div>
 </form>
 
 <div class="mp1-wrapper"></div>

@@ -152,6 +152,7 @@
 
   span {
     font-weight: 700;
+    font-size: 15px;
   }
 
   .number-search-wrapper {
@@ -185,6 +186,18 @@
     }
   }
 
+  .mp1-ds-btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: underline;
+      font-size: 12px;
+    }
+  }
+
 
   .mp1-ds-form-line {
     display: flex;
@@ -195,9 +208,10 @@
       margin-right: 10px;
       font-weight: 300;
       margin-bottom: 0;
+      font-size: 12px;
 
       &.label-from, &.label-to {
-        font-size: 10px;
+        font-size: 12px;
       }
     }
   }

@@ -97,19 +97,23 @@ $v = \Helper\CustomHelper::instance()->version();
 
             <input type="text" required name="ma1-weight" id="ma1-weight" min="2" max="255" class="ma1-input" placeholder="Peso (kg)">
             <span class="error-box error-ma1-weight"></span>
-
             <select required name="ma1-eyeColor" id="ma1-eyeColor" class="ma1-input">
-              <option value="">Color de ojos*</option>
-              <option value="blue">Azul</option>
-              <option value="hazel">Avellana</option>
-              <option value="gray">Gris</option>
-              <option value="green">Verde</option>
+              <option value="">Color de los ojos</option>
+              <option value="blue">Azules</option>
+              <option value="hazel">Marrónes</option>
+              <option value="gray">Grises</option>
+              <option value="green">Verdes</option>
+              <option value="black">Negros</option>
             </select>
-
             <span class="error-box error-ma1-eyeColor"></span>
-
-            <input type="text" required name="ma1-heirColor" id="ma1-heirColor" min="2" max="255" class="ma1-input" placeholder="Color de pelo">
-            <span class="error-box error-ma1-heirColor"></span>
+            <select required name="ma1-hairColor" id="ma1-hairColor" class="ma1-input">
+              <option value="">Color del cabello</option>
+              <option value="blond">Rubio</option>
+              <option value="brunette">Moreno</option>
+              <option value="chestnut">Castaño</option>
+              <option value="ginger">Pelirrojo</option>
+            </select>
+            <span class="error-box error-ma1-hairColor"></span>
 
             <input type="text" required name="ma1-enLanguage" id="ma1-enLanguage" min="2" max="255" class="ma1-input" placeholder="Conocimiento de inglés">
             <span class="error-box error-ma1-enLanguage"></span>

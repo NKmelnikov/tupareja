@@ -5,6 +5,13 @@
     deepSearchForm: $('#mp1-ds-form'),
     mainSearchInput: $('#mp1-main-search-input'),
     mainSearchBtn: $('#mp1-main-search-btn'),
+    resetSearchBtn: $('#mp1-reset-search'),
+    ageFromInput: $('#mp1-ds-age-from'),
+    ageToInput: $('#mp1-ds-age-to'),
+    heightFromInput: $('#mp1-ds-height-from'),
+    heightToInput: $('#mp1-ds-height-to'),
+    weightFromInput: $('#mp1-ds-weight-from'),
+    weightToInput: $('#mp1-ds-weight-to'),
     ladiesArray: [],
     zodiacCheckedArray: [],
     eyesCheckedArray: [],
@@ -156,6 +163,18 @@
       return mp1.renderLadyGrid(mp1.deepSearchArray);
     },
 
+    resetSearchParameters() {
+      mp1.ageFromInput.val(18);
+      mp1.ageToInput.val(60);
+      mp1.heightFromInput.val(160);
+      mp1.heightToInput.val(190);
+      mp1.weightFromInput.val(45);
+      mp1.weightToInput.val(70);
+      $('input[type=checkbox]').attr('checked', false);
+      mp1.zodiacCheckedArray = [];
+      mp1.eyesCheckedArray = [];
+      mp1.hairCheckedArray = [];
+    },
 
     mainSearch(ladiesArray) {
       mp1.mainSearchArray = [];
@@ -207,10 +226,12 @@
     });
 
     mp1.mainSearchBtn.on('click', () => {
-      console.log(mp1.ladiesArray);
       mp1.mainSearch(mp1.ladiesArray);
     });
 
+    mp1.resetSearchBtn.on('click', () => {
+      mp1.resetSearchParameters();
+    });
 
     $('#mp1-ds-form').hide();
     $("#accordion").click(function (e) {

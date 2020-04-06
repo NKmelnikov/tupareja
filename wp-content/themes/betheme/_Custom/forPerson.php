@@ -10,69 +10,12 @@ use Helper\CustomHelper;
 
 get_header('person');
 $clientRepository = new ClientRepository();
-
-function convertImgPath($src)
-{
-    preg_match_all('`(\/wp-content.*)`im', $src, $new_src, PREG_SET_ORDER);
-    if (!empty($new_src)) {
-        return $new_src[0][0];
-    }
-    return '';
-}
-
-function getCurrentAge($timestamp)
-{
-    $age = date('Y') - date('Y', $timestamp);
-    if (date('n') < date('n', $timestamp)) {
-        $age--;
-    }
-    if ((date('n') == date('n', $timestamp)) && (date('j') < date('j', $timestamp))) {
-        $age--;
-    }
-    return $age;
-}
-
-function eyeColorMap($color)
-{
-    switch ($color) {
-        case 'hazel':
-            $es_color = 'avellana';
-            break;
-        case 'gray':
-            $es_color = 'gris';
-            break;
-        case 'green':
-            $es_color = 'verde';
-            break;
-        default:
-            $es_color = 'azul';
-            break;
-    }
-    return $es_color;
-}
-
-function hairColorMap($color)
-{
-    switch ($color) {
-        case 'ginger':
-            $es_color = 'pelirroja';
-            break;
-        case 'brunette':
-            $es_color = 'morena';
-            break;
-        default:
-            $es_color = 'rubia';
-            break;
-    }
-    return $es_color;
-}
-
 $person = $clientRepository->getById(TABLE_LADIES, $_GET['id']);
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 CustomHelper::build();
-$config = CustomHelper::instance();
-$v = $config->version();
+$customHelper = CustomHelper::instance();
+$v = $customHelper->version();
 ?>
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/person/person.css?v=' . $v ?>">
   <script language="JavaScript">
@@ -84,7 +27,7 @@ $v = $config->version();
 
       <section class="pr1-lvl1-wrap pr1-wrap">
         <div class="left">
-          <img width="300" src="<?php echo convertImgPath($person[0]->main_image_path); ?>" alt="<?php echo $person[0]->name; ?>">
+          <img width="300" src="<?php echo $customHelper->convertImgPath($person[0]->main_image_path); ?>" alt="<?php echo $person[0]->name; ?>">
         </div>
         <div class="right">
           <ul>
@@ -95,7 +38,10 @@ $v = $config->version();
               <span>ID:</span> <?php echo $person[0]->id; ?>
             </li>
             <li>
-              <span><?php _e('search_age', 'betheme') ?>:</span> <?php echo getCurrentAge($person[0]->date_of_birth) ?>
+              <span><?php _e('search_age', 'betheme') ?>:</span> <?php echo $customHelper->getCurrentAge($person[0]->date_of_birth) ?>
+            </li>
+            <li>
+              <span><?php _e('search_zodiac', 'betheme') ?>:</span> <?php _e('search_zodiac_'.$customHelper->getZodiac($person[0]->date_of_birth), 'betheme')  ?>
             </li>
             <li>
               <span><?php _e('person_country', 'betheme') ?>:</span> <?php echo $person[0]->country; ?>
@@ -110,10 +56,10 @@ $v = $config->version();
               <span><?php _e('search_weight', 'betheme') ?>:</span> <?php echo $person[0]->weight; ?>
             </li>
             <li>
-              <span><?php _e('search_eye_color', 'betheme') ?>:</span> <?php echo eyeColorMap($person[0]->eye_color); ?>
+              <span><?php _e('search_eye_color', 'betheme') ?>:</span> <?php echo $customHelper->eyeColorMap($person[0]->eye_color); ?>
             </li>
             <li>
-              <span><?php _e('search_hair_color', 'betheme') ?>:</span> <?php echo hairColorMap($person[0]->hair_color); ?>
+              <span><?php _e('search_hair_color', 'betheme') ?>:</span> <?php echo $customHelper->hairColorMap($person[0]->hair_color); ?>
             </li>
             <li>
               <span><?php _e('person_profession', 'betheme') ?>:</span> <?php echo $person[0]->profession; ?>
@@ -147,12 +93,12 @@ $v = $config->version();
           <?php $images = explode(",", $person[0]->path_to_images);
           foreach ($images as $img) {
               ?>
-            <a href="<?php echo convertImgPath($img); ?>" data-lightbox="roadtrip"><img src="<?php echo convertImgPath($img); ?>" alt=""></a>
+            <a href="<?php echo $customHelper->convertImgPath($img); ?>" data-lightbox="roadtrip"><img src="<?php echo $customHelper->convertImgPath($img); ?>" alt=""></a>
           <?php } ?>
       </section>
         <?php if ($person[0]->video_link !== 'http://no_video'): ?>
           <section class="pr1-video pr1-wrap">
-            <video src="<?php echo convertImgPath($person[0]->video_link); ?>" controls></video>
+            <video src="<?php echo $customHelper->convertImgPath($person[0]->video_link); ?>" controls></video>
           </section>
         <?php endif; ?>
     </div>

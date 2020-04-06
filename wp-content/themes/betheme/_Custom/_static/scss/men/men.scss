@@ -53,6 +53,20 @@
     &__first-box, &__second-box {
       width: 48%;
 
+      .ma1-color-container{
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          select{
+            border:none;
+          }
+        }
+      }
+
       @media #{$mobile} {
         width: 100%;
       }

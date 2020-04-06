@@ -115,9 +115,9 @@ class LadiesApplicationAdmin extends WP_List_Table
             case 'main_image_path':
                 return "<img src='$image_src' width='39' height='50'>";
             case 'position':
-                return "  <input class='change_position old_position' type='hidden' value='$_item' data-id='".$item['id']."'>
-                          <input class='change_position new_position' type='number' value='$_item' data-id='".$item['id']."' style='width:50px;'>
-                          <a class='change_position' href='".$_SERVER['REQUEST_URI']."' data-id='".$item['id']."' style='border:1px solid #016087; padding: 5px; border-radius: 5px'>ОК</a>
+                return "  <input class='change_position old_position' type='hidden' value='$_item' min='1' data-id='".$item['id']."'>
+                          <input class='change_position new_position' type='number' value='$_item' min='1' data-id='".$item['id']."' style='width:50px;'>
+                          <a class='change_position' href='".strtok($_SERVER['REQUEST_URI'], '&')."' data-id='".$item['id']."' style='border:1px solid #016087; padding: 5px; border-radius: 5px'>ОК</a>
 </form>";
             default:
                 return print_r($item, true); //Show the whole array for troubleshooting purposes

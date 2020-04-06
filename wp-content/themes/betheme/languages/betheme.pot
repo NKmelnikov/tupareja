@@ -11005,7 +11005,13 @@ msgstr "Advanced Search"
 msgid "search_hair_blond"
 msgstr "Advanced Search"
 
+msgid "search_hair_chestnut"
+msgstr "Advanced Search"
+
 msgid "search_search"
+msgstr "Advanced Search"
+
+msgid "search_reset_search"
 msgstr "Advanced Search"
 
 msgid "video_dear"
