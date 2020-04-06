@@ -36,8 +36,8 @@ class LadiesMenu
     {
 
         $hook = add_menu_page(
-            'Анкеты девушек',
-            'Анкеты девушек',
+            'Ladies applications',
+            'Ladies applications',
             'manage_options',
             'ladies_applications',
             [$this, 'plugin_settings_page'],

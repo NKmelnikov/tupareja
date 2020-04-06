@@ -183,6 +183,7 @@ class LadiesApplicationAdmin extends WP_List_Table
         return [
             'id' => ['id', true],
             'activated' => ['activated', true],
+            'position' => ['position', true],
             'name' => ['name', true],
             'family_status' => ['name', false]
         ];

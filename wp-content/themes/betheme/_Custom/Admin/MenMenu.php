@@ -36,8 +36,8 @@ class MenMenu
     {
 
         $hook = add_menu_page(
-            'Анкеты мужчин',
-            'Анкеты мужчин',
+            'Men`s applications',
+            'Men`s applications',
             'manage_options',
             'men_applications',
             [$this, 'plugin_settings_page'],
@@ -77,7 +77,7 @@ class MenMenu
     {
         ?>
         <div class="wrap">
-            <h2>Анкеты мужчин</h2>
+            <h2>Men`s application</h2>
 
 	        <form class="menSearch" method="GET">
 		        <input type="hidden" name="page" value="men_applications">
