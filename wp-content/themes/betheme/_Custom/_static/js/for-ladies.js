@@ -36,11 +36,6 @@
         },
 
         sendAjax(url_video) {
-            let telegramArray = {
-                name: $('#la1-name').val(),
-                email: $('#la1-email').val(),
-                phone: $('#la1-phone').val()
-            };
             let data = this.ladiesForm.serialize();
             data += '&video_link=' + url_video;
             data['g-recaptcha-response'] = grecaptcha.getResponse();
@@ -55,7 +50,6 @@
         },
 
         sendAjaxVideo() {
-            console.log('sendAjaxVideo');
             let file_video = la1.uploadInput.prop('files')[0];
             let data_video = new FormData();
             data_video.append('file', file_video);
