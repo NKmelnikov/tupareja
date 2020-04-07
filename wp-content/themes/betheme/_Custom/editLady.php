@@ -1,5 +1,5 @@
 <?php
-require_once( explode( "wp-content" , __FILE__ )[0] . "wp-load.php" );
+require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
 require_once 'Repository/ClientRepository.php';
 require_once 'Helper/CustomHelper.php';
 
@@ -8,7 +8,7 @@ use Helper\CustomHelper;
 
 const TABLE_LADIES = 'wp_ladies';
 
-if(empty($_GET['customer']) && !is_numeric($_GET['customer'])){
+if (empty($_GET['customer']) && !is_numeric($_GET['customer'])) {
     echo 'Lady not found (';
     die();
 }
@@ -17,14 +17,14 @@ $clientRepository = new ClientRepository();
 $lady = $clientRepository->getById(TABLE_LADIES, $_GET['customer']);
 $lady = (array)$lady[0];
 
-if (!$lady){
+if (!$lady) {
     echo 'Lady not found (';
     die();
 }
 
-if(empty($_GET['_wpnonce'])){
-  echo 'You are not allow to be here';
-  die();
+if (empty($_GET['_wpnonce'])) {
+    echo 'You are not allow to be here';
+    die();
 }
 
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
@@ -35,43 +35,41 @@ $v = $config->version();
 
 ?>
 
-<link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v='.$v ?>">
-<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.css'?>">
-<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-gallery.min.css'?>">
-<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-new.min.css'?>">
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/lightbox/css/lightbox.css?v=' . $v ?>">
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/ladies/ladiesEdit.css?v=' . $v ?>">
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.css' ?>">
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-gallery.min.css' ?>">
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-new.min.css' ?>">
 
-
-<script src="<?= $pathToCustom . '_static/fine-uploader/jquery.fine-uploader.min.js'?>"></script>
-<script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js'?>"></script>
-<script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.core.min.js'?>"></script>
-<script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.js'?>"></script>
-
-<link href="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/css/lightbox.css?v=<?= time() ?>" rel="stylesheet" />
-<script src="/wp-content/themes/betheme/_Custom/_static/libs/lightbox/js/lightbox.js?v=<?= time() ?>"></script>
+<script src="<?= $pathToCustom . '_static/fine-uploader/jquery.fine-uploader.min.js' ?>"></script>
+<script src="<?= $pathToCustom . '_static/libs/lightbox/js/lightbox.js?v=' .$v ?>"></script>
+<script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js' ?>"></script>
+<script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.core.min.js' ?>"></script>
+<script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.js' ?>"></script>
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateLady.php' ?>" class="le1-wrapper" id="le1-form" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer']?>">
-	<section class="le1_input_section">
+  <input type="hidden" name="le1-id" id="le1-id" value="<?php echo $_GET['customer'] ?>">
+  <section class="le1_input_section">
     <div class="le1_input_section__first-box">
-	    <div class="le1-name-container">
-		    <div class="le1-name-box">
-			    <label for="le1-lname">Фамилия</label>
-			    <input type="text" name="le1-lname" id="le1-lname" maxlength="125" class="le1-input translate-value" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
-			    <span class="error-box error-le1-lname"></span>
-		    </div>
-		    <div class="le1-name-box">
-			    <label for="le1-name">Имя</label>
-			    <input type="text" required name="le1-name" id="le1-name" maxlength="125" class="le1-input translate-value" placeholder="Имя" value="<?php echo $lady['name']; ?>">
-			    <span class="error-box error-le1-name"></span>
-		    </div>
-		    <div class="le1-fname-box">
-			    <label for="le1-fname">Отчество</label>
-			    <input type="text" name="le1-fname" id="le1-fname" maxlength="125" class="le1-input translate-value" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
-			    <span class="error-box error-le1-fname"></span>
-		    </div>
-	    </div>
+      <div class="le1-name-container">
+        <div class="le1-name-box">
+          <label for="le1-lname">Фамилия</label>
+          <input type="text" name="le1-lname" id="le1-lname" maxlength="125" class="le1-input translate-value" placeholder="Фамилия" value="<?php echo $lady['lname']; ?>">
+          <span class="error-box error-le1-lname"></span>
+        </div>
+        <div class="le1-name-box">
+          <label for="le1-name">Имя</label>
+          <input type="text" required name="le1-name" id="le1-name" maxlength="125" class="le1-input translate-value" placeholder="Имя" value="<?php echo $lady['name']; ?>">
+          <span class="error-box error-le1-name"></span>
+        </div>
+        <div class="le1-fname-box">
+          <label for="le1-fname">Отчество</label>
+          <input type="text" name="le1-fname" id="le1-fname" maxlength="125" class="le1-input translate-value" placeholder="Отчество" value="<?php echo $lady['fname']; ?>">
+          <span class="error-box error-le1-fname"></span>
+        </div>
+      </div>
       <label for="le1-dateOfBirth">Дата рождения</label>
-      <input type="text" required name="le1-dateOfBirth" id="le1-dateOfBirth" min="2" max="255" class="le1-input" placeholder="Дата рождения" value="<?php echo date('Y-m-d',$lady['date_of_birth']); ?>">
+      <input type="text" required name="le1-dateOfBirth" id="le1-dateOfBirth" min="2" max="255" class="le1-input" placeholder="Дата рождения" value="<?php echo date('Y-m-d', $lady['date_of_birth']); ?>">
       <span class="error-box error-le1-dateOfBirth"></span>
       <label for="le1-email">Email</label>
       <input type="email" required name="le1-email" id="le1-email" min="2" max="255" class="le1-input" placeholder="Email" value="<?php echo $lady['email']; ?>">
@@ -139,34 +137,30 @@ $v = $config->version();
 
       <label for="le1-main-image-path">Путь к главной фотографии</label>
       <textarea rows="4" cols="50" type="text" name="le1-main-image-path" id="le1-main-image-path"><?php echo $lady['main_image_path']; ?></textarea>
-      <input type="hidden" id="le1-main-image-path-1" name="le1-main-image-path-1" >
+      <input type="hidden" id="le1-main-image-path-1" name="le1-main-image-path-1">
       <span class="error-box error-le1-main-image-path"></span>
     </div>
   </section>
   <section class="le1_photo_section">
-  <?php
-  $pathArray = explode(',',$lady['path_to_images']);
-  $mainImage = str_replace(ABSPATH, get_home_url() . '/', $lady['main_image_path']);
-    ?>
-    <div class="image-wrap">
-      <button class="delete-image main-image">Удалить</button>
-      <button class="change-main-image main-image">Сделать главным</button>
-    <a class="main-image" href="<?php echo $mainImage;?>" data-lightbox="roadtrip"><img src="<?php echo $mainImage;?>" class="main-image" alt="lady image"></a>
-    </div>
-    <?php
-  foreach ($pathArray as $image){
-    $image = str_replace(ABSPATH, get_home_url() . '/', $image);
-    $mainImageClass = ($image == $mainImage) ? 'main-image' : '';
-    ?>
-    <div class="image-wrap">
-      <button class="delete-image">Удалить</button>
-      <button class="change-main-image">Сделать главным</button>
-    <a href="<?php echo $image;?>" data-lightbox="roadtrip"><img src="<?php echo $image;?>" class="<?php echo $mainImageClass;?>" alt="lady image"></a>
-    </div>
-    <?php
-  }
-
-  ?>
+      <?php
+      $pathArray = explode(',', $lady['path_to_images']);
+      $mainImage = str_replace(ABSPATH, get_home_url() . '/', $lady['main_image_path']);
+      ?>
+      <?php
+      foreach ($pathArray as $imgPath) {
+          $imageLink = str_replace(ABSPATH, get_home_url() . '/', $imgPath);
+          $mainImageClass = ($imageLink == $mainImage) ? 'main-image' : '';
+          ?>
+        <div class="image-wrap <?= $mainImageClass ?>">
+          <button class="delete-image">Удалить</button>
+          <button class="change-main-image">Сделать главным</button>
+          <a href="<?php echo $imageLink; ?>" data-path="<?= $imgPath ?>" data-lightbox="roadtrip">
+            <img src="<?php echo $imageLink; ?>" class="le1-lady-image <?= $mainImageClass ?>" alt="lady image">
+          </a>
+        </div>
+          <?php
+      }
+      ?>
   </section>
   <section class="le1-uploader-section">
     <!-- Fine Uploader Gallery template
@@ -253,22 +247,22 @@ $v = $config->version();
 
     <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template
     ====================================================================== -->
-    <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js?v='.$v ?> ?>"></script>
+    <script src="<?php echo $pathToCustom . '_static/js/fine-uploader-connect.js?v=' . $v ?> ?>"></script>
 
   </section>
-	<section class="le1_activated_section">
-		<h3>Статус активации:</h3>
-		<label for="le1-activated-yes">Активирована</label>
-		<input type="radio" name="le1-activated" id="le1-activate-yes" value="1" <?php if($lady['activated']==1) echo 'checked'?>>
-		<label for="le1-activated-no">Не активирована</label>
-		<input type="radio" name="le1-activated" id="le1-activate-no" value="0" <?php if($lady['activated']==0) echo 'checked'?>>
-	</section>
+  <section class="le1_activated_section">
+    <h3>Статус активации:</h3>
+    <label for="le1-activated-yes">Активирована</label>
+    <input type="radio" name="le1-activated" id="le1-activate-yes" value="1" <?php if ($lady['activated'] == 1) echo 'checked' ?>>
+    <label for="le1-activated-no">Не активирована</label>
+    <input type="radio" name="le1-activated" id="le1-activate-no" value="0" <?php if ($lady['activated'] == 0) echo 'checked' ?>>
+  </section>
   <section class="le1_bottom_section">
     <button class="le1_bottom_section__button-save" type="submit">Сохранить</button>
     <button class="le1_bottom_section__button-translate" type="button">Перевести</button>
   </section>
 
-  <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js'?>"></script>
-  <script src="<?= $pathToCustom . '_static/js/ladies-edit.js?v='.$v ?>"></script>
-  <script src="<?= $pathToCustom . '_static/js/ladies-edit-translate.js?v='.$v ?>"></script>
+  <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js' ?>"></script>
+  <script src="<?= $pathToCustom . '_static/js/ladies-edit.js?v=' . $v ?>"></script>
+  <script src="<?= $pathToCustom . '_static/js/ladies-edit-translate.js?v=' . $v ?>"></script>
 </form>

@@ -39,35 +39,35 @@ $v = \Helper\CustomHelper::instance()->version();
         <input type="hidden" name="ma1-locale" id="cf1-local" value="<?= get_locale() ?>"/>
         <section class="ma1-input-section">
           <div class="ma1-input-section__first-box">
-            <input type="text" required name="ma1-name" id="ma1-name" min="2" max="255" class="ma1-input" placeholder=" Tu nombre">
+            <input type="text" required name="ma1-name" id="ma1-name"  maxlength="255" class="ma1-input" placeholder=" Tu nombre">
             <span class="error-box error-ma1-name"></span>
 
             <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required name="ma1-dateOfBirth" id="ma1-dateOfBirth" maxlength="125" class="ma1-input" placeholder="Fecha de nacimiento">
             <span class="error-box error-ma1-dateOfBirth"></span>
 
-            <input type="email" required name="ma1-email" id="ma1-email" min="2" max="255" class="ma1-input" placeholder="Email">
+            <input type="email" required name="ma1-email" id="ma1-email"  maxlength="255" class="ma1-input" placeholder="Email">
             <span class="error-box error-ma1-email"></span>
 
-            <input type="text" required name="ma1-phone" id="ma1-phone" min="2" max="255" class="ma1-input" placeholder="Número de teléfono">
+            <input type="number" required name="ma1-phone" id="ma1-phone"  maxlength="255" class="ma1-input" placeholder="Número de teléfono">
             <span class="error-box error-ma1-phone"></span>
 
-            <!-- <input type="text" required name="ma1-country" id="ma1-country" min="2" max="255" class="ma1-input" placeholder="Страна">
+            <!-- <input type="text" required name="ma1-country" id="ma1-country"  maxlength="255" class="ma1-input" placeholder="Страна">
               <span class="error-box error-ma1-country"></span>-->
 
 
-            <input type="text" required name="ma1-education" id="ma1-education" min="2" max="255" class="ma1-input" placeholder="Educación (especialidad)">
+            <input type="text" required name="ma1-education" id="ma1-education"  maxlength="255" class="ma1-input" placeholder="Educación (especialidad)">
             <span class="error-box error-ma1-education"></span>
 
-            <input type="text" required name="ma1-profession" id="ma1-profession" min="2" max="255" class="ma1-input" placeholder="Profesión">
+            <input type="text" required name="ma1-profession" id="ma1-profession"  maxlength="255" class="ma1-input" placeholder="Profesión">
             <span class="error-box error-ma1-profession"></span>
 
-            <input type="text" required name="ma1-familyStatus" id="ma1-familyStatus" min="2" max="255" class="ma1-input" placeholder="Estado civil">
+            <input type="text" required name="ma1-familyStatus" id="ma1-familyStatus"  maxlength="255" class="ma1-input" placeholder="Estado civil">
             <span class="error-box error-ma1-familyStatus"></span>
 
-            <input type="text" required name="ma1-kids" id="ma1-kids" min="2" max="255" class="ma1-input" placeholder="Niños (género y edad)">
+            <input type="text" required name="ma1-kids" id="ma1-kids"  maxlength="255" class="ma1-input" placeholder="Niños (género y edad)">
             <span class="error-box error-ma1-kids"></span>
 
-            <input type="text" required name="ma1-smoking" id="ma1-smoking" min="2" max="255" class="ma1-input" placeholder="¿Fumas?">
+            <input type="text" required name="ma1-smoking" id="ma1-smoking"  maxlength="255" class="ma1-input" placeholder="¿Fumas?">
             <span class="error-box error-ma1-smoking"></span>
 
             <textarea rows="4" cols="50" required name="ma1-music_preferences" id="ma1-music_preferences" class="ma1-input" placeholder="Preferencias musicales*"></textarea>
@@ -89,13 +89,13 @@ $v = \Helper\CustomHelper::instance()->version();
 
           </div>
           <div class="ma1-input-section__second-box">
-            <input type="text" required name="ma1-town" id="ma1-town" min="2" max="255" class="ma1-input" placeholder="Dirección de residencia">
+            <input type="text" required name="ma1-town" id="ma1-town"  maxlength="255" class="ma1-input" placeholder="Dirección de residencia">
             <span class="error-box error-ma1-town"></span>
 
-            <input type="text" required name="ma1-height" id="ma1-height" min="2" max="255" class="ma1-input" placeholder="Estatura (cm)">
+            <input type="text" required name="ma1-height" id="ma1-height"  maxlength="255" class="ma1-input" placeholder="Estatura (cm)">
             <span class="error-box error-ma1-height"></span>
 
-            <input type="text" required name="ma1-weight" id="ma1-weight" min="2" max="255" class="ma1-input" placeholder="Peso (kg)">
+            <input type="text" required name="ma1-weight" id="ma1-weight"  maxlength="255" class="ma1-input" placeholder="Peso (kg)">
             <span class="error-box error-ma1-weight"></span>
             <select required name="ma1-eyeColor" id="ma1-eyeColor" class="ma1-input">
               <option value="">Color de los ojos</option>
@@ -115,16 +115,16 @@ $v = \Helper\CustomHelper::instance()->version();
             </select>
             <span class="error-box error-ma1-hairColor"></span>
 
-            <input type="text" required name="ma1-enLanguage" id="ma1-enLanguage" min="2" max="255" class="ma1-input" placeholder="Conocimiento de inglés">
+            <input type="text" required name="ma1-enLanguage" id="ma1-enLanguage"  maxlength="255" class="ma1-input" placeholder="Conocimiento de inglés">
             <span class="error-box error-ma1-enLanguage"></span>
 
-            <input type="text" required name="ma1-languages" id="ma1-languages" min="2" max="255" class="ma1-input" placeholder="Idioma adicional">
+            <input type="text" required name="ma1-languages" id="ma1-languages"  maxlength="255" class="ma1-input" placeholder="Idioma adicional">
             <span class="error-box error-ma1-languages"></span>
 
-            <input type="text" required name="ma1-hobby" id="ma1-hobby" min="2" max="255" class="ma1-input" placeholder="Aficiones/Hobbies">
+            <input type="text" required name="ma1-hobby" id="ma1-hobby"  maxlength="255" class="ma1-input" placeholder="Aficiones/Hobbies">
             <span class="error-box error-ma1-hobby"></span>
 
-            <input type="text" required name="ma1-drinking" id="ma1-drinking" min="2" max="255" class="ma1-input" placeholder="¿Bebes alcohol?">
+            <input type="text" required name="ma1-drinking" id="ma1-drinking"  maxlength="255" class="ma1-input" placeholder="¿Bebes alcohol?">
             <span class="error-box error-ma1-drinking"></span>
 
             <textarea rows="4" cols="50" required name="ma1-people_value" id="ma1-people_value" class="ma1-input" placeholder="¿Qué es lo que más valoras en las personas?*"></textarea>
@@ -150,10 +150,10 @@ $v = \Helper\CustomHelper::instance()->version();
           <h3>Como ves a tu pareja:</h3>
           <div class="ma1-comoveas-wrap">
             <div class="ma1-input-section__first-box">
-              <input type="text" required name="ma1-partner_age_difference" id="ma1-partner_age_difference" min="2" max="255" class="ma1-input" placeholder="diferencia máxima de edad">
+              <input type="text" required name="ma1-partner_age_difference" id="ma1-partner_age_difference"  maxlength="255" class="ma1-input" placeholder="diferencia máxima de edad">
               <span class="error-box error-ma1-partner_age_difference"></span>
 
-              <input type="text" required name="ma1-partner_smoke" id="ma1-partner_smoke" min="2" max="255" class="ma1-input" placeholder="fumar">
+              <input type="text" required name="ma1-partner_smoke" id="ma1-partner_smoke"  maxlength="255" class="ma1-input" placeholder="fumar">
               <span class="error-box error-ma1-partner_smoke"></span>
 
               <textarea rows="4" cols="50" required name="ma1-partner_drive_away" id="ma1-partner_drive_away" class="ma1-input" placeholder="Lo que puede alejarte en una pareja"></textarea>
@@ -162,10 +162,10 @@ $v = \Helper\CustomHelper::instance()->version();
 
             </div>
             <div class="ma1-input-section__second-box">
-              <input type="text" required name="ma1-partner_kids" id="ma1-partner_kids" min="2" max="255" class="ma1-input" placeholder="con o sin hijos">
+              <input type="text" required name="ma1-partner_kids" id="ma1-partner_kids"  maxlength="255" class="ma1-input" placeholder="con o sin hijos">
               <span class="error-box error-ma1-partner_kids"></span>
 
-              <input type="text" required name="ma1-partner_religion" id="ma1-partner_religion" min="2" max="255" class="ma1-input" placeholder="actitud hacia la religión y la religión">
+              <input type="text" required name="ma1-partner_religion" id="ma1-partner_religion"  maxlength="255" class="ma1-input" placeholder="actitud hacia la religión y la religión">
               <span class="error-box error-ma1-partner_religion"></span>
 
               <textarea rows="4" cols="50" required name="ma1-partner_attraction" id="ma1-partner_attraction" class="ma1-input" placeholder="Qué te puede atraer en una pareja"></textarea>
@@ -268,7 +268,7 @@ $v = \Helper\CustomHelper::instance()->version();
 
         <section class="ma1-bottom-section">
           <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
-          <button class="ma1-submit" type="submit">Enviar</button>
+          <button class="ma1-submit" disabled type="submit">Enviar</button>
         </section>
       </form>
     </div>
