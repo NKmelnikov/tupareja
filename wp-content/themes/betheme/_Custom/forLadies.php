@@ -34,7 +34,7 @@ $v = \Helper\CustomHelper::instance()->version();
             <li>Предоставляйте только реальную информацию (не скрывайте свой возраст либо наличие детей)</li>
             <li>Прикрепите удачные фото, где можно хорошо рассмотреть Ваши черты лица и особенности фигуры (снимки не должны быть вульгарными)</li>
             <li>Не создавайте придуманного образа, несоответствие с ним может оттолкнуть мужчину</li>
-		      <li>Сделайте коротенькое качественное видео, где можно увидеть вас в реальной жизни</li>
+		      <li>Сделайте коротенькое качественное видео, где можно увидеть вас в реальной жизни (формат <b>.mp4</b>)</li>
           <li>В видео расскажите немного о себе и какие ваши пожелания к партнеру,
             обязательно укажите что на сайте tuparejaucraniana.com вы бы хотели найти своего мужчину.
             Видео может быть сделано на русском,  английским или испанским языках, на каком вам более комфортно.
@@ -147,7 +147,7 @@ $v = \Helper\CustomHelper::instance()->version();
                 <span class="qq-upload-drop-area-text-selector"></span>
               </div>
               <div class="qq-upload-button-selector qq-upload-button">
-                <div>Загрузить</div>
+                <div>Загрузить*</div>
               </div>
               <span class="qq-drop-processing-selector qq-drop-processing">
                 <span>Processing dropped files...</span>
@@ -224,8 +224,8 @@ $v = \Helper\CustomHelper::instance()->version();
 
         </section>
         <section class="la1-bottom-section">
-            <input type="button" id="la1-fake-file-input" value="Загрузить видео" />
-            <input type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
+            <input type="button" id="la1-fake-file-input" value="Загрузить видео*" />
+            <input type="file" required accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
             <span id="la1-fileName-text"></span>
             <span class="error-box error-la1-video-upload"></span>
 	        <div id="upload-info"></div>

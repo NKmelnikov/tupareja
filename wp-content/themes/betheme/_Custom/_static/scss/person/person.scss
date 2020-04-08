@@ -30,11 +30,23 @@
 
     ul {
       li {
-        &::first-letter {
-          text-transform: capitalize;
-        }
-        span {
+        display: flex;
+        .pr1-person-title {
+          display: block;
           font-weight: bold;
+          padding:0 5px;
+
+          &:first-letter {
+            text-transform: capitalize;
+          }
+        }
+
+        .pr1-person-info {
+          display: block;
+
+          &::first-letter{
+            text-transform: capitalize;
+          }
         }
       }
     }

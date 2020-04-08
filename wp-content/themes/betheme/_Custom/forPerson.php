@@ -32,60 +32,60 @@ $v = $customHelper->version();
         <div class="right">
           <ul>
             <li>
-              <span><?php _e('contact_from_name', 'betheme') ?>:</span> <?php echo $person[0]->name; ?>
+              <span class="pr1-person-title"><?php _e('contact_from_name', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->name; ?></span>
             </li>
             <li>
-              <span>ID:</span> <?php echo $person[0]->id; ?>
+              <span class="pr1-person-title">ID:</span> <?php echo $person[0]->id; ?>
             </li>
             <li>
-              <span><?php _e('search_age', 'betheme') ?>:</span> <?php echo $customHelper->getCurrentAge($person[0]->date_of_birth) ?>
+              <span class="pr1-person-title"><?php _e('search_age', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $customHelper->getCurrentAge($person[0]->date_of_birth) ?></span>
             </li>
             <li>
-              <span><?php _e('search_zodiac', 'betheme') ?>:</span> <?php _e('search_zodiac_'.$customHelper->getZodiac($person[0]->date_of_birth), 'betheme')  ?>
+              <span class="pr1-person-title"><?php _e('search_zodiac', 'betheme') ?>:</span> <span class="pr1-person-info"><?php _e('search_zodiac_'.$customHelper->getZodiac($person[0]->date_of_birth), 'betheme')  ?></span>
             </li>
             <li>
-              <span><?php _e('person_country', 'betheme') ?>:</span> <?php echo $person[0]->country; ?>
+              <span class="pr1-person-title"><?php _e('person_country', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->country; ?></span>
             </li>
             <li>
-              <span><?php _e('person_town', 'betheme') ?>:</span> <?php echo $person[0]->town; ?>
+              <span class="pr1-person-title"><?php _e('person_town', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->town; ?></span>
             </li>
             <li>
-              <span><?php _e('search_height', 'betheme') ?>:</span> <?php echo $person[0]->height; ?>
+              <span class="pr1-person-title"><?php _e('search_height', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->height; ?></span>
             </li>
             <li>
-              <span><?php _e('search_weight', 'betheme') ?>:</span> <?php echo $person[0]->weight; ?>
+              <span class="pr1-person-title"><?php _e('search_weight', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->weight; ?></span>
             </li>
             <li>
-              <span><?php _e('search_eye_color', 'betheme') ?>:</span> <?php echo $customHelper->eyeColorMap($person[0]->eye_color); ?>
+              <span class="pr1-person-title"><?php _e('search_eye_color', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $customHelper->eyeColorMap($person[0]->eye_color); ?></span>
             </li>
             <li>
-              <span><?php _e('search_hair_color', 'betheme') ?>:</span> <?php echo $customHelper->hairColorMap($person[0]->hair_color); ?>
+              <span class="pr1-person-title"><?php _e('search_hair_color', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $customHelper->hairColorMap($person[0]->hair_color); ?></span>
             </li>
             <li>
-              <span><?php _e('person_profession', 'betheme') ?>:</span> <?php echo $person[0]->profession; ?>
+              <span class="pr1-person-title"><?php _e('person_profession', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->profession; ?></span>
             </li>
             <li>
-              <span><?php _e('person_smoking', 'betheme') ?>:</span> <?php echo $person[0]->smoking; ?>
+              <span class="pr1-person-title"><?php _e('person_smoking', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->smoking; ?></span>
             </li>
             <li>
-              <span><?php _e('person_languages', 'betheme') ?>:</span> <?php echo $person[0]->languages; ?>
+              <span class="pr1-person-title"><?php _e('person_languages', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->languages; ?></span>
             </li>
             <li>
-              <span><?php _e('person_family_status', 'betheme') ?>:</span> <?php echo $person[0]->family_status; ?>
+              <span class="pr1-person-title"><?php _e('person_family_status', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->family_status; ?></span>
             </li>
             <li>
-              <span><?php _e('person_kids', 'betheme') ?>:</span> <?php echo $person[0]->kids; ?>
+              <span class="pr1-person-title"><?php _e('person_kids', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->kids; ?></span>
             </li>
           </ul>
         </div>
       </section>
       <section class="pr1-lvl2-wrap pr1-wrap">
         <p>
-          <span><?php _e('person_about_myself', 'betheme') ?>:</span> <?php echo $person[0]->about; ?>
+          <span><?php _e('person_about_myself', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->about; ?></span>
         </p>
           <?php if ($person[0]->wishes_to_man != "") { ?>
             <p>
-              <span><?php _e('person_about_target', 'betheme') ?>:</span> <?php echo $person[0]->wishes_to_man; ?>
+              <span><?php _e('person_about_target', 'betheme') ?>:</span> <span class="pr1-person-info"><?php echo $person[0]->wishes_to_man; ?></span>
             </p>
           <?php } ?>
       </section>
