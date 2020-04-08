@@ -77,6 +77,9 @@ $homeUrlES = $customHelper::instance()->host_es();
                 <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
                   <a href="<?= get_home_url() ?>"><span><?php _e('header_main', 'betheme') ?></span></a>
                 </li>
+                <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="<?= get_home_url() .'/#main-gallery' ?>"><span><?php _e('header_our_ladies', 'betheme') ?></span></a>
+                </li>
                 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() .'/about/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                 </li>
