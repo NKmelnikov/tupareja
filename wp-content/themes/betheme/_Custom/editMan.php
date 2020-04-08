@@ -32,7 +32,10 @@ $config = CustomHelper::instance();
 $v = $config->version();
 
 ?>
+<link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/lightbox/css/lightbox.css?v=' . $v ?>">
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/men/menEdit.css?v=' .$v ?>">
+<script src="<?= $pathToCustom . '_static/libs/lightbox/js/lightbox.js?v=' .$v ?>"></script>
+
 
 <form action="<?php echo $pathToCustom . 'Actions/submitUpdateMan.php' ?>" class="me1-wrapper" id="me1-form" method="post" enctype="multipart/form-data">
   <input type="hidden" name="me1-id" id="me1-id" value="<?php echo $_GET['customer'] ?>">
@@ -210,7 +213,9 @@ $v = $config->version();
 		foreach ($pathArray as $image){
 			$image = str_replace(ABSPATH, get_home_url() . '/', $image);
 			?>
-			<img src="<?php echo $image;?>" class="" alt="man img">
+      <a href="<?php echo $image; ?>" data-path="<?= $image ?>" data-lightbox="roadtrip">
+        <img src="<?php echo $image; ?>" class="le1-lady-image <?= $image ?>" alt="lady image">
+      </a>
 			<?php
 		}
 
