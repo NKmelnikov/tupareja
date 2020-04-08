@@ -28,8 +28,8 @@ if (empty($_GET['_wpnonce'])) {
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 CustomHelper::build();
-$config = CustomHelper::instance();
-$v = $config->version();
+$customHelper = CustomHelper::instance();
+$v = $customHelper->version();
 
 ?>
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/libs/lightbox/css/lightbox.css?v=' . $v ?>">
@@ -100,9 +100,6 @@ $v = $config->version();
 			<label for="me1-vacation_preferences">Durante sus vacaciones, que es preferible para usted: descansar en el mar, la soledad en un parque, bosque o montaña, un programa deexcursión activa*</label>
 			<textarea rows="4" cols="50" required name="me1-vacation_preferences" id="me1-vacation_preferences" class="me1-input" placeholder="Durante sus vacaciones, que es preferible para usted: descansar en el mar, la soledad en un parque, bosque o montaña, un programa deexcursión activa*"><?php echo $man['vacation_preferences']; ?></textarea>
 			<span class="error-box error-me1-vacation_preferences"></span>
-
-
-
 		</div>
 		<div class="me1-input-section__second-box">
 			<label for="me1-town">Dirección de residencia</label>
@@ -118,11 +115,11 @@ $v = $config->version();
 			<span class="error-box error-me1-weight"></span>
 
 			<label for="me1-eyeColor">Color de ojos*</label>
-			<input type="text" required name="me1-eyeColor" id="me1-eyeColor" min="2" max="255" class="me1-input" placeholder="Color de ojos*" value="<?php echo $man['eye_color']; ?>">
+			<input type="text" required name="me1-eyeColor" id="me1-eyeColor" min="2" max="255" class="me1-input" placeholder="Color de ojos*" value="<?php echo $customHelper->eyeColorMap($man['eye_color']); ?>">
 			<span class="error-box error-me1-eyeColor"></span>
 
 			<label for="me1-heirColor">Color de pelo</label>
-			<input type="text" required name="me1-heirColor" id="me1-heirColor" min="2" max="255" class="me1-input" placeholder="Color de pelo" value="<?php echo $man['hair_color']; ?>">
+			<input type="text" required name="me1-heirColor" id="me1-heirColor" min="2" max="255" class="me1-input" placeholder="Color de pelo" value="<?php echo $customHelper->hairColorMap($man['hair_color']); ?>">
 			<span class="error-box error-me1-heirColor"></span>
 
 			<label for="me1-enLanguage">Conocimiento de inglés</label>

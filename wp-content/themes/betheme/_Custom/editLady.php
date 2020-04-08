@@ -134,11 +134,8 @@ $v = $customHelper->version();
       <label for="le1-wishes-to-man">Deseos a un socio potencial</label>
       <textarea rows="4" cols="50" name="le1-wishes-to-man" id="le1-wishes-to-man" class="le1-input translate-value" placeholder="Пожелания к потенциальному партнёру"><?php echo $lady['wishes_to_man']; ?></textarea>
       <span class="error-box error-le1-wishes-to-man"></span>
-
       <label for="le1-main-image-path">El camino a la foto principal</label>
       <textarea rows="4" cols="50" type="text" name="le1-main-image-path" id="le1-main-image-path"><?php echo $lady['main_image_path']; ?></textarea>
-      <input type="hidden" id="le1-main-image-path-1" name="le1-main-image-path-1">
-      <span class="error-box error-le1-main-image-path"></span>
     </div>
   </section>
   <section class="le1_photo_section">
@@ -170,7 +167,7 @@ $v = $customHelper->version();
   <?php else: ?>
     <section class="le1-upload-video-section">
       <input type="button" id="le1-fake-file-input" value="Subir video"/>
-      <input type="file" required accept="video/mp4" id="le1-video-upload" name="le1-video-upload" class="le1-input le1-video-upload">
+      <input type="file" accept="video/mp4" id="le1-video-upload" name="le1-video-upload" class="le1-input le1-video-upload">
       <span id="le1-fileName-text"></span>
       <span class="error-box error-le1-video-upload"></span>
     </section>
