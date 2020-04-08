@@ -49,7 +49,7 @@ class MenApplicationAdminUpdate
 			'town' => CustomHelper::sanitiseText($post['me1-town']),
 			'height' => CustomHelper::sanitiseText($post['me1-height']),
 			'weight' => CustomHelper::sanitiseText($post['me1-weight']),
-			'hair_color' => CustomHelper::sanitiseText($post['me1-heirColor']),
+			'hair_color' => CustomHelper::sanitiseText($post['me1-hairColor']),
 			'eye_color' => CustomHelper::sanitiseText($post['me1-eyeColor']),
 			'education' => CustomHelper::sanitiseText($post['me1-education']),
 			'profession' => CustomHelper::sanitiseText($post['me1-profession']),
