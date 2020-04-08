@@ -96,7 +96,7 @@ $v = $customHelper->version();
             <a href="<?php echo $customHelper->convertImgPath($img); ?>" data-lightbox="roadtrip"><img src="<?php echo $customHelper->convertImgPath($img); ?>" alt=""></a>
           <?php } ?>
       </section>
-        <?php if ($person[0]->video_link !== 'http://no_video'): ?>
+        <?php if (strpos($person[0]->video_link, 'no_video') === false): ?>
           <section class="pr1-video pr1-wrap">
             <video src="<?php echo $customHelper->convertImgPath($person[0]->video_link); ?>" controls></video>
           </section>

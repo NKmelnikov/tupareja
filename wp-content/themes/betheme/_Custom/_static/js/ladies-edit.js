@@ -9,6 +9,37 @@
     changeMainImgBtn: $('.change-main-image'),
     imgWrapper: $('.image-wrap'),
     ladyImg: $('.le1-lady-image'),
+    videoLinkInput: $('#le1-video-link'),
+    deleteVideoBtn: $('.delete-video'),
+    videoSection: $('.le1-video-section'),
+    uploadInput: $('#le1-video-upload'),
+    fakeFileUploadBtn: $('#le1-fake-file-input'),
+    fileNameSpan: $('#le1-fileName-text'),
+
+    deleteVideo() {
+        le1.videoSection.remove();
+        le1.videoLinkInput.val('no_video');
+    },
+
+    fileValidate() {
+      let file = le1.uploadInput.prop('files')[0],
+        ext = "не определилось",
+        parts = file.name.split('.');
+      le1.uploadInput.removeClass('error-input');
+      if (parts.length > 1) ext = parts.pop();
+      if (file.type !== "video/mp4" || ext !== "mp4") {
+        le1.showNotification('danger', "¡Tipo de archivo no válido! Lo necesito .mp4");
+        le1.uploadInput.addClass('error-input');
+        return 0;
+      }
+      if (file.size >= 60 * 1024 * 1024) {
+        le1.showNotification('danger', "¡El video no debe tener más de 60 MB!");
+        le1.uploadInput.addClass('error-input');
+        return 0;
+      }
+      le1.fileNameSpan.html(file.name);
+      le1.sendAjaxVideo();
+    },
 
     deleteImage(elem) {
       let pathToImagesArray = le1.pathToImagesArea.val().split(',');
@@ -86,6 +117,46 @@
       });
     },
 
+    sendAjaxVideo() {
+      let file_video = le1.uploadInput.prop('files')[0];
+      let data_video = new FormData();
+      data_video.append('file', file_video);
+      $.ajax({
+        url: '/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php',
+        type: 'POST',
+        data: data_video,
+        cache: false,
+        processData: false,
+        contentType: false,
+        success: function (msg) {
+          le1.videoLinkInput.val(msg);
+        }
+      });
+    },
+
+    showNotification(type, message, timeOut = 7000) {
+      return $.notify({
+        message: message,
+      }, {
+        type: type,
+        delay: timeOut,
+        allow_dismiss: false,
+        template: '<div data-notify="container" class="le1-notification alert alert-{0}" role="alert">' +
+          '<div data-notify="message">{2}</div>' +
+          '<div class="meter">' +
+          '<span style="width:100%;"><span class="progress"></span></span>' +
+          '</div>' +
+          '</div>',
+        placement: {
+          from: "bottom"
+        },
+        animate: {
+          enter: 'animated fadeInRight',
+          exit: 'animated fadeOutRight'
+        }
+      });
+    },
+
     validateHtml() {
       this.clearErrors();
       return this.ladiesForm.find(":invalid").each(function (index, node) {
@@ -113,6 +184,10 @@
     }
   };
 
+  le1.deleteVideoBtn.click(function () {
+      le1.deleteVideo();
+  });
+
   le1.deleteImgBtn.click(function (e) {
     e.preventDefault();
     le1.deleteImage($(this));
@@ -122,6 +197,12 @@
     e.preventDefault();
     le1.changeMainImage($(this));
   });
+
+  le1.fakeFileUploadBtn.on('click', () => {
+    le1.uploadInput.click();
+  });
+
+  le1.uploadInput.on('change', le1.fileValidate);
 
   le1.saveBtn.on('click', (e) => {
     e.preventDefault();

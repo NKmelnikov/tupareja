@@ -30,8 +30,8 @@ if (empty($_GET['_wpnonce'])) {
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 CustomHelper::build();
-$config = CustomHelper::instance();
-$v = $config->version();
+$customHelper = CustomHelper::instance();
+$v = $customHelper->version();
 
 ?>
 
@@ -42,7 +42,7 @@ $v = $config->version();
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/fine-uploader/fine-uploader-new.min.css' ?>">
 
 <script src="<?= $pathToCustom . '_static/fine-uploader/jquery.fine-uploader.min.js' ?>"></script>
-<script src="<?= $pathToCustom . '_static/libs/lightbox/js/lightbox.js?v=' .$v ?>"></script>
+<script src="<?= $pathToCustom . '_static/libs/lightbox/js/lightbox.js?v=' . $v ?>"></script>
 <script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js' ?>"></script>
 <script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.core.min.js' ?>"></script>
 <script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.js' ?>"></script>
@@ -162,11 +162,25 @@ $v = $config->version();
       }
       ?>
   </section>
+  <?php if (strpos($lady['video_link'], 'no_video') === false): ?>
+  <section class="le1-video-section">
+    <video src="<?= $customHelper->convertImgPath($lady['video_link']); ?>" controls></video>
+    <button class="delete-video">Eliminar</button>
+  </section>
+  <?php else: ?>
+    <section class="le1-upload-video-section">
+      <input type="button" id="le1-fake-file-input" value="Subir video"/>
+      <input type="file" required accept="video/mp4" id="le1-video-upload" name="le1-video-upload" class="le1-input le1-video-upload">
+      <span id="le1-fileName-text"></span>
+      <span class="error-box error-le1-video-upload"></span>
+    </section>
+  <?php endif; ?>
+
   <section class="le1-uploader-section">
     <!-- Fine Uploader Gallery template
 ====================================================================== -->
     <script type="text/template" id="qq-template-gallery">
-      <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Загрузите до 5 фоторафий">
+      <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Sube hasta 5 fotos">
         <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
           <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
         </div>
@@ -257,6 +271,7 @@ $v = $config->version();
     <label for="le1-activated-no">No activado</label>
     <input type="radio" name="le1-activated" id="le1-activate-no" value="0" <?php if ($lady['activated'] == 0) echo 'checked' ?>>
   </section>
+
   <section class="le1_bottom_section">
     <button class="le1_bottom_section__button-save" type="submit">Guardar</button>
     <button class="le1_bottom_section__button-translate" type="button">Traducir</button>

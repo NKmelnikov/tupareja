@@ -164,3 +164,44 @@
     box-shadow: none !important;
   }
 }
+
+.le1-video-section{
+  max-width: 400px;
+  max-height: 400px;
+
+  .delete-video{
+    width: 150px;
+    height: 30px;
+    background: #682e37;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid transparent;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      background: #ccc;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+}
+
+.le1-upload-video-section{
+  .le1-video-upload {
+    display: none;
+  }
+
+  #le1-fake-file-input{
+    width: 150px;
+    height: 30px;
+    background: #00abc7;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid transparent;
+    transition: .2s ease-in-out;
+  }
+}
+
