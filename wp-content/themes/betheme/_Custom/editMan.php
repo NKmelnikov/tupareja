@@ -119,7 +119,7 @@ $v = $customHelper->version();
 			<span class="error-box error-me1-eyeColor"></span>
 
 			<label for="me1-hairColor">Color de pelo</label>
-			<input type="text" required name="me1-hairColor" id="me1-hairColor" min="2" max="255" class="me1-input" placeholder="Color de pelo" value="<?php echo $customHelper->hairColorMap($man['hair_color']); ?>">
+			<input type="text" required name="me1-hairColor" id="me1-hairColor" min="2" max="255" class="me1-input" placeholder="Color de pelo" value="<?php echo $customHelper->hairColorMap($man['hair_color'], 'men'); ?>">
 			<span class="error-box error-me1-heirColor"></span>
 
 			<label for="me1-enLanguage">Conocimiento de inglés</label>

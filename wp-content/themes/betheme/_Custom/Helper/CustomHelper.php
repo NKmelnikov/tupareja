@@ -134,23 +134,44 @@ class CustomHelper
     {
         switch (strtolower($color)) {
             case 'hazel':
-                $es_color = 'avellana';
+                $es_color = 'marrónes';
                 break;
             case 'gray':
-                $es_color = 'gris';
+                $es_color = 'grises';
                 break;
             case 'green':
-                $es_color = 'verde';
+                $es_color = 'verdes';
+                break;
+            case 'black':
+                $es_color = 'negros';
                 break;
             default:
-                $es_color = 'azul';
+                $es_color = 'azules';
                 break;
         }
         return $es_color;
     }
 
-    function hairColorMap($color)
+    function hairColorMap($color, $type='ladies')
     {
+        if ($type === 'men') {
+            switch (strtolower($color)) {
+                case 'ginger':
+                    $es_color = 'pelirrojo';
+                    break;
+                case 'brunette':
+                    $es_color = 'moreno';
+                    break;
+                case 'chestnut':
+                    $es_color = 'castaño';
+                    break;
+                default:
+                    $es_color = 'rubio';
+                    break;
+            }
+            return $es_color;
+        }
+
         switch (strtolower($color)) {
             case 'ginger':
                 $es_color = 'pelirroja';
