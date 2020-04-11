@@ -158,6 +158,9 @@ class CustomHelper
             case 'brunette':
                 $es_color = 'morena';
                 break;
+            case 'chestnut':
+                $es_color = 'castaño';
+                break;
             default:
                 $es_color = 'rubia';
                 break;
