@@ -134,7 +134,7 @@ class CustomHelper
     {
         switch (strtolower($color)) {
             case 'hazel':
-                $es_color = 'marrónes';
+                $es_color = 'marrones';
                 break;
             case 'gray':
                 $es_color = 'grises';
