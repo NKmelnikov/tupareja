@@ -132,7 +132,7 @@ class CustomHelper
 
     function eyeColorMap($color)
     {
-        switch ($color) {
+        switch (strtolower($color)) {
             case 'hazel':
                 $es_color = 'avellana';
                 break;
@@ -151,7 +151,7 @@ class CustomHelper
 
     function hairColorMap($color)
     {
-        switch ($color) {
+        switch (strtolower($color)) {
             case 'ginger':
                 $es_color = 'pelirroja';
                 break;
