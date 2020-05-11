@@ -60,7 +60,7 @@
 
   &-service {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px 0;
     box-shadow: 0px 4px 5px 0px rgba(198, 198, 198, 0.5);
 
@@ -183,7 +183,9 @@
       }
 
       &__text {
+        text-align: justify;
         margin: 20px 0;
+        padding-right: 10px;
 
         @media #{$mobile} {
           margin: 10px 0;
@@ -346,5 +348,6 @@
 
   article {
     padding-top: 10px;
+    text-align: justify;
   }
 }
