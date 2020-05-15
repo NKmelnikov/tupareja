@@ -29,19 +29,21 @@
                 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() .'/about/' ?>"><span><?php _e('header_about_us', 'betheme') ?></span></a>
                 </li>
-                <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
+              <?php if (get_locale() !== 'ru_RU'): ?>
+              <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
                   <a href="<?= get_home_url() .'/our-service/' ?>"><span><?php _e('header_service', 'betheme') ?> </span><span class="triangle-turn">&#9668;</span></a>
                   <div class="service-dropdown-content up1">
                     <a href="<?= get_home_url() .'/our-service/dates-ucraine/' ?>"><span><?php _e('service_title_1', 'betheme') ?></span></a>
                     <a href="<?= get_home_url() .'/our-service/trip-to-spain/' ?>"><span><?php _e('service_title_2', 'betheme') ?></span></a>
                     <a href="<?= get_home_url() .'/our-service/event-dates/' ?>"><span><?php _e('service_title_3', 'betheme') ?></span></a>
                     <a href="<?= get_home_url() .'/our-service/translator/' ?>"><span><?php _e('service_title_4', 'betheme') ?></span></a>
-                    <a href="<?= get_home_url() .'/our-service/transfer/' ?>"><span><?php _e('service_title_5', 'betheme') ?></span></a>
-                    <a href="<?= get_home_url() .'/our-service/flowers/' ?>"><span><?php _e('service_title_6', 'betheme') ?></span></a>
-                    <a href="<?= get_home_url() .'/our-service/wedding/' ?>"><span><?php _e('service_title_7', 'betheme') ?></span></a>
+<!--                    <a href="--><?//= get_home_url() .'/our-service/transfer/' ?><!--"><span>--><?php //_e('service_title_5', 'betheme') ?><!--</span></a>-->
+<!--                    <a href="--><?//= get_home_url() .'/our-service/flowers/' ?><!--"><span>--><?php //_e('service_title_6', 'betheme') ?><!--</span></a>-->
+<!--                    <a href="--><?//= get_home_url() .'/our-service/wedding/' ?><!--"><span>--><?php //_e('service_title_7', 'betheme') ?><!--</span></a>-->
                   </div>
                 </li>
-                  <?php if (get_locale() === 'ru_RU'): ?>
+              <?php endif; ?>
+                <?php if (get_locale() === 'ru_RU'): ?>
                     <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
                       <a href="<?= get_home_url() .'/recommendations-lady/' ?>"><span><?php _e('header_lady_tips', 'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
                       <div class="service-dropdown-content up">
@@ -93,6 +95,9 @@
 					}
 					?>
 				</div>
+        <div class="social">
+            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+        </div>
 			</div>
 
 		</div>
