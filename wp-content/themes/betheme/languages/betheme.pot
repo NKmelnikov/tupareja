@@ -11077,6 +11077,12 @@ msgstr "Find your love"
 msgid "service_more_button"
 msgstr "find more"
 
+msgid "service_title_0"
+msgstr "title 0"
+
+msgid "service_text_0"
+msgstr "text 0"
+
 msgid "service_title_1"
 msgstr "title 1"
 
@@ -11145,6 +11151,9 @@ msgstr "The path to the happiness"
 
 msgid "service_step_text_4"
 msgstr "The path to the happiness"
+
+msgid "service_article_0"
+msgstr "service article"
 
 msgid "service_article_1"
 msgstr "service article"

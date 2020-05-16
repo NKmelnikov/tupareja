@@ -19,6 +19,7 @@ body, html {
     top: 0;
     right: 120px;
     width: 50px;
+    z-index: 999;
 
     @media #{$mobile} {
       left: 0;
@@ -54,6 +55,7 @@ body, html {
     .social {
       display: flex;
       justify-content: center;
+
       .sfsi_wDiv {
         display: flex;
         justify-content: center;
@@ -103,11 +105,14 @@ body, html {
     .header-title {
 
       &.real {
-        display: flex;
-        justify-content: space-around;
+        position: relative;
+        //display: flex;
+        //justify-content: space-around;
 
         .social {
-
+          position: absolute;
+          top: 30px;
+          right: 20px;
         }
       }
     }
@@ -166,7 +171,6 @@ body, html {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin-top: 15px;
 
       .sfsi_wDiv {
         width: auto !important;

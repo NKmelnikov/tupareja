@@ -25,9 +25,19 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   </section>
   <div class="heart-box heart-box-advantage">
     <img class="heart-box__heart-big service-section hs13" src="<?= $pathToCustom . '_static/img/big-right.png?v='. $v?>" alt="">
-    <img class="heart-box__heart-small service-section hs14" src="<?= $pathToCustom . '_static/img/small-left.png?v='. $v?>" alt="">
-    <img class="heart-box__heart-small service-section hs15" src="<?= $pathToCustom . '_static/img/small-right.png?v='. $v?>" alt="">
+<!--    <img class="heart-box__heart-small service-section hs14" src="--><?//= $pathToCustom . '_static/img/small-left.png?v='. $v?><!--" alt="">-->
+<!--    <img class="heart-box__heart-small service-section hs15" src="--><?//= $pathToCustom . '_static/img/small-right.png?v='. $v?><!--" alt="">-->
   </div>
+  <section class="os1-wrapper-service">
+    <div class="os1-service-img-box">
+      <div class="os1-service-img-box__image image0"></div>
+    </div>
+    <div class="os1-service-text-box">
+      <span class="os1-service-text-box__title"><?php _e('service_title_0', 'betheme') ?></span>
+      <span class="os1-service-text-box__text"><?php _e('service_text_0', 'betheme') ?></span>
+      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/dates-online/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+    </div>
+  </section>
   <section class="os1-wrapper-service">
     <div class="os1-service-img-box">
       <div class="os1-service-img-box__image image1"></div>
@@ -48,36 +58,36 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/trip-to-spain/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
-  <section class="os1-wrapper-service">
-    <div class="os1-service-img-box">
-      <div class="os1-service-img-box__image image3"></div>
-    </div>
-    <div class="os1-service-text-box">
-      <span class="os1-service-text-box__title"><?php _e('service_title_3', 'betheme') ?></span>
-      <span class="os1-service-text-box__text"><?php _e('service_text_3', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/event-dates/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
-    </div>
-  </section>
-  <section class="os1-wrapper-service">
-    <div class="os1-service-img-box">
-      <div class="os1-service-img-box__image image4"></div>
-    </div>
-    <div class="os1-service-text-box">
-      <span class="os1-service-text-box__title"><?php _e('service_title_4', 'betheme') ?></span>
-      <span class="os1-service-text-box__text"><?php _e('service_text_4', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/translator/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
-    </div>
-  </section>
-  <section class="os1-wrapper-service">
-    <div class="os1-service-img-box">
-      <div class="os1-service-img-box__image image5"></div>
-    </div>
-    <div class="os1-service-text-box">
-      <span class="os1-service-text-box__title"><?php _e('service_title_5', 'betheme') ?></span>
-      <span class="os1-service-text-box__text"><?php _e('service_text_5', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/transfer/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
-    </div>
-  </section>
+<!--  <section class="os1-wrapper-service">-->
+<!--    <div class="os1-service-img-box">-->
+<!--      <div class="os1-service-img-box__image image3"></div>-->
+<!--    </div>-->
+<!--    <div class="os1-service-text-box">-->
+<!--      <span class="os1-service-text-box__title">--><?php //_e('service_title_3', 'betheme') ?><!--</span>-->
+<!--      <span class="os1-service-text-box__text">--><?php //_e('service_text_3', 'betheme') ?><!--</span>-->
+<!--      <a class="os1-service-text-box__btn" target="_blank" href="--><?//= get_home_url() .'/our-service/event-dates/' ?><!--"><span>--><?php //_e('service_more_button', 'betheme') ?><!--</span></a>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  <section class="os1-wrapper-service">-->
+<!--    <div class="os1-service-img-box">-->
+<!--      <div class="os1-service-img-box__image image4"></div>-->
+<!--    </div>-->
+<!--    <div class="os1-service-text-box">-->
+<!--      <span class="os1-service-text-box__title">--><?php //_e('service_title_4', 'betheme') ?><!--</span>-->
+<!--      <span class="os1-service-text-box__text">--><?php //_e('service_text_4', 'betheme') ?><!--</span>-->
+<!--      <a class="os1-service-text-box__btn" target="_blank" href="--><?//= get_home_url() .'/our-service/translator/' ?><!--"><span>--><?php //_e('service_more_button', 'betheme') ?><!--</span></a>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  <section class="os1-wrapper-service">-->
+<!--    <div class="os1-service-img-box">-->
+<!--      <div class="os1-service-img-box__image image5"></div>-->
+<!--    </div>-->
+<!--    <div class="os1-service-text-box">-->
+<!--      <span class="os1-service-text-box__title">--><?php //_e('service_title_5', 'betheme') ?><!--</span>-->
+<!--      <span class="os1-service-text-box__text">--><?php //_e('service_text_5', 'betheme') ?><!--</span>-->
+<!--      <a class="os1-service-text-box__btn" target="_blank" href="--><?//= get_home_url() .'/our-service/transfer/' ?><!--"><span>--><?php //_e('service_more_button', 'betheme') ?><!--</span></a>-->
+<!--    </div>-->
+<!--  </section>-->
   <section class="os1-wrapper-service">
     <div class="os1-service-img-box">
       <div class="os1-service-img-box__image image6"></div>
@@ -88,16 +98,16 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
       <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/flowers/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
-  <section class="os1-wrapper-service">
-    <div class="os1-service-img-box">
-      <div class="os1-service-img-box__image image7"></div>
-    </div>
-    <div class="os1-service-text-box">
-      <span class="os1-service-text-box__title"><?php _e('service_title_7', 'betheme') ?></span>
-      <span class="os1-service-text-box__text"><?php _e('service_text_7', 'betheme') ?></span>
-      <a class="os1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/our-service/wedding/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
-    </div>
-  </section>
+<!--  <section class="os1-wrapper-service">-->
+<!--    <div class="os1-service-img-box">-->
+<!--      <div class="os1-service-img-box__image image7"></div>-->
+<!--    </div>-->
+<!--    <div class="os1-service-text-box">-->
+<!--      <span class="os1-service-text-box__title">--><?php //_e('service_title_7', 'betheme') ?><!--</span>-->
+<!--      <span class="os1-service-text-box__text">--><?php //_e('service_text_7', 'betheme') ?><!--</span>-->
+<!--      <a class="os1-service-text-box__btn" target="_blank" href="--><?//= get_home_url() .'/our-service/wedding/' ?><!--"><span>--><?php //_e('service_more_button', 'betheme') ?><!--</span></a>-->
+<!--    </div>-->
+<!--  </section>-->
   <div class="heart-box heart-box-advantage">
     <img class="heart-box__heart-medium service-section hs16" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
     <img class="heart-box__heart-small service-section hs17" src="<?= $pathToCustom . '_static/img/small-right.png?v='. $v?>" alt="">
