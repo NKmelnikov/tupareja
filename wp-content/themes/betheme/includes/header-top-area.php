@@ -59,14 +59,21 @@ $homeUrlES = $customHelper::instance()->host_es();
 <div id="Top_bar">
   <div class="container">
     <div class="column one">
-      <ul class="main-translation">
-        <li id="menu-item-wpglobus_menu_switch_es" class="menu-item menu-item-type-custom menu-item-object-custom menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
-          <a href="<?= $homeUrlES ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_es"></span></span></a>
-        </li>
-        <li id="menu-item-wpglobus_menu_switch_ru" class="menu-item menu-item-type-custom menu-item-object-custom sub_menu_item_wpglobus_menu_switch wpglobus-selector-link">
-          <a href="<?= $homeUrlRu ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
-        </li>
-      </ul>
+      <div class="translations-wrapper">
+        <ul class="main-translation">
+          <li id="menu-item-wpglobus_menu_switch_es" class="menu-item menu-item-type-custom menu-item-object-custom menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
+            <a href="<?= $homeUrlES ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_es"></span></span></a>
+          </li>
+          <li id="menu-item-wpglobus_menu_switch_ru" class="menu-item menu-item-type-custom menu-item-object-custom sub_menu_item_wpglobus_menu_switch wpglobus-selector-link">
+            <a href="<?= $homeUrlRu ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
+          </li>
+        </ul>
+        <?php if (get_locale() === 'ru_RU'): ?>
+          <div class="social">
+              <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+          </div>
+        <?php endif; ?>
+      </div>
       <div class="heart-box heart-box-main-header">
         <img class="heart-box__heart-small rotated header-section hs1" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">
         <img class="heart-box__heart-medium header-section hs2" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
@@ -146,11 +153,6 @@ $homeUrlES = $customHelper::instance()->host_es();
         <div class="header-right-block">
           <div class="header-title real">
             <h1>International Matchmaking Office</h1>
-              <?php if (get_locale() === 'ru_RU'): ?>
-                <div class="social">
-                    <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-                </div>
-              <?php endif; ?>
           </div>
           <div class="menu_wrapper">
               <?php
