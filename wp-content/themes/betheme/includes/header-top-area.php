@@ -68,6 +68,7 @@ $homeUrlES = $customHelper::instance()->host_es();
             <a href="<?= $homeUrlRu ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
           </li>
         </ul>
+        <br>
         <?php if (get_locale() === 'ru_RU'): ?>
           <div class="social">
               <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
@@ -80,12 +81,6 @@ $homeUrlES = $customHelper::instance()->host_es();
       </div>
 
       <div class="header-special-mobile">
-          <?php if (get_locale() === 'ru_RU'): ?>
-            <div class="social">
-                <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-            </div>
-          <?php endif; ?>
-
           <?php get_template_part('includes/include',
               'logo'); ?>
 
