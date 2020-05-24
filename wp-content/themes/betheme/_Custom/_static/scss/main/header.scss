@@ -52,16 +52,6 @@ body, html {
       flex-direction: column;
     }
 
-    .social {
-      display: flex;
-      justify-content: center;
-
-      .sfsi_wDiv {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
     &__title {
       color: #c4923f;
       text-align: center;
@@ -100,21 +90,6 @@ body, html {
 
     @media #{$mobile} {
       display: none;
-    }
-
-    .header-title {
-
-      &.real {
-        position: relative;
-        //display: flex;
-        //justify-content: space-around;
-
-        .social {
-          position: absolute;
-          top: 30px;
-          right: 20px;
-        }
-      }
     }
 
     h1 {
@@ -165,16 +140,6 @@ body, html {
 
     .service-dropdown:hover .service-dropdown-content {
       display: flex;
-    }
-
-    .social {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-
-      .sfsi_wDiv {
-        width: auto !important;
-      }
     }
   }
 

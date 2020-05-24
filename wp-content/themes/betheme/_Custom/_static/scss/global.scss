@@ -371,3 +371,13 @@
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
+
+.social {
+  width: 100%;
+
+  .sfsi_wDiv{
+    width: 100%!important;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
