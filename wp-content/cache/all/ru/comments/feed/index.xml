@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Комментарии на сайте tuparejaucraniana.com	</title>
+	<atom:link href="https://tuparejaucraniana.com/ru/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://tuparejaucraniana.com/ru</link>
+	<description>Your ucranian couple</description>
+	<lastBuildDate>Tue, 04 Feb 2020 22:50:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+			<item>
+				<title>
+				Комментарий к записи Привет, мир! (Автор комментария)				</title>
+				<link>https://tuparejaucraniana.com/ru/2020/02/05/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/#comment-1</link>
+		<dc:creator><![CDATA[Автор комментария]]></dc:creator>
+		<pubDate>Tue, 04 Feb 2020 22:50:16 +0000</pubDate>
+		<guid isPermaLink="false">https://tuparejaucraniana.com/?p=1#comment-1</guid>
+					<description><![CDATA[Привет! Это комментарий.
+Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.
+Аватары авторов комментариев загружаются с сервиса &lt;a href=&quot;https://ru.gravatar.com&quot;&gt;Gravatar&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>Привет! Это комментарий.<br />
+Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.<br />
+Аватары авторов комментариев загружаются с сервиса <a href="https://ru.gravatar.com">Gravatar</a>.</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				Комментарий к записи Hello world! (A WordPress Commenter)				</title>
+				<link>https://tuparejaucraniana.com/ru/2018/10/31/hello-world/#comment-2</link>
+		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
+		<pubDate>Wed, 31 Oct 2018 12:22:26 +0000</pubDate>
+		<guid isPermaLink="false">https://themes.muffingroup.com/be/model2/?p=1#comment-2</guid>
+					<description><![CDATA[Hi, this is a comment.
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot; rel=&quot;nofollow ugc&quot;&gt;Gravatar&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>Hi, this is a comment.<br />
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br />
+Commenter avatars come from <a href="https://gravatar.com" rel="nofollow ugc">Gravatar</a>.</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>
