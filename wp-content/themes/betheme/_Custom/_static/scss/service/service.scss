@@ -3,7 +3,7 @@
 .os1-wrapper, .rc1-wrapper, .rm1-wrapper {
 
   .os1-title, .rc1-title, .rm1-title {
-    background: url("/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
+    background: url("https://tuparejaucraniana.com/wp-content/themes/betheme/_Custom/_static/img/title-bg.png") no-repeat top center;
     height: 185px;
     width: 453px;
     box-sizing: border-box;
@@ -234,7 +234,7 @@
     align-items: center;
     flex-direction: column;
     padding: 30px 0;
-    background: url("/wp-content/themes/betheme/_Custom/_static/img/steps-background.jpg") no-repeat 50% 60%;
+    background: url("https://tuparejaucraniana.com/wp-content/themes/betheme/_Custom/_static/img/steps-background.jpg") no-repeat 50% 60%;
 
     @media #{$mobile} {
       background: none;
