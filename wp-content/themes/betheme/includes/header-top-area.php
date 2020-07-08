@@ -52,28 +52,19 @@ if (mfn_header_style(true) == 'header-overlay') {
     echo '<i class="close icon-cancel-fine"></i>';
     echo '</a>';
 }
-$homeUrlRu = $customHelper::instance()->host_ru();
-$homeUrlES = $customHelper::instance()->host_es();
+
 ?>
 
 <div id="Top_bar">
   <div class="container">
     <div class="column one">
       <div class="translations-wrapper">
-        <ul class="main-translation">
-          <li id="menu-item-wpglobus_menu_switch_es" class="menu-item menu-item-type-custom menu-item-object-custom menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
-            <a href="<?= $homeUrlES ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_es"></span></span></a>
-          </li>
-          <li id="menu-item-wpglobus_menu_switch_ru" class="menu-item menu-item-type-custom menu-item-object-custom sub_menu_item_wpglobus_menu_switch wpglobus-selector-link">
-            <a href="<?= $homeUrlRu ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
-          </li>
-        </ul>
-        <br>
-        <?php if (get_locale() === 'ru_RU'): ?>
-          <div class="social">
-              <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-          </div>
-        <?php endif; ?>
+	      <a href="<?= $customHelper::instance()->getCurrentUrl() ?>">
+		      <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
+	      </a>
+	      <a href="<?= $customHelper::instance()->getCurrentUrl('/ru') ?>">
+		      <img src="/wp-content/themes/betheme/_Custom/_static/img/russia-flag-round-icon-32.png" alt="">
+	      </a>
       </div>
       <div class="heart-box heart-box-main-header">
         <img class="heart-box__heart-small rotated header-section hs1" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">

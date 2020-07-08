@@ -8,7 +8,6 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 $config = \Helper\CustomHelper::instance();
 $v = $config->version();
-$defaultUrl = $config->host_es();
 
 ?>
 <script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js'?>"></script>
@@ -19,7 +18,7 @@ $defaultUrl = $config->host_es();
 
 <main class="cf1-wrapper">
   <section class="cf1-wrapper-image">
-    <img class="cf1-image" src="<?= $defaultUrl . '/wp-content/themes/betheme/_Custom/_static/img/contact_page.jpeg' ?>"/>
+    <img class="cf1-image" src="/wp-content/themes/betheme/_Custom/_static/img/contact_page.jpeg'"/>
   </section>
 
   <section class="cf1-wrapper-info">
@@ -30,7 +29,7 @@ $defaultUrl = $config->host_es();
       <div class="contact-block">
         <div class="block-contact">
           <div class="line-box">
-            <img src="<?= $defaultUrl . '/wp-content/uploads/2018/11/line3.png' ?>" class="line-box__image" alt="line3" width="42" height="3"/>
+            <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
           </div>
           <div class="text-box">
             <div class="text-box__title">
@@ -47,7 +46,7 @@ $defaultUrl = $config->host_es();
         </div>
         <div class="block-address">
           <div class="line-box">
-            <img src="<?= $defaultUrl . '/wp-content/uploads/2018/11/line3.png' ?>" class="line-box__image" alt="line3" width="42" height="3"/>
+            <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
           </div>
           <div class="text-box">
             <div class="text-box__title">
