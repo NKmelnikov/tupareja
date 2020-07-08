@@ -14,8 +14,6 @@ class CustomHelper
     private static $instance;
     private $configFilePath = ABSPATH . 'wp-content/themes/betheme/_Custom/Helper/config.ini';
     private $version;
-    private $host_ru;
-    private $host_es;
     private $email_from = 'info@tuparejaucraniana.com';
     private $email_from_name = 'Elena';
 
