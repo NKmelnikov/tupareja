@@ -102,12 +102,12 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 
                   <?php if (get_locale() === 'ru_RU'): ?>
                     <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/' ?>"><span><?php _e('header_lady_tips',
                                   'betheme') ?></span></a>
                     </li>
                   <?php else: ?>
                     <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/recommendations-men/' ?>"><span><?php _e('header_man_tips',
+                      <a href="<?= get_home_url() . '/recommendations/' ?>"><span><?php _e('header_man_tips',
                                   'betheme') ?></span></a>
                     </li>
                   <?php endif; ?>
