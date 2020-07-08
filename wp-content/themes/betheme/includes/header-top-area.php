@@ -179,31 +179,31 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                       <?php endif; ?>
                       <?php if (get_locale() === 'ru_RU'): ?>
                         <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
-                          <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
+                          <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/' ?>"><span><?php _e('header_lady_tips',
                                       'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
                           <div class="service-dropdown-content">
-                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/ua-es-man/' ?>"><span><?php _e('rec_title_1',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/ua-es-man/' ?>"><span><?php _e('rec_title_1',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/es-man/' ?>"><span><?php _e('rec_title_3',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/es-man/' ?>"><span><?php _e('rec_title_3',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/es-attitude/' ?>"><span><?php _e('rec_title_4',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/es-attitude/' ?>"><span><?php _e('rec_title_4',
                                         'betheme') ?></span></a>
                           </div>
                         </li>
                       <?php else: ?>
                         <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
-                          <a href="<?= get_home_url() . '/recommendations-men/' ?>"><span><?php _e('header_man_tips',
+                          <a href="<?= get_home_url() . '/recommendations/' ?>"><span><?php _e('header_man_tips',
                                       'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
                           <div class="service-dropdown-content">
-                            <a href="<?= get_home_url() . '/recommendations-men/ua-es-lady/' ?>"><span><?php _e('rec_title_5',
+                            <a href="<?= get_home_url() . '/recommendations/ua-es-lady/' ?>"><span><?php _e('rec_title_5',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-men/men-mistakes/' ?>"><span><?php _e('rec_title_6',
+                            <a href="<?= get_home_url() . '/recommendations/men-mistakes/' ?>"><span><?php _e('rec_title_6',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-men/ua-lady/' ?>"><span><?php _e('rec_title_7',
+                            <a href="<?= get_home_url() . '/recommendations/ua-lady/' ?>"><span><?php _e('rec_title_7',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-men/ua-attitude/' ?>"><span><?php _e('rec_title_8',
+                            <a href="<?= get_home_url() . '/recommendations/ua-attitude/' ?>"><span><?php _e('rec_title_8',
                                         'betheme') ?></span></a>
                           </div>
                         </li>
