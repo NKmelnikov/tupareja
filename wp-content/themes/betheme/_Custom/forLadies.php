@@ -2,6 +2,8 @@
 /*
 Template Name: for Ladies
 */
+switch_to_locale('ru_RU');
+load_textdomain('betheme', 'wp-content/themes/betheme/languages/ru_RU.mo');
 get_header();
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';

@@ -53,6 +53,7 @@ if (mfn_header_style(true) == 'header-overlay') {
     echo '</a>';
 }
 
+$ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 ?>
 
 <div id="Top_bar">
@@ -81,15 +82,15 @@ if (mfn_header_style(true) == 'header-overlay') {
             <nav id="menu">
               <ul id="menu-menu-3" class="menu menu-main">
                 <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
-                  <a href="<?= get_home_url() ?>"><span><?php _e('header_main',
+                  <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
+                  <a href="<?= get_home_url() .$ruSuffix. '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/about/' ?>"><span><?php _e('header_about_us',
+                  <a href="<?= get_home_url() . $ruSuffix .  '/about/' ?>"><span><?php _e('header_about_us',
                               'betheme') ?></span></a>
                 </li>
                   <?php if (get_locale() !== 'ru_RU'): ?>
@@ -101,7 +102,7 @@ if (mfn_header_style(true) == 'header-overlay') {
 
                   <?php if (get_locale() === 'ru_RU'): ?>
                     <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
                                   'betheme') ?></span></a>
                     </li>
                   <?php else: ?>
@@ -111,7 +112,7 @@ if (mfn_header_style(true) == 'header-overlay') {
                     </li>
                   <?php endif; ?>
                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/for-ladies/' ?>"><span><?php _e('header_lady_application',
+                  <a href="<?= get_home_url() . $ruSuffix .  '/for-ladies/' ?>"><span><?php _e('header_lady_application',
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -119,7 +120,7 @@ if (mfn_header_style(true) == 'header-overlay') {
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/contact/' ?>"><span><?php _e('header_contacts',
+                  <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
                               'betheme') ?></span></a>
                 </li>
               </ul>
@@ -149,15 +150,15 @@ if (mfn_header_style(true) == 'header-overlay') {
                 <nav id="menu">
                   <ul id="menu-menu-1" class="menu menu-main">
                     <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
-                      <a href="<?= get_home_url() ?>"><span><?php _e('header_main',
+                      <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
+                      <a href="<?= get_home_url() . $ruSuffix . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/about/' ?>"><span><?php _e('header_about_us',
+                      <a href="<?= get_home_url() . $ruSuffix . '/about/' ?>"><span><?php _e('header_about_us',
                                   'betheme') ?></span></a>
                     </li>
                       <?php if (get_locale() !== 'ru_RU'): ?>
@@ -178,16 +179,16 @@ if (mfn_header_style(true) == 'header-overlay') {
                       <?php endif; ?>
                       <?php if (get_locale() === 'ru_RU'): ?>
                         <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
-                          <a href="<?= get_home_url() . '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
+                          <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
                                       'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
                           <div class="service-dropdown-content">
-                            <a href="<?= get_home_url() . '/recommendations-lady/ua-es-man/' ?>"><span><?php _e('rec_title_1',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/ua-es-man/' ?>"><span><?php _e('rec_title_1',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-lady/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-lady/es-man/' ?>"><span><?php _e('rec_title_3',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/es-man/' ?>"><span><?php _e('rec_title_3',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-lady/es-attitude/' ?>"><span><?php _e('rec_title_4',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations-lady/es-attitude/' ?>"><span><?php _e('rec_title_4',
                                         'betheme') ?></span></a>
                           </div>
                         </li>
@@ -208,7 +209,7 @@ if (mfn_header_style(true) == 'header-overlay') {
                         </li>
                       <?php endif; ?>
                     <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/for-ladies/' ?>"><span><?php _e('header_lady_application',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/for-ladies/' ?>"><span><?php _e('header_lady_application',
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -216,7 +217,7 @@ if (mfn_header_style(true) == 'header-overlay') {
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/contact/' ?>"><span><?php _e('header_contacts',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
                                   'betheme') ?></span></a>
                     </li>
                   </ul>
