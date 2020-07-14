@@ -59,6 +59,11 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 <div id="Top_bar">
   <div class="container">
     <div class="column one">
+        <?php if (get_locale() === 'ru_RU'): ?>
+			    <div class="social">
+              <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+			    </div>
+        <?php endif; ?>
       <div class="translations-wrapper">
 	      <a href="<?= $customHelper::instance()->getCurrentUrl() ?>">
 		      <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
