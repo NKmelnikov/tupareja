@@ -21,6 +21,8 @@ $v = \Helper\CustomHelper::instance()->version();
   <script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.core.min.js'?>"></script>
   <script src="<?= $pathToCustom . '_static/fine-uploader/fine-uploader.min.js'?>"></script>
   <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js'?>"></script>
+  <script src="<?= $pathToCustom . '_static/libs/jquery.maskedinput-1.2.2-co.min.js'?>"></script>
+
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
@@ -63,7 +65,7 @@ $v = \Helper\CustomHelper::instance()->version();
               </div>
             </div>
 
-            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required name="la1-dateOfBirth" id="la1-dateOfBirth" maxlength="125" class="la1-input" placeholder="Дата рождения*">
+            <input type="text" required name="la1-dateOfBirth" id="la1-dateOfBirth" maxlength="125" class="la1-input" placeholder="Дата рождения*">
             <span class="error-box error-la1-dateOfBirth"></span>
 
             <input type="email" required name="la1-email" id="la1-email" maxlength="125" class="la1-input" placeholder="Email*">
