@@ -1,0 +1,24 @@
+[30-Jul-2020 17:54:25 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Customize_Control' not found in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php on line 17
+[31-Jul-2020 14:58:59 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Customize_Control' not found in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php on line 17
+[31-Jul-2020 14:59:19 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Customize_Control' not found in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php on line 17
+[01-Aug-2020 14:23:35 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Customize_Control' not found in /home/tuparej1/public_html/wp-includes/customize/class-wp-widget-form-customize-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-includes/customize/class-wp-widget-form-customize-control.php on line 17
+[01-Aug-2020 14:41:32 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Customize_Control' not found in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php on line 17
+[01-Aug-2020 14:41:32 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Customize_Control' not found in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-includes/customize/class-wp-customize-theme-control.php on line 17

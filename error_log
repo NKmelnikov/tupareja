@@ -1,0 +1,1 @@
+[03-Aug-2020 16:35:40 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT autoload FROM wp_options WHERE option_name = 'rank_math_notifications' made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, MyThemeShop\Notification_Center->update_storage, delete_option
