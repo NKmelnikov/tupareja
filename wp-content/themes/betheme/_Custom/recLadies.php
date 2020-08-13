@@ -2,6 +2,8 @@
 /*
 Template Name: Recommendations Lady
 */
+switch_to_locale('ru_RU');
+load_textdomain('betheme', 'wp-content/themes/betheme/languages/ru_RU.mo');
 get_header();
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 $v = \Helper\CustomHelper::instance()->version();
@@ -34,7 +36,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="rc1-service-text-box">
       <span class="rc1-service-text-box__title"><?php _e('rec_title_1', 'betheme') ?></span>
       <span class="rc1-service-text-box__text"><?php _e('rec_text_1', 'betheme') ?></span>
-      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/recommendations-lady/ua-es-man/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/ru/recommendations/ua-es-man/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="rc1-wrapper-service">
@@ -44,7 +46,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="rc1-service-text-box">
       <span class="rc1-service-text-box__title"><?php _e('rec_title_2', 'betheme') ?></span>
       <span class="rc1-service-text-box__text"><?php _e('rec_text_2', 'betheme') ?></span>
-      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/recommendations-lady/ladies-mistakes/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/ru/recommendations/ladies-mistakes/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="rc1-wrapper-service">
@@ -54,7 +56,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="rc1-service-text-box">
       <span class="rc1-service-text-box__title"><?php _e('rec_title_3', 'betheme') ?></span>
       <span class="rc1-service-text-box__text"><?php _e('rec_text_3', 'betheme') ?></span>
-      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/recommendations-lady/es-man/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/ru/recommendations/es-man/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <section class="rc1-wrapper-service">
@@ -64,7 +66,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     <div class="rc1-service-text-box">
       <span class="rc1-service-text-box__title"><?php _e('rec_title_4', 'betheme') ?></span>
       <span class="rc1-service-text-box__text"><?php _e('rec_text_4', 'betheme') ?></span>
-      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/recommendations-lady/es-attitude/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
+      <a class="rc1-service-text-box__btn" target="_blank" href="<?= get_home_url() .'/ru/recommendations/es-attitude/' ?>"><span><?php _e('service_more_button', 'betheme') ?></span></a>
     </div>
   </section>
   <div class="heart-box heart-box-advantage">

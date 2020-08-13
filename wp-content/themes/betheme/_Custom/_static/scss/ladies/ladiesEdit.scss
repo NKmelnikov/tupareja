@@ -152,7 +152,7 @@
 }
 
 .translate-value {
-  text-transform: capitalize;
+  //text-transform: capitalize;
 }
 
 .lb-next, .lb-prev {
@@ -168,10 +168,11 @@
 .le1-video-section{
   max-width: 400px;
   max-height: 400px;
+	display: flex;
 
   .delete-video{
     width: 150px;
-    height: 30px;
+    height: 40px;
     background: #682e37;
     margin-bottom: 20px;
     cursor: pointer;

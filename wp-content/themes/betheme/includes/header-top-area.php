@@ -52,28 +52,25 @@ if (mfn_header_style(true) == 'header-overlay') {
     echo '<i class="close icon-cancel-fine"></i>';
     echo '</a>';
 }
-$homeUrlRu = $customHelper::instance()->host_ru();
-$homeUrlES = $customHelper::instance()->host_es();
+
+$ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 ?>
 
 <div id="Top_bar">
   <div class="container">
     <div class="column one">
-      <div class="translations-wrapper">
-        <ul class="main-translation">
-          <li id="menu-item-wpglobus_menu_switch_es" class="menu-item menu-item-type-custom menu-item-object-custom menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language">
-            <a href="<?= $homeUrlES ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_es"></span></span></a>
-          </li>
-          <li id="menu-item-wpglobus_menu_switch_ru" class="menu-item menu-item-type-custom menu-item-object-custom sub_menu_item_wpglobus_menu_switch wpglobus-selector-link">
-            <a href="<?= $homeUrlRu ?>"><span><span class="wpglobus_flag wpglobus_language_name wpglobus_flag_ru"></span></span></a>
-          </li>
-        </ul>
-        <br>
         <?php if (get_locale() === 'ru_RU'): ?>
-          <div class="social">
+			    <div class="social">
               <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-          </div>
+			    </div>
         <?php endif; ?>
+      <div class="translations-wrapper">
+	      <a href="<?= $customHelper::instance()->getCurrentUrl() ?>">
+		      <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
+	      </a>
+	      <a href="<?= $customHelper::instance()->getCurrentUrl('/ru') ?>">
+		      <img src="/wp-content/themes/betheme/_Custom/_static/img/russia-flag-round-icon-32.png" alt="">
+	      </a>
       </div>
       <div class="heart-box heart-box-main-header">
         <img class="heart-box__heart-small rotated header-section hs1" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">
@@ -90,15 +87,15 @@ $homeUrlES = $customHelper::instance()->host_es();
             <nav id="menu">
               <ul id="menu-menu-3" class="menu menu-main">
                 <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
-                  <a href="<?= get_home_url() ?>"><span><?php _e('header_main',
+                  <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
+                  <a href="<?= get_home_url() .$ruSuffix. '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/about/' ?>"><span><?php _e('header_about_us',
+                  <a href="<?= get_home_url() . $ruSuffix .  '/about/' ?>"><span><?php _e('header_about_us',
                               'betheme') ?></span></a>
                 </li>
                   <?php if (get_locale() !== 'ru_RU'): ?>
@@ -110,17 +107,17 @@ $homeUrlES = $customHelper::instance()->host_es();
 
                   <?php if (get_locale() === 'ru_RU'): ?>
                     <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/' ?>"><span><?php _e('header_lady_tips',
                                   'betheme') ?></span></a>
                     </li>
                   <?php else: ?>
                     <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/recommendations-men/' ?>"><span><?php _e('header_man_tips',
+                      <a href="<?= get_home_url() . '/recommendations/' ?>"><span><?php _e('header_man_tips',
                                   'betheme') ?></span></a>
                     </li>
                   <?php endif; ?>
                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/for-ladies/' ?>"><span><?php _e('header_lady_application',
+                  <a href="<?= get_home_url() . $ruSuffix .  '/for-ladies/' ?>"><span><?php _e('header_lady_application',
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -128,7 +125,7 @@ $homeUrlES = $customHelper::instance()->host_es();
                               'betheme') ?></span></a>
                 </li>
                 <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page">
-                  <a href="<?= get_home_url() . '/contact/' ?>"><span><?php _e('header_contacts',
+                  <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
                               'betheme') ?></span></a>
                 </li>
               </ul>
@@ -158,15 +155,15 @@ $homeUrlES = $customHelper::instance()->host_es();
                 <nav id="menu">
                   <ul id="menu-menu-1" class="menu menu-main">
                     <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
-                      <a href="<?= get_home_url() ?>"><span><?php _e('header_main',
+                      <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
+                      <a href="<?= get_home_url() . $ruSuffix . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/about/' ?>"><span><?php _e('header_about_us',
+                      <a href="<?= get_home_url() . $ruSuffix . '/about/' ?>"><span><?php _e('header_about_us',
                                   'betheme') ?></span></a>
                     </li>
                       <?php if (get_locale() !== 'ru_RU'): ?>
@@ -187,37 +184,37 @@ $homeUrlES = $customHelper::instance()->host_es();
                       <?php endif; ?>
                       <?php if (get_locale() === 'ru_RU'): ?>
                         <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
-                          <a href="<?= get_home_url() . '/recommendations-lady/' ?>"><span><?php _e('header_lady_tips',
+                          <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/' ?>"><span><?php _e('header_lady_tips',
                                       'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
                           <div class="service-dropdown-content">
-                            <a href="<?= get_home_url() . '/recommendations-lady/ua-es-man/' ?>"><span><?php _e('rec_title_1',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/ua-es-man/' ?>"><span><?php _e('rec_title_1',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-lady/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-lady/es-man/' ?>"><span><?php _e('rec_title_3',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/es-man/' ?>"><span><?php _e('rec_title_3',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-lady/es-attitude/' ?>"><span><?php _e('rec_title_4',
+                            <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/es-attitude/' ?>"><span><?php _e('rec_title_4',
                                         'betheme') ?></span></a>
                           </div>
                         </li>
                       <?php else: ?>
                         <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
-                          <a href="<?= get_home_url() . '/recommendations-men/' ?>"><span><?php _e('header_man_tips',
+                          <a href="<?= get_home_url() . '/recommendations/' ?>"><span><?php _e('header_man_tips',
                                       'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
                           <div class="service-dropdown-content">
-                            <a href="<?= get_home_url() . '/recommendations-men/ua-es-lady/' ?>"><span><?php _e('rec_title_5',
+                            <a href="<?= get_home_url() . '/recommendations/ua-es-lady/' ?>"><span><?php _e('rec_title_5',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-men/men-mistakes/' ?>"><span><?php _e('rec_title_6',
+                            <a href="<?= get_home_url() . '/recommendations/men-mistakes/' ?>"><span><?php _e('rec_title_6',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-men/ua-lady/' ?>"><span><?php _e('rec_title_7',
+                            <a href="<?= get_home_url() . '/recommendations/ua-lady/' ?>"><span><?php _e('rec_title_7',
                                         'betheme') ?></span></a>
-                            <a href="<?= get_home_url() . '/recommendations-men/ua-attitude/' ?>"><span><?php _e('rec_title_8',
+                            <a href="<?= get_home_url() . '/recommendations/ua-attitude/' ?>"><span><?php _e('rec_title_8',
                                         'betheme') ?></span></a>
                           </div>
                         </li>
                       <?php endif; ?>
                     <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/for-ladies/' ?>"><span><?php _e('header_lady_application',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/for-ladies/' ?>"><span><?php _e('header_lady_application',
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -225,7 +222,7 @@ $homeUrlES = $customHelper::instance()->host_es();
                                   'betheme') ?></span></a>
                     </li>
                     <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page">
-                      <a href="<?= get_home_url() . '/contact/' ?>"><span><?php _e('header_contacts',
+                      <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
                                   'betheme') ?></span></a>
                     </li>
                   </ul>

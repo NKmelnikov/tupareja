@@ -14,8 +14,6 @@ class CustomHelper
     private static $instance;
     private $configFilePath = ABSPATH . 'wp-content/themes/betheme/_Custom/Helper/config.ini';
     private $version;
-    private $host_ru;
-    private $host_es;
     private $email_from = 'info@tuparejaucraniana.com';
     private $email_from_name = 'Elena';
 
@@ -53,16 +51,6 @@ class CustomHelper
         return (string)$this->version;
     }
 
-    public function host_ru()
-    {
-        return (string)$this->host_ru;
-    }
-
-    public function host_es()
-    {
-        return (string)$this->host_es;
-    }
-
     public function email_from()
     {
         return (string)$this->email_from;
@@ -71,6 +59,12 @@ class CustomHelper
     public function email_from_name()
     {
         return (string)$this->email_from_name;
+    }
+    
+    public function getCurrentUrl($lang=null){
+        $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://";
+        $requestUri = str_ireplace(['/ru'], '', $_SERVER['REQUEST_URI']);
+        return (!is_null($lang)) ? "$protocol$_SERVER[HTTP_HOST]$lang$requestUri" : "$protocol$_SERVER[HTTP_HOST]$requestUri";
     }
 
     /**

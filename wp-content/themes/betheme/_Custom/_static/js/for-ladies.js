@@ -158,6 +158,8 @@
     }
   };
 
+  $('#la1-dateOfBirth').mask("99/99/9999", {placeholder: 'DD/MM/YYYY' });
+
   la1.submitBtn.on('click', (e) => {
     e.preventDefault();
     la1.submitApplicationClient();

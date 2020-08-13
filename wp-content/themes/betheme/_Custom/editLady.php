@@ -162,7 +162,7 @@ $v = $customHelper->version();
   <?php if (strpos($lady['video_link'], 'no_video') === false): ?>
   <section class="le1-video-section">
     <video src="<?= $customHelper->convertImgPath($lady['video_link']); ?>" controls></video>
-    <button class="delete-video">Eliminar</button>
+    <button class="delete-video">Eliminar video</button>
   </section>
   <?php else: ?>
     <section class="le1-upload-video-section">

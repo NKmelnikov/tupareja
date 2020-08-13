@@ -2,6 +2,8 @@
 /*
 Template Name: Recommendation 3
 */
+switch_to_locale('ru_RU');
+load_textdomain('betheme', 'wp-content/themes/betheme/languages/ru_RU.mo');
 get_header();
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 $v = \Helper\CustomHelper::instance()->version();

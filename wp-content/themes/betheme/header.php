@@ -17,11 +17,8 @@
       case 'ru_RU':
           $languageClass = 'ru';
           break;
-      case 'es_ES':
-          $languageClass = 'es';
-          break;
       default:
-          $languageClass = 'ru';
+          $languageClass = 'es';
           break;
   }
 ?>

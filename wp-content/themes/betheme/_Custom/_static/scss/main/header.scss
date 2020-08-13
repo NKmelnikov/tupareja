@@ -12,6 +12,29 @@ body, html {
 
 #Top_bar, #Footer {
 
+	.translations-wrapper{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 40px;
+		margin-top: 20px;
+
+		@media #{$mobile} {
+			justify-content: center;
+			margin-right: 0;
+		}
+
+		a{
+			margin-left: 10px;
+		}
+
+
+		img{
+			border-radius: 25px;
+			border:1px solid rgba(184, 184, 184, 0.45);
+		}
+	}
+
   .main-translation {
     position: absolute;
     display: flex;
