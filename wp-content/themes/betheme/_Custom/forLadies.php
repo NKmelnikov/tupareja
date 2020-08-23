@@ -133,7 +133,7 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="text" name="la1-smoking" id="la1-smoking" maxlength="125" class="la1-input" placeholder="Курите ли Вы?">
             <span class="error-box error-la1-smoking"></span>
 
-            <textarea rows="4" cols="50" name="la1-wishes-to-man" id="la1-wishes-to-man" class="la1-input" placeholder="Пожелания к потенциальному партнёру"></textarea>
+            <textarea rows="4" cols="50" name="la1-wishes-to-man" id="la1-wishes-to-man" class="la1-input" placeholder="Пожелания к потенциальному партнёру - например возраст, рост, цвет глаз и т.д."></textarea>
             <span class="error-box error-la1-wishes-to-man"></span>
 
             <input type="hidden" name="la1-path-to-images" id="la1-path-to-images">
