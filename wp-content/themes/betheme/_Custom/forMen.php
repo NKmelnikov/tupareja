@@ -16,6 +16,8 @@ $v = \Helper\CustomHelper::instance()->version();
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/men/men.css?v=' . $v ?>">
   <script src="<?= $pathToCustom . '_static/fine-uploader/dnd.min.js' ?>"></script>
   <script src="<?= $pathToCustom . '_static/libs/bootstrap.notify.min.js' ?>"></script>
+	<script src="<?= $pathToCustom . '_static/libs/imask.min.js'?>"></script>
+	<script src="<?= $pathToCustom . '_static/libs/moment.min.js'?>"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
 
   <script src="<?= $pathToCustom . '_static/fine-uploader/jquery.fine-uploader.min.js' ?>"></script>
@@ -42,7 +44,7 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="text" required name="ma1-name" id="ma1-name"  maxlength="255" class="ma1-input" placeholder=" Tu nombre">
             <span class="error-box error-ma1-name"></span>
 
-            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required name="ma1-dateOfBirth" id="ma1-dateOfBirth" maxlength="125" class="ma1-input" placeholder="Fecha de nacimiento">
+            <input type="text" required name="ma1-dateOfBirth" id="ma1-dateOfBirth" class="ma1-input" placeholder="Fecha de nacimiento">
             <span class="error-box error-ma1-dateOfBirth"></span>
 
             <input type="email" required name="ma1-email" id="ma1-email"  maxlength="255" class="ma1-input" placeholder="Email">
