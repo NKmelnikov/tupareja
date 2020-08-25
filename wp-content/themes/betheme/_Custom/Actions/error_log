@@ -10,3 +10,4 @@
 [18-Aug-2020 20:08:48 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 284
 [19-Aug-2020 12:16:20 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 284
 [19-Aug-2020 12:16:42 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 284
+[24-Aug-2020 14:54:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 284
