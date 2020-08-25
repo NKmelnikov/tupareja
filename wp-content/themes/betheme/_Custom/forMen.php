@@ -50,7 +50,7 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="email" required name="ma1-email" id="ma1-email"  maxlength="255" class="ma1-input" placeholder="Email">
             <span class="error-box error-ma1-email"></span>
 
-            <input type="number" required name="ma1-phone" id="ma1-phone"  maxlength="255" class="ma1-input" placeholder="Número de teléfono">
+            <input type="text" required name="ma1-phone" id="ma1-phone"  maxlength="255" class="ma1-input" placeholder="Número de teléfono">
             <span class="error-box error-ma1-phone"></span>
 
             <!-- <input type="text" required name="ma1-country" id="ma1-country"  maxlength="255" class="ma1-input" placeholder="Страна">
