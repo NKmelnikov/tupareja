@@ -6,8 +6,12 @@
  * @author Muffin group
  * @link https://muffingroup.com
  */
+use Helper\CustomHelper;
 ?><!DOCTYPE html>
 <?php
+require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
+$customHelper = new CustomHelper();
+$customHelper::build();
 	if ($_GET && key_exists('mfn-rtl', $_GET)):
 		echo '<html class="no-js" lang="ar" dir="rtl">';
 	else:
@@ -29,6 +33,25 @@
 <!--  <script language="JavaScript">-->
 <!--      document.oncontextmenu =new Function("return false;")-->
 <!--  </script>-->
+    
+<?php if($customHelper::instance()->env() === 'prod') : ?>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	  ym(66732919, "init", {
+		  clickmap:true,
+		  trackLinks:true,
+		  accurateTrackBounce:true,
+		  webvisor:true
+	  });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/66732919" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+<?php endif; ?>
+
 
 <?php wp_head(); ?>
   <meta charset="<?php bloginfo('charset'); ?>" />

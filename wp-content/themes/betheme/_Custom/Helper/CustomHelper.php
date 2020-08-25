@@ -16,7 +16,8 @@ class CustomHelper
     private $version;
     private $email_from = 'info@tuparejaucraniana.com';
     private $email_from_name = 'Elena';
-
+    private $env='prod';
+    
     public function __construct()
     {
         $this->loadIniFile($this->configFilePath);
@@ -49,6 +50,11 @@ class CustomHelper
     public function version()
     {
         return (string)$this->version;
+    }
+    
+    public function env()
+    {
+        return (string)$this->env;
     }
 
     public function email_from()

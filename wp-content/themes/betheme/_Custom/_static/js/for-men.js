@@ -4,6 +4,7 @@
         submitBtn: $('.ma1-submit'),
         mensForm: $('#ma1-form'),
 	    dateInput: document.getElementById('ma1-dateOfBirth'),
+	    phoneInput: document.getElementById('ma1-phone'),
 
         clearErrors() {
             $('.error-box').text(''); //clear error spans
@@ -82,6 +83,12 @@
 		        ma1.dateInput.setCustomValidity('')
 	        }
 
+	        if(ma1.phoneInput.value.includes('_')){
+		        ma1.phoneInput.setCustomValidity('Field is incorrect')
+	        } else {
+		        ma1.phoneInput.setCustomValidity('')
+	        }
+
             return this.mensForm.find(":invalid").each(function (index, node) {
                 $(`#${node.id}`).addClass('error-input');
                 $(`.error-${node.id}`).html(node.validationMessage);
@@ -153,6 +160,47 @@
 			}
 		},
 
+	});
+
+	var dynamicMask = IMask(ma1.phoneInput, {
+		mask: [
+			{
+				mask: '+00 000 000 000',
+				startsWith: '34',
+				lazy: false,
+				country: 'Spain'
+			},
+			{
+				mask: '+000 (00) 000 00 00',
+				startsWith: '380',
+				lazy: false,
+				country: 'Ukraine'
+			},
+			{
+				mask: '+0 (000) 000 00 00',
+				startsWith: '7',
+				lazy: false,
+				country: 'Russia'
+			},
+			{
+				mask: '+000 (00) 000 00 00',
+				startsWith: '375',
+				lazy: false,
+				country: 'Belarus'
+			},
+			{
+				mask: '0000000000000',
+				startsWith: '',
+				country: 'unknown'
+			}
+		],
+		dispatch: function (appended, dynamicMasked) {
+			var number = (dynamicMasked.value + appended).replace(/\D/g,'');
+
+			return dynamicMasked.compiledMasks.find(function (m) {
+				return number.indexOf(m.startsWith) === 0;
+			});
+		}
 	});
 
 

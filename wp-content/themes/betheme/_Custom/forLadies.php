@@ -73,7 +73,7 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="email" required name="la1-email" id="la1-email" maxlength="125" class="la1-input" placeholder="Email*">
             <span class="error-box error-la1-email"></span>
 
-            <input type="number" required name="la1-phone" id="la1-phone" maxlength="125" class="la1-input" placeholder="Телефон*">
+            <input type="text" required name="la1-phone" id="la1-phone" maxlength="125" class="la1-input" placeholder="Телефон*">
             <span class="error-box error-la1-phone"></span>
 
             <input type="text" required name="la1-profession" id="la1-profession" maxlength="125" class="la1-input" placeholder="Профессия*">

@@ -7,6 +7,7 @@
 		uploadInput: $('#la1-video-upload'),
 		fakeFileUploadBtn: $('#la1-fake-file-input'),
 		dateInput: document.getElementById('la1-dateOfBirth'),
+		phoneInput: document.getElementById('la1-phone'),
 
 		clearErrors() {
 			$('.error-box').text(''); //clear error spans
@@ -100,6 +101,12 @@
 				la1.dateInput.setCustomValidity('Дата заполнена не корректно')
 			} else {
 				la1.dateInput.setCustomValidity('')
+			}
+
+			if(la1.phoneInput.value.includes('_')){
+				la1.phoneInput.setCustomValidity('Телефон заполнен не корректно')
+			} else {
+				la1.phoneInput.setCustomValidity('')
 			}
 
 			return this.ladiesForm.find(":invalid").each(function (index, node) {
@@ -197,7 +204,41 @@
 				to: 31
 			}
 		},
+	});
 
+	var dynamicMask = IMask(la1.phoneInput, {
+		mask: [
+			{
+				mask: '+000 (00) 000 00 00',
+				startsWith: '380',
+				lazy: false,
+				country: 'Ukraine'
+			},
+			{
+				mask: '+0 (000) 000 00 00',
+				startsWith: '7',
+				lazy: false,
+				country: 'Russia'
+			},
+			{
+				mask: '+000 (00) 000 00 00',
+				startsWith: '375',
+				lazy: false,
+				country: 'Belarus'
+			},
+			{
+				mask: '0000000000000',
+				startsWith: '',
+				country: 'unknown'
+			}
+		],
+		dispatch: function (appended, dynamicMasked) {
+			var number = (dynamicMasked.value + appended).replace(/\D/g,'');
+
+			return dynamicMasked.compiledMasks.find(function (m) {
+				return number.indexOf(m.startsWith) === 0;
+			});
+		}
 	});
 
 
