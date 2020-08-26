@@ -77,11 +77,6 @@
 
         validateHtml() {
             this.clearErrors();
-	        if(ma1.dateInput.value.includes('_')){
-		        ma1.dateInput.setCustomValidity('Field is incorrect')
-	        } else {
-		        ma1.dateInput.setCustomValidity('')
-	        }
 
 	        if(ma1.phoneInput.value.includes('_')){
 		        ma1.phoneInput.setCustomValidity('Field is incorrect')
@@ -126,41 +121,6 @@
         },
 
     };
-
-	let momentFormat = 'DD/MM/YYYY';
-	let momentMask = IMask(ma1.dateInput, {
-		mask: Date,
-		pattern: momentFormat,
-		lazy: false,
-		min: new Date(1940, 0, 1),
-		max: new Date(2030, 0, 1),
-
-		format: function (date) {
-			return moment(date).format(momentFormat);
-		},
-		parse: function (str) {
-			return moment(str, momentFormat);
-		},
-
-		blocks: {
-			YYYY: {
-				mask: IMask.MaskedRange,
-				from: 1940,
-				to: 2030
-			},
-			MM: {
-				mask: IMask.MaskedRange,
-				from: 1,
-				to: 12
-			},
-			DD: {
-				mask: IMask.MaskedRange,
-				from: 1,
-				to: 31
-			}
-		},
-
-	});
 
 	var dynamicMask = IMask(ma1.phoneInput, {
 		mask: [

@@ -97,11 +97,6 @@
 
 		validateHtml() {
 			this.clearErrors();
-			if(la1.dateInput.value.includes('_')){
-				la1.dateInput.setCustomValidity('Дата заполнена не корректно')
-			} else {
-				la1.dateInput.setCustomValidity('')
-			}
 
 			if(la1.phoneInput.value.includes('_')){
 				la1.phoneInput.setCustomValidity('Телефон заполнен не корректно')
@@ -171,40 +166,6 @@
 			}
 		}
 	};
-
-	let momentFormat = 'DD/MM/YYYY';
-	let momentMask = IMask(la1.dateInput, {
-		mask: Date,
-		pattern: momentFormat,
-		lazy: false,
-		min: new Date(1940, 0, 1),
-		max: new Date(2030, 0, 1),
-
-		format: function (date) {
-			return moment(date).format(momentFormat);
-		},
-		parse: function (str) {
-			return moment(str, momentFormat);
-		},
-
-		blocks: {
-			YYYY: {
-				mask: IMask.MaskedRange,
-				from: 1940,
-				to: 2030
-			},
-			MM: {
-				mask: IMask.MaskedRange,
-				from: 1,
-				to: 12
-			},
-			DD: {
-				mask: IMask.MaskedRange,
-				from: 1,
-				to: 31
-			}
-		},
-	});
 
 	var dynamicMask = IMask(la1.phoneInput, {
 		mask: [
