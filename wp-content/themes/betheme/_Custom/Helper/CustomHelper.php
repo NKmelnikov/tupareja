@@ -191,8 +191,8 @@ class CustomHelper
     }
 
     public function getZodiac($timestamp){
-        $day = date('j',$timestamp);
-        $month = date('n',$timestamp);
+        $day = (int)date('d',$timestamp);
+        $month = (int)date('m',$timestamp);
 
         if(($month==1 && $day>20)||($month==2 && $day<20)) {
             $mysign = "aquarius";
