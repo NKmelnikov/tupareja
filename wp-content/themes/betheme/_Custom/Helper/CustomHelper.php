@@ -97,6 +97,7 @@ class CustomHelper
         require_once(explode("wp-content", __FILE__)[0] . "wp-load.php");
         $text = esc_html($text);
         $text = sanitize_text_field($text);
+        $text = self::removeEmoji($text);
 
         return $text;
     }
@@ -230,5 +231,24 @@ class CustomHelper
             $mysign = "capricorn";
         }
         return $mysign;
+    }
+
+    public static function removeEmoji($text)
+    {
+        $cleanText = "";
+
+        // Match Emoticons
+        $regexEmoticons = '/[\x{1F600}-\x{1F64F}]/u';
+        $cleanText = preg_replace($regexEmoticons, '', $text);
+
+        // Match Miscellaneous Symbols and Pictographs
+        $regexSymbols = '/[\x{1F300}-\x{1F5FF}]/u';
+        $cleanText = preg_replace($regexSymbols, '', $cleanText);
+
+        // Match Transport And Map Symbols
+        $regexTransport = '/[\x{1F680}-\x{1F6FF}]/u';
+        $cleanText = preg_replace($regexTransport, '', $cleanText);
+
+        return $cleanText;
     }
 }
