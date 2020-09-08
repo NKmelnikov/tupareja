@@ -226,24 +226,6 @@ class UploadHelper
                     imagejpeg($img, $target, 100);
                     imagedestroy($img);
                     imagedestroy($watermark);
-
-
-                    $watermark = imagecreatefrompng('https://tuparejaucraniana.com/wp-content/themes/betheme/_Custom/Helper/tupareja_watermark_2.png');
-                    imagealphablending($watermark, false);
-                    imagesavealpha($watermark, true);
-                    $img = imagecreatefromjpeg($target);
-                    $img_w = imagesx($img);
-                    $img_h = imagesy($img);
-                    $wtrmrk_w = imagesx($watermark);
-                    $wtrmrk_h = imagesy($watermark);
-                    $dst_x = ($img_w / 2) - ($wtrmrk_w / 2);
-                    $dst_y = ($img_h / 2) - ($wtrmrk_h / 2);
-                    imagecopy($img, $watermark, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
-                    imagejpeg($img, $target, 100);
-                    imagedestroy($img);
-                    imagedestroy($watermark);
-
-
                     return array('success' => true, "uuid" => $uuid, "path" => $target);
                 }
             }
