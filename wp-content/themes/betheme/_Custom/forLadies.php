@@ -55,7 +55,7 @@ $v = \Helper\CustomHelper::instance()->version();
           <div class="la1-input-section__first-box">
             <div class="la1-name-container">
               <div class="la1-lname-box">
-                <input type="text" name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Фамилия">
+                <input type="text" required name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Фамилия*">
                 <span class="error-box error-la1-lname"></span>
               </div>
               <div class="la1-name-box">
