@@ -20,15 +20,19 @@
 .ma1-article{
   letter-spacing:0;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  padding: 0 15px;
 
   p{
-    font-weight: bold;
   }
 
   ul{
     list-style: circle;
     margin-left: 40px;
+  }
+
+  ol {
+    margin-bottom: 20px;
   }
 }
 
