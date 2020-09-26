@@ -28,29 +28,68 @@ $v = \Helper\CustomHelper::instance()->version();
       <article class="ma1-article">
         <h4>Condiciones para iniciar la búsqueda de una chica </h4>
         <ol>
-          <li>Al inicio del procedimiento el cliente tiene que rellenar formulario en la página web de La agencia https://tuparejaucraniana.com/men-application/, presentando la máxima información posible sobre usted y preferencia en la elección de la mujer (edad, apariencia, carácter, prioridades, etc). Con esto proporcionará una información fundamental para despertar el interés de las chicas.</li>
-          <li>El cliente debe adjuntar fotos claras suyas (como mínimo cuatro, recientes o máximo del ultimo año, sin gafas, donde se ve bien el rostro y el cuerpo entero, vestido de forma ocasional, de trabajo, deporte, por favor no fotos oscuras, ni sin camisetas) en el mismo formulario y también una foto de su DNI para confirmar el nombre, apellidos, edad. Toda esta información se tratará de forma confidencial para uso interno.</li>
           <li>
-            Una vez la información y datos recibidos por parte del cliente, sean validados por la agencia, deberá abonar una de las cuotas de socio eligidas con el servicio incluido que ofrece La agencia.
+            Al inicio del procedimiento el cliente tiene que rellenar formulario
+            en la página web de La agencia https://tuparejaucraniana.com/men-application/,
+            presentando la máxima información posible sobre usted y preferencia
+            en la elección de la mujer (edad, apariencia, carácter, prioridades, etc).
+            Con esto proporcionará una información fundamental para despertar
+            el interés de las chicas.
           </li>
           <li>
-            El objeto del contrato es el asesoramiento para conocer a una mujer del catálogo de la página web https://tuparejaucraniana.com/ o una mujer recomendada por la Agencia que no está en el catálogo que mejor encaje con su perfil, con la cual el cliente muestre afinidad, así como la organización de citas online con el traductor personalizado, organización del viaje a España de la mujer o el viaje a Ucrania del cliente para conocer a la mujer elegida o tener opción conocer varias mujeres.
+            El cliente debe adjuntar fotos claras suyas (como mínimo cuatro,
+            recientes o máximo del ultimo año, sin gafas, donde se ve bien el
+            rostro y el cuerpo entero, vestido de forma ocasional, de trabajo,
+            deporte, por favor no fotos oscuras, ni sin camisetas) en el mismo
+            formulario y también una foto de su DNI para confirmar el nombre,
+            apellidos, edad. Toda esta información se tratará de forma
+            confidencial para uso interno.
           </li>
           <li>
-            El éxito del encuentro y el posterior inicio de una relación dependen exclusivamente del hombre y la mujer, y es por ello que La agencia no se responsabiliza en ningún caso del resultado posterior ni de la durabilidad de la misma.
+            Una vez la información y datos recibidos por parte del cliente,
+            sean validados por la agencia, deberá abonar una de las cuotas
+            de socio eligidas con el servicio incluido que ofrece La agencia.
           </li>
           <li>
-            La fundadora de La agencia se reserva el derecho de no aceptar como cliente a cualquier persona sin necesidad de justificar dicha decisión.
+            El objeto del contrato es el asesoramiento para conocer a una
+            mujer del catálogo de la página web https://tuparejaucraniana.com/
+            o una mujer recomendada por la Agencia que no está en el catálogo
+            que mejor encaje con su perfil, con la cual el cliente muestre
+            afinidad, así como la organización de citas online con el traductor
+            personalizado, organización del viaje a España de la mujer o el
+            viaje a Ucrania del cliente para conocer a la mujer elegida
+            o tener opción conocer varias mujeres.
+          </li>
+          <li>
+            El éxito del encuentro y el posterior inicio de una relación
+            dependen exclusivamente del hombre y la mujer, y es por ello
+            que La agencia no se responsabiliza en ningún caso del resultado
+            posterior ni de la durabilidad de la misma.
+          </li>
+          <li>
+            La fundadora de La agencia se reserva el derecho de no aceptar
+            como cliente a cualquier persona sin necesidad de justificar
+            dicha decisión.
           </li>
         </ol>
         <h5>Packs</h5>
         <p>
-          Los packs se basan en nuestra forma habitual de trabajo, incluyendo, en primer lugar, un dialogo exploratorio y una entrevista de adhesión en profundidad, evaluación y elaboración del perfil y un dedicado gerente de relaciones para sus presentaciones, seguimiento y guía, colaborando con usted durante todo su paso. La comunicación regular a lo largo del proceso se realiza por teléfono, correo electrónico y mensajes de texto.
-          Le daremos consejos prácticos sobre lo que usted debe o no debe hacer en cada etapa de su búsqueda del principio al fin, le explicaremos cuales son los errores mas comunes que cometen los hombres y qué es lo que busca una mujer ucraniana en un hombre basándonos en nuestra propia experiencia
+          Los packs se basan en nuestra forma habitual de trabajo, incluyendo,
+          en primer lugar, un dialogo exploratorio y una entrevista de adhesión
+          en profundidad, evaluación y elaboración del perfil y un dedicado
+          gerente de relaciones para sus presentaciones, seguimiento y guía,
+          colaborando con usted durante todo su paso. La comunicación regular
+          a lo largo del proceso se realiza por teléfono, correo electrónico
+          y mensajes de texto.
         </p>
-        <h5>
-          Pack Mini
-        </h5>
+        <p>
+          Le daremos consejos prácticos sobre lo que usted debe o no debe hacer
+          en cada etapa de su búsqueda del principio al fin, le explicaremos
+          cuales son los errores mas comunes que cometen los hombres y qué
+          es lo que busca una mujer ucraniana en un hombre basándonos en
+          nuestra propia experiencia
+        </p>
+        <h5>Pack Mini</h5>
         <ul>
           <li>
             Primera selección de no menos de 10 perfiles de mujeres recomendadas.
@@ -62,9 +101,7 @@ $v = \Helper\CustomHelper::instance()->version();
             Cuota única de inscripción de 180 EUR
           </li>
         </ul>
-        <h5>
-          Pack Medio
-        </h5>
+        <h5>Pack Medio</h5>
         <ul>
           <li>
             Primera selección de no menos de 15 perfiles de mujeres recomendadas.
@@ -76,9 +113,7 @@ $v = \Helper\CustomHelper::instance()->version();
             Cuota única de inscripción de 300 EUR
           </li>
         </ul>
-        <h5>
-          Pack Maxi
-        </h5>
+        <h5>Pack Maxi</h5>
         <ul>
           <li>
             Primera selección de no menos de 20 perfiles de mujeres recomendadas.
@@ -87,7 +122,8 @@ $v = \Helper\CustomHelper::instance()->version();
             Cinco citas online - videollamadas gratuitas con las mujeres finalmente elegidas.
           </li>
           <li>
-            El número de teléfono privado de la mujer finalmente elegida, así como un descuento en el precio de invitación a España de esta misma mujer, no otra.
+            El número de teléfono privado de la mujer finalmente elegida,
+            así como un descuento en el precio de invitación a España de esta misma mujer, no otra.
           </li>
           <li>
             Este descuento será de 100 EUR
