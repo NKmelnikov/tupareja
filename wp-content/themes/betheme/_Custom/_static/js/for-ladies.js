@@ -152,12 +152,8 @@
 			la1.uploadInput.removeClass('error-input');
 			la1.fileNameSpan.html(file.name);
 			if (parts.length > 1) ext = parts.pop();
-			if (file.type !== "video/mp4") {
-				la1.showNotification('danger', "Неверный тип файла!");
-				la1.uploadInput.addClass('error-input');
-			}
-			if (ext !== "mp4") {
-				la1.showNotification('danger', "Неверный формат видео!");
+			if (file.type !== "video/mp4" && ext.toLowerCase() !== "mp4") {
+				la1.showNotification('danger', "Неверный формат видео, должен быть .mp4 !");
 				la1.uploadInput.addClass('error-input');
 			}
 			if (file.size >= 60 * 1024 * 1024) {

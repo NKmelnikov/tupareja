@@ -27,7 +27,7 @@
         parts = file.name.split('.');
       le1.uploadInput.removeClass('error-input');
       if (parts.length > 1) ext = parts.pop();
-      if (file.type !== "video/mp4" || ext !== "mp4") {
+      if (file.type !== "video/mp4" || ext.toLowerCase() !== "mp4") {
         le1.showNotification('danger', "¡Tipo de archivo no válido! Lo necesito .mp4");
         le1.uploadInput.addClass('error-input');
         return 0;
