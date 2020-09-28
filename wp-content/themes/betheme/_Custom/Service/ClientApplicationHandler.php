@@ -93,7 +93,7 @@ class ClientApplicationHandler
         $post =  [
             'locale' => CustomHelper::sanitiseText($post['ma1-locale']),
             'name' => CustomHelper::sanitiseText($post['ma1-name']),
-            'date_of_birth' => DateTime::createFromFormat('!d/m/Y', $post['la1-day'] .'/'. $post['la1-month'].'/'. $post['la1-year'])->getTimestamp(),
+            'date_of_birth' => DateTime::createFromFormat('!d/m/Y', $post['ma1-day'] .'/'. $post['ma1-month'].'/'. $post['ma1-year'])->getTimestamp(),
             'email' => sanitize_email($post['ma1-email']),
             'phone' => CustomHelper::sanitiseText($post['ma1-phone']),
             'town' => CustomHelper::sanitiseText($post['ma1-town']),
