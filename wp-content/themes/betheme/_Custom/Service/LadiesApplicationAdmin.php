@@ -116,7 +116,7 @@ class LadiesApplicationAdmin extends WP_List_Table
                 return "<img src='$image_src' width='39' height='50'>";
             case 'position':
                 return "  <input class='change_position old_position' type='hidden' value='$_item' min='1' data-id='".$item['id']."'>
-                          <input class='change_position new_position' type='number' value='$_item' min='1' data-id='".$item['id']."' style='width:50px;'>
+                          <input class='change_position new_position' type='number' value='$_item' min='1' data-id='".$item['id']."' style='width:75px;'>
                           <a class='change_position' href='".strtok($_SERVER['REQUEST_URI'], '&')."' data-id='".$item['id']."' style='border:1px solid #016087; padding: 5px; border-radius: 5px'>ОК</a>
 </form>";
             default: 
