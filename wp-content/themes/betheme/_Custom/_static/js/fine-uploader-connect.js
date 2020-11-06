@@ -19,6 +19,13 @@ function updateImagesPathes($, responseJSON){
     pathArray.push(responseJSON.path);
 }
 
+function onAllCompleteCallback() {
+    $('.la1-submit, .ma1-submit').attr('disabled', false);
+}
+
+function onProgressCallback () {
+    $('.la1-submit, .ma1-submit').attr('disabled', true);
+}
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -45,7 +52,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
             validation: {
                 itemLimit: 5,
                 acceptFiles: 'image/*',
-                allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                allowedExtensions: ['jpeg', 'jpg', 'gif', 'png', 'bmp', 'tiff', 'tif', 'svg']
+            },
+            callbacks: {
+                onAllComplete: onAllCompleteCallback,
+                onProgress: onProgressCallback
             }
         }).on('error', function (event, id, name, reason) {
             console.log(event);
@@ -57,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             updateImagesPathes($,responseJSON);
             makeMain($, id);
             $('#la1-path-to-images, #ma1-path-to-images, #le1-path-to-images-1').val(pathArray);
-            $('.la1-submit, .ma1-submit').attr('disabled', false);
         });
     })(jQuery);
 });

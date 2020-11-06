@@ -5,9 +5,34 @@
 		ladiesForm: $('#la1-form'),
 		fileNameSpan: $('#la1-fileName-text'),
 		uploadInput: $('#la1-video-upload'),
+		privacyCheckbox: $('#la1-privacy-checkbox'),
 		fakeFileUploadBtn: $('#la1-fake-file-input'),
 		dateInput: document.getElementById('la1-dateOfBirth'),
 		phoneInput: document.getElementById('la1-phone'),
+        whiteListVideoTypes: {
+            "asf": "video/x-ms-asf",
+            "asx": "video/x-ms-asf",
+            "wmv": "video/x-ms-wmv",
+            "wmx": "video/x-ms-wmx",
+            "wm": "video/x-ms-wm",
+            "avi": "video/avi",
+            "divx": "video/divx",
+            "flv": "video/x-flv",
+            "mov": "video/quicktime",
+            "qt": "video/quicktime",
+            "mpeg": "video/mpeg",
+            "mpg": "video/mpeg",
+            "mpe": "video/mpeg",
+            "mp4": "video/mp4",
+            "m4v": "video/mp4",
+            "ogv": "video/ogg",
+            "webm": "video/webm",
+            "mkv": "video/x-matroska",
+            "3gp": "video/3gpp",
+            "3gpp": "video/3gpp",
+            "3g2": "video/3gpp2",
+            "3gp2": "video/3gpp2",
+        },
 
 		clearErrors() {
 			$('.error-box').text(''); //clear error spans
@@ -145,19 +170,32 @@
 			}
 		},
 
-		fileValidate() {
+        clearVideoInput() {
+            la1.fileNameSpan.html('');
+            la1.uploadInput.val('');
+        },
+
+		videoFileValidate() {
+            let allowedVideoExtensions = Object.keys(la1.whiteListVideoTypes)
+            let allowedVideoMimeTypes = Object.values(la1.whiteListVideoTypes)
+
 			let file = la1.uploadInput.prop('files')[0],
 				ext = "не определилось",
 				parts = file.name.split('.');
 			la1.uploadInput.removeClass('error-input');
 			la1.fileNameSpan.html(file.name);
-			if (parts.length > 1) ext = parts.pop();
-			if (file.type !== "video/mp4" && ext.toLowerCase() !== "mp4") {
-				la1.showNotification('danger', "Неверный формат видео, должен быть .mp4 !");
+
+			if (
+			    allowedVideoMimeTypes.indexOf(file.type) < 0 &&
+                allowedVideoExtensions.indexOf(ext.toLowerCase()) < 0
+            ) {
+                la1.clearVideoInput();
+				la1.showNotification('danger', "Неверный формат видео!");
 				la1.uploadInput.addClass('error-input');
 			}
 			if (file.size >= 60 * 1024 * 1024) {
-				la1.showNotification('danger', "Видео не должно быть больше 60мб!");
+                la1.clearVideoInput();
+                la1.showNotification('danger', "Видео не должно быть больше 60мб!");
 				la1.uploadInput.addClass('error-input');
 			}
 		}
@@ -213,7 +251,8 @@
 		la1.uploadInput.click();
 	});
 
-	la1.uploadInput.on('change', la1.fileValidate);
+	la1.uploadInput.on('change', la1.videoFileValidate);
+	la1.privacyCheckbox.on('change', la1.privacyCheckboxChangeEvent);
 
 	$('#la1-eyeColor').on('change', function () {
 		$(this).css('color', 'gray');

@@ -70,9 +70,7 @@ $v = \Helper\CustomHelper::instance()->version();
           </li>
         </ul>
         <br>
-        <p>
-          Милые девушки, будьте открытыми и уверенными в себе, потому что вы лучшие!
-        </p>
+        <p>Милые девушки, будьте открытыми и уверенными в себе, потому что вы лучшие!</p>
         International Matchmaking Office “Твоя испанская пара» организовывает ивенты знакомств с
         испанскими мужчинами в г. Киеве и в г. Барселона, а также проводит фотосессии в офисе
         агенства г. Киеве, о времени проведения данных мероприятий, будет объявлено дополнительно,
@@ -102,8 +100,10 @@ $v = \Helper\CustomHelper::instance()->version();
         </ul>
         <br>
         <p>Наши рекомендации по подбору фото для анкеты.</p>
-        <p>От правильного выбора фото, зависит ваш успех!!!
-          Если у вас есть возможность, выделите для себя время и сделайте новые фото, специально для вашего портфолио, на сайте tuparejaucraniana.com</p>
+        <p>
+От правильного выбора фото, зависит ваш успех!!!
+Если у вас есть возможность, выделите для себя время и сделайте новые фото, специально для вашего портфолио, на сайте tuparejaucraniana.com
+        </p>
         <br>
         <p>Не используйте фото:</p>
         <ul>
@@ -137,15 +137,15 @@ $v = \Helper\CustomHelper::instance()->version();
           <div class="la1-input-section__first-box">
             <div class="la1-name-container">
               <div class="la1-lname-box">
-                <input type="text" required name="la1-lname" id="la1-lname" maxlength="125" class="la1-input" placeholder="Фамилия*">
+                <input type="text" required name="la1-lname" id="la1-lname" maxlength="50" class="la1-input" placeholder="Фамилия*">
                 <span class="error-box error-la1-lname"></span>
               </div>
               <div class="la1-name-box">
-                <input type="text" required name="la1-name" id="la1-name" maxlength="125" class="la1-input" placeholder="Имя*">
+                <input type="text" required name="la1-name" id="la1-name" maxlength="50" class="la1-input" placeholder="Имя*">
                 <span class="error-box error-la1-name"></span>
               </div>
               <div class="la1-fname-box">
-                <input type="text" name="la1-fname" id="la1-fname" maxlength="125" class="la1-input" placeholder="Отчество">
+                <input type="text" name="la1-fname" id="la1-fname" maxlength="50" class="la1-input" placeholder="Отчество">
                 <span class="error-box error-la1-fname"></span>
               </div>
             </div>
@@ -289,29 +289,29 @@ $v = \Helper\CustomHelper::instance()->version();
 		          </div>
 	          </div>
 
-            <input type="email" required name="la1-email" id="la1-email" maxlength="125" class="la1-input" placeholder="Email*">
+            <input type="email" required name="la1-email" id="la1-email" maxlength="50" class="la1-input" placeholder="Email*">
             <span class="error-box error-la1-email"></span>
 
-            <input type="text" required name="la1-phone" id="la1-phone" maxlength="125" class="la1-input" placeholder="Телефон*">
+            <input type="text" required name="la1-phone" id="la1-phone" maxlength="50" class="la1-input" placeholder="Телефон*">
             <span class="error-box error-la1-phone"></span>
 
             <input type="text" required name="la1-profession" id="la1-profession" maxlength="125" class="la1-input" placeholder="Профессия*">
             <span class="error-box error-la1-profession"></span>
 
-            <input type="text" required name="la1-familyStatus" id="la1-familyStatus" maxlength="125" class="la1-input" placeholder="Семейное положение*">
+            <input type="text" required name="la1-familyStatus" id="la1-familyStatus" maxlength="50" class="la1-input" placeholder="Семейное положение*">
             <span class="error-box error-la1-familyStatus"></span>
 
-            <input type="text" required name="la1-kids" id="la1-kids" maxlength="125" class="la1-input" placeholder="Дети*">
+            <input type="text" required name="la1-kids" id="la1-kids" maxlength="50" class="la1-input" placeholder="Дети*">
             <span class="error-box error-la1-kids"></span>
 
-            <textarea rows="4" cols="50" required name="la1-about" id="la1-about" class="la1-input" placeholder="О себе*"></textarea>
+            <textarea rows="4" cols="50" required name="la1-about" id="la1-about" maxlength="500" class="la1-input" placeholder="О себе*"></textarea>
             <span class="error-box error-la1-about"></span>
           </div>
           <div class="la1-input-section__second-box">
-            <input type="number" required name="la1-height" id="la1-height" maxlength="125" class="la1-input" placeholder="Рост (см)*">
+            <input type="number" required name="la1-height" id="la1-height" maxlength="3" class="la1-input" placeholder="Рост (см)*">
             <span class="error-box error-la1-height"></span>
 
-            <input type="number" required name="la1-weight" id="la1-weight" maxlength="125" class="la1-input" placeholder="Вес (кг)*">
+            <input type="number" required name="la1-weight" id="la1-weight" maxlength="3" class="la1-input" placeholder="Вес (кг)*">
             <span class="error-box error-la1-weight"></span>
 
             <div class="la1-color-container">
@@ -340,19 +340,19 @@ $v = \Helper\CustomHelper::instance()->version();
             </div>
 
 
-            <input type="text" required name="la1-town" id="la1-town" maxlength="125" class="la1-input" placeholder="Город*">
+            <input type="text" required name="la1-town" id="la1-town" maxlength="25" class="la1-input" placeholder="Город*">
             <span class="error-box error-la1-town"></span>
 
-            <input type="text" required name="la1-country" id="la1-country" maxlength="125" class="la1-input" placeholder="Страна*">
+            <input type="text" required name="la1-country" id="la1-country" maxlength="25" class="la1-input" placeholder="Страна*">
             <span class="error-box error-la1-country"></span>
 
-            <input type="text" required name="la1-languages" id="la1-languages" maxlength="125" class="la1-input" placeholder="Иностранные языки и уровень владения*">
+            <input type="text" required name="la1-languages" id="la1-languages" maxlength="50" class="la1-input" placeholder="Иностранные языки и уровень владения*">
             <span class="error-box error-la1-languages"></span>
 
-            <input type="text" name="la1-smoking" id="la1-smoking" maxlength="125" class="la1-input" placeholder="Курите ли Вы?">
+            <input type="text" name="la1-smoking" id="la1-smoking" maxlength="25" class="la1-input" placeholder="Курите ли Вы?">
             <span class="error-box error-la1-smoking"></span>
 
-            <textarea rows="4" cols="50" name="la1-wishes-to-man" id="la1-wishes-to-man" class="la1-input" placeholder="Пожелания к потенциальному партнёру - например возраст, рост, цвет глаз и т.д."></textarea>
+            <textarea rows="4" cols="50" name="la1-wishes-to-man" maxlength="255" id="la1-wishes-to-man" class="la1-input" placeholder="Пожелания к потенциальному партнёру - например возраст, рост, цвет глаз и т.д."></textarea>
             <span class="error-box error-la1-wishes-to-man"></span>
 
             <input type="hidden" name="la1-path-to-images" id="la1-path-to-images">
@@ -450,13 +450,24 @@ $v = \Helper\CustomHelper::instance()->version();
         </section>
         <section class="la1-bottom-section">
             <input type="button" id="la1-fake-file-input" value="Загрузить видео*" />
-            <input type="file" accept="video/mp4" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
+            <input type="file" id="la1-video-upload" name="la1-video-upload" class="la1-input la1-video-upload">
             <span id="la1-fileName-text"></span>
             <span class="error-box error-la1-video-upload"></span>
 	        <div id="upload-info"></div>
           <div class="g-recaptcha" data-sitekey="6LdRaDMUAAAAAOwHA7zXiR1sAEbA2yQ9gwt7bbo0"></div>
           <button class="la1-submit" disabled type="submit">Отправить</button>
         </section>
+	      <div class="la1-privacy-container">
+		      <div class="check-label-container">
+			      <label class="privacy-checkbox-label" for="la1-privacy-checkbox">
+				      Я согласна на обработку
+				      персональных данных в соответствии с
+				      <br>
+				      <a style="color: #daad20" target="_blank" href="/ru/privacy-policy">Политикой конфиденциальности.</a></label>
+			      <input required type="checkbox" checked name="la1-privacy-checkbox" id="la1-privacy-checkbox">
+		      </div>
+		      <span class="error-box error-la1-privacy-checkbox"></span>
+	      </div>
       </form>
     </div>
 

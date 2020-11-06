@@ -7,8 +7,9 @@
 
 #Content {
   @media #{$mobile} {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    //white-space: break-spaces;
   }
 }
 
@@ -24,6 +25,7 @@
 
   p {
     font-weight: bold;
+    white-space: break-spaces;
   }
 
   ul {
@@ -100,6 +102,10 @@
 
     #la1-fake-file-input{
       margin: 0;
+
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
     }
 
     #la1-fileName-text{
@@ -159,4 +165,33 @@
 
 .la1-input {
   border: 1px solid rgba(0,0,0,.08);
+}
+
+.la1-privacy-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  .check-label-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .error-la1-privacy-checkbox{
+    text-align: center;
+    height: 27px;
+  }
+
+  .privacy-checkbox-label {
+    text-align: center;
+  }
+
+  #la1-privacy-checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
 }

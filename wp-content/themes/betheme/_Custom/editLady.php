@@ -167,7 +167,7 @@ $v = $customHelper->version();
   <?php else: ?>
     <section class="le1-upload-video-section">
       <input type="button" id="le1-fake-file-input" value="Subir video"/>
-      <input type="file" accept="video/mp4" id="le1-video-upload" name="le1-video-upload" class="le1-input le1-video-upload">
+      <input type="file" id="le1-video-upload" name="le1-video-upload" class="le1-input le1-video-upload">
       <span id="le1-fileName-text"></span>
       <span class="error-box error-le1-video-upload"></span>
     </section>
