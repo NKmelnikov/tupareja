@@ -150,7 +150,7 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 
           <?php get_template_part('includes/include',
               'logo'); ?>
-        <div class="header-right-block">
+      <div class="header-right-block">
           <div class="header-title real">
 	          <?php if (get_locale() === 'ru_RU'): ?>
             <h1>Международное Агентство Знакомств</h1>
@@ -268,7 +268,7 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
               ?>
           </div>
         </div>
-
+			<div class="header-alter-left-block"></div>
       </div>
 
         <?php

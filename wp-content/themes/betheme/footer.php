@@ -43,7 +43,7 @@
 							  <li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
 								  <a href="<?= get_home_url() . '/our-service/' ?>"><span><?php _e('header_service',
 											  'betheme') ?> </span><span class="triangle-turn">&#9668;</span></a>
-								  <div class="service-dropdown-content">
+								  <div class="service-dropdown-content up">
 									  <a href="<?= get_home_url() . '/our-service/dates-online/' ?>"><span><?php _e('service_title_0','betheme') ?></span></a>
 									  <a href="<?= get_home_url() . '/our-service/dates-ucraine/' ?>"><span><?php _e('service_title_1','betheme') ?></span></a>
 									  <a href="<?= get_home_url() . '/our-service/trip-to-spain/' ?>"><span><?php _e('service_title_2','betheme') ?></span></a>
@@ -59,7 +59,7 @@
 							  <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
 								  <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/' ?>"><span><?php _e('header_lady_tips',
 											  'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
-								  <div class="service-dropdown-content">
+								  <div class="service-dropdown-content up">
 									  <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/ua-es-man/' ?>"><span><?php _e('rec_title_1',
 												  'betheme') ?></span></a>
 									  <a href="<?= get_home_url() . $ruSuffix .  '/recommendations/ladies-mistakes/' ?>"><span><?php _e('rec_title_2',
@@ -74,7 +74,7 @@
 							  <li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page service-dropdown">
 								  <a href="<?= get_home_url() . '/recommendations/' ?>"><span><?php _e('header_man_tips',
 											  'betheme') ?></span><span class="triangle-turn">&#9668;</span></a>
-								  <div class="service-dropdown-content">
+								  <div class="service-dropdown-content up">
 									  <a href="<?= get_home_url() . '/recommendations/ua-es-lady/' ?>"><span><?php _e('rec_title_5',
 												  'betheme') ?></span></a>
 									  <a href="<?= get_home_url() . '/recommendations/men-mistakes/' ?>"><span><?php _e('rec_title_6',
