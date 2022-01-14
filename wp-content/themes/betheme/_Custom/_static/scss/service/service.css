@@ -48,7 +48,7 @@
     width: 33px;
     height: 32px; }
     .heart-box__heart-small.hs1 {
-      top: 110px;
+      top: 105px;
       left: 0;
       animation: upDown 2.3s linear .1s infinite; }
       @media (max-width: 768px) {

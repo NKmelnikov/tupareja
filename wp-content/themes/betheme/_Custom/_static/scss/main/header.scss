@@ -105,7 +105,10 @@ body, html {
 
       .main-logo {
         width: 270px;
-        height: 122px;
+
+        @media #{$normalDesktop} {
+          width: 240px;
+        }
       }
     }
   }

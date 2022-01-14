@@ -92,10 +92,10 @@
 											  'betheme') ?></span></a>
 							  </li>
 						  <?php else: ?>
-							  <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">
-								  <a href="<?= get_home_url() . '/men-application/' ?>"><span><?php _e('header_man_application',
-											  'betheme') ?></span></a>
-							  </li>
+<!--							  <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">-->
+<!--								  <a href="--><?//= get_home_url() . '/men-application/' ?><!--"><span>--><?php //_e('header_man_application',
+//											  'betheme') ?><!--</span></a>-->
+<!--							  </li>-->
 						  <?php endif; ?>
 						  <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page">
 							  <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
