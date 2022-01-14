@@ -81,15 +81,23 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
           <?php get_template_part('includes/include',
               'logo'); ?>
 
-        <p class="header-special-mobile__title">International Matchmaking Office</p>
+	      <p class="header-special-mobile__title">
+		      <?php if (get_locale() === 'ru_RU'): ?>
+			      Международное Агентство Знакомств
+		      <?php elseif (get_locale() === 'en_En'): ?>
+			      International Matchmaking Office
+		      <?php else: ?>
+			      Relaciones estables
+		      <?php endif; ?>
+	      </p>
 
         <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i><a>
             <nav id="menu">
               <ul id="menu-menu-3" class="menu menu-main">
-                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
-                  <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
-                              'betheme') ?></span></a>
-                </li>
+<!--                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">-->
+<!--                  <a href="--><?//= get_home_url() . $ruSuffix ?><!--"><span>--><?php //_e('header_main',
+//                              'betheme') ?><!--</span></a>-->
+<!--                </li>-->
                 <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() .$ruSuffix. '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                               'betheme') ?></span></a>
@@ -144,7 +152,13 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
               'logo'); ?>
         <div class="header-right-block">
           <div class="header-title real">
+	          <?php if (get_locale() === 'ru_RU'): ?>
+            <h1>Международное Агентство Знакомств</h1>
+	          <?php elseif (get_locale() === 'en_En'): ?>
             <h1>International Matchmaking Office</h1>
+	          <?php else: ?>
+		          <h1>Relaciones estables</h1>
+	          <?php endif; ?>
           </div>
           <div class="menu_wrapper">
               <?php
@@ -154,10 +168,6 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                   ?>
                 <nav id="menu">
                   <ul id="menu-menu-1" class="menu menu-main">
-                    <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
-                      <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
-                                  'betheme') ?></span></a>
-                    </li>
                     <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() . $ruSuffix . '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                                   'betheme') ?></span></a>
@@ -213,14 +223,17 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                           </div>
                         </li>
                       <?php endif; ?>
+	                  <?php if (get_locale() === 'ru_RU'): ?>
                     <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() . $ruSuffix .  '/for-ladies/' ?>"><span><?php _e('header_lady_application',
                                   'betheme') ?></span></a>
                     </li>
+	                  <?php else: ?>
                     <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() . '/men-application/' ?>"><span><?php _e('header_man_application',
                                   'betheme') ?></span></a>
                     </li>
+	                  <?php endif; ?>
                     <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
                                   'betheme') ?></span></a>
