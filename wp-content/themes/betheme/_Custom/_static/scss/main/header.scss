@@ -284,7 +284,12 @@ body, html {
 }
 
 .mfn-main-slider {
+  &::before, &::after {
+    display: none;
+  }
+
   .mp1-slider-elem {
+    display: none;
     position: absolute;
     width: 570px;
     height: 190px;

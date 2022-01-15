@@ -466,7 +466,10 @@ body, html {
   #Footer #menu-bot ul li a span {
     font-size: 11px; }
 
+.mfn-main-slider::before, .mfn-main-slider::after {
+  display: none; }
 .mfn-main-slider .mp1-slider-elem {
+  display: none;
   position: absolute;
   width: 570px;
   height: 190px;
