@@ -65,6 +65,7 @@ class ClientApplicationHandler
             'fname' => CustomHelper::sanitiseText($post['la1-fname']),
             'date_of_birth' => DateTime::createFromFormat('!d/m/Y', $post['la1-day'] .'/'. $post['la1-month'].'/'. $post['la1-year'])->getTimestamp(),
             'email' => sanitize_email($post['la1-email']),
+            'instagram' => CustomHelper::sanitiseText($post['la1-instagram']),
             'phone' => CustomHelper::sanitiseText($post['la1-phone']),
             'family_status' => CustomHelper::sanitiseText($post['la1-familyStatus']),
             'kids' => CustomHelper::sanitiseText($post['la1-kids']),
