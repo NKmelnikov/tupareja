@@ -1,4 +1,32 @@
-[26-Sep-2020 00:43:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php:13
+[18-Jun-2021 13:06:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php:13
 Stack trace:
 #0 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php on line 13
+[19-Jul-2021 21:27:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php on line 13
+[23-Aug-2021 05:23:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/footer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/footer.php on line 22
+[30-Aug-2021 01:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php on line 13
+[26-Sep-2021 01:28:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/footer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/footer.php on line 22
+[27-Sep-2021 02:48:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/404.php on line 13
+[02-Oct-2021 21:15:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/functions.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/functions.php on line 16
+[26-Oct-2021 02:09:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/functions.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/twentyseventeen/functions.php on line 16

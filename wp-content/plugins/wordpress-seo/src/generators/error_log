@@ -1,0 +1,4 @@
+[29-Oct-2021 14:00:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'Yoast\WP\SEO\Generators\Generator_Interface' not found in /home/tuparej1/public_html/wp-content/plugins/wordpress-seo/src/generators/breadcrumbs-generator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/tuparej1/public_html/wp-content/plugins/wordpress-seo/src/generators/breadcrumbs-generator.php on line 21
