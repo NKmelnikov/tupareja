@@ -204,8 +204,8 @@ class UploadHelper
                 }
                 $imageWithWm = $file['tmp_name'];
                 if (move_uploaded_file($file['tmp_name'], $target)) {
-                    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-                    $watermark = imagecreatefrompng('https://tuparejaucraniana.com/wp-content/themes/betheme/_Custom/Helper/tupareja_main_watermark_V2.png');
+                    $domainName = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+                    $watermark = imagecreatefrompng($domainName . '/wp-content/themes/betheme/_Custom/Helper/logo_small_en.png');
                     imagealphablending($watermark, false);
                     imagesavealpha($watermark, true);
                     switch ($ext) {
@@ -216,6 +216,7 @@ class UploadHelper
                             $img = imagecreatefromjpeg($target);
                             break;
                     }
+
                     $img_w = imagesx($img);
                     $img_h = imagesy($img);
                     $wtrmrk_w = imagesx($watermark);

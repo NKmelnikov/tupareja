@@ -96,6 +96,7 @@ class LadiesApplicationAdmin extends WP_List_Table
             case 'lname':
             case 'fname':
             case 'email':
+            case 'instagram':
             case 'phone':
             case 'family_status':
             case 'kids':
@@ -167,6 +168,7 @@ class LadiesApplicationAdmin extends WP_List_Table
             'fname' => __('FathersName', 'sp'),
             'date_of_birth' => __('Date of Birth (d.m.Y)', 'sp'),
             'email' => __('email', 'sp'),
+            'instagram' => __('instagram', 'sp'),
             'phone' => __('phone', 'sp'),
             'profession' => __('profession', 'sp'),
             'country' => __('country', 'sp'),

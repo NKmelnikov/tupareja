@@ -71,8 +71,16 @@ $v = $customHelper->version();
       <label for="le1-dateOfBirth">Fecha de nacimiento</label>
       <input type="text" required name="le1-dateOfBirth" id="le1-dateOfBirth" min="2" max="255" class="le1-input" placeholder="Дата рождения" value="<?php echo date('Y-m-d', $lady['date_of_birth']); ?>">
       <span class="error-box error-le1-dateOfBirth"></span>
-      <label for="le1-email">Email</label>
-      <input type="email" required name="le1-email" id="le1-email" min="2" max="255" class="le1-input" placeholder="Email" value="<?php echo $lady['email']; ?>">
+	    <div class="le1-color-container">
+		    <div class="le1-color-box">
+			    <label for="le1-email">Email</label>
+			    <input type="email" required name="le1-email" id="le1-email" min="2" max="255" class="le1-input" placeholder="Email" value="<?php echo $lady['email']; ?>">
+		    </div>
+		    <div class="le1-color-box">
+			    <label for="le1-instagram">Instagram</label>
+			    <input type="text" required name="le1-instagram" id="le1-instagram" min="2" class="le1-input" placeholder="Instagram" value="<?php echo $lady['instagram']; ?>">
+		    </div>
+	    </div>
       <span class="error-box error-le1-email"></span>
       <label for="le1-phone">Número de teléfono</label>
       <input type="text" required name="le1-phone" id="le1-phone" min="2" max="255" class="le1-input" placeholder="Телефон" value="<?php echo $lady['phone']; ?>">

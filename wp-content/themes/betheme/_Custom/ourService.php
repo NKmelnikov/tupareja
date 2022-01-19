@@ -149,6 +149,14 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
           <p class="os1-step-elem-desc"><?php _e('service_step_text_4', 'betheme') ?></p>
         </div>
       </div>
+	    <div class="os1-step-elem">
+		    <div class="os1-step-icon"><img src="<?= $pathToCustom . '_static/img/service-step.png?v='. $v?>"></div>
+		    <div class="os1-step-description">
+			    <h3 class="os1-step-elem-title"><?php _e('service_step_title_5', 'betheme') ?></h3>
+			    <p class="os1-step-elem-delimiter">...</p>
+			    <p class="os1-step-elem-desc"><?php _e('service_step_text_5', 'betheme') ?></p>
+		    </div>
+	    </div>
     </div>
   </section>
 </main>

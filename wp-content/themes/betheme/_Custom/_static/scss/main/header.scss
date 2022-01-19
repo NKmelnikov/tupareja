@@ -98,18 +98,27 @@ body, html {
 
     .logo {
 
+      margin-left: 24px;
       @media #{$mobile} {
         display: none;
       }
 
       .main-logo {
         width: 270px;
-        height: 122px;
+
+        @media #{$normalDesktop} {
+          width: 240px;
+        }
       }
     }
   }
 
   .header-right-block {
+    margin-left: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media #{$mobile} {
       display: none;
@@ -117,11 +126,10 @@ body, html {
 
     h1 {
       font-size: 30px;
-      text-align: left;
-      padding-left: 10%;
       font-style: italic;
       color: #daad20;
       white-space: nowrap;
+      text-align: center;
     }
 
     .service-dropdown {
@@ -166,9 +174,17 @@ body, html {
     }
   }
 
+  .header-alter-left-block {
+    width: 190px;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
   .top_bar_left {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     .logo {
       padding-top: 10px;
@@ -196,7 +212,7 @@ body, html {
         line-height: 18px;
 
         span {
-          font-size: 12px;
+          font-size: 0.7em;
           font-weight: bold;
         }
       }
@@ -268,7 +284,12 @@ body, html {
 }
 
 .mfn-main-slider {
+  &::before, &::after {
+    display: none;
+  }
+
   .mp1-slider-elem {
+    display: none;
     position: absolute;
     width: 570px;
     height: 190px;

@@ -184,33 +184,31 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <script src="<?= $pathToCustom . '_static/js/main-gallery-handler.js?v='.$v ?>"></script>
 
 
-<section class="mp1-video-block">
-	<div class="mp1-video-description">
-		<div class="mp1-video-contact">
-			<h3><?php _e('video_dear', 'betheme') ?></h3>
-			<p><?php _e('video_text', 'betheme') ?></p>
-			<a class="mp1-video-link" href="/contact/"><span><?php _e('video_contacts', 'betheme') ?></span></a>
-		</div>
-	</div>
-	<video loop="" autoplay="" muted="" class="mp1-bg-video" id="mp1-bg-video">
-		<source src="<?= $pathToCustom . '_static/video/hearts-video.mp4?v='.$v ?>">
-	</video>
-  <p class="click-to-mute"><?php _e('click_to_mute', 'betheme') ?></p>
-</section>
+<!--<section class="mp1-video-block">-->
+<!--	<div class="mp1-video-description">-->
+<!--		<div class="mp1-video-contact">-->
+<!--			<h3>--><?php //_e('video_dear', 'betheme') ?><!--</h3>-->
+<!--			<p>--><?php //_e('video_text', 'betheme') ?><!--</p>-->
+<!--			<a class="mp1-video-link" href="/contact/"><span>--><?php //_e('video_contacts', 'betheme') ?><!--</span></a>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<video loop="" autoplay="" muted="" class="mp1-bg-video" id="mp1-bg-video">-->
+<!--		<source src="--><?//= $pathToCustom . '_static/video/hearts-video.mp4?v='.$v ?><!--">-->
+<!--	</video>-->
+<!--  <p class="click-to-mute">--><?php //_e('click_to_mute', 'betheme') ?><!--</p>-->
+<!--</section>-->
 <div class="heart-box heart-box-shirts">
-  <img class="heart-box__heart-medium shirts-section hs6" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
-  <img class="heart-box__heart-big shirts-section hs7" src="<?= $pathToCustom . '_static/img/big-left.png?v='. $v?>" alt="">
   <img class="heart-box__heart-small shirts-section hs8" src="<?= $pathToCustom . '_static/img/small-right.png?v='. $v?>" alt="">
 </div>
-<section class="mp1-b3-wrap">
-	<div class="mp1-b3-lady mp1-b3-elem">
-		<a href="/for-ladies/"><?php _e('registration_for_ladies', 'betheme') ?></a>
-	</div>
-	<div class="mp1-b3-men mp1-b3-elem">
-		<a href="/men-application/"><?php _e('registration_for_men', 'betheme') ?></a>
-	</div>
-
-</section>
+<!--<section class="mp1-b3-wrap">-->
+<!--	<div class="mp1-b3-lady mp1-b3-elem">-->
+<!--		<a href="/for-ladies/">--><?php //_e('registration_for_ladies', 'betheme') ?><!--</a>-->
+<!--	</div>-->
+<!--	<div class="mp1-b3-men mp1-b3-elem">-->
+<!--		<a href="/men-application/">--><?php //_e('registration_for_men', 'betheme') ?><!--</a>-->
+<!--	</div>-->
+<!---->
+<!--</section>-->
 
 <div class="heart-box heart-box-advantage">
   <img class="heart-box__heart-medium advantage-section hs9" src="<?= $pathToCustom . '_static/img/medium-right.png?v='. $v?>" alt="">
