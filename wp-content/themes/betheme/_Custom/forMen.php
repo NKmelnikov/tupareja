@@ -26,117 +26,195 @@ $v = \Helper\CustomHelper::instance()->version();
   <div id="Content" class="container">
     <div class="content_wrapper clearfix ">
       <article class="ma1-article">
-        <h4>Condiciones para iniciar la búsqueda de una chica </h4>
+        <h4>Relaciones estables Tu pareja ucraniana</h4>
         <ol>
-          <li>
-            Al inicio del procedimiento el cliente tiene que rellenar formulario
-            en la página web de La agencia https://tuparejaucraniana.com/men-application/,
-            presentando la máxima información posible sobre usted y preferencia
-            en la elección de la mujer (edad, apariencia, carácter, prioridades, etc).
-            Con esto proporcionará una información fundamental para despertar
-            el interés de las chicas.
-          </li>
-          <li>
-            El cliente debe adjuntar fotos claras suyas (como mínimo cuatro,
-            recientes o máximo del ultimo año, sin gafas, donde se ve bien el
-            rostro y el cuerpo entero, vestido de forma ocasional, de trabajo,
-            deporte, por favor no fotos oscuras, ni sin camisetas) en el mismo
-            formulario y también una foto de su DNI para confirmar el nombre,
-            apellidos, edad. Toda esta información se tratará de forma
-            confidencial para uso interno.
-          </li>
-          <li>
-            Una vez la información y datos recibidos por parte del cliente,
-            sean validados por la agencia, deberá abonar una de las cuotas
-            de socio eligidas con el servicio incluido que ofrece La agencia.
-          </li>
-          <li>
-            El objeto del contrato es el asesoramiento para conocer a una
-            mujer del catálogo de la página web https://tuparejaucraniana.com/
-            o una mujer recomendada por la Agencia que no está en el catálogo
-            que mejor encaje con su perfil, con la cual el cliente muestre
-            afinidad, así como la organización de citas online con el traductor
-            personalizado, organización del viaje a España de la mujer o el
-            viaje a Ucrania del cliente para conocer a la mujer elegida
-            o tener opción conocer varias mujeres.
-          </li>
-          <li>
-            El éxito del encuentro y el posterior inicio de una relación
-            dependen exclusivamente del hombre y la mujer, y es por ello
-            que La agencia no se responsabiliza en ningún caso del resultado
-            posterior ni de la durabilidad de la misma.
-          </li>
-          <li>
-            La fundadora de La agencia se reserva el derecho de no aceptar
-            como cliente a cualquier persona sin necesidad de justificar
-            dicha decisión.
-          </li>
+           <p>
+          El objetivo de nuestros servicios es prestar el asesoramiento para conocer una mujer del catálogo de nuestra página web https://tuparejaucraniana.com/ u otra mujer recomendada por la agencia, que, a pesar de no estar en el catálogo, encaje con el perfil del cliente y él muestre su afinidad con ella..
+        </p>
+		 <p>
+         Te resumimos el procedimiento de nuestra agencia en cinco Sencillos pasos:
+        </p>
+         
+		<h5>1 Paso</h5>
+		 <p>
+         Envía una solicitud a nuestra agencia Tú Pareja Ucraniana.
+Una vez aceptados los términos y condiciones de contratación, te haremos una entrevista para conocerte mejor, saber qué tipo de mujer buscas y que perfil es el que mejor se adapta.
+        </p>
+		<h5>2 Paso</h5>
+		<p>
+         Una vez formalizada la contratación, hacemos presentaciones ilimitadas de los perfiles de mujeres y te presentamos a las chicas que te han gustado.
+
+		</p>
+		<h5>3 Paso</h5>
+		<p>
+        Una vez seleccionado el perfil de la persona escogida, preparamos tú presentación de perfil con tus fotos y una presentación traducida al ruso para darte a conocer mejor y ver la afinidad con esa chica.
+
+        </p>
+		<h5>4 Paso</h5>
+		<p>
+         Nos ponemos en contacto por cualquier Messenger, el que te sea más cómodo y con las mujeres que han confirmado su intención de conocerte. 
+
+        </p>
+		<h5>5 Paso</h5>
+		<p>
+         Hacer seguimiento del desarrollo de vuestra relación y buen entendimiento entre ambos.
+
+        </p>	
+			
         </ol>
-        <h5>Packs</h5>
-        <p>
-          Los packs se basan en nuestra forma habitual de trabajo, incluyendo,
-          en primer lugar, un dialogo exploratorio y una entrevista de adhesión
-          en profundidad, evaluación y elaboración del perfil y un dedicado
-          gerente de relaciones para sus presentaciones, seguimiento y guía,
-          colaborando con usted durante todo su paso. La comunicación regular
-          a lo largo del proceso se realiza por teléfono, correo electrónico
-          y mensajes de texto.
+		  
+		<h5>Ofrecemos diferentes packs.</h5>
+		<p>
+         
         </p>
+        <h5>Pack Silver</h5>
         <p>
-          Le daremos consejos prácticos sobre lo que usted debe o no debe hacer
-          en cada etapa de su búsqueda del principio al fin, le explicaremos
-          cuales son los errores mas comunes que cometen los hombres y qué
-          es lo que busca una mujer ucraniana en un hombre basándonos en
-          nuestra propia experiencia
+          Pack Silver sin límite de contactos incluye: 
         </p>
-        <h5>Pack Mini</h5>
+        
         <ul>
           <li>
-            Primera selección de no menos de 10 perfiles de mujeres recomendadas.
+           Creación del perfil en Ruso 
           </li>
           <li>
-            Primera cita online - videollamada gratuita con la mujer finalmente elegida.
+           Seleccion individual de las mujeres
           </li>
           <li>
-            Cuota única de inscripción de 180 EUR
+           Contactos directos sin límite de todas las mujeres interesadas
           </li>
+          <li>
+           Consulta y seguimiento individual
+          </li>
+          <li>
+           Recomendaciones para citas sobre la relación con chicas eslavas 
+          </li>
+          <li>
+           Presentaciones individuales sin límite 
+          </li>
+          <li>
+           Puedes hablar con todas las mujeres y verlas directamente
+          </li>
+          <li>
+           Puedes planificar tus citas reales con mujeres interesadas
+          </li>
+          <li>
+           Puedes intercambiar información de contacto (WhatsApp, Viber, Telegram, redes sociales) con todas las mujeres interesadas
+          </li>
+          <li>
+            Soporte 24/7
+          </li>
+         
+           
         </ul>
-        <h5>Pack Medio</h5>
+		 </ol>
+		<h5>Precio 199€</h5>
+        <h5>Duración del pack 1 mes</h5>
+		<p>
+          * Tarifa única, sin pagos adicionales. 
+        </p>		  
+
+        <h5>Pack Gold </h5>
+        <p>
+          Pack Gold sin límite de contactos incluye: 
+        </p>
+        
         <ul>
           <li>
-            Primera selección de no menos de 15 perfiles de mujeres recomendadas.
+           Creación del perfil en ruso  
           </li>
           <li>
-            Tres citas online - videollamadas gratuitas con las mujeres finalmente elegidas.
+           Seleccion individual de las mujeres
           </li>
           <li>
-            Cuota única de inscripción de 300 EUR
+           Contactos directos sin límite de todas las mujeres interesadas
           </li>
+          <li>
+           Consulta y seguimiento individual
+          </li>
+          <li>
+           Recomendaciones para citas sobre la relación con chicas eslavas 
+          </li>
+          <li>
+           Presentaciones individuales sin límite 
+          </li>
+          <li>
+           Puedes hablar con todas las mujeres y verlas directamente
+          </li>
+          <li>
+           Puedes planificar tus citas reales con mujeres interesadas
+          </li>
+          <li>
+           Puedes intercambiar información de contacto (WhatsApp, Viber, Telegram, redes sociales) con todas las mujeres interesadas
+          </li>
+          <li>
+           Gestión de entrega de regalos a la chica elegida (flores, bombones, perfumes, bisutería, bolsos, etc.) 
+          </li>
+          <li>
+            Soporte 24/7
+          </li>
+         
+           
         </ul>
-        <h5>Pack Maxi</h5>
-        <ul>
-          <li>
-            Primera selección de no menos de 20 perfiles de mujeres recomendadas.
-          </li>
-          <li>
-            Cinco citas online - videollamadas gratuitas con las mujeres finalmente elegidas.
-          </li>
-          <li>
-            El número de teléfono privado de la mujer finalmente elegida,
-            así como un descuento en el precio de invitación a España de esta misma mujer, no otra.
-          </li>
-          <li>
-            Este descuento será de 100 EUR
-          </li>
-          <li>
-            Cuota única de inscripción de 450 EUR
-          </li>
-          <li>
-            A continuación, usted va a poder elegir como quiere conocer a su mujer personalmente entre invitar a España o viaje a Ucrania.
-          </li>
-        </ul>
+		 </ol>
+		<h5>Precio 299€</h5>
+        <h5>Duración del pack 3 meses</h5>
+		<p>
+          * Tarifa única, sin pagos adicionales. 
+        </p>	
 
 
+       <h5>Pack Platinum</h5>
+        <p>
+          Pack Platinum sin límite de contactos incluye: 
+        </p>
+        
+        <ul>
+          <li>
+           Creación del perfil en ruso  
+          </li>
+          <li>
+           Seleccion individual de las mujeres
+          </li>
+          <li>
+           Contactos directos sin límite de todas las mujeres interesadas
+          </li>
+          <li>
+           Consulta y seguimiento individual
+          </li>
+          <li>
+           Recomendaciones para citas sobre la relación con chicas eslavas 
+          </li>
+          <li>
+           Presentaciones individuales sin límite 
+          </li>
+          <li>
+           Puedes hablar con todas las mujeres y verlas directamente
+          </li>
+          <li>
+           Puedes planificar tus citas reales con mujeres interesadas
+          </li>
+          <li>
+           Puedes intercambiar información de contacto (WhatsApp, Viber, Telegram, redes sociales) con todas las mujeres interesadas
+          </li>
+          <li>
+           Gestión de entrega de regalos a la chica elegida (flores, bombones, perfumes, bisutería, bolsos, etc.) 
+          </li>
+          <li>
+            Organización de los encuentros con la chica escogida (gestión de reservas: vuelos, traslados y hoteles).
+          </li>
+          <li>
+            Soporte 24/7
+          </li>
+         
+           
+        </ul>
+		 </ol>
+		<h5>Precio 499€</h5>
+        <h5>Duración del pack 6 meses</h5>
+		<p>
+          * Tarifa única, sin pagos adicionales. 
+        </p>
+	
       </article>
       <form action="<?php echo $pathToCustom . 'Actions/submitApplicationMan.php' ?>" class="ma1-wrapper" id="ma1-form" method="post" enctype="multipart/form-data">
         <input type="hidden" name="ma1-locale" id="cf1-local" value="<?= get_locale() ?>"/>
@@ -290,12 +368,9 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="text" required name="ma1-phone" id="ma1-phone"  maxlength="255" class="ma1-input" placeholder="Número de teléfono">
             <span class="error-box error-ma1-phone"></span>
 
-            <!-- <input type="text" required name="ma1-country" id="ma1-country"  maxlength="255" class="ma1-input" placeholder="Страна">
-              <span class="error-box error-ma1-country"></span>-->
+            <input type="text" required name="ma1-país" id="ma1-país"  maxlength="255" class="ma1-input" placeholder="País">
+            <span class="error-box error-ma1-país"></span>
 
-
-            <input type="text" required name="ma1-education" id="ma1-education"  maxlength="255" class="ma1-input" placeholder="Educación (especialidad)">
-            <span class="error-box error-ma1-education"></span>
 
             <input type="text" required name="ma1-profession" id="ma1-profession"  maxlength="255" class="ma1-input" placeholder="Profesión">
             <span class="error-box error-ma1-profession"></span>
@@ -306,109 +381,18 @@ $v = \Helper\CustomHelper::instance()->version();
             <input type="text" required name="ma1-kids" id="ma1-kids"  maxlength="255" class="ma1-input" placeholder="Niños (género y edad)">
             <span class="error-box error-ma1-kids"></span>
 
-            <input type="text" required name="ma1-smoking" id="ma1-smoking"  maxlength="255" class="ma1-input" placeholder="¿Fumas?">
-            <span class="error-box error-ma1-smoking"></span>
-
-            <textarea rows="4" cols="50" required name="ma1-music_preferences" id="ma1-music_preferences" class="ma1-input" placeholder="Preferencias musicales*"></textarea>
-            <span class="error-box error-ma1-music_preferences"></span>
-
-            <textarea rows="4" cols="50" required name="ma1-literature" id="ma1-literature" class="ma1-input" placeholder="¿Lees literatura y qué género prefieres, también indica tu libro favorito*"></textarea>
-            <span class="error-box error-ma1-literature"></span>
-
-            <textarea rows="4" cols="50" required name="ma1-principles" id="ma1-principles" class="ma1-input" placeholder="¿Tienes principios / valores de vida estrictos que necesariamente deben coincidir con su pareja?*"></textarea>
-            <span class="error-box error-ma1-principles"></span>
-
-
-            <textarea rows="4" cols="50" required name="ma1-socially_active" id="ma1-socially_active" class="ma1-input" placeholder="¿Te consideras una persona socialmente activa o prefieres pasar tu tiempo libre en soledad / en un círculo cercano de conocidos?*"></textarea>
-            <span class="error-box error-ma1-socially_active "></span>
-
-            <textarea rows="4" cols="50" required name="ma1-vacation_preferences" id="ma1-vacation_preferences" class="ma1-input" placeholder="Durante sus vacaciones, que es preferible para usted: descansar en el mar, la soledad en un parque, bosque o montaña, un programa deexcursión activa*"></textarea>
-            <span class="error-box error-ma1-vacation_preferences"></span>
-
-
-          </div>
-          <div class="ma1-input-section__second-box">
-            <input type="text" required name="ma1-town" id="ma1-town"  maxlength="255" class="ma1-input" placeholder="Dirección de residencia">
-            <span class="error-box error-ma1-town"></span>
 
             <input type="text" required name="ma1-height" id="ma1-height"  maxlength="255" class="ma1-input" placeholder="Estatura (cm)">
             <span class="error-box error-ma1-height"></span>
 
             <input type="text" required name="ma1-weight" id="ma1-weight"  maxlength="255" class="ma1-input" placeholder="Peso (kg)">
             <span class="error-box error-ma1-weight"></span>
-            <select required name="ma1-eyeColor" id="ma1-eyeColor" class="ma1-input">
-              <option value="">Color de los ojos</option>
-              <option value="blue">Azules</option>
-              <option value="hazel">Marrónes</option>
-              <option value="gray">Grises</option>
-              <option value="green">Verdes</option>
-              <option value="black">Negros</option>
-            </select>
-            <span class="error-box error-ma1-eyeColor"></span>
-            <select required name="ma1-hairColor" id="ma1-hairColor" class="ma1-input">
-              <option value="">Color del cabello</option>
-              <option value="blond">Rubio</option>
-              <option value="brunette">Moreno</option>
-              <option value="chestnut">Castaño</option>
-              <option value="ginger">Pelirrojo</option>
-            </select>
-            <span class="error-box error-ma1-hairColor"></span>
-
-            <input type="text" required name="ma1-enLanguage" id="ma1-enLanguage"  maxlength="255" class="ma1-input" placeholder="Conocimiento de inglés">
-            <span class="error-box error-ma1-enLanguage"></span>
-
-            <input type="text" required name="ma1-languages" id="ma1-languages"  maxlength="255" class="ma1-input" placeholder="Idioma adicional">
-            <span class="error-box error-ma1-languages"></span>
-
-            <input type="text" required name="ma1-hobby" id="ma1-hobby"  maxlength="255" class="ma1-input" placeholder="Aficiones/Hobbies">
-            <span class="error-box error-ma1-hobby"></span>
-
-            <input type="text" required name="ma1-drinking" id="ma1-drinking"  maxlength="255" class="ma1-input" placeholder="¿Bebes alcohol?">
-            <span class="error-box error-ma1-drinking"></span>
-
-            <textarea rows="4" cols="50" required name="ma1-people_value" id="ma1-people_value" class="ma1-input" placeholder="¿Qué es lo que más valoras en las personas?*"></textarea>
-            <span class="error-box error-ma1-people_value"></span>
-
+            
+			  
             <textarea rows="4" cols="50" required name="ma1-about" id="ma1-about" class="ma1-input" placeholder="Sobre mí*"></textarea>
             <span class="error-box error-ma1-about"></span>
 
-            <textarea rows="4" cols="50" required name="ma1-parent_relations" id="ma1-parent_relations" class="ma1-input" placeholder="¿Cuál es tu relación con tus padres?*"></textarea>
-            <span class="error-box error-ma1-parent_relations"></span>
-
-            <textarea rows="4" cols="50" required name="ma1-goal" id="ma1-goal" class="ma1-input" placeholder="¿Tienes una meta en la vida que debe alcanzar*"></textarea>
-            <span class="error-box error-ma1-goal"></span>
-
-            <textarea rows="4" cols="50" required name="ma1-cuisine" id="ma1-cuisine" class="ma1-input" placeholder="¿Qué cocina prefieres / te gusta más?"></textarea>
-            <span class="error-box error-ma1-cuisine"></span>
-
-          </div>
-
-
-        </section>
-        <section class="ma1-comoveas-section">
-          <h3>Como ves a tu pareja:</h3>
-          <div class="ma1-comoveas-wrap">
-            <div class="ma1-input-section__first-box">
-              <input type="text" required name="ma1-partner_age_difference" id="ma1-partner_age_difference"  maxlength="255" class="ma1-input" placeholder="diferencia máxima de edad">
-              <span class="error-box error-ma1-partner_age_difference"></span>
-
-              <input type="text" required name="ma1-partner_smoke" id="ma1-partner_smoke"  maxlength="255" class="ma1-input" placeholder="fumar">
-              <span class="error-box error-ma1-partner_smoke"></span>
-
-              <textarea rows="4" cols="50" required name="ma1-partner_drive_away" id="ma1-partner_drive_away" class="ma1-input" placeholder="Lo que puede alejarte en una pareja"></textarea>
-              <span class="error-box error-ma1-partner_drive_away"></span>
-
-
-            </div>
-            <div class="ma1-input-section__second-box">
-              <input type="text" required name="ma1-partner_kids" id="ma1-partner_kids"  maxlength="255" class="ma1-input" placeholder="con o sin hijos">
-              <span class="error-box error-ma1-partner_kids"></span>
-
-              <input type="text" required name="ma1-partner_religion" id="ma1-partner_religion"  maxlength="255" class="ma1-input" placeholder="actitud hacia la religión y la religión">
-              <span class="error-box error-ma1-partner_religion"></span>
-
-              <textarea rows="4" cols="50" required name="ma1-partner_attraction" id="ma1-partner_attraction" class="ma1-input" placeholder="Qué te puede atraer en una pareja"></textarea>
-              <span class="error-box error-ma1-partner_attraction"></span>
+           
 
               <input type="hidden" name="ma1-path-to-images" id="ma1-path-to-images">
             </div>

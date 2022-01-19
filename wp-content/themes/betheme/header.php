@@ -29,6 +29,7 @@ $customHelper::build();
 <html <?php language_attributes(); ?> class="noselect no-js<?php echo esc_attr(mfn_user_os()); ?> <?= $languageClass ?>"<?php mfn_tag_schema(); ?>>
 <?php endif; ?>
 
+<script src="//code.jivosite.com/widget/VBPfmCG0sM" async></script>
 <head>
 <!--  <script language="JavaScript">-->
 <!--      document.oncontextmenu =new Function("return false;")-->

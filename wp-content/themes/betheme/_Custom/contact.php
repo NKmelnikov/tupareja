@@ -36,9 +36,9 @@ $v = $config->version();
                 <?php _e('contact_contact', 'betheme') ?>
             </div>
             <div class="text-box__content">
-              + 38 050 1474440
+              + 38 096 952 47 19
               <br>
-              + 34 66 2426485
+              + 34 636 49 75 35
               <br>
               info@tuparejaucraniana.com
             </div>

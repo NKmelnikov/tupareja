@@ -1,596 +1,415 @@
-[07-Sep-2020 08:06:33 UTC] PHP Warning:  mkdir(): File exists in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 8
-[07-Sep-2020 08:06:33 UTC] PHP Warning:  move_uploaded_file(/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599465993--WhatsApp Video 2020-09-07 at 09.59.34.mp4): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:06:33 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpWh5xXb' to '/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599465993--WhatsApp Video 2020-09-07 at 09.59.34.mp4' in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:11:33 UTC] PHP Warning:  mkdir(): File exists in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 8
-[07-Sep-2020 08:11:33 UTC] PHP Warning:  move_uploaded_file(/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599466293--WhatsApp Video 2020-09-07 at 09.59.34.mp4): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:11:33 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php5OlAdw' to '/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599466293--WhatsApp Video 2020-09-07 at 09.59.34.mp4' in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:14:05 UTC] PHP Warning:  mkdir(): File exists in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 8
-[07-Sep-2020 08:14:05 UTC] PHP Warning:  move_uploaded_file(/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599466445--WhatsApp Video 2020-09-07 at 09.59.34.mp4): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:14:05 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpBKM1uu' to '/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599466445--WhatsApp Video 2020-09-07 at 09.59.34.mp4' in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:23:26 UTC] PHP Warning:  mkdir(): File exists in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 8
-[07-Sep-2020 08:23:26 UTC] PHP Warning:  move_uploaded_file(/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599467006--WhatsApp Video 2020-09-07 at 09.59.34.mp4): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[07-Sep-2020 08:23:26 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpWJTOMf' to '/home/tuparej1/public_html/wp-content/uploads/2020/09.07/1599467006--WhatsApp Video 2020-09-07 at 09.59.34.mp4' in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 11
-[08-Sep-2020 00:00:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:38:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:38:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:38:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:38:57 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
-[08-Sep-2020 22:38:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:38:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:39:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:39:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:39:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:40:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:40:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:40:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[08-Sep-2020 22:40:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[10-Sep-2020 19:30:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
-[11-Sep-2020 02:28:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[13-Sep-2020 03:03:48 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
-[15-Sep-2020 13:09:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:09:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:11:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:13:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:13:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:13:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:14:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:14:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:18:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:47:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 13:54:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[15-Sep-2020 14:11:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[16-Sep-2020 00:12:32 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
-[16-Sep-2020 04:38:04 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
-[16-Sep-2020 19:35:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+[01-Jun-2021 14:11:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[05-Jun-2021 15:48:52 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[06-Jun-2021 10:07:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[06-Jun-2021 10:08:21 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[06-Jun-2021 10:08:44 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[07-Jun-2021 06:26:42 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[09-Jun-2021 10:30:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
-[19-Sep-2020 09:19:24 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
-[20-Sep-2020 14:01:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[12-Jun-2021 19:55:07 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Jun-2021 19:55:09 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[15-Jun-2021 06:45:01 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[15-Jun-2021 07:23:28 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[15-Jun-2021 07:23:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 07:31:15 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 07:31:23 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 07:31:34 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 07:32:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 07:32:48 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 09:43:37 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 11:32:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 15:21:38 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[18-Jun-2021 18:02:00 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 18:12:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 19:27:13 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jun-2021 20:18:07 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Jun-2021 10:11:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Jun-2021 23:45:20 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[21-Jun-2021 21:33:52 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[22-Jun-2021 03:09:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:02:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[22-Jun-2021 22:06:05 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[22-Jun-2021 22:08:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Jun-2021 08:11:15 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Jun-2021 09:18:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[28-Jun-2021 18:45:40 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[28-Jun-2021 18:46:47 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Jul-2021 18:57:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[05-Jul-2021 10:03:04 UTC] PHP Warning:  mkdir(): File exists in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/uploadVideo.php on line 8
+[07-Jul-2021 20:31:29 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[09-Jul-2021 14:03:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[13-Jul-2021 02:35:05 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[14-Jul-2021 06:55:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[16-Jul-2021 22:18:00 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jul-2021 04:49:20 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[19-Jul-2021 05:49:59 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Jul-2021 10:56:44 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[27-Jul-2021 18:52:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[28-Jul-2021 04:06:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:02:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[01-Aug-2021 00:47:32 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[06-Aug-2021 16:27:39 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[09-Aug-2021 17:47:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[12-Aug-2021 16:02:56 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 17:30:00 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 17:32:49 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:06:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:06:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:06:32 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:07:35 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:15:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:35:05 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:36:54 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 18:45:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:12:26 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:12:32 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:44:27 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:52:18 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:52:21 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:55:42 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:56:15 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 20:57:49 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 21:01:59 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 21:02:01 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 21:02:03 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 21:03:50 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 21:03:59 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 21:06:55 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Aug-2021 22:16:22 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 01:43:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 01:49:27 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 01:51:31 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 01:54:34 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 02:39:02 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 02:41:38 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 02:42:34 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 02:43:22 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 13:40:55 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Aug-2021 14:13:13 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[14-Aug-2021 09:52:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[14-Aug-2021 09:58:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[14-Aug-2021 09:59:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[15-Aug-2021 17:28:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[16-Aug-2021 14:54:09 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[16-Aug-2021 15:05:33 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[17-Aug-2021 20:58:17 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Aug-2021 16:27:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Aug-2021 16:27:42 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[22-Aug-2021 12:04:09 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[22-Aug-2021 14:03:07 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[24-Aug-2021 16:32:28 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[26-Aug-2021 21:40:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[27-Aug-2021 20:19:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:02:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[31-Aug-2021 16:08:54 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Sep-2021 15:54:45 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Sep-2021 15:54:48 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Sep-2021 15:54:49 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Sep-2021 15:54:50 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Sep-2021 15:54:54 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Sep-2021 17:06:39 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Sep-2021 17:49:45 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[04-Sep-2021 21:07:12 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[04-Sep-2021 21:08:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[06-Sep-2021 18:29:01 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[09-Sep-2021 20:29:26 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[11-Sep-2021 15:25:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[13-Sep-2021 03:27:18 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Sep-2021 03:27:19 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Sep-2021 03:27:20 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Sep-2021 03:27:23 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2021/09.13/1631548053--inbound3166029603358164083.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[13-Sep-2021 15:47:33 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[13-Sep-2021 19:11:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[14-Sep-2021 12:26:18 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[17-Sep-2021 12:55:52 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Sep-2021 14:24:07 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Sep-2021 14:28:11 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Sep-2021 15:52:33 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[24-Sep-2021 03:30:54 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[26-Sep-2021 11:20:53 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[27-Sep-2021 20:26:48 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[27-Sep-2021 20:27:02 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[30-Sep-2021 15:08:51 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[30-Sep-2021 15:08:54 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Oct-2021 12:59:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:02:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[03-Oct-2021 07:10:55 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Oct-2021 10:44:59 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Oct-2021 16:24:50 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[04-Oct-2021 10:56:45 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x00 0x00 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2021/10.09/1633807190--IMG_1637.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[09-Oct-2021 19:19:50 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[09-Oct-2021 19:20:19 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[11-Oct-2021 02:05:59 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Oct-2021 16:40:53 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[14-Oct-2021 07:58:44 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[17-Oct-2021 13:00:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[18-Oct-2021 13:31:12 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Oct-2021 13:40:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Oct-2021 00:58:17 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Oct-2021 13:34:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[20-Oct-2021 22:01:52 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Oct-2021 05:04:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Oct-2021 05:04:29 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Oct-2021 06:21:42 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Oct-2021 06:21:48 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Oct-2021 18:54:10 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Oct-2021 18:56:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[22-Oct-2021 10:52:03 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[28-Oct-2021 01:15:40 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[30-Oct-2021 17:25:20 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[30-Oct-2021 17:25:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[30-Oct-2021 17:29:41 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[31-Oct-2021 11:04:12 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[31-Oct-2021 11:19:49 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Nov-2021 13:44:53 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Nov-2021 15:05:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Nov-2021 20:55:29 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Nov-2021 20:56:04 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Nov-2021 20:56:05 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Nov-2021 20:56:05 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Nov-2021 20:56:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Nov-2021 20:00:42 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Nov-2021 20:00:45 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[04-Nov-2021 19:55:50 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[05-Nov-2021 14:19:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:03:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[09-Nov-2021 04:07:21 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[09-Nov-2021 23:03:27 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[10-Nov-2021 20:29:00 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[10-Nov-2021 23:34:24 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Nov-2021 21:57:30 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[13-Nov-2021 04:04:14 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[14-Nov-2021 23:26:47 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[16-Nov-2021 02:26:58 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[17-Nov-2021 08:42:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[18-Nov-2021 13:51:17 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Nov-2021 06:35:23 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Nov-2021 06:36:09 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Nov-2021 11:19:55 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Nov-2021 11:20:35 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Nov-2021 11:22:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Nov-2021 11:22:38 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Nov-2021 17:55:44 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[21-Nov-2021 17:56:09 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Nov-2021 06:42:38 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Nov-2021 22:48:44 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[26-Nov-2021 09:01:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[26-Nov-2021 09:11:18 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[26-Nov-2021 09:11:20 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[26-Nov-2021 09:11:22 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[26-Nov-2021 09:11:25 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[26-Nov-2021 09:11:27 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Dec-2021 07:41:21 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Dec-2021 07:49:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Dec-2021 18:22:07 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Dec-2021 21:58:28 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Dec-2021 21:59:16 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Dec-2021 21:59:17 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Dec-2021 16:37:31 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Dec-2021 19:09:53 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[03-Dec-2021 20:29:35 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[06-Dec-2021 16:50:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:03:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[07-Dec-2021 18:07:27 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[09-Dec-2021 19:35:51 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 15:45:36 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 15:59:21 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 16:37:37 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 16:38:18 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 16:41:58 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 16:51:55 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 17:21:13 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 19:36:44 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 19:42:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 19:42:32 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 19:47:47 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[12-Dec-2021 19:48:06 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[15-Dec-2021 22:58:32 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[16-Dec-2021 00:17:39 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Dec-2021 20:15:12 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Dec-2021 20:18:02 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Dec-2021 20:24:09 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Dec-2021 20:25:02 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[20-Dec-2021 20:25:10 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[22-Dec-2021 21:37:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[24-Dec-2021 23:45:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
+Stack trace:
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
+#2 {main}
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2021/12.25/1640470264--inbound8493471451521563946.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[25-Dec-2021 22:11:04 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[25-Dec-2021 22:12:09 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2021/12.25/1640470339--inbound1626903786105067444.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[25-Dec-2021 22:12:20 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[25-Dec-2021 22:12:22 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Dec-2021 22:14:03 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[25-Dec-2021 22:14:31 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[27-Dec-2021 20:51:11 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[30-Dec-2021 21:19:04 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[01-Jan-2022 17:52:37 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[02-Jan-2022 03:34:32 UTC] PHP Warning:  fopen(/home/tuparej1/public_html/wp-content/themes/betheme/languages/.mo): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-includes/pomo/streams.php on line 148
+[03-Jan-2022 10:25:27 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[07-Jan-2022 09:55:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
 Stack trace:
 #0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
 #1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
 #2 {main}
   thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:03:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.13/1642114686--IMG_20220113_104449_181.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[13-Jan-2022 22:58:06 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[13-Jan-2022 22:58:16 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 22:58:34 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 22:58:46 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.13/1642114739--IMG_20220113_104449_181.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[13-Jan-2022 22:58:59 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[13-Jan-2022 22:59:05 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.13/1642114801--IMG_20220113_104449_115.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.13/1642114801--IMG_20220113_104449_181.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[13-Jan-2022 23:00:01 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[13-Jan-2022 23:00:07 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 23:00:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.13/1642114830--IMG_20220113_104449_181.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[13-Jan-2022 23:00:30 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[13-Jan-2022 23:08:17 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 23:08:19 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[13-Jan-2022 23:08:21 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[18-Jan-2022 14:29:49 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Jan-2022 08:58:30 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.19/1642596723--inbound7525751305443604060.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[19-Jan-2022 12:52:03 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x52 0x49 in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/tuparej1/public_html/wp-content/uploads/2022/01.19/1642596755--inbound744943338605518368.jpg' is not a valid JPEG file in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 216
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 219
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 220
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagecopy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 225
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 226
+[19-Jan-2022 12:52:35 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 227
+[19-Jan-2022 14:45:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:66
 Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
+#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(26): Service\ClientApplicationHandler->validatePostLadies(Array)
+#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationLady.php(7): Service\ClientApplicationHandler->ladiesAction(Array)
 #2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:28:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:28:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:29:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:29:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:29:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:29:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:29:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[20-Sep-2020 14:30:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[23-Sep-2020 10:10:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 18:21:55 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
-[24-Sep-2020 19:16:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:16:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:16:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:16:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:16:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:16:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:17:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:18:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:18:08 UTC] PHP Warning:  file_put_contents(/tmp/logs/$target.txt): failed to open stream: No such file or directory in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Helper/UploadHelper.php on line 266
-[24-Sep-2020 19:18:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:18:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:18:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:18:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:18:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:19:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:19:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:19:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:19:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:19:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
-[24-Sep-2020 19:20:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on bool in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php:96
-Stack trace:
-#0 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php(43): Service\ClientApplicationHandler->validatePostMen(Array)
-#1 /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Actions/submitApplicationMan.php(7): Service\ClientApplicationHandler->menAction(Array)
-#2 {main}
-  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 96
+  thrown in /home/tuparej1/public_html/wp-content/themes/betheme/_Custom/Service/ClientApplicationHandler.php on line 66
