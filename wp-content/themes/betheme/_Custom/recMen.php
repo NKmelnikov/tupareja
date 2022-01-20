@@ -11,12 +11,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/service/service.css?v=' . $v ?>">
 
 <main class="rm1-wrapper">
-  <section class="paralax-box">
-    <div class="paralax-box__image"></div>
-    <div class="paralax-box__border"></div>
-  </section>
+<!--  <section class="paralax-box">-->
+<!--    <div class="paralax-box__image"></div>-->
+<!--    <div class="paralax-box__border"></div>-->
+<!--  </section>-->
   <div class="heart-box heart-box-advantage">
-    <img class="heart-box__heart-medium service-section hs12" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
+<!--    <img class="heart-box__heart-medium service-section hs12" src="--><?//= $pathToCustom . '_static/img/medium-left.png?v='. $v?><!--" alt="">-->
   </div>
   <section class="rm1-wrapper-title">
     <div class="rm1-title">
@@ -24,8 +24,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     </div>
   </section>
   <div class="heart-box heart-box-advantage">
-    <img class="heart-box__heart-big service-section hs18" src="<?= $pathToCustom . '_static/img/big-right.png?v='. $v?>" alt="">
-    <img class="heart-box__heart-small service-section hs19" src="<?= $pathToCustom . '_static/img/small-left.png?v='. $v?>" alt="">
+<!--    <img class="heart-box__heart-big service-section hs18" src="--><?//= $pathToCustom . '_static/img/big-right.png?v='. $v?><!--" alt="">-->
+<!--    <img class="heart-box__heart-small service-section hs19" src="--><?//= $pathToCustom . '_static/img/small-left.png?v='. $v?><!--" alt="">-->
   </div>
   <section class="rm1-wrapper-service">
     <div class="rm1-service-img-box">
@@ -108,6 +108,14 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
           <p class="rm1-step-elem-desc"><?php _e('service_step_text_4', 'betheme') ?></p>
         </div>
       </div>
+	    <div class="rm1-step-elem">
+		    <div class="rm1-step-icon"><img src="<?= $pathToCustom . '_static/img/service-step.png?v='. $v?>"></div>
+		    <div class="rm1-step-description">
+			    <h3 class="rm1-step-elem-title"><?php _e('service_step_title_5', 'betheme') ?></h3>
+			    <p class="rm1-step-elem-delimiter">...</p>
+			    <p class="rm1-step-elem-desc"><?php _e('service_step_text_5', 'betheme') ?></p>
+		    </div>
+	    </div>
     </div>
   </section>
 </main>

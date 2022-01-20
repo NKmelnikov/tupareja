@@ -13,12 +13,12 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/service/service.css?v=' . $v ?>">
 
 <main class="rc1-wrapper">
-  <section class="paralax-box">
-    <div class="paralax-box__image"></div>
-    <div class="paralax-box__border"></div>
-  </section>
+<!--  <section class="paralax-box">-->
+<!--    <div class="paralax-box__image"></div>-->
+<!--    <div class="paralax-box__border"></div>-->
+<!--  </section>-->
   <div class="heart-box heart-box-advantage">
-    <img class="heart-box__heart-medium service-section hs12" src="<?= $pathToCustom . '_static/img/medium-left.png?v='. $v?>" alt="">
+<!--    <img class="heart-box__heart-medium service-section hs12" src="--><?//= $pathToCustom . '_static/img/medium-left.png?v='. $v?><!--" alt="">-->
   </div>
   <section class="rc1-wrapper-title">
     <div class="rc1-title">
@@ -26,8 +26,8 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
     </div>
   </section>
   <div class="heart-box heart-box-advantage">
-    <img class="heart-box__heart-big service-section hs18" src="<?= $pathToCustom . '_static/img/big-right.png?v='. $v?>" alt="">
-    <img class="heart-box__heart-small service-section hs19" src="<?= $pathToCustom . '_static/img/small-left.png?v='. $v?>" alt="">
+<!--    <img class="heart-box__heart-big service-section hs18" src="--><?//= $pathToCustom . '_static/img/big-right.png?v='. $v?><!--" alt="">-->
+<!--    <img class="heart-box__heart-small service-section hs19" src="--><?//= $pathToCustom . '_static/img/small-left.png?v='. $v?><!--" alt="">-->
   </div>
   <section class="rc1-wrapper-service">
     <div class="rc1-service-img-box">
