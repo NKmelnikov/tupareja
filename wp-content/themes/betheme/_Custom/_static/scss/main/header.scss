@@ -12,16 +12,24 @@ body, html {
 
 #Top_bar, #Footer {
 
+  .header-column {
+    position:relative;
+  }
+
 	.translations-wrapper{
+    position: absolute;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		margin-right: 40px;
-		margin-top: 20px;
+    right: 100px;
+    top: 25px;
 
 		@media #{$mobile} {
 			justify-content: center;
-			margin-right: 0;
+			margin: 0 auto;
+      right: 0;
+      left: 0;
+      top: 0;
 		}
 
 		a{
@@ -226,6 +234,10 @@ body, html {
 
   .column {
     margin: 0;
+
+    @media #{$mobile} {
+      margin-top: 12px;
+    }
   }
 
   .column:after {
