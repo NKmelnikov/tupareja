@@ -106,6 +106,10 @@ $v = $customHelper->version();
 			<input type="text" required name="me1-town" id="me1-town" min="2" max="255" class="me1-input" placeholder="Dirección de residencia" value="<?php echo $man['town']; ?>">
 			<span class="error-box error-me1-town"></span>
 
+			<label for="me1-town">Pais</label>
+			<input type="text" required name="me1-country" id="me1-country" min="2" max="255" class="me1-input" placeholder="Pais" value="<?php echo $man['country']; ?>">
+			<span class="error-box error-me1-country"></span>
+
 			<label for="me1-height">Estatura (cm)</label>
 			<input type="text" required name="me1-height" id="me1-height" min="2" max="255" class="me1-input" placeholder="Estatura (cm)" value="<?php echo $man['height']; ?>">
 			<span class="error-box error-me1-height"></span>

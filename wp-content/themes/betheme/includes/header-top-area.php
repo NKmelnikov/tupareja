@@ -58,7 +58,7 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 
 <div id="Top_bar">
   <div class="container">
-    <div class="column one">
+    <div class="column one header-column">
         <?php if (get_locale() === 'ru_RU'): ?>
 			    <div class="social">
               <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
@@ -124,14 +124,17 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                                   'betheme') ?></span></a>
                     </li>
                   <?php endif; ?>
+	              <?php if (get_locale() === 'ru_RU'): ?>
                 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() . $ruSuffix .  '/for-ladies/' ?>"><span><?php _e('header_lady_application',
                               'betheme') ?></span></a>
                 </li>
-<!--                <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page">-->
-<!--                  <a href="--><?//= get_home_url() . '/men-application/' ?><!--"><span>--><?php //_e('header_man_application',
-//                              'betheme') ?><!--</span></a>-->
-<!--                </li>-->
+	              <?php else: ?>
+		              <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page">
+			              <a href="<?= get_home_url() . '/men-application/' ?>"><span><?php _e('header_man_application',
+						              'betheme') ?></span></a>
+		              </li>
+	              <?php endif; ?>
                 <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',
                               'betheme') ?></span></a>
@@ -229,10 +232,10 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                                   'betheme') ?></span></a>
                     </li>
 	                  <?php else: ?>
-<!--                    <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">-->
-<!--                      <a href="--><?//= get_home_url() . '/men-application/' ?><!--"><span>--><?php //_e('header_man_application',
-//                                  'betheme') ?><!--</span></a>-->
-<!--                    </li>-->
+                    <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="<?= get_home_url() . '/men-application/' ?>"><span><?php _e('header_man_application',
+                                  'betheme') ?></span></a>
+                    </li>
 	                  <?php endif; ?>
                     <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page">
                       <a href="<?= get_home_url() . $ruSuffix .  '/contact/' ?>"><span><?php _e('header_contacts',

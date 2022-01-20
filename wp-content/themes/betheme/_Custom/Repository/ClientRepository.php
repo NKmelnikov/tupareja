@@ -23,10 +23,9 @@ class ClientRepository
 
         $this->db->insert($table, $post);
 
-        if(!array_key_exists('goal', $post)) {
+        if($table == 'wp_ladies') {
             $this->updateLadyPosition($table);
         }
-
     }
 
     public function updateLadyPosition($table)

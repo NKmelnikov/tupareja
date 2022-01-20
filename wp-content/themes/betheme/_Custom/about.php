@@ -11,16 +11,16 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <link rel="stylesheet" href="<?= $pathToCustom .'_static/scss/about/about.css?v='.$v ?>">
 <script src="<?= $pathToCustom . '_static/libs/pagination.min.js'?>"></script>
 <script src="<?= $pathToCustom . '_static/libs/jquery-ui.min.js'?>"></script>
-<section class="paralax-box">
-	<div class="paralax-box__image"></div>
-	<div class="paralax-box__border"></div>
-</section>
+<!--<section class="paralax-box">-->
+<!--	<div class="paralax-box__image"></div>-->
+<!--	<div class="paralax-box__border"></div>-->
+<!--</section>-->
 
-<div class="heart-box heart-box-search-top">
-	<img class="heart-box__heart-big search-top-section hs19" src="<?= $pathToCustom . '_static/img/big-right.png?v='.$v ?>" alt="">
-	<img class="heart-box__heart-medium search-top-section hs5" src="<?= $pathToCustom . '_static/img/medium-right.png?v='.$v ?>" alt="">
-	<img class="heart-box__heart-medium search-top-section hs4" src="<?= $pathToCustom . '_static/img/medium-left.png?v='.$v ?>" alt="">
-</div>
+<!--<div class="heart-box heart-box-search-top">-->
+<!--	<img class="heart-box__heart-big search-top-section hs19" src="--><?//= $pathToCustom . '_static/img/big-right.png?v='.$v ?><!--" alt="">-->
+<!--	<img class="heart-box__heart-medium search-top-section hs5" src="--><?//= $pathToCustom . '_static/img/medium-right.png?v='.$v ?><!--" alt="">-->
+<!--	<img class="heart-box__heart-medium search-top-section hs4" src="--><?//= $pathToCustom . '_static/img/medium-left.png?v='.$v ?><!--" alt="">-->
+<!--</div>-->
 
 <section class="about-wrapper-title">
 	<div class="about-title">
