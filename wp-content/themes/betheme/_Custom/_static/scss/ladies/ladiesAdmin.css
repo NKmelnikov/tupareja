@@ -201,6 +201,9 @@
       @media (max-width: 768px) {
         .heart-box__heart-big.hs19 {
           display: none; } }
+  @media (max-width: 768px) {
+    .heart-box.no-mobile {
+      display: none; } }
 
 @keyframes upDown {
   0%, 100% {

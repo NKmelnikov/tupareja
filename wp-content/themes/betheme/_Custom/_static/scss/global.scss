@@ -274,6 +274,12 @@
       }
     }
   }
+
+  &.no-mobile {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
 }
 
 @keyframes upDown {

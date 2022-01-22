@@ -515,7 +515,6 @@ html,body{overflow-x:hidden}
 	#Top_bar .menu_wrapper{float:left!important;width:100%;margin:0!important}
 	#Top_bar #menu{float:left;position:static!important;width:100%!important}
 
-	#Top_bar .logo{position:static;float:left;width:100%;text-align:center;margin:0}
 	#Top_bar .logo #logo,
 	#Top_bar .logo .custom-logo-link{padding:0!important;margin:10px 50px}
 	#Top_bar #logo img.logo-main{display:none}
@@ -625,7 +624,6 @@ html,body{overflow-x:hidden}
 		.mobile-header-mini #Top_bar{top:0}
 		.mobile-header-mini #Top_bar .container{max-width:100%!important;}
 		.mobile-header-mini #Top_bar .top_bar_left{float:left;position:static;}
-		.mobile-header-mini #Top_bar .logo{width:auto;float:left;margin-left:15px;border:none;}
 		.mobile-header-mini #Top_bar #logo,
 		.mobile-header-mini #Top_bar .custom-logo-link{height:60px!important;line-height:60px!important;margin:0}
 		.mobile-header-mini.logo-overflow #Top_bar #logo img.logo-mobile{max-height:80px!important}

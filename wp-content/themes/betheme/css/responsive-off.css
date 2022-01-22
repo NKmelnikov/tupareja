@@ -152,9 +152,6 @@ body.error404,body.under-construction,body.template-blank{padding-left:0!importa
 #Header_creative #Top_bar .top_bar_right{width:100%!important;float:none;height:auto;margin-bottom:35px;text-align:center;padding:0 20px;top:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #Header_creative #Top_bar .top_bar_right:before{display:none}
 #Header_creative #Top_bar .top_bar_right_wrapper{top:0}
-
-#Header_creative #Top_bar .logo{float:none;text-align:center;margin:15px 0}
-
 #Header_creative #Top_bar .menu_wrapper{float:none;margin:0 0 30px}
 #Header_creative #Top_bar .menu > li{width:100%;float:none;position:relative}
 #Header_creative #Top_bar .menu > li > a{padding:0;text-align:center}
