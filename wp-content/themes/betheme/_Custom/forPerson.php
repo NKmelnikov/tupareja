@@ -18,7 +18,7 @@ $customHelper = CustomHelper::instance();
 $v = $customHelper->version();
 ?>
   <link rel="stylesheet" href="<?= $pathToCustom . '_static/scss/person/person.css?v=' . $v ?>">
-  <script language="JavaScript">
+  <script>
       document.oncontextmenu =new Function("return false;")
   </script>
 
