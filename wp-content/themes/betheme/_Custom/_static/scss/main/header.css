@@ -512,6 +512,11 @@ body, html {
   padding: 15px 0; }
   @media (max-width: 768px) {
     #Footer {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media (max-width: 768px) {
+    #Footer .social {
       display: none; } }
   #Footer .top_bar_left {
     max-width: 1300px;

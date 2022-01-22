@@ -341,8 +341,18 @@ body, html {
   padding: 15px 0;
 
   @media #{$mobile} {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .social {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+
+
 
 
   .top_bar_left {
