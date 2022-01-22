@@ -221,8 +221,9 @@ class UploadHelper
                     $img_h = imagesy($img);
                     $wtrmrk_w = imagesx($watermark);
                     $wtrmrk_h = imagesy($watermark);
-                    $dst_x = $img_w - $wtrmrk_w - 10; // For centering the watermark on any image
-                    $dst_y = $img_h - $wtrmrk_h - 30; // For centering the watermark on any image
+//                    $dst_x = $img_w - $wtrmrk_w - 10; right side
+                    $dst_x = 10; //left side
+                    $dst_y = $img_h - $wtrmrk_h - 30; //bottom
                     imagecopy($img, $watermark, $dst_x, $dst_y, 0, 0, $wtrmrk_w, $wtrmrk_h);
                     imagejpeg($img, $target, 100);
                     imagedestroy($img);
