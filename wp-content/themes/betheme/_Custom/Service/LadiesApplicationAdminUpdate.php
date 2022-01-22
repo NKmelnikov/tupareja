@@ -52,7 +52,7 @@ class LadiesApplicationAdminUpdate
             'fname' => CustomHelper::sanitiseText($post['le1-fname']),
             'date_of_birth' => strtotime(CustomHelper::sanitiseText($post['le1-dateOfBirth'])),
             'email' => sanitize_email($post['le1-email']),
-            'instagram' => sanitize_email($post['le1-instagram']),
+            'instagram' => CustomHelper::sanitiseText($post['le1-instagram']),
             'phone' => CustomHelper::sanitiseText($post['le1-phone']),
             'family_status' => CustomHelper::sanitiseText($post['le1-familyStatus']),
             'kids' => CustomHelper::sanitiseText($post['le1-kids']),

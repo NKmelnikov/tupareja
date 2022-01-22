@@ -18,7 +18,7 @@ $v = $config->version();
 
 <main class="cf1-wrapper">
   <section class="cf1-wrapper-image">
-    <img class="cf1-image" src="/wp-content/themes/betheme/_Custom/_static/img/contact_page.jpeg'"/>
+    <img class="cf1-image" src="/wp-content/themes/betheme/_Custom/_static/img/contact_page_new.jpg"/>
   </section>
 
   <section class="cf1-wrapper-info">

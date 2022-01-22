@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betheme\n"
 "POT-Creation-Date: 2019-02-19 10:20+0100\n"
-"PO-Revision-Date: 2020-09-26 12:06+0000\n"
+"PO-Revision-Date: 2022-01-22 08:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -11682,42 +11682,44 @@ msgid "advantages_registration"
 msgstr "Регистрация"
 
 msgid "advantages_registration_text"
-msgstr "Бесплатная регистрация для девушек."
+msgstr ""
+"Мы не используем ваши фотографии ни для каких других целей, кроме как для "
+"создания вашего качественного портфолио"
 
 msgid "advantages_individual"
 msgstr "Индивидуально"
 
 msgid "advantages_individual_text"
-msgstr "С помощью психолога подберем для вас испанскую пару. "
+msgstr "Мы не ведём переписку ни с кем от вашего имени. "
 
 msgid "advantages_confidential"
 msgstr "Конфиденциально"
 
 msgid "advantages_confidential_text"
 msgstr ""
-"Все ваши данные и ваши фотографии будут защищены нашей компанией и не будут "
-"использованы другими агенствами без нашего на то разрешения. "
+" Мы не сотрудничаем ни с какими сомнительными “знаменитыми» матмейкерами"
 
 msgid "advantages_exp"
 msgstr "Опыт"
 
 msgid "advantages_exp_text"
-msgstr "Наша компания создает счастливые пары и мы знаем как это сделать."
+msgstr ""
+" Мы не принимаем участие ни в каких мошеннических схемах «знаменитых» "
+"дейтинг агентств"
 
 msgid "advantages_guaranty"
 msgstr "Гарантированно"
 
 msgid "advantages_guaranty_text"
-msgstr ""
-"Мы сотрудничаем и работает с вами до тех пор пока вы найдёте себе пару и "
-"сделаем для этого все возможное."
+msgstr "Мы не продаём и не покупаем ваши фотографии"
 
 msgid "advantages_effective"
 msgstr "Эффективно"
 
 msgid "advantages_effective_text"
 msgstr ""
-"Организовываем романтические свидания и ивенты знакомств в Испании и Украине."
+"Мы не имеем никакого отношения к скаутам, вебкам, брачкам и тому подобным и "
+"не имеем исключительно девушек модельной внешности"
 
 msgid "service_our"
 msgstr "Услуги"
@@ -11895,6 +11897,12 @@ msgstr "Шаг четвёртый"
 
 msgid "service_step_text_4"
 msgstr "Реальное свидание в Киеве или Барселоне"
+
+msgid "service_step_title_5"
+msgstr "The path to the happiness"
+
+msgid "service_step_text_5"
+msgstr "The path to the happiness"
 
 msgid "service_article_0"
 msgstr "service article"

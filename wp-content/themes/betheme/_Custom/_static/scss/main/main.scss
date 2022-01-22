@@ -581,14 +581,16 @@
       display: flex;
       justify-content: center;
       justify-items: stretch;
+      margin-bottom: 80px;
 
 
       @media #{$mobile} {
         flex-direction: column;
+        margin-bottom: 0;
       }
 
       .mp1-advantage-elem {
-        width: 230px;
+        width: 260px;
         margin: 0 99px;
         position: relative;
 
@@ -613,7 +615,7 @@
         content: "";
         display: block;
         background: url("https://tuparejaucraniana.com/wp-content/themes/betheme/_Custom/_static/img/advantage-elem-bg.png") no-repeat center center;
-        width: 230px;
+        width: 260px;
         height: 230px;
         position: absolute;
         top: -40px;
@@ -631,7 +633,7 @@
           font-size: 18px;
           color: #1c1f3e;
           text-transform: uppercase;
-          line-height: 5px;
+          line-height: 24px;
           font-weight: bold;
           margin-bottom: 5px;
         }
@@ -647,8 +649,9 @@
           font-family: $main-font;
           margin-top: 30px;
           line-height: 16px;
-          font-size: 14px;
+          font-size: 12px;
           color: #e48d05;
+          text-align: left;
         }
       }
 
