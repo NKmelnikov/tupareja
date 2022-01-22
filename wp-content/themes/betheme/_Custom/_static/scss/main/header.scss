@@ -17,12 +17,16 @@ body, html {
   }
 
 	.translations-wrapper{
-    //position: absolute;
+    position: absolute;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
     right: 100px;
     top: 25px;
+
+    &.mobile {
+      position: static;
+    }
 
 		@media #{$mobile} {
 			justify-content: center;
@@ -96,14 +100,6 @@ body, html {
       right: 0;
       margin: 0 auto;
       z-index: 9;
-    }
-
-    .responsive-menu-toggle {
-      position: absolute;
-      top: 5px;
-      right: 15px;
-      font-size: 20px;
-      display: none;
     }
 
     .hamburger {
@@ -189,8 +185,6 @@ body, html {
 
     }
   }
-
-
 
   .header-right-block {
     margin-left: 36px;
@@ -344,6 +338,7 @@ body, html {
 #Footer {
   border-top: #0931a2 2px solid;
   padding: 15px 0;
+  position: relative;
 
   @media #{$mobile} {
     display: flex;
@@ -352,6 +347,8 @@ body, html {
   }
 
   .social {
+    top:10px;
+    right: 10px;
     @media #{$mobile} {
       display: none;
     }
@@ -483,7 +480,13 @@ body, html {
 }
 
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 115px;
+
+  &.mobile {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

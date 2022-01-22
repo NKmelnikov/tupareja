@@ -60,7 +60,19 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 <div id="Top_bar">
   <div class="container">
     <div class="column one header-column">
-
+	    <?php if (get_locale() === 'ru_RU'): ?>
+		    <div class="social">
+			    <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+		    </div>
+	    <?php endif; ?>
+	    <div class="translations-wrapper">
+		    <a href="<?= $config->getCurrentUrl() ?>">
+			    <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
+		    </a>
+		    <a href="<?= $config->getCurrentUrl('/ru') ?>">
+			    <img src="/wp-content/themes/betheme/_Custom/_static/img/russia-flag-round-icon-32.png" alt="">
+		    </a>
+	    </div>
       <div class="heart-box heart-box-main-header no-mobile">
         <img class="heart-box__heart-small rotated header-section hs1" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">
         <img class="heart-box__heart-medium header-section hs2" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
@@ -79,9 +91,6 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 			      Relaciones estables
 		      <?php endif; ?>
 	      </p>
-
-        <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
-
 		        <div class="hamburger" id="hamburger">
 			        <span class="line"></span>
 			        <span class="line"></span>
@@ -89,7 +98,7 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 		        </div>
             <nav id="mobile-menu">
 	            <br>
-	            <div class="translations-wrapper">
+	            <div class="translations-wrapper mobile">
 		            <a href="<?= $config->getCurrentUrl() ?>">
 			            <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
 		            </a>
@@ -145,7 +154,7 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                 </li>
               </ul>
 	            <?php if (get_locale() === 'ru_RU'): ?>
-		            <div class="social">
+		            <div class="social mobile">
 			            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
 		            </div>
 	            <?php endif; ?>

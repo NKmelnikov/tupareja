@@ -131,8 +131,8 @@
       z-index: 10;
       animation: upDown 3s linear .1s infinite; }
     .heart-box__heart-medium.hs11 {
-      top: 40px;
-      right: 170px;
+      top: 85px;
+      right: 60px;
       z-index: 10;
       animation: upDown 2.4s linear .1s infinite; }
       @media (max-width: 768px) {
@@ -299,11 +299,14 @@ body, html {
 #Top_bar .header-column, #Footer .header-column {
   position: relative; }
 #Top_bar .translations-wrapper, #Footer .translations-wrapper {
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   right: 100px;
   top: 25px; }
+  #Top_bar .translations-wrapper.mobile, #Footer .translations-wrapper.mobile {
+    position: static; }
   @media (max-width: 768px) {
     #Top_bar .translations-wrapper, #Footer .translations-wrapper {
       justify-content: center;
@@ -355,12 +358,6 @@ body, html {
     right: 0;
     margin: 0 auto;
     z-index: 9; }
-  #Top_bar .header-special-mobile .responsive-menu-toggle, #Footer .header-special-mobile .responsive-menu-toggle {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 20px;
-    display: none; }
   #Top_bar .header-special-mobile .hamburger, #Footer .header-special-mobile .hamburger {
     top: 60px;
     right: 15px;
@@ -511,15 +508,19 @@ body, html {
 
 #Footer {
   border-top: #0931a2 2px solid;
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: relative; }
   @media (max-width: 768px) {
     #Footer {
       display: flex;
       justify-content: center;
       align-items: center; } }
-  @media (max-width: 768px) {
-    #Footer .social {
-      display: none; } }
+  #Footer .social {
+    top: 10px;
+    right: 10px; }
+    @media (max-width: 768px) {
+      #Footer .social {
+        display: none; } }
   #Footer .top_bar_left {
     max-width: 1300px;
     margin: 0 auto; }
@@ -602,8 +603,12 @@ body, html {
   transform: translateY(-9px) rotate(-45deg); }
 
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  position: absolute;
+  top: 115px; }
+  .social.mobile {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=header.css.map */
