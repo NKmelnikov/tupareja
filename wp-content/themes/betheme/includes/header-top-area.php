@@ -7,6 +7,7 @@
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
 $action_bar = mfn_opts_get('action-bar');
 $pathToCustom = '/wp-content/themes/betheme/_Custom/';
+\Helper\CustomHelper::build();
 $config = \Helper\CustomHelper::instance();
 $v = $config->version();
 
