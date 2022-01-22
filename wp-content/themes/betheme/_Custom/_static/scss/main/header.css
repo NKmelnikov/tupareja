@@ -284,7 +284,7 @@
                supported by Chrome, Opera and Firefox */ }
 
 .social {
-  width: 100%; }
+  width: 200px; }
   .social .sfsi_wDiv {
     width: 100% !important;
     display: flex;
@@ -604,8 +604,10 @@ body, html {
 
 .social {
   position: absolute;
-  top: 115px; }
+  top: 115px;
+  right: 25px; }
   .social.mobile {
+    width: 100%;
     position: static;
     display: flex;
     justify-content: center;
