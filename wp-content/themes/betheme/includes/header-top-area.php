@@ -5,9 +5,10 @@
  * @link https://muffingroup.com
  */
 require_once 'wp-content/themes/betheme/_Custom/Helper/CustomHelper.php';
-$customHelper = new \Helper\CustomHelper();
-$customHelper::build();
 $action_bar = mfn_opts_get('action-bar');
+$pathToCustom = '/wp-content/themes/betheme/_Custom/';
+$config = \Helper\CustomHelper::instance();
+$v = $config->version();
 
 $translate['wpml-no'] = mfn_opts_get('translate') ? mfn_opts_get('translate-wpml-no',
     'No translations available for this page') : __('No translations available for this page',
@@ -59,20 +60,20 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 <div id="Top_bar">
   <div class="container">
     <div class="column one header-column">
-        <?php if (get_locale() === 'ru_RU'): ?>
-			    <div class="social">
-              <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-			    </div>
-        <?php endif; ?>
-      <div class="translations-wrapper">
-	      <a href="<?= $customHelper::instance()->getCurrentUrl() ?>">
-		      <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
-	      </a>
-	      <a href="<?= $customHelper::instance()->getCurrentUrl('/ru') ?>">
-		      <img src="/wp-content/themes/betheme/_Custom/_static/img/russia-flag-round-icon-32.png" alt="">
-	      </a>
-      </div>
-      <div class="heart-box heart-box-main-header">
+	    <?php if (get_locale() === 'ru_RU'): ?>
+		    <div class="social">
+			    <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+		    </div>
+	    <?php endif; ?>
+	    <div class="translations-wrapper">
+		    <a href="<?= $config->getCurrentUrl() ?>">
+			    <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
+		    </a>
+		    <a href="<?= $config->getCurrentUrl('/ru') ?>">
+			    <img src="/wp-content/themes/betheme/_Custom/_static/img/russia-flag-round-icon-32.png" alt="">
+		    </a>
+	    </div>
+      <div class="heart-box heart-box-main-header no-mobile">
         <img class="heart-box__heart-small rotated header-section hs1" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">
         <img class="heart-box__heart-medium header-section hs2" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
       </div>
@@ -90,14 +91,26 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 			      Relaciones estables
 		      <?php endif; ?>
 	      </p>
-
-        <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i><a>
-            <nav id="menu">
+		        <div class="hamburger" id="hamburger">
+			        <span class="line"></span>
+			        <span class="line"></span>
+			        <span class="line"></span>
+		        </div>
+            <nav id="mobile-menu">
+	            <br>
+	            <div class="translations-wrapper mobile">
+		            <a href="<?= $config->getCurrentUrl() ?>">
+			            <img src="/wp-content/themes/betheme/_Custom/_static/img/spain-flag-round-icon-32.png" alt="">
+		            </a>
+		            <a href="<?= $config->getCurrentUrl('/ru') ?>">
+			            <img src="/wp-content/themes/betheme/_Custom/_static/img/russia-flag-round-icon-32.png" alt="">
+		            </a>
+	            </div>
               <ul id="menu-menu-3" class="menu menu-main">
-<!--                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">-->
-<!--                  <a href="--><?//= get_home_url() . $ruSuffix ?><!--"><span>--><?php //_e('header_main',
-//                              'betheme') ?><!--</span></a>-->
-<!--                </li>-->
+                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-82">
+                  <a href="<?= get_home_url() . $ruSuffix ?>"><span><?php _e('header_main',
+                              'betheme') ?></span></a>
+                </li>
                 <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="<?= get_home_url() .$ruSuffix. '/#main-gallery' ?>"><span><?php _e('header_our_ladies',
                               'betheme') ?></span></a>
@@ -140,13 +153,14 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
                               'betheme') ?></span></a>
                 </li>
               </ul>
+	            <?php if (get_locale() === 'ru_RU'): ?>
+		            <div class="social mobile">
+			            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+		            </div>
+	            <?php endif; ?>
+
             </nav>
       </div>
-      <script>
-        $('.responsive-menu-toggle').click(function () {
-          $('#menu').toggleClass('active');
-        })
-      </script>
 
 
       <div class="top_bar_left clearfix">
@@ -284,3 +298,4 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
     </div>
   </div>
 </div>
+<script src="<?php echo $pathToCustom . '_static/js/header.js?v=' . $v ?>"></script>

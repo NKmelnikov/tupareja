@@ -178,8 +178,8 @@
     }
 
     &.hs11 {
-      top: 40px;
-      right: 170px;
+      top: 85px;
+      right: 60px;
       z-index: 10;
       animation: upDown 2.4s linear .1s infinite;
 
@@ -272,6 +272,12 @@
       @media #{$mobile} {
         display: none;
       }
+    }
+  }
+
+  &.no-mobile {
+    @media #{$mobile} {
+      display: none;
     }
   }
 }

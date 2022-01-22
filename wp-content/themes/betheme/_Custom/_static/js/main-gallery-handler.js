@@ -245,27 +245,27 @@
 
     });
 
-    let video = document.getElementById("mp1-bg-video");
-    let clicked = false;
-    video.volume = 0.3;
-    video.pause();
-
-    $('.mp1-video-block').click(() => {
-      video.muted = !video.muted;
-      video.play();
-      clicked = true;
-    });
-
-    $(document).on('scroll', function () {
-      if (!clicked) {
-        if ($(this).scrollTop() >= $('.mp1-lower-section').position().top - 200 && $(this).scrollTop() <= $('.mp1-b3-wrap').position().top - 200) {
-          video.play();
-          video.muted = false;
-        } else {
-          video.pause();
-          video.muted = true;
-        }
-      }
-    });
+    // let video = document.getElementById("mp1-bg-video");
+    // let clicked = false;
+    // video.volume = 0.3;
+    // video.pause();
+    //
+    // $('.mp1-video-block').click(() => {
+    //   video.muted = !video.muted;
+    //   video.play();
+    //   clicked = true;
+    // });
+    //
+    // $(document).on('scroll', function () {
+    //   if (!clicked) {
+    //     if ($(this).scrollTop() >= $('.mp1-lower-section').position().top - 200 && $(this).scrollTop() <= $('.mp1-b3-wrap').position().top - 200) {
+    //       video.play();
+    //       video.muted = false;
+    //     } else {
+    //       video.pause();
+    //       video.muted = true;
+    //     }
+    //   }
+    // });
   });
 })(jQuery);

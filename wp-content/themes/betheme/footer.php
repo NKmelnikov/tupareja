@@ -1,4 +1,4 @@
-<div class="heart-box heart-box-main-header">
+<div class="heart-box heart-box-main-header no-mobile">
   <img class="heart-box__heart-small footer-section hs10" src="/wp-content/themes/betheme/_Custom/_static/img/small-left.png" alt="">
   <img class="heart-box__heart-medium footer-section hs11" src="/wp-content/themes/betheme/_Custom/_static/img/medium-right.png" alt="">
 </div>

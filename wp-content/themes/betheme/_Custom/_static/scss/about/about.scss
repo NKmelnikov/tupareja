@@ -76,6 +76,11 @@
   background-size: cover;
   padding: 7px 0;
   margin-bottom: 50px;
+
+  @media #{$mobile} {
+    margin-bottom: 0;
+  }
+
   .guarant_border{
     border-bottom:#dbc283 4px solid;
     border-top:#dbc283 4px solid;
