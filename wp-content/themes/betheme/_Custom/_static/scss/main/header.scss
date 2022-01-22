@@ -239,6 +239,7 @@ body, html {
         }
       }
 
+
       &.up {
         top: -130px;
       }
@@ -250,6 +251,10 @@ body, html {
 
     .service-dropdown:hover .service-dropdown-content {
       display: flex;
+
+      span {
+        font-size: 0.8em;
+      }
     }
   }
 
