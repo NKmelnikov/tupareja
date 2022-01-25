@@ -349,7 +349,8 @@
           width: 350px;
           height: 250px; } }
       .os1-wrapper-service .os1-service-img-box__image.image0, .os1-wrapper-service .rc1-service-img-box__image.image0, .os1-wrapper-service .rm1-service-img-box__image.image0, .rc1-wrapper-service .os1-service-img-box__image.image0, .rc1-wrapper-service .rc1-service-img-box__image.image0, .rc1-wrapper-service .rm1-service-img-box__image.image0, .rm1-wrapper-service .os1-service-img-box__image.image0, .rm1-wrapper-service .rc1-service-img-box__image.image0, .rm1-wrapper-service .rm1-service-img-box__image.image0 {
-        background: url("/wp-content/themes/betheme/_Custom/_static/img/service/service_0.jpg") no-repeat 50% 5%; }
+        background: url("/wp-content/themes/betheme/_Custom/_static/img/service/service_0.jpg") no-repeat 50% 50%;
+        background-size: 400px; }
       .os1-wrapper-service .os1-service-img-box__image.image1, .os1-wrapper-service .rc1-service-img-box__image.image1, .os1-wrapper-service .rm1-service-img-box__image.image1, .rc1-wrapper-service .os1-service-img-box__image.image1, .rc1-wrapper-service .rc1-service-img-box__image.image1, .rc1-wrapper-service .rm1-service-img-box__image.image1, .rm1-wrapper-service .os1-service-img-box__image.image1, .rm1-wrapper-service .rc1-service-img-box__image.image1, .rm1-wrapper-service .rm1-service-img-box__image.image1 {
         background: url("/wp-content/themes/betheme/_Custom/_static/img/service/service_1.jpg") no-repeat 50% 5%; }
       .os1-wrapper-service .os1-service-img-box__image.image2, .os1-wrapper-service .rc1-service-img-box__image.image2, .os1-wrapper-service .rm1-service-img-box__image.image2, .rc1-wrapper-service .os1-service-img-box__image.image2, .rc1-wrapper-service .rc1-service-img-box__image.image2, .rc1-wrapper-service .rm1-service-img-box__image.image2, .rm1-wrapper-service .os1-service-img-box__image.image2, .rm1-wrapper-service .rc1-service-img-box__image.image2, .rm1-wrapper-service .rm1-service-img-box__image.image2 {
@@ -526,5 +527,9 @@
   .sp-wrapper article, .rl-wrapper article, .rm-wrapper article {
     padding-top: 10px;
     text-align: justify; }
+
+.e-shop-link {
+  color: #182872;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=service.css.map */

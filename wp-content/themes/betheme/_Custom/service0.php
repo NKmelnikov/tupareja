@@ -19,3 +19,4 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 </div>
 <?php get_footer();
 ?>
+
