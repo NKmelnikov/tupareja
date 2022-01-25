@@ -86,7 +86,8 @@
         }
 
         &.image0 {
-          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_0.jpg') no-repeat 50% 5%;
+          background: url('/wp-content/themes/betheme/_Custom/_static/img/service/service_0.jpg') no-repeat 50% 50%;
+          background-size: 400px;
         }
 
         &.image1 {
@@ -354,4 +355,9 @@
     padding-top: 10px;
     text-align: justify;
   }
+}
+
+.e-shop-link {
+  color: #182872;
+  text-decoration: underline;
 }
