@@ -451,7 +451,7 @@ body, html {
   #Top_bar .header-right-block .service-dropdown:hover .service-dropdown-content, #Footer .header-right-block .service-dropdown:hover .service-dropdown-content {
     display: flex; }
     #Top_bar .header-right-block .service-dropdown:hover .service-dropdown-content span, #Footer .header-right-block .service-dropdown:hover .service-dropdown-content span {
-      font-size: 0.8em; }
+      font-size: 0.86em; }
 #Top_bar .header-alter-left-block, #Footer .header-alter-left-block {
   width: 190px; }
   @media (max-width: 768px) {
