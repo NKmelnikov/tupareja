@@ -302,6 +302,15 @@
   @media (max-width: 768px) {
     .cf1-wrapper-info {
       flex-direction: column; } }
+  .cf1-wrapper-info .block-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .cf1-wrapper-info .block-address .address {
+      display: flex; }
+      .cf1-wrapper-info .block-address .address .text-box {
+        margin-right: 52px; }
   .cf1-wrapper-info .text-block {
     width: 50%; }
     @media (max-width: 768px) {

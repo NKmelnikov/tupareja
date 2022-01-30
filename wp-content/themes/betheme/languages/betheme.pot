@@ -11269,10 +11269,13 @@ msgstr "Article"
 msgid "contact_contact"
 msgstr "Contact"
 
-msgid "contact_address"
+msgid "contact_address_title"
 msgstr "Address"
 
-msgid "contact_address_text"
+msgid "contact_address_text_ua"
+msgstr "Address Text"
+
+msgid "contact_address_text_es"
 msgstr "Address Text"
 
 msgid "contact_from_text"

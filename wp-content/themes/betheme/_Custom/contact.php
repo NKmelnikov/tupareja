@@ -26,38 +26,50 @@ $v = $config->version();
       <div class="title-block">
           <?php _e('contact_from_text', 'betheme') ?>
       </div>
-      <div class="contact-block">
-        <div class="block-contact">
-          <div class="line-box">
-            <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
-          </div>
-          <div class="text-box">
-            <div class="text-box__title">
-                <?php _e('contact_contact', 'betheme') ?>
-            </div>
-            <div class="text-box__content">
-              + 38 096 952 47 19
-              <br>
-              + 34 636 49 75 35
-              <br>
-              info@tuparejaucraniana.com
-            </div>
-          </div>
-        </div>
-        <div class="block-address">
-          <div class="line-box">
-            <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
-          </div>
-          <div class="text-box">
-            <div class="text-box__title">
-                <?php _e('contact_address', 'betheme') ?>
-            </div>
-            <div class="text-box__content">
-                <?php _e('contact_address_text', 'betheme') ?>
-            </div>
-          </div>
-        </div>
-      </div>
+	    <div class="contact-block">
+		    <div class="block-contact">
+
+			    <div class="text-box">
+				    <div class="text-box__title">
+					    <b><?php _e('contact_contact', 'betheme') ?></b>
+				    </div>
+				    <div class="line-box">
+					    <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
+				    </div>
+				    <div class="text-box__content">
+					    + 380 96 952 4719
+					    <br>
+					    + 34 63 6497535
+					    <br>
+					    tuparejaucraniana20@gmail.com
+				    </div>
+			    </div>
+		    </div>
+		    <br>
+		    <div class="block-address">
+			    <div class="text-box__title">
+				    <b><?php _e('contact_address_title', 'betheme') ?></b>
+			    </div>
+			    <div class="address">
+				    <div class="text-box">
+					    <div class="line-box">
+						    <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
+					    </div>
+					    <div class="text-box__content">
+						    <?php _e('contact_address_text_ua', 'betheme') ?>
+					    </div>
+				    </div>
+				    <div class="text-box">
+					    <div class="line-box">
+						    <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
+					    </div>
+					    <div class="text-box__content">
+						    <?php _e('contact_address_text_es', 'betheme') ?>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
     </div>
     <div class="form-block">
       <form action="<?= $pathToCustom . 'Actions/sendContactFormEmail.php' ?>" method="POST" id="cf1-form">

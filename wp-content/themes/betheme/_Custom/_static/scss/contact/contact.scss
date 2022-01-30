@@ -25,6 +25,27 @@
       flex-direction: column;
     }
 
+    //.contact-block {
+    //  display: flex;
+    //  justify-content: flex-start;
+    //  align-items: center;
+    //}
+
+    .block-address {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .address {
+        display: flex;
+
+        .text-box {
+          margin-right: 52px;
+        }
+      }
+    }
+
     .text-block {
       width: 50%;
 
