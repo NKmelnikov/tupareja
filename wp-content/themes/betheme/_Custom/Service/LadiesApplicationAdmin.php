@@ -93,7 +93,6 @@ class LadiesApplicationAdmin extends WP_List_Table
 
             case 'activated':
             case 'name':
-            case 'lname':
             case 'fname':
             case 'email':
             case 'instagram':
@@ -110,8 +109,14 @@ class LadiesApplicationAdmin extends WP_List_Table
             case 'man_wish_age':
             case 'video_link':
             case 'about':
+            case 'created_at':
+            case 'updated_at':
                 return $_item;
-            case 'date_of_birth':
+	        case 'lname':
+                return $item['name'] ."<br>" .
+                 $item['lname'] ."<br>" .
+                 $item['fname'] ."<br>";
+					case 'date_of_birth':
                 return sprintf("%s \nВозраст:(%s)", date('d-m-Y', $_item), $this->getCurrentAge($_item));
             case 'main_image_path':
                 return "<img src='$image_src' width='39' height='50'>";
@@ -160,18 +165,18 @@ class LadiesApplicationAdmin extends WP_List_Table
         return [
             'cb' => '<input type="checkbox" />',
             'id' => __('ID', 'sp'),
-            'position' =>__('Position in gallery', 'sp'),
-            'main_image_path' => __('Picture', 'sp'),
-            'activated' => __('Activated?', 'sp'),
-            'name' => __('Name', 'sp'),
-            'lname' => __('LastName', 'sp'),
-            'fname' => __('FathersName', 'sp'),
-            'date_of_birth' => __('Date of Birth (d.m.Y)', 'sp'),
+            'position' =>__('Место', 'sp'),
+            'main_image_path' => __('Картинка', 'sp'),
+            'activated' => __('Активна?', 'sp'),
+            'name' => __('Имя', 'sp'),
+            'date_of_birth' => __('Дата рождения (d.m.Y)', 'sp'),
             'email' => __('email', 'sp'),
             'instagram' => __('instagram', 'sp'),
-            'phone' => __('phone', 'sp'),
-            'profession' => __('profession', 'sp'),
-            'country' => __('country', 'sp'),
+            'phone' => __('Телефон', 'sp'),
+            'profession' => __('Профессия', 'sp'),
+            'country' => __('Страна', 'sp'),
+            'created_at' => __('Создана', 'sp'),
+            'updated_at' => __('Обновлена', 'sp'),
         ];
     }
 

@@ -26,7 +26,7 @@ class ContactFormHandler
             return ['error' => $post['error']];
         }
 
-        $this->sendEmail($post);
+//        $this->sendEmail($post);
         return ['success' => CustomHelper::getTranslationByLocale('cfh_contact_form_sent', $post['locale'])];
     }
 
@@ -78,7 +78,7 @@ class ContactFormHandler
         $post = [
             'name' => CustomHelper::sanitiseText($post['name']),
             'email' => sanitize_email($post['email']),
-            'subject' => CustomHelper::sanitiseText($post['subject']),
+            'phone' => CustomHelper::sanitiseText($post['phone']),
             'message' => CustomHelper::sanitiseText($post['message']),
             'locale' => CustomHelper::sanitiseText($post['locale']),
         ];

@@ -78,19 +78,23 @@ $v = $config->version();
 		<div class="form-block">
 			<form action="<?= $pathToCustom . 'Actions/sendContactFormEmail.php' ?>" method="POST" id="cf1-form">
 				<input type="hidden" name="locale" id="cf1-local" value="<?= get_locale() ?>"/>
-				<div class="name-email-box">
-					<div class="name-email-box__item">
-						<input type="text" name="name" id="cf1-name" class="cf1-input" required placeholder="<?php _e('contact_from_name', 'betheme') ?>"/>
-						<span class="error-box error-cf1-name"></span>
-					</div>
-					<div class="name-email-box__item">
-						<input type="email" name="email" id="cf1-email" class="cf1-input" required placeholder="<?php _e('contact_from_email', 'betheme') ?>"/>
-						<span class="error-box error-cf1-email"></span>
-					</div>
-				</div>
+				<input type="text" name="name" id="cf1-name" class="cf1-input" required placeholder="<?php _e('contact_from_name', 'betheme') ?>"/>
+				<span class="error-box error-cf1-name"></span>
 
-				<input type="text" name="subject" id="cf1-subject" class="cf1-input" required placeholder="<?php _e('contact_from_subject', 'betheme') ?>"/>
-				<span class="error-box error-cf1-subject"></span>
+				<input type="email" name="email" id="cf1-email" class="cf1-input" required placeholder="<?php _e('contact_from_email', 'betheme') ?>"/>
+				<span class="error-box error-cf1-email"></span>
+<!--				<span class="error-box error-cf1-name"></span>-->
+<!--				<div class="name-email-box">-->
+<!--					<div class="name-email-box__item">-->
+<!--						-->
+<!--					</div>-->
+<!--					<div class="name-email-box__item">-->
+<!--						-->
+<!--					</div>-->
+<!--				</div>-->
+
+				<input type="text" name="phone" id="cf1-phone" class="cf1-input" required placeholder="<?php _e('contact_from_subject', 'betheme') ?>"/>
+				<span class="error-box error-cf1-phone"></span>
 
 				<textarea cols="30" rows="5" type="text" name="message" id="cf1-message" class="cf1-input" required placeholder="<?php _e('contact_from_message', 'betheme') ?>"/></textarea>
 				<span class="error-box error-cf1-message"></span>
