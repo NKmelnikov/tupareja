@@ -1,6 +1,7 @@
 (function ($) {
   let mp1 = {
     galleryWrapper: $('.mp1-wrapper'),
+    galleryWrapperId: $('#mp1-women-gallery'),
     deepSearchSubmitButton: $('#mp1-ds-submit-btn'),
     deepSearchForm: $('#mp1-ds-form'),
     mainSearchInput: $('#mp1-main-search-input'),
@@ -39,6 +40,9 @@
         locator: 'items',
         totalNumber: 1000,
         pageSize: 10,
+        beforePaging: () => {
+          mp1.galleryWrapperId[0].scrollIntoView({behavior: 'smooth'});
+        },
         ajax: {
           beforeSend: function () {
             mp1.galleryWrapper.html('loading...')

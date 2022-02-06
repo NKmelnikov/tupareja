@@ -80,24 +80,45 @@
 
 #pagination {
   height: 100%;
+  width: 25%;
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+
+  .paginationjs, .paginationjs-pages {
+
+    @media #{$mobile} {
+      width: 100%;
+    }
+  }
 
 }
 
 .paginationjs-pages {
   ul {
     display: flex;
+    justify-content: space-between;
 
     li {
-      padding: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      font-size: 26px;
+      height: 32px;
+      line-height: 140%;
+      width: 24px;
 
-      @media #{$mobile} {
-        font-size: 26px;
+      a {
+        height: 32px;
+        width: 100%;
+        text-align: center;
       }
 
       &.active {
         background: #86c0c7;
-        border-radius: 2px;
+        border-radius: 4px;
       }
     }
   }

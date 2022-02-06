@@ -179,7 +179,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
   </div>
 </form>
 
-<div class="mp1-wrapper"></div>
+<div id="mp1-women-gallery" class="mp1-wrapper"></div>
 <div class="mp1-lower-section">
   <div id="pagination"></div>
 </div>
