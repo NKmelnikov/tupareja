@@ -40,7 +40,13 @@
         locator: 'items',
         totalNumber: 1000,
         pageSize: 10,
-        beforePaging: () => {
+        afterNextOnClick: () => {
+          mp1.galleryWrapperId[0].scrollIntoView({behavior: 'smooth'});
+        },
+        afterPreviousOnClick: () => {
+          mp1.galleryWrapperId[0].scrollIntoView({behavior: 'smooth'});
+        },
+        afterPageOnClick: () => {
           mp1.galleryWrapperId[0].scrollIntoView({behavior: 'smooth'});
         },
         ajax: {
