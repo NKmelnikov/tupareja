@@ -310,7 +310,8 @@
     .cf1-wrapper-info .block-address .address {
       display: flex; }
       .cf1-wrapper-info .block-address .address .text-box {
-        margin-right: 52px; }
+        margin-right: 38px;
+        font-size: 14px; }
   .cf1-wrapper-info .text-block {
     width: 50%; }
     @media (max-width: 768px) {

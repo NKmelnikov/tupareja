@@ -11278,6 +11278,9 @@ msgstr "Address Text"
 msgid "contact_address_text_es"
 msgstr "Address Text"
 
+msgid "contact_address_text_es2"
+msgstr "Address Text"
+
 msgid "contact_from_text"
 msgstr "Address Form Text"
 

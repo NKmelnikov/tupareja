@@ -67,6 +67,14 @@ $v = $config->version();
 						    <?php _e('contact_address_text_es', 'betheme') ?>
 					    </div>
 				    </div>
+            <div class="text-box">
+              <div class="line-box">
+                <img src="/wp-content/uploads/2018/11/line3.png" class="line-box__image" alt="line3" width="42" height="3"/>
+              </div>
+              <div class="text-box__content">
+                  <?php _e('contact_address_text_es2', 'betheme') ?>
+              </div>
+            </div>
 			    </div>
 		    </div>
 	    </div>

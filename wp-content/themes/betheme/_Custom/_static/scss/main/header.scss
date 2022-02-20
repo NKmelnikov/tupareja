@@ -197,13 +197,28 @@ body, html {
       display: none;
     }
 
-    h1 {
-      font-size: 30px;
-      font-style: italic;
-      color: #daad20;
-      white-space: nowrap;
-      text-align: center;
+    &__title {
+      h1 {
+        font-size: 30px;
+        font-style: italic;
+        color: #daad20;
+        white-space: nowrap;
+        text-align: center;
+        height: 42px;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-style: italic;
+        color: #daad20;
+        text-align: center;
+        line-height: 150%;
+        height: 40px;
+        width: 460px;
+      }
     }
+
+
 
     .service-dropdown {
       position: relative;

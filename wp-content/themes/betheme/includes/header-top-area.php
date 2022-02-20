@@ -175,7 +175,12 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
 	          <?php elseif (get_locale() === 'en_En'): ?>
             <h1>International Matchmaking Office</h1>
 	          <?php else: ?>
-		          <h1>Relaciones estables</h1>
+            <div class="header-right-block__title">
+              <h1>Relaciones estables</h1>
+              <h3>Compartir la vida con una bella mujer eslava está en tus manos!!! Te ayudamos a hacer tu sueño realidad.</h3>
+            </div>
+
+
 	          <?php endif; ?>
           </div>
           <div class="menu_wrapper">
