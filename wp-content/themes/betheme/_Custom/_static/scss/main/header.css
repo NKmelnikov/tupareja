@@ -417,21 +417,31 @@ body, html {
   @media (max-width: 768px) {
     #Top_bar .header-right-block, #Footer .header-right-block {
       display: none; } }
-  #Top_bar .header-right-block__title h1, #Footer .header-right-block__title h1 {
-    font-size: 30px;
-    font-style: italic;
-    color: #daad20;
-    white-space: nowrap;
-    text-align: center;
-    height: 42px; }
-  #Top_bar .header-right-block__title h3, #Footer .header-right-block__title h3 {
-    font-size: 14px;
-    font-style: italic;
-    color: #daad20;
-    text-align: center;
-    line-height: 150%;
-    height: 40px;
-    width: 460px; }
+  #Top_bar .header-right-block__title, #Footer .header-right-block__title {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #Top_bar .header-right-block__title h1, #Footer .header-right-block__title h1 {
+      display: block;
+      font-size: 30px;
+      font-style: italic;
+      color: #daad20;
+      white-space: nowrap;
+      text-align: center;
+      height: 30px;
+      line-height: 120%;
+      margin-bottom: 8px; }
+    #Top_bar .header-right-block__title h3, #Footer .header-right-block__title h3 {
+      display: block;
+      font-size: 14px;
+      font-style: italic;
+      color: #daad20;
+      text-align: center;
+      line-height: 110%;
+      width: 460px;
+      height: 30px; }
   #Top_bar .header-right-block .service-dropdown, #Footer .header-right-block .service-dropdown {
     position: relative;
     display: inline-block; }

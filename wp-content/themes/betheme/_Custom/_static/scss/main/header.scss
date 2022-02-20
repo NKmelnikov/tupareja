@@ -198,23 +198,33 @@ body, html {
     }
 
     &__title {
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
       h1 {
+        display: block;
         font-size: 30px;
         font-style: italic;
         color: #daad20;
         white-space: nowrap;
         text-align: center;
-        height: 42px;
+        height: 30px;
+        line-height: 120%;
+        margin-bottom: 8px;
       }
 
       h3 {
+        display: block;
         font-size: 14px;
         font-style: italic;
         color: #daad20;
         text-align: center;
-        line-height: 150%;
-        height: 40px;
+        line-height: 110%;
         width: 460px;
+        height: 30px;
       }
     }
 

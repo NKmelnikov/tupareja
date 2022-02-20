@@ -171,9 +171,13 @@ $ruSuffix = (get_locale() === 'ru_RU') ? '/ru' : '';
       <div class="header-right-block">
           <div class="header-title real">
 	          <?php if (get_locale() === 'ru_RU'): ?>
-            <h1>Международное Агентство Знакомств</h1>
+              <div class="header-right-block__title">
+                <h1>Международное Агентство Знакомств</h1>
+              </div>
 	          <?php elseif (get_locale() === 'en_En'): ?>
-            <h1>International Matchmaking Office</h1>
+              <div class="header-right-block__title">
+                <h1>International Matchmaking Office</h1>
+              </div>
 	          <?php else: ?>
             <div class="header-right-block__title">
               <h1>Relaciones estables</h1>
