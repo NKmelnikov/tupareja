@@ -30,7 +30,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 <section class="about">
 	<div class="about_line line_1">
 		<div class="left">
-			<img src="<?= $pathToCustom . '_static/img/about_img_1.png'?>">
+			<img src="<?= $pathToCustom . '_static/img/about_img_1.jpg'?>">
 		</div>
 		<div class="right">
 			<p><?php _e('about_elem_1', 'betheme') ?></p>
@@ -38,7 +38,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	</div>
 	<div class="about_line line_2">
 		<div class="right">
-			<img src="<?= $pathToCustom . '_static/img/about_img_2.png'?>">
+			<img src="<?= $pathToCustom . '_static/img/about_img_2.jpg'?>">
 		</div>
 		<div class="left">
 			<p><?php _e('about_elem_2', 'betheme') ?></p>
@@ -47,7 +47,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 
 	<div class="about_line line_1">
 		<div class="left">
-			<img src="<?= $pathToCustom . '_static/img/about_img_3.png'?>">
+			<img src="<?= $pathToCustom . '_static/img/about_img_3.jpg'?>">
 		</div>
 		<div class="right">
 			<p><?php _e('about_elem_3', 'betheme') ?></p>
@@ -55,7 +55,7 @@ $pathToCustom = '/wp-content/themes/betheme/_Custom/';
 	</div>
 	<div class="about_line line_2">
 		<div class="right">
-			<img src="<?= $pathToCustom . '_static/img/about_img_4.png'?>">
+			<img src="<?= $pathToCustom . '_static/img/about_img_4.jpg'?>">
 		</div>
 		<div class="left">
 			<p><?php _e('about_elem_4', 'betheme') ?></p>
